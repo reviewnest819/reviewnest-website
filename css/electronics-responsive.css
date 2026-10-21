@@ -1,0 +1,812 @@
+/* =========================================================
+REVIEWNEST
+ELECTRONICS CATEGORY PAGE
+STEP 1 — RESPONSIVE CSS
+========================================================= */
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+.electronics-hero {  
+    padding: 48px 30px 32px;  
+}  
+
+.electronics-search-section {  
+    padding-left: 30px;  
+    padding-right: 30px;  
+}  
+
+.electronics-controls-section {  
+    padding-left: 30px;  
+    padding-right: 30px;  
+}  
+
+.electronics-products-section {  
+    padding-left: 30px;  
+    padding-right: 30px;  
+}  
+
+.electronics-product-grid {  
+    grid-template-columns: repeat(2, minmax(0, 1fr));  
+}
+
+}
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+.electronics-hero {  
+    padding: 34px 18px 26px;  
+}  
+
+.electronics-breadcrumb {  
+    margin-bottom: 20px;  
+    font-size: 12px;  
+}  
+
+.electronics-hero h1 {  
+    font-size: 37px;  
+    line-height: 1.07;  
+}  
+
+.electronics-intro {  
+    margin-top: 16px;  
+    font-size: 15px;  
+    line-height: 1.65;  
+}  
+
+
+/* SEARCH */  
+
+.electronics-search-section {  
+    padding: 0 18px 22px;  
+}  
+
+.electronics-search-box {  
+    min-height: 56px;  
+    gap: 5px;  
+    padding: 5px;  
+    border-radius: 12px;  
+}  
+
+.electronics-search-icon {  
+    width: 38px;  
+    height: 42px;  
+    flex-basis: 38px;  
+}  
+
+.electronics-search-icon svg {  
+    width: 19px;  
+    height: 19px;  
+}  
+
+.electronics-search-box input {  
+    height: 42px;  
+    padding: 0 4px;  
+    font-size: 14px;  
+}  
+
+.electronics-search-button {  
+    min-width: 76px;  
+    height: 42px;  
+    padding: 0 12px;  
+    font-size: 13px;  
+}  
+
+
+/* CONTROLS */  
+
+.electronics-controls-section {  
+    padding: 0 18px 24px;  
+}  
+
+.electronics-controls {  
+    align-items: stretch;  
+    flex-direction: column;  
+    gap: 12px;  
+    padding: 14px;  
+}  
+
+.electronics-filter-area,  
+.electronics-sort-area {  
+    width: 100%;  
+    justify-content: space-between;  
+}  
+
+.electronics-control-note {  
+    font-size: 11px;  
+    text-align: right;  
+}  
+
+
+/* PRODUCTS */  
+
+.electronics-products-section {  
+    padding: 30px 18px 55px;  
+}  
+
+.electronics-section-heading {  
+    align-items: flex-start;  
+    flex-direction: column;  
+    gap: 8px;  
+    margin-bottom: 22px;  
+}  
+
+.electronics-section-heading h2 {  
+    font-size: 27px;  
+}  
+
+.electronics-section-heading p {  
+    font-size: 13px;  
+}  
+
+.electronics-product-grid {  
+    grid-template-columns: repeat(2, minmax(0, 1fr));  
+    gap: 14px;  
+}  
+
+.electronics-placeholder-card {  
+    min-height: 250px;  
+    border-radius: 13px;  
+}  
+
+
+/* PAGINATION */  
+
+.electronics-pagination {  
+    gap: 6px;  
+    margin-top: 28px;  
+}  
+
+.pagination-button {  
+    min-width: 40px;  
+    height: 40px;  
+}
+
+}
+
+/* =========================================================
+SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+.electronics-hero h1 {  
+    font-size: 32px;  
+}  
+
+.electronics-kicker {  
+    font-size: 11px;  
+}  
+
+.electronics-search-box {  
+    width: 100%;  
+}  
+
+.electronics-search-button {  
+    min-width: 70px;  
+    padding: 0 10px;  
+    font-size: 12px;  
+}  
+
+.electronics-product-grid {  
+    grid-template-columns: 1fr;  
+}  
+
+.electronics-placeholder-card {  
+    min-height: 220px;  
+}  
+
+.electronics-control-note {  
+    display: none;  
+}
+
+}
+
+/* =========================================================
+VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 360px) {
+
+.electronics-hero {  
+    padding-left: 14px;  
+    padding-right: 14px;  
+}  
+
+.electronics-search-section,  
+.electronics-controls-section,  
+.electronics-products-section {  
+    padding-left: 14px;  
+    padding-right: 14px;  
+}  
+
+.electronics-hero h1 {  
+    font-size: 29px;  
+}  
+
+.electronics-search-button {  
+    min-width: 64px;  
+}
+
+}
+
+/* =========================================================
+REVIEWNEST ELECTRONICS
+STEP 2 — RESPONSIVE PRODUCT DATA SYSTEM
+========================================================= */
+
+@media (max-width: 1000px) {
+
+.electronics-products-section {  
+    padding: 65px 24px;  
+}  
+
+.products-grid {  
+    grid-template-columns: repeat(2, minmax(0, 1fr));  
+    gap: 20px;  
+}
+
+}
+
+@media (max-width: 760px) {
+
+.electronics-products-section {  
+    padding: 55px 18px;  
+}  
+
+.products-section-header {  
+    align-items: flex-start;  
+    flex-direction: column;  
+    gap: 16px;  
+    margin-bottom: 26px;  
+}  
+
+.products-section-header h2 {  
+    font-size: 30px;  
+}  
+
+.products-result-count {  
+    width: 100%;  
+    text-align: center;  
+}  
+
+.products-grid {  
+    grid-template-columns: 1fr;  
+    gap: 16px;  
+}  
+
+.product-card-body {  
+    padding: 17px;  
+}  
+
+.products-pagination {  
+    flex-wrap: wrap;  
+    margin-top: 30px;  
+}
+
+}
+
+@media (max-width: 420px) {
+
+.electronics-products-section {  
+    padding-left: 14px;  
+    padding-right: 14px;  
+}  
+
+.products-section-header h2 {  
+    font-size: 27px;  
+}  
+
+.pagination-button {  
+    min-width: 40px;  
+    height: 40px;  
+}
+
+}
+
+/* =========================================================
+ReviewNest Electronics
+STEP 3 — Premium Product Card Responsive
+========================================================= */
+
+/* ---------------------------------------------------------
+LARGE LAPTOP
+--------------------------------------------------------- */
+
+@media (max-width: 1200px) {
+
+.products-grid {  
+    grid-template-columns:  
+        repeat(2, minmax(0, 1fr));  
+
+    gap: 20px;  
+}
+
+}
+
+/* ---------------------------------------------------------
+TABLET
+--------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+.products-grid {  
+    grid-template-columns:  
+        repeat(2, minmax(0, 1fr));  
+
+    gap: 18px;  
+}  
+
+
+.product-card-content {  
+    padding: 18px;  
+}  
+
+
+.product-name {  
+    font-size: 18px;  
+}  
+
+
+.product-description {  
+    font-size: 13px;  
+}  
+
+
+.product-price {  
+    font-size: 22px;  
+}
+
+}
+
+/* ---------------------------------------------------------
+MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 760px) {
+
+.products-grid {  
+    grid-template-columns: 1fr;  
+    gap: 16px;  
+}  
+
+
+.product-card {  
+    border-radius: 16px;  
+}  
+
+
+.product-card-image {  
+    aspect-ratio: 16 / 10;  
+}  
+
+
+.product-card-content {  
+    padding: 17px;  
+}  
+
+
+.product-name {  
+    font-size: 19px;  
+}  
+
+
+.product-description {  
+    margin-top: 9px;  
+    margin-bottom: 14px;  
+
+    font-size: 13px;  
+    line-height: 1.6;  
+}  
+
+
+.product-card-rating-row {  
+    margin-bottom: 18px;  
+}  
+
+
+.product-card-bottom {  
+    align-items: center;  
+}  
+
+
+.product-price {  
+    font-size: 23px;  
+}  
+
+
+.product-review-button {  
+    min-height: 44px;  
+
+    padding:  
+        10px 14px;  
+
+    font-size: 12px;  
+}  
+
+
+.products-pagination {  
+    gap: 6px;  
+
+    margin-top: 26px;  
+}  
+
+
+.pagination-button {  
+    min-width: 38px;  
+    height: 38px;  
+
+    padding:  
+        0 9px;  
+
+    font-size: 12px;  
+}
+
+}
+
+/* ---------------------------------------------------------
+SMALL MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 420px) {
+
+.product-card-image {  
+    aspect-ratio: 16 / 10;  
+}  
+
+
+.product-card-content {  
+    padding: 15px;  
+}  
+
+
+.product-name {  
+    font-size: 18px;  
+}  
+
+
+.product-card-bottom {  
+    align-items: stretch;  
+    flex-direction: column;  
+}  
+
+
+.product-review-button {  
+    width: 100%;  
+}  
+
+
+.product-price {  
+    font-size: 22px;  
+}  
+
+
+.products-pagination {  
+    gap: 5px;  
+}  
+
+
+.pagination-button {  
+    min-width: 36px;  
+    height: 36px;  
+
+    padding:  
+        0 8px;  
+}
+
+}
+
+/* =========================================================
+STEP 6 — FILTER SYSTEM RESPONSIVE
+========================================================= */
+
+/* TABLET */
+
+@media (max-width: 960px) {
+
+.electronics-filter-panel {  
+    width: 370px;  
+    max-width: calc(100vw - 28px);  
+}  
+
+.filter-panel-body {  
+    max-height: 440px;  
+}
+
+}
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+.electronics-filter-wrap {  
+    width: auto;  
+    max-width: 100%;  
+}  
+
+.filter-control-row {  
+    gap: 8px;  
+}  
+
+
+/* FILTER BUTTON */  
+
+.electronics-filter-wrap .electronics-control-button {  
+    min-height: 42px;  
+
+    padding: 0 14px;  
+
+    border-radius: 9px;  
+
+    font-size: 12px;  
+}  
+
+.filter-button-icon,  
+.filter-button-icon svg {  
+    width: 17px;  
+    height: 17px;  
+}  
+
+
+/* FILTER COUNT */  
+
+.filter-active-count {  
+    min-height: 30px;  
+
+    padding: 0 9px;  
+
+    font-size: 11px;  
+}  
+
+
+/* FILTER PANEL */  
+
+.electronics-filter-panel {  
+    position: fixed;  
+
+    left: 50%;  
+    top: auto;  
+    bottom: 0;  
+
+    width: 100%;  
+    max-width: 100%;  
+
+    max-height: 88vh;  
+
+    transform: translateX(-50%);  
+
+    border-radius: 18px 18px 0 0;  
+
+    border-left: 0;  
+    border-right: 0;  
+    border-bottom: 0;  
+
+    box-shadow:  
+        0 -12px 40px rgba(16, 24, 40, .16),  
+        0 -3px 12px rgba(16, 24, 40, .06);  
+}  
+
+
+/* PANEL HEADER */  
+
+.filter-panel-top {  
+    padding: 18px 18px 15px;  
+
+    gap: 12px;  
+}  
+
+.filter-panel-heading .section-kicker {  
+    font-size: 9px;  
+}  
+
+.filter-panel-heading h3 {  
+    font-size: 17px;  
+}  
+
+.filter-panel-heading p {  
+    font-size: 11px;  
+}  
+
+
+/* CLOSE */  
+
+.filter-close-button {  
+    width: 34px;  
+    height: 34px;  
+
+    border-radius: 8px;  
+}  
+
+
+/* PANEL BODY */  
+
+.filter-panel-body {  
+    max-height: calc(88vh - 150px);  
+
+    padding: 2px 18px 8px;  
+
+    overflow-y: auto;  
+
+    -webkit-overflow-scrolling: touch;  
+}  
+
+
+/* SECTIONS */  
+
+.filter-section {  
+    padding: 16px 0;  
+}  
+
+.filter-section-title h4 {  
+    font-size: 12px;  
+}  
+
+.filter-section-title p {  
+    margin-top: 3px;  
+    margin-bottom: 10px;  
+
+    font-size: 10px;  
+}  
+
+
+/* OPTIONS */  
+
+.filter-options {  
+    gap: 3px;  
+}  
+
+.filter-option {  
+    min-height: 44px;  
+
+    padding: 7px 8px;  
+
+    gap: 10px;  
+
+    font-size: 12px;  
+
+    -webkit-tap-highlight-color: transparent;  
+}  
+
+.filter-radio {  
+    width: 18px;  
+    height: 18px;  
+
+    flex-basis: 18px;  
+}  
+
+
+/* FEATURED */  
+
+.filter-featured-option {  
+    min-height: 52px;  
+
+    padding: 9px;  
+
+    gap: 10px;  
+}  
+
+
+/* FOOTER */  
+
+.filter-panel-footer {  
+    padding: 13px 18px;  
+
+    gap: 10px;  
+
+    position: sticky;  
+    bottom: 0;  
+
+    background: #fff;  
+
+    box-shadow: 0 -4px 12px rgba(16, 24, 40, .04);  
+}  
+
+.filter-clear-button,  
+.filter-apply-button {  
+    min-height: 42px;  
+
+    font-size: 12px;  
+}  
+
+.filter-clear-button {  
+    padding: 0 14px;  
+}  
+
+.filter-apply-button {  
+    flex: 1;  
+
+    padding: 0 15px;  
+}
+
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 480px) {
+
+.filter-control-row {  
+    gap: 7px;  
+}  
+
+.electronics-filter-wrap .electronics-control-button {  
+    min-height: 40px;  
+
+    padding: 0 12px;  
+
+    font-size: 11px;  
+}  
+
+.filter-button-icon,  
+.filter-button-icon svg {  
+    width: 16px;  
+    height: 16px;  
+}  
+
+.filter-active-count {  
+    min-height: 28px;  
+
+    padding: 0 8px;  
+
+    font-size: 10px;  
+}  
+
+
+.electronics-filter-panel {  
+    max-height: 92vh;  
+
+    border-radius: 16px 16px 0 0;  
+}  
+
+.filter-panel-top {  
+    padding: 16px 15px 13px;  
+}  
+
+.filter-panel-body {  
+    max-height: calc(92vh - 142px);  
+
+    padding-left: 15px;  
+    padding-right: 15px;  
+}  
+
+.filter-panel-footer {  
+    padding: 11px 15px;  
+}
+
+}
+
+/* VERY SMALL PHONES */
+
+@media (max-width: 360px) {
+
+.filter-control-row {  
+    gap: 6px;  
+}  
+
+.electronics-filter-wrap .electronics-control-button {  
+    padding: 0 10px;  
+}  
+
+.filter-button-label {  
+    font-size: 11px;  
+}  
+
+.filter-active-count {  
+    padding: 0 7px;  
+}  
+
+.filter-panel-heading h3 {  
+    font-size: 16px;  
+}  
+
+.filter-panel-heading p {  
+    max-width: 220px;  
+}
+
+}

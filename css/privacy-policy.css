@@ -1,0 +1,473 @@
+/* =========================================================
+   REVIEWNEST — PRIVACY POLICY
+   Main Stylesheet
+   File: css/privacy-policy.css
+========================================================= */
+
+/* =========================
+   1. ROOT VARIABLES
+========================= */
+
+.privacy-page {
+    --privacy-primary: #b42318;
+    --privacy-primary-hover: #912018;
+    --privacy-text: #344054;
+    --privacy-heading: #101828;
+    --privacy-muted: #667085;
+    --privacy-border: #eaecf0;
+    --privacy-soft: #f9fafb;
+    --privacy-white: #ffffff;
+
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    color: var(--privacy-text);
+    background: var(--privacy-white);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+/* =========================
+   2. BOX SIZING
+========================= */
+
+.privacy-page,
+.privacy-page *,
+.privacy-page *::before,
+.privacy-page *::after {
+    box-sizing: border-box;
+}
+
+/* =========================
+   3. LINKS
+========================= */
+
+.privacy-page a {
+    color: var(--privacy-primary);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.privacy-page a:hover {
+    color: var(--privacy-primary-hover);
+}
+
+.privacy-page a:focus-visible {
+    outline: 3px solid rgba(180, 35, 24, 0.35);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* =========================
+   4. CONTAINER
+========================= */
+
+.privacy-page .privacy-container {
+    width: min(1120px, calc(100% - 48px));
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* =========================
+   5. HEADER
+========================= */
+
+.privacy-page .privacy-header {
+    width: 100%;
+    padding: 24px 0;
+    background: var(--privacy-white);
+    border-bottom: 1px solid var(--privacy-border);
+}
+
+.privacy-page .privacy-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.privacy-page .privacy-brand {
+    display: inline-block;
+    flex-shrink: 0;
+    color: var(--privacy-heading);
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+.privacy-page .privacy-brand span {
+    color: var(--privacy-primary);
+}
+
+.privacy-page .privacy-back-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 10px 16px;
+    border: 1px solid var(--privacy-border);
+    border-radius: 8px;
+    background: var(--privacy-white);
+    color: var(--privacy-heading);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+.privacy-page .privacy-back-link:hover {
+    border-color: var(--privacy-primary);
+    background: #fff8f7;
+    color: var(--privacy-primary);
+}
+
+/* =========================
+   6. HERO SECTION
+========================= */
+
+.privacy-page .privacy-hero {
+    padding: 76px 0 56px;
+    border-bottom: 1px solid var(--privacy-border);
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(180, 35, 24, 0.07),
+            transparent 40%
+        ),
+        var(--privacy-soft);
+}
+
+.privacy-page .privacy-eyebrow {
+    display: inline-block;
+    margin: 0 0 16px;
+    color: var(--privacy-primary);
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.privacy-page .privacy-hero h1 {
+    max-width: 850px;
+    margin: 0 0 20px;
+    color: var(--privacy-heading);
+    font-size: clamp(36px, 5vw, 58px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -2px;
+}
+
+.privacy-page .privacy-hero-description {
+    max-width: 760px;
+    margin: 0;
+    color: var(--privacy-muted);
+    font-size: 17px;
+    line-height: 1.85;
+}
+
+.privacy-page .privacy-updated {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 8px 12px;
+    border: 1px solid var(--privacy-border);
+    border-radius: 7px;
+    background: var(--privacy-white);
+    color: var(--privacy-muted);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* =========================
+   7. MAIN CONTENT LAYOUT
+========================= */
+
+.privacy-page .privacy-layout {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    align-items: start;
+    gap: 48px;
+    padding-top: 56px;
+    padding-bottom: 80px;
+}
+
+.privacy-page .privacy-content {
+    min-width: 0;
+}
+
+/* =========================
+   8. TABLE OF CONTENTS
+========================= */
+
+.privacy-page .privacy-toc {
+    position: sticky;
+    top: 24px;
+    min-width: 0;
+    padding: 22px;
+    border: 1px solid var(--privacy-border);
+    border-radius: 12px;
+    background: var(--privacy-white);
+    box-shadow: 0 2px 8px rgba(16, 24, 40, 0.03);
+}
+
+.privacy-page .privacy-toc h2 {
+    margin: 0 0 14px;
+    color: var(--privacy-heading);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.privacy-page .privacy-toc ol {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.privacy-page .privacy-toc li {
+    margin: 0 0 9px;
+    padding-left: 2px;
+    color: var(--privacy-muted);
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+.privacy-page .privacy-toc li:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-page .privacy-toc a {
+    color: var(--privacy-text);
+    text-decoration: none;
+}
+
+.privacy-page .privacy-toc a:hover {
+    color: var(--privacy-primary);
+    text-decoration: underline;
+}
+
+/* =========================
+   9. POLICY SECTIONS
+========================= */
+
+.privacy-page .privacy-section {
+    min-width: 0;
+    margin: 0 0 36px;
+    padding: 0 0 36px;
+    border-bottom: 1px solid var(--privacy-border);
+    scroll-margin-top: 24px;
+}
+
+.privacy-page .privacy-section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.privacy-page .privacy-section h2 {
+    margin: 0 0 18px;
+    color: var(--privacy-heading);
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: -0.6px;
+}
+
+.privacy-page .privacy-section h3 {
+    margin: 24px 0 10px;
+    color: var(--privacy-heading);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.55;
+}
+
+.privacy-page .privacy-section p {
+    margin: 0 0 16px;
+    color: var(--privacy-text);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+.privacy-page .privacy-section p:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-page .privacy-section strong {
+    color: var(--privacy-heading);
+    font-weight: 700;
+}
+
+/* =========================
+   10. LISTS
+========================= */
+
+.privacy-page .privacy-section ul,
+.privacy-page .privacy-section ol {
+    margin: 0 0 20px;
+    padding-left: 24px;
+}
+
+.privacy-page .privacy-section li {
+    margin-bottom: 9px;
+    padding-left: 3px;
+    color: var(--privacy-text);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.privacy-page .privacy-section li:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-page .privacy-section li::marker {
+    color: var(--privacy-primary);
+}
+
+/* =========================
+   11. PRIVACY NOTE
+========================= */
+
+.privacy-page .privacy-note {
+    margin: 20px 0;
+    padding: 18px 20px;
+    border-left: 4px solid var(--privacy-primary);
+    border-radius: 0 8px 8px 0;
+    background: var(--privacy-soft);
+}
+
+.privacy-page .privacy-note p {
+    margin: 0 0 12px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.privacy-page .privacy-note p:last-child {
+    margin-bottom: 0;
+}
+
+/* =========================
+   12. CONTACT CARD
+========================= */
+
+.privacy-page .privacy-contact-card {
+    margin-top: 20px;
+    padding: 24px;
+    border: 1px solid var(--privacy-border);
+    border-radius: 12px;
+    background: var(--privacy-soft);
+}
+
+.privacy-page .privacy-contact-card h3 {
+    margin: 0 0 16px;
+    color: var(--privacy-heading);
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.privacy-page .privacy-contact-card p {
+    margin: 0 0 14px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.privacy-page .privacy-contact-card p:last-child {
+    margin-bottom: 0;
+}
+
+.privacy-page .privacy-contact-card a {
+    overflow-wrap: anywhere;
+}
+
+/* =========================
+   13. FOOTER
+========================= */
+
+.privacy-page .privacy-footer {
+    padding: 28px 0;
+    border-top: 1px solid var(--privacy-border);
+    background: var(--privacy-white);
+}
+
+.privacy-page .privacy-footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.privacy-page .privacy-footer p {
+    margin: 0;
+    color: var(--privacy-muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.privacy-page .privacy-footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.privacy-page .privacy-footer-links a {
+    color: var(--privacy-text);
+    font-size: 13px;
+    line-height: 1.7;
+    text-decoration: none;
+}
+
+.privacy-page .privacy-footer-links a:hover {
+    color: var(--privacy-primary);
+    text-decoration: underline;
+}
+
+/* =========================
+   14. PRINT STYLES
+========================= */
+
+@media print {
+    .privacy-page .privacy-header,
+    .privacy-page .privacy-toc,
+    .privacy-page .privacy-footer {
+        display: none;
+    }
+
+    .privacy-page .privacy-container {
+        width: 100%;
+        max-width: none;
+    }
+
+    .privacy-page .privacy-hero {
+        padding: 20px 0;
+        background: #fff;
+    }
+
+    .privacy-page .privacy-layout {
+        display: block;
+        padding: 20px 0;
+    }
+
+    .privacy-page .privacy-section {
+        break-inside: avoid;
+    }
+
+    .privacy-page a {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+/* =========================
+   END OF MAIN STYLESHEET
+========================= */

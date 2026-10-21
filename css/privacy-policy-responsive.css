@@ -1,0 +1,608 @@
+/* =========================================================
+   REVIEWNEST — PRIVACY POLICY
+   Responsive Stylesheet
+   File: css/privacy-policy-responsive.css
+
+   Breakpoints:
+   Large Desktop | Desktop | Tablet | Mobile | Small Mobile
+========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL RESPONSIVE FIXES
+========================================================= */
+
+.privacy-page,
+.privacy-page *,
+.privacy-page *::before,
+.privacy-page *::after {
+    box-sizing: border-box;
+}
+
+.privacy-page {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.privacy-page .privacy-container {
+    width: min(1120px, calc(100% - 48px));
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.privacy-page .privacy-content,
+.privacy-page .privacy-section,
+.privacy-page .privacy-header-inner,
+.privacy-page .privacy-footer-inner {
+    min-width: 0;
+}
+
+.privacy-page img,
+.privacy-page video,
+.privacy-page iframe {
+    max-width: 100%;
+}
+
+.privacy-page a,
+.privacy-page p,
+.privacy-page li {
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   2. LARGE DESKTOP — 1200px AND ABOVE
+========================================================= */
+
+@media (min-width: 1200px) {
+
+    .privacy-page .privacy-container {
+        width: min(1120px, calc(100% - 64px));
+    }
+
+    .privacy-page .privacy-layout {
+        grid-template-columns: 250px minmax(0, 1fr);
+        gap: 48px;
+        padding-top: 56px;
+        padding-bottom: 80px;
+    }
+
+    .privacy-page .privacy-hero {
+        padding-top: 76px;
+        padding-bottom: 56px;
+    }
+
+    .privacy-page .privacy-hero h1 {
+        font-size: clamp(48px, 4vw, 58px);
+    }
+
+    .privacy-page .privacy-section h2 {
+        font-size: 25px;
+    }
+}
+
+
+/* =========================================================
+   3. DESKTOP AND SMALL LAPTOP — 761px TO 1199px
+========================================================= */
+
+@media (min-width: 761px) and (max-width: 1199px) {
+
+    .privacy-page .privacy-container {
+        width: calc(100% - 48px);
+    }
+
+    .privacy-page .privacy-layout {
+        grid-template-columns: 220px minmax(0, 1fr);
+        gap: 30px;
+        padding-top: 44px;
+        padding-bottom: 64px;
+    }
+
+    .privacy-page .privacy-toc {
+        top: 20px;
+        padding: 18px;
+    }
+
+    .privacy-page .privacy-toc li {
+        font-size: 12px;
+    }
+
+    .privacy-page .privacy-hero {
+        padding-top: 60px;
+        padding-bottom: 46px;
+    }
+
+    .privacy-page .privacy-hero h1 {
+        font-size: clamp(40px, 5vw, 52px);
+        letter-spacing: -1.5px;
+    }
+
+    .privacy-page .privacy-hero-description {
+        font-size: 16px;
+    }
+
+    .privacy-page .privacy-section {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    .privacy-page .privacy-section h2 {
+        font-size: 23px;
+    }
+
+    .privacy-page .privacy-footer-inner {
+        gap: 24px;
+    }
+
+    .privacy-page .privacy-footer-links {
+        gap: 12px;
+    }
+}
+
+
+/* =========================================================
+   4. TABLET — 481px TO 760px
+========================================================= */
+
+@media (min-width: 481px) and (max-width: 760px) {
+
+    .privacy-page .privacy-container {
+        width: calc(100% - 36px);
+    }
+
+    /* Header */
+
+    .privacy-page .privacy-header {
+        padding: 20px 0;
+    }
+
+    .privacy-page .privacy-header-inner {
+        gap: 16px;
+    }
+
+    .privacy-page .privacy-brand {
+        font-size: 23px;
+    }
+
+    .privacy-page .privacy-back-link {
+        min-height: 40px;
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    /* Hero */
+
+    .privacy-page .privacy-hero {
+        padding: 48px 0 40px;
+    }
+
+    .privacy-page .privacy-hero h1 {
+        font-size: clamp(36px, 7vw, 46px);
+        line-height: 1.15;
+        letter-spacing: -1.3px;
+    }
+
+    .privacy-page .privacy-eyebrow {
+        margin-bottom: 12px;
+    }
+
+    .privacy-page .privacy-hero-description {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .privacy-page .privacy-updated {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    /* Main layout */
+
+    .privacy-page .privacy-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 30px;
+        padding-top: 32px;
+        padding-bottom: 48px;
+    }
+
+    /* Table of contents */
+
+    .privacy-page .privacy-toc {
+        position: static;
+        padding: 20px;
+    }
+
+    .privacy-page .privacy-toc ol {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 24px;
+        row-gap: 4px;
+    }
+
+    .privacy-page .privacy-toc li {
+        margin-bottom: 8px;
+        padding-right: 4px;
+        font-size: 12px;
+    }
+
+    /* Policy sections */
+
+    .privacy-page .privacy-section {
+        margin-bottom: 28px;
+        padding-bottom: 28px;
+        scroll-margin-top: 16px;
+    }
+
+    .privacy-page .privacy-section h2 {
+        margin-bottom: 15px;
+        font-size: 22px;
+        line-height: 1.4;
+        letter-spacing: -0.4px;
+    }
+
+    .privacy-page .privacy-section h3 {
+        margin-top: 22px;
+        font-size: 16px;
+    }
+
+    .privacy-page .privacy-section p,
+    .privacy-page .privacy-section li {
+        font-size: 14px;
+        line-height: 1.85;
+    }
+
+    .privacy-page .privacy-section ul,
+    .privacy-page .privacy-section ol {
+        padding-left: 22px;
+    }
+
+    /* Notes */
+
+    .privacy-page .privacy-note {
+        padding: 16px 18px;
+    }
+
+    .privacy-page .privacy-contact-card {
+        padding: 20px;
+    }
+
+    /* Footer */
+
+    .privacy-page .privacy-footer {
+        padding: 24px 0;
+    }
+
+    .privacy-page .privacy-footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .privacy-page .privacy-footer-links {
+        gap: 14px;
+    }
+}
+
+
+/* =========================================================
+   5. MOBILE — 480px AND BELOW
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .privacy-page .privacy-container {
+        width: calc(100% - 28px);
+    }
+
+    /* Header */
+
+    .privacy-page .privacy-header {
+        padding: 16px 0;
+    }
+
+    .privacy-page .privacy-header-inner {
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .privacy-page .privacy-brand {
+        font-size: 21px;
+        letter-spacing: -0.7px;
+    }
+
+    .privacy-page .privacy-back-link {
+        min-height: 36px;
+        padding: 8px 10px;
+        border-radius: 7px;
+        font-size: 11px;
+        text-align: center;
+        white-space: normal;
+    }
+
+    /* Hero */
+
+    .privacy-page .privacy-hero {
+        padding: 36px 0 30px;
+    }
+
+    .privacy-page .privacy-eyebrow {
+        margin-bottom: 12px;
+        font-size: 11px;
+        letter-spacing: 1.2px;
+    }
+
+    .privacy-page .privacy-hero h1 {
+        margin-bottom: 16px;
+        font-size: clamp(32px, 9vw, 38px);
+        line-height: 1.15;
+        letter-spacing: -1.2px;
+    }
+
+    .privacy-page .privacy-hero-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .privacy-page .privacy-updated {
+        display: block;
+        width: fit-content;
+        max-width: 100%;
+        margin-top: 18px;
+        padding: 8px 10px;
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
+    /* Main layout */
+
+    .privacy-page .privacy-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+        padding-top: 24px;
+        padding-bottom: 36px;
+    }
+
+    /* Table of contents */
+
+    .privacy-page .privacy-toc {
+        position: static;
+        padding: 16px;
+        border-radius: 10px;
+    }
+
+    .privacy-page .privacy-toc h2 {
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+
+    .privacy-page .privacy-toc ol {
+        display: block;
+        columns: 1;
+        padding-left: 20px;
+    }
+
+    .privacy-page .privacy-toc li {
+        margin-bottom: 9px;
+        padding-left: 2px;
+        font-size: 12px;
+        line-height: 1.65;
+    }
+
+    /* Policy sections */
+
+    .privacy-page .privacy-section {
+        margin-bottom: 26px;
+        padding-bottom: 26px;
+        scroll-margin-top: 12px;
+    }
+
+    .privacy-page .privacy-section h2 {
+        margin-bottom: 14px;
+        font-size: 21px;
+        line-height: 1.4;
+        letter-spacing: -0.35px;
+    }
+
+    .privacy-page .privacy-section h3 {
+        margin-top: 20px;
+        margin-bottom: 9px;
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+    .privacy-page .privacy-section p {
+        margin-bottom: 14px;
+        font-size: 14px;
+        line-height: 1.85;
+    }
+
+    .privacy-page .privacy-section ul,
+    .privacy-page .privacy-section ol {
+        margin-bottom: 18px;
+        padding-left: 21px;
+    }
+
+    .privacy-page .privacy-section li {
+        margin-bottom: 8px;
+        padding-left: 2px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* Notes */
+
+    .privacy-page .privacy-note {
+        margin: 18px 0;
+        padding: 14px;
+        border-left-width: 3px;
+        border-radius: 0 7px 7px 0;
+    }
+
+    .privacy-page .privacy-note p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    /* Contact card */
+
+    .privacy-page .privacy-contact-card {
+        margin-top: 16px;
+        padding: 16px;
+        border-radius: 9px;
+    }
+
+    .privacy-page .privacy-contact-card h3 {
+        margin-bottom: 12px;
+        font-size: 17px;
+    }
+
+    .privacy-page .privacy-contact-card p {
+        margin-bottom: 12px;
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    /* Footer */
+
+    .privacy-page .privacy-footer {
+        padding: 22px 0;
+    }
+
+    .privacy-page .privacy-footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .privacy-page .privacy-footer p {
+        font-size: 12px;
+    }
+
+    .privacy-page .privacy-footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 14px;
+    }
+
+    .privacy-page .privacy-footer-links a {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   6. SMALL MOBILE — 360px AND BELOW
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .privacy-page .privacy-container {
+        width: calc(100% - 24px);
+    }
+
+    .privacy-page .privacy-header-inner {
+        gap: 8px;
+    }
+
+    .privacy-page .privacy-brand {
+        font-size: 19px;
+    }
+
+    .privacy-page .privacy-back-link {
+        padding: 7px 8px;
+        font-size: 10px;
+    }
+
+    .privacy-page .privacy-hero {
+        padding-top: 30px;
+        padding-bottom: 26px;
+    }
+
+    .privacy-page .privacy-hero h1 {
+        font-size: 31px;
+        letter-spacing: -0.8px;
+    }
+
+    .privacy-page .privacy-hero-description {
+        font-size: 13px;
+    }
+
+    .privacy-page .privacy-updated {
+        font-size: 10px;
+    }
+
+    .privacy-page .privacy-layout {
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .privacy-page .privacy-toc {
+        padding: 13px;
+    }
+
+    .privacy-page .privacy-section h2 {
+        font-size: 19px;
+    }
+
+    .privacy-page .privacy-section h3 {
+        font-size: 14px;
+    }
+
+    .privacy-page .privacy-section p,
+    .privacy-page .privacy-section li {
+        font-size: 13px;
+    }
+
+    .privacy-page .privacy-note,
+    .privacy-page .privacy-contact-card {
+        padding: 13px;
+    }
+
+    .privacy-page .privacy-footer-links {
+        gap: 9px 12px;
+    }
+}
+
+
+/* =========================================================
+   7. LANDSCAPE MOBILE
+========================================================= */
+
+@media (max-width: 760px) and (orientation: landscape) {
+
+    .privacy-page .privacy-toc {
+        position: static;
+    }
+
+    .privacy-page .privacy-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+
+/* =========================================================
+   8. REDUCED MOTION ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .privacy-page *,
+    .privacy-page *::before,
+    .privacy-page *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+/* =========================================================
+   END OF RESPONSIVE STYLESHEET
+========================================================= */

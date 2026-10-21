@@ -1,0 +1,690 @@
+/* ==========================================================
+   ReviewNest — Disclaimer Responsive CSS
+   File: css/disclaimer-responsive.css
+   Matches: disclaimer.html + disclaimer.css
+   ========================================================== */
+
+
+/* =========================
+   1. RESPONSIVE FOUNDATION
+   ========================= */
+
+.disclaimer-page,
+.disclaimer-page body {
+    max-width: 100%;
+}
+
+.disclaimer-page *,
+.disclaimer-page *::before,
+.disclaimer-page *::after {
+    box-sizing: border-box;
+}
+
+.disclaimer-page .disclaimer-main,
+.disclaimer-page .disclaimer-container,
+.disclaimer-page .disclaimer-layout,
+.disclaimer-page .disclaimer-content,
+.disclaimer-page .disclaimer-section,
+.disclaimer-page .disclaimer-related {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.disclaimer-page .disclaimer-section p,
+.disclaimer-page .disclaimer-section li,
+.disclaimer-page .disclaimer-notice-content p,
+.disclaimer-page .disclaimer-intro,
+.disclaimer-page .disclaimer-related > p {
+    white-space: normal;
+    word-break: normal !important;
+    overflow-wrap: break-word;
+}
+
+
+/* =========================
+   2. LARGE DESKTOP
+   ========================= */
+
+@media (min-width: 1600px) {
+
+    .disclaimer-page .disclaimer-main {
+        margin-left: 290px;
+        width: calc(100% - 290px);
+    }
+
+    .disclaimer-page .disclaimer-container {
+        max-width: 1240px;
+        padding-right: 42px;
+        padding-left: 42px;
+    }
+
+    .disclaimer-page .disclaimer-layout {
+        grid-template-columns: 270px minmax(0, 1fr);
+        gap: 34px;
+    }
+
+    .disclaimer-page .disclaimer-section {
+        padding: 34px;
+    }
+
+    .disclaimer-page .disclaimer-section h2 {
+        font-size: 25px;
+    }
+
+    .disclaimer-page .disclaimer-footer-inner {
+        max-width: 1240px;
+    }
+}
+
+
+/* =========================
+   3. LAPTOP
+   ========================= */
+
+@media (min-width: 961px) and (max-width: 1199px) {
+
+    .disclaimer-page .disclaimer-main {
+        margin-left: 270px;
+        width: calc(100% - 270px);
+    }
+
+    .disclaimer-page .disclaimer-container {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .disclaimer-page .disclaimer-layout {
+        grid-template-columns: 215px minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .disclaimer-page .disclaimer-toc {
+        padding: 18px 12px;
+    }
+
+    .disclaimer-page .disclaimer-toc nav a {
+        padding: 9px 8px;
+        font-size: 12px;
+    }
+
+    .disclaimer-page .disclaimer-section {
+        padding: 24px;
+    }
+
+    .disclaimer-page .disclaimer-section h2 {
+        font-size: 22px;
+    }
+
+    .disclaimer-page .disclaimer-contact-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+
+/* =========================
+   4. TABLET
+   ========================= */
+
+@media (max-width: 960px) {
+
+    .disclaimer-page .disclaimer-main {
+        width: 100% !important;
+        max-width: 100%;
+        margin-left: 0 !important;
+    }
+
+    .disclaimer-page .disclaimer-topbar {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 14px;
+
+        width: 100%;
+        min-width: 0;
+        padding: 12px 22px;
+    }
+
+    .disclaimer-page .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .disclaimer-page .disclaimer-brand {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .disclaimer-page .disclaimer-topbar-link {
+        flex-shrink: 0;
+    }
+
+    .disclaimer-page .disclaimer-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 24px 44px;
+    }
+
+    .disclaimer-page .disclaimer-hero {
+        padding-top: 40px;
+        padding-bottom: 28px;
+    }
+
+    .disclaimer-page .disclaimer-hero h1 {
+        font-size: clamp(34px, 5vw, 46px);
+        letter-spacing: -1.2px;
+    }
+
+    .disclaimer-page .disclaimer-intro {
+        font-size: 15px;
+    }
+
+    .disclaimer-page .disclaimer-notice {
+        margin-bottom: 26px;
+    }
+
+    .disclaimer-page .disclaimer-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .disclaimer-page .disclaimer-toc {
+        position: static;
+        width: 100%;
+        padding: 22px;
+    }
+
+    .disclaimer-page .disclaimer-toc nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 5px 12px;
+    }
+
+    .disclaimer-page .disclaimer-toc nav a {
+        width: 100%;
+        min-width: 0;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .disclaimer-page .disclaimer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .disclaimer-page .disclaimer-section {
+        width: 100%;
+        padding: 27px;
+        scroll-margin-top: 85px;
+    }
+
+    .disclaimer-page .disclaimer-contact-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .disclaimer-page .disclaimer-contact-button {
+        max-width: 100%;
+    }
+
+    .disclaimer-page .disclaimer-related {
+        margin-top: 28px;
+    }
+
+    .disclaimer-page .disclaimer-footer-inner {
+        padding: 28px 24px;
+    }
+}
+
+
+/* =========================
+   5. MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .disclaimer-page .disclaimer-topbar {
+        gap: 10px;
+        min-height: 62px;
+        padding: 10px 16px;
+    }
+
+    .disclaimer-page .disclaimer-brand {
+        font-size: 17px;
+    }
+
+    .disclaimer-page .disclaimer-topbar-link {
+        padding: 9px 11px;
+        font-size: 12px;
+    }
+
+    .disclaimer-page .disclaimer-container {
+        padding-right: 17px;
+        padding-left: 17px;
+        padding-bottom: 34px;
+    }
+
+    .disclaimer-page .disclaimer-hero {
+        padding-top: 32px;
+        padding-bottom: 24px;
+    }
+
+    .disclaimer-page .disclaimer-eyebrow {
+        margin-bottom: 14px;
+        font-size: 10px;
+    }
+
+    .disclaimer-page .disclaimer-hero h1 {
+        margin-bottom: 15px;
+        font-size: clamp(30px, 7vw, 38px);
+        line-height: 1.2;
+        letter-spacing: -0.8px;
+    }
+
+    .disclaimer-page .disclaimer-intro {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .disclaimer-page .disclaimer-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        margin-top: 18px;
+        font-size: 12px;
+    }
+
+    .disclaimer-page .disclaimer-notice {
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 22px;
+        padding: 17px;
+    }
+
+    .disclaimer-page .disclaimer-notice-icon {
+        flex-basis: 30px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .disclaimer-page .disclaimer-notice-content h2 {
+        font-size: 15px;
+    }
+
+    .disclaimer-page .disclaimer-notice-content p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .disclaimer-page .disclaimer-layout {
+        gap: 20px;
+    }
+
+    .disclaimer-page .disclaimer-toc {
+        padding: 18px;
+    }
+
+    .disclaimer-page .disclaimer-toc h2 {
+        margin-bottom: 12px;
+        font-size: 17px;
+    }
+
+    .disclaimer-page .disclaimer-toc nav {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 4px;
+    }
+
+    .disclaimer-page .disclaimer-toc nav a {
+        padding: 10px 9px;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .disclaimer-page .disclaimer-content {
+        gap: 16px;
+    }
+
+    .disclaimer-page .disclaimer-section {
+        padding: 20px;
+        border-radius: 13px;
+        scroll-margin-top: 76px;
+    }
+
+    .disclaimer-page .disclaimer-section-number {
+        margin-bottom: 13px;
+    }
+
+    .disclaimer-page .disclaimer-section h2 {
+        margin-bottom: 15px;
+        font-size: 21px;
+        line-height: 1.4;
+        letter-spacing: -0.3px;
+    }
+
+    .disclaimer-page .disclaimer-section h3 {
+        font-size: 15px;
+    }
+
+    .disclaimer-page .disclaimer-section p,
+    .disclaimer-page .disclaimer-section li {
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+    .disclaimer-page .disclaimer-section ul,
+    .disclaimer-page .disclaimer-section ol {
+        padding-left: 21px;
+    }
+
+    .disclaimer-page .disclaimer-highlight,
+    .disclaimer-page .disclaimer-amazon-box,
+    .disclaimer-page .disclaimer-note {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        padding: 17px;
+    }
+
+    .disclaimer-page .disclaimer-amazon-box p {
+        font-size: 14px;
+    }
+
+    .disclaimer-page .disclaimer-contact-card {
+        gap: 17px;
+        padding: 18px;
+    }
+
+    .disclaimer-page .disclaimer-contact-info {
+        width: 100%;
+    }
+
+    .disclaimer-page .disclaimer-contact-info p {
+        font-size: 13px;
+    }
+
+    .disclaimer-page .disclaimer-contact-button {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    .disclaimer-page .disclaimer-related {
+        margin-top: 24px;
+        padding: 20px;
+    }
+
+    .disclaimer-page .disclaimer-related h2 {
+        font-size: 20px;
+    }
+
+    .disclaimer-page .disclaimer-related > p {
+        font-size: 13px;
+    }
+
+    .disclaimer-page .disclaimer-related-links {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .disclaimer-page .disclaimer-related-links a {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        min-height: 42px;
+        padding: 11px 13px;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .disclaimer-page .disclaimer-footer-inner {
+        gap: 17px;
+        padding: 25px 17px;
+    }
+
+    .disclaimer-page .disclaimer-footer-links {
+        gap: 11px 18px;
+    }
+
+    .disclaimer-page .disclaimer-footer-links a {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================
+   6. SMALL MOBILE
+   ========================= */
+
+@media (max-width: 380px) {
+
+    .disclaimer-page .disclaimer-topbar {
+        gap: 7px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .disclaimer-page .mobile-menu-toggle {
+        width: 38px;
+        height: 38px;
+    }
+
+    .disclaimer-page .disclaimer-brand {
+        font-size: 15px;
+        letter-spacing: -0.4px;
+    }
+
+    .disclaimer-page .disclaimer-topbar-link {
+        padding: 8px 9px;
+        font-size: 11px;
+    }
+
+    .disclaimer-page .disclaimer-container {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .disclaimer-page .disclaimer-hero h1 {
+        font-size: 29px;
+    }
+
+    .disclaimer-page .disclaimer-section {
+        padding: 16px;
+    }
+
+    .disclaimer-page .disclaimer-section h2 {
+        font-size: 19px;
+    }
+
+    .disclaimer-page .disclaimer-toc {
+        padding: 14px;
+    }
+
+    .disclaimer-page .disclaimer-highlight,
+    .disclaimer-page .disclaimer-amazon-box,
+    .disclaimer-page .disclaimer-note {
+        padding: 14px;
+    }
+
+    .disclaimer-page .disclaimer-related {
+        padding: 16px;
+    }
+
+    .disclaimer-page .disclaimer-contact-card {
+        padding: 14px;
+    }
+}
+
+
+/* =========================
+   7. VERY SMALL SCREENS
+   ========================= */
+
+@media (max-width: 320px) {
+
+    .disclaimer-page .disclaimer-topbar {
+        flex-wrap: wrap;
+    }
+
+    .disclaimer-page .disclaimer-brand {
+        font-size: 15px;
+    }
+
+    .disclaimer-page .disclaimer-topbar-link {
+        font-size: 11px;
+    }
+
+    .disclaimer-page .disclaimer-container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .disclaimer-page .disclaimer-hero h1 {
+        font-size: 27px;
+    }
+
+    .disclaimer-page .disclaimer-section {
+        padding: 14px;
+    }
+
+    .disclaimer-page .disclaimer-section h2 {
+        font-size: 18px;
+    }
+}
+
+
+/* =========================
+   8. PREVENT HORIZONTAL OVERFLOW
+   ========================= */
+
+.disclaimer-page .disclaimer-main,
+.disclaimer-page .disclaimer-container,
+.disclaimer-page .disclaimer-layout,
+.disclaimer-page .disclaimer-content,
+.disclaimer-page .disclaimer-section,
+.disclaimer-page .disclaimer-toc,
+.disclaimer-page .disclaimer-notice,
+.disclaimer-page .disclaimer-contact-card,
+.disclaimer-page .disclaimer-related,
+.disclaimer-page .disclaimer-footer-inner {
+    min-width: 0;
+}
+
+.disclaimer-page .disclaimer-contact-info p,
+.disclaimer-page .disclaimer-section a,
+.disclaimer-page .disclaimer-related-links a,
+.disclaimer-page .disclaimer-footer-links a {
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   9. PAGE SCROLLING
+   ========================= */
+
+/*
+   Page ko document ke saath scroll karne dein.
+   Cards aur content par fixed height ya internal
+   scrolling force nahi ki ja rahi.
+*/
+
+html:has(body.disclaimer-page) {
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body.disclaimer-page {
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.disclaimer-page .disclaimer-main,
+.disclaimer-page .disclaimer-container,
+.disclaimer-page .disclaimer-layout,
+.disclaimer-page .disclaimer-content,
+.disclaimer-page .disclaimer-section {
+    height: auto;
+    max-height: none;
+}
+
+
+/* =========================
+   10. ACCESSIBILITY
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .disclaimer-page *,
+    .disclaimer-page *::before,
+    .disclaimer-page *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+/* =========================
+   11. PRINT
+   ========================= */
+
+@media print {
+
+    html:has(body.disclaimer-page),
+    body.disclaimer-page {
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .disclaimer-page .page-loader,
+    .disclaimer-page .mobile-overlay,
+    .disclaimer-page .sidebar,
+    .disclaimer-page .disclaimer-topbar,
+    .disclaimer-page .disclaimer-toc {
+        display: none !important;
+    }
+
+    .disclaimer-page .disclaimer-main {
+        display: block;
+        width: 100% !important;
+        min-height: 0;
+        margin: 0 !important;
+        overflow: visible !important;
+    }
+
+    .disclaimer-page .disclaimer-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .disclaimer-page .disclaimer-layout {
+        display: block;
+    }
+
+    .disclaimer-page .disclaimer-content {
+        display: block;
+    }
+
+    .disclaimer-page .disclaimer-section,
+    .disclaimer-page .disclaimer-related {
+        margin-bottom: 18px;
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .disclaimer-page .disclaimer-footer {
+        margin-top: 20px;
+    }
+}

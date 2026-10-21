@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Viewport -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!-- SEO Metadata -->
+    <meta
+        name="description"
+        content="Explore electronics reviews, product comparisons, and buying guides to help you compare headphones, laptops, smartwatches, gaming gear, and other tech products."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <title>Electronics Reviews & Buying Guides | ReviewNest</title>
+
+    <!-- Open Graph Metadata -->
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:site_name"
+        content="ReviewNest"
+    >
+
+    <meta
+        property="og:title"
+        content="Electronics Reviews & Buying Guides | ReviewNest"
+    >
+
+    <meta
+        property="og:description"
+        content="Explore electronics reviews, product comparisons, and buying guides to help you compare headphones, laptops, smartwatches, gaming gear, and other tech products."
+    >
+
+    <meta
+        property="og:locale"
+        content="en_US"
+    >
+
+    <!-- Open Graph Image -->
+    <meta
+        property="og:image"
+        content="images/reviewnest-social.jpg"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="ReviewNest electronics reviews and buying guides"
+    >
+
+    <!-- Twitter / X Metadata -->
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Electronics Reviews & Buying Guides | ReviewNest"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Explore electronics reviews, product comparisons, and buying guides to help you compare headphones, laptops, smartwatches, gaming gear, and other tech products."
+    >
+
+    <meta
+        name="twitter:image"
+        content="images/reviewnest-social.jpg"
+    >
+
+    <!-- Global ReviewNest CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Electronics Page CSS -->
+    <link rel="stylesheet" href="css/electronics.css">
+    <link rel="stylesheet" href="css/electronics-responsive.css">
+</head>
+
+
+<body>
+
+
+
+
+<!-- ==============================
+     REVIEWNEST HEADER
+================================== -->
+
+<header class="rn-header" id="rnHeader">
+
+  <div class="rn-header-inner">
+
+    <!-- LEFT: MENU + SEARCH -->
+    <div class="rn-header-left">
+
+      <!-- Menu Button -->
+      <button
+        class="rn-icon-button rn-menu-toggle"
+        id="rnMenuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="rnMobileMenu"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <path d="M4 6h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Search Button -->
+      <button
+        class="rn-icon-button rn-search-toggle"
+        id="rnSearchToggle"
+        type="button"
+        aria-label="Open search"
+        aria-expanded="false"
+        aria-controls="rnSearchPanel"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <circle cx="10.8" cy="10.8" r="6.8"></circle>
+          <path d="m16 16 4.5 4.5"></path>
+        </svg>
+      </button>
+
+    </div>
+
+
+    <!-- CENTER: DESKTOP NAVIGATION -->
+    <nav
+      class="rn-desktop-nav"
+      id="rnDesktopNav"
+      aria-label="Main navigation"
+    >
+
+      <a
+        href="electronics.html"
+        class="rn-nav-link"
+        data-nav="electronics"
+      >
+        Electronics
+      </a>
+
+      <a
+        href="reviews.html"
+        class="rn-nav-link"
+        data-nav="reviews"
+      >
+        Reviews
+      </a>
+
+      <a
+        href="buying-guides.html"
+        class="rn-nav-link"
+        data-nav="buying-guides"
+      >
+        Buying Guides
+      </a>
+
+    </nav>
+
+
+    <!-- RIGHT: REVIEWNEST BRAND -->
+    <a
+      class="rn-brand"
+      href="index.html"
+      aria-label="ReviewNest homepage"
+    >
+
+      <span class="rn-brand-icon" aria-hidden="true">
+  <svg
+    viewBox="0 0 40 40"
+    width="40"
+    height="40"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      x="0"
+      y="0"
+      width="40"
+      height="40"
+      rx="8"
+      fill="#B42318"
+    />
+
+    <text
+      x="20"
+      y="29"
+      text-anchor="middle"
+      font-family="Arial, sans-serif"
+      font-size="29"
+      font-weight="800"
+      fill="#FFFFFF"
+    >R</text>
+  </svg>
+</span>
+
+      <span class="rn-brand-text">
+        <span class="rn-brand-name">ReviewNest</span>
+        <span class="rn-brand-tagline">Honest Reviews. Smarter Choices.</span>
+      </span>
+
+    </a>
+
+  </div>
+
+
+  <!-- SEARCH PANEL -->
+  <div
+    class="rn-search-panel"
+    id="rnSearchPanel"
+    aria-hidden="true"
+    inert
+  >
+
+    <form
+      class="rn-search-form"
+      id="rnSearchForm"
+      role="search"
+      action="search.html"
+      method="get"
+    >
+
+      <label class="rn-sr-only" for="rnSearchInput">
+        Search products and reviews
+      </label>
+
+      <input
+        type="search"
+        id="rnSearchInput"
+        name="q"
+        placeholder="Search products, reviews, and buying guides..."
+        autocomplete="off"
+      >
+
+      <button type="submit" class="rn-search-submit">
+        Search
+      </button>
+
+      <button
+        type="button"
+        class="rn-search-close"
+        id="rnSearchClose"
+        aria-label="Close search"
+      >
+        &times;
+      </button>
+
+    </form>
+
+  </div>
+
+</header>
+
+
+<!-- ==============================
+     MOBILE SIDEBAR MENU
+================================== -->
+
+<div
+  class="rn-mobile-menu-overlay"
+  id="rnMenuOverlay"
+  aria-hidden="true"
+></div>
+
+<aside
+  class="rn-mobile-menu"
+  id="rnMobileMenu"
+  aria-label="Mobile navigation"
+  aria-hidden="true"
+  inert
+>
+
+  <div class="rn-mobile-menu-header">
+
+    <a class="rn-mobile-brand" href="index.html">
+      ReviewNest
+    </a>
+
+    <button
+      class="rn-mobile-menu-close"
+      id="rnMenuClose"
+      type="button"
+      aria-label="Close navigation menu"
+    >
+      &times;
+    </button>
+
+  </div>
+
+
+  <!-- Homepage Menu -->
+  <nav
+    class="rn-mobile-nav rn-home-menu"
+    data-page-menu="home"
+    aria-label="Homepage navigation"
+  >
+
+    <a href="index.html" class="rn-mobile-nav-link">
+      Home
+    </a>
+
+    <a href="electronics.html" class="rn-mobile-nav-link">
+      Electronics
+    </a>
+
+    <a href="reviews.html" class="rn-mobile-nav-link">
+      Reviews
+    </a>
+
+    <a href="buying-guides.html" class="rn-mobile-nav-link">
+      Buying Guides
+    </a>
+
+  </nav>
+
+
+  <!-- Electronics Page Menu -->
+  <nav
+    class="rn-mobile-nav rn-electronics-menu"
+    data-page-menu="electronics"
+    aria-label="Electronics navigation"
+    hidden
+  >
+
+    <a href="index.html" class="rn-mobile-nav-link">
+      Home
+    </a>
+
+    <a href="electronics.html" class="rn-mobile-nav-link">
+      All Electronics
+    </a>
+
+    <a href="electronics.html#headphones" class="rn-mobile-nav-link">
+      Headphones
+    </a>
+
+    <a href="electronics.html#speakers" class="rn-mobile-nav-link">
+      Speakers
+    </a>
+
+    <a href="electronics.html#smartwatches" class="rn-mobile-nav-link">
+      Smartwatches
+    </a>
+
+    <a href="electronics.html#laptops" class="rn-mobile-nav-link">
+      Laptops
+    </a>
+
+    <a href="buying-guides.html" class="rn-mobile-nav-link">
+      Buying Guides
+    </a>
+
+  </nav>
+
+</aside>
+
+
+<!-- ================================
+     End ReviewNest Header
+================================= -->
+
+
+
+
+
+
+
+<!-- =====================================================
+     ELECTRONICS PAGE
+     STEP 1 — PAGE FOUNDATION
+====================================================== -->
+
+<div class="electronics-page" id="electronics">
+
+
+    <!-- =================================================
+         PAGE HERO
+    ================================================== -->
+
+    <section class="electronics-hero">
+
+        <div class="electronics-container">
+
+
+            <nav
+                class="electronics-breadcrumb"
+                aria-label="Breadcrumb"
+            >
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <span aria-hidden="true">
+                    /
+                </span>
+
+                <span aria-current="page">
+                    Electronics
+                </span>
+
+            </nav>
+
+
+            <div class="electronics-hero-content">
+
+                <span class="electronics-kicker">
+                    ELECTRONICS
+                </span>
+
+
+                <h1>
+                    Electronics Reviews
+                    <span>Worth Exploring.</span>
+                </h1>
+
+
+                <p class="electronics-intro">
+                    Explore electronics products with
+                    clear reviews, useful comparisons,
+                    ratings, and practical buying
+                    information for US shoppers.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SEARCH FOUNDATION
+    ================================================== -->
+
+    <section class="electronics-search-section" aria-label="Search electronics">
+
+        <div class="electronics-container">
+
+            <div class="electronics-search-box">
+
+                <div
+                    class="electronics-search-icon"
+                    aria-hidden="true"
+                >
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+
+                        <circle
+                            cx="10.8"
+                            cy="10.8"
+                            r="6.3"
+                        ></circle>
+
+                        <path
+                            d="m16 16 4.5 4.5"
+                        ></path>
+
+                    </svg>
+
+                </div>
+
+
+                <input
+                    type="search"
+                    id="electronicsSearch"
+                    name="electronics-query"
+                    placeholder="Search electronics products..."
+                    aria-label="Search electronics products"
+                    autocomplete="off"
+                >
+
+
+                <button
+                    type="button"
+                    id="electronicsSearchButton"
+                    class="electronics-search-button"
+                >
+                    Search
+                </button>
+
+                <div
+                    class="electronics-search-suggestions"
+                    id="electronicsSearchSuggestions"
+                    hidden
+                >
+
+                    <div class="search-suggestions-title">
+                        Popular searches
+                    </div>
+
+                    <button
+                        type="button"
+                        class="search-suggestion"
+                        data-search="wireless headphones"
+                    >
+                        <span class="suggestion-icon" aria-hidden="true">⌕</span>
+                        <span>Wireless headphones</span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="search-suggestion"
+                        data-search="smartphones"
+                    >
+                        <span class="suggestion-icon" aria-hidden="true">⌕</span>
+                        <span>Smartphones</span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="search-suggestion"
+                        data-search="laptops"
+                    >
+                        <span class="suggestion-icon" aria-hidden="true">⌕</span>
+                        <span>Laptops</span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="search-suggestion"
+                        data-search="gaming"
+                    >
+                        <span class="suggestion-icon" aria-hidden="true">⌕</span>
+                        <span>Gaming</span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="search-suggestion"
+                        data-search="smart home"
+                    >
+                        <span class="suggestion-icon" aria-hidden="true">⌕</span>
+                        <span>Smart home</span>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         CONTROLS FOUNDATION
+    ================================================== -->
+
+    <section class="electronics-controls-section" aria-label="Electronics product filters">
+
+        <div class="electronics-container">
+
+            <div class="electronics-controls">
+
+                <div class="electronics-filter-area">
+
+                    <button
+                        type="button"
+                        class="electronics-control-button"
+                        id="mobileFilterButton"
+                        aria-controls="filterPanel"
+                    >
+
+                        <span
+                            class="control-icon"
+                            aria-hidden="true"
+                        >
+                            ☰
+                        </span>
+
+                        <span>
+                            Filters
+                        </span>
+
+                    </button>
+
+                    <div class="electronics-filter-wrap">
+
+                        <div class="filter-control-row">
+
+                            <!-- FILTER BUTTON -->
+
+                            <button
+                                type="button"
+                                class="electronics-control-button"
+                                id="filterButton"
+                                aria-expanded="false"
+                                aria-controls="filterPanel"
+                            >
+                                <span class="filter-button-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M4 6h16"></path>
+                                        <path d="M7 12h10"></path>
+                                        <path d="M10 18h4"></path>
+                                    </svg>
+                                </span>
+
+                                <span class="filter-button-label">
+                                    Filters
+                                </span>
+                            </button>
+
+
+                            <!-- ACTIVE FILTER COUNT -->
+
+                            <span
+                                class="filter-active-count"
+                                id="filterActiveCount"
+                                hidden
+                            >
+                                0 filters
+                            </span>
+
+                        </div>
+
+
+                        <!-- FILTER BACKDROP -->
+
+                        <div
+                            class="filter-backdrop"
+                            id="filterBackdrop"
+                            hidden
+                        ></div>
+
+
+                        <!-- FILTER PANEL -->
+
+                        <section
+                            class="electronics-filter-panel"
+                            id="filterPanel"
+                            hidden
+                            aria-label="Product filters"
+                        >
+
+                            <!-- PANEL HEADER -->
+
+                            <div class="filter-panel-top">
+
+                                <div class="filter-panel-heading">
+
+                                    <span class="section-kicker">
+                                        REFINE RESULTS
+                                    </span>
+
+                                    <h3>
+                                        Filter Electronics
+                                    </h3>
+
+                                    <p>
+                                        Narrow down products to find the right match.
+                                    </p>
+
+                                </div>
+
+
+                                <button
+                                    type="button"
+                                    class="filter-close-button"
+                                    id="filterCloseButton"
+                                    aria-label="Close filters"
+                                >
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                    >
+                                        <path d="M6 6l12 12"></path>
+                                        <path d="M18 6L6 18"></path>
+                                    </svg>
+                                </button>
+
+                            </div>
+
+
+                            <!-- PANEL BODY -->
+
+                            <div class="filter-panel-body">
+
+
+                                <!-- PRODUCT TYPE -->
+
+                                <div class="filter-section">
+
+                                    <div class="filter-section-title">
+
+                                        <div>
+
+                                            <h4>
+                                                Product Type
+                                            </h4>
+
+                                            <p>
+                                                Choose a category
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="filter-options">
+
+                                        <label class="filter-option">
+
+                                            <input
+                                                type="radio"
+                                                name="productType"
+                                                value="all"
+                                                id="productTypeAll"
+                                                checked
+                                            >
+
+                                            <span class="filter-radio" aria-hidden="true"></span>
+
+                                            <span>
+                                                All Types
+                                            </span>
+
+                                        </label>
+
+
+                                        <label class="filter-option">
+
+                                            <input
+                                                type="radio"
+                                                name="productType"
+                                                value="Audio"
+                                            >
+
+                                            <span class="filter-radio" aria-hidden="true"></span>
+
+                                            <span>
+                                                Audio
+                                            </span>
+
+                                        </label>
+
+
+                                        <label class="filter-option">
+
+                                            <input
+                                                type="radio"
+                                                name="productType"
+                                                value="Accessories"
+                                            >
+
+                                            <span class="filter-radio" aria-hidden="true"></span>
+
+                                            <span>
+                                                Accessories
+                                            </span>
+
+                                        </label>
+
+
+                                        <label class="filter-option">
+
+                                            <input
+                                                type="radio"
+                                                name="productType"
+                                                value="Computers"
+                                            >
+
+                                            <span class="filter-radio" aria-hidden="true"></span>
+
+                                            <span>
+                                                Computers
+                                            </span>
+
+                                        </label>
+
+
+                                        <label class="filter-option">
+
+                                            <input
+                                                type="radio"
+                                                name="productType"
+                                                value="Smartphones"
+                                            >
+
+                                            <span class="filter-radio" aria-hidden="true"></span>
+
+                                            <span>
+                                                Smartphones
+                                            </span>
+
+                                        </label>
+
+
+                                        <label class="filter-option">
+
+                                            <input
+                                                type="radio"
+                                                name="productType"
+                                                value="Gaming"
+                                            >
+
+                                            <span class="filter-radio" aria-hidden="true"></span>
+
+                                            <span>
+                                                Gaming
+                                            </span>
+
+                                        </label>
+
+
+                                        <label class="filter-option">
+
+                                            <input
+                                                type="radio"
+                                                name="productType"
+                                                value="TV"
+                                            >
+
+                                            <span class="filter-radio" aria-hidden="true"></span>
+
+                                            <span>
+                                                TV
+                                            </span>
+
+                                        </label>
+
+
+                                        <label class="filter-option">
+
+                                            <input
+                                                type="radio"
+                                                name="productType"
+                                                value="Cameras"
+                                            >
+
+                                            <span class="filter-radio" aria-hidden="true"></span>
+
+                                            <span>
+                                                Cameras
+                                            </span>
+
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- RATING -->
+
+                                <div class="filter-section">
+
+                                    <div class="filter-section-title">
+
+                                        <div>
+
+                                            <h4>
+                                                Customer Rating
+                                            </h4>
+
+                                            <p>
+                                                Minimum product rating
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="filter-options">
+
+                                        <label class="filter-option">
+
+                                            <input
+                                                type="radio"
+                                                name="rating"
+                                                value="0"
+                                                checked
+                                            >
+
+                                            <span class="filter-radio" aria-hidden="true"></span>
+
+                                            <span>
+                                                All Ratings
+                                            </span>
+
+                                        </label>
+
+
+                                        <label class="filter-option">
+
+                                            <input
+                                                type="radio"
+                                                name="rating"
+                                                value="4.5"
+                                            >
+
+                                            <span class="filter-radio" aria-hidden="true"></span>
+
+                                            <span class="rating-stars" aria-label="5 stars">
+                                                ★★★★★
+                                            </span>
+
+                                            <span class="rating-text">
+                                                4.5 &amp; up
+                                            </span>
+
+                                        </label>
+
+
+                                        <label class="filter-option">
+
+                                            <input
+                                                type="radio"
+                                                name="rating"
+                                                value="4"
+                                            >
+
+                                            <span class="filter-radio" aria-hidden="true"></span>
+
+                                            <span class="rating-stars" aria-label="4 stars">
+                                                ★★★★
+                                            </span>
+
+                                            <span class="rating-text">
+                                                4.0 &amp; up
+                                            </span>
+
+                                        </label>
+
+
+                                        <label class="filter-option">
+
+                                            <input
+                                                type="radio"
+                                                name="rating"
+                                                value="3.5"
+                                            >
+
+                                            <span class="filter-radio" aria-hidden="true"></span>
+
+                                            <span class="rating-stars" aria-label="3.5 stars">
+                                                ★★★½
+                                            </span>
+
+                                            <span class="rating-text">
+                                                3.5 &amp; up
+                                            </span>
+
+                                        </label>
+
+                                    </div>
+
+                                </div>
+      
+                            <!-- PRICE -->
+
+            <div class="filter-section">
+
+                <div class="filter-section-title">
+
+                    <div>
+
+                        <h4>
+                            Price
+                        </h4>
+
+                        <p>
+                            Choose your budget
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="filter-options">
+
+                    <label class="filter-option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="all"
+                            checked
+                        >
+
+                        <span class="filter-radio" aria-hidden="true"></span>
+
+                        <span>
+                            Any Price
+                        </span>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="0-100"
+                        >
+
+                        <span class="filter-radio" aria-hidden="true"></span>
+
+                        <span>
+                            Under $100
+                        </span>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="100-300"
+                        >
+
+                        <span class="filter-radio" aria-hidden="true"></span>
+
+                        <span>
+                            $100 – $300
+                        </span>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="300-700"
+                        >
+
+                        <span class="filter-radio" aria-hidden="true"></span>
+
+                        <span>
+                            $300 – $700
+                        </span>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="700-1200"
+                        >
+
+                        <span class="filter-radio" aria-hidden="true"></span>
+
+                        <span>
+                            $700 – $1,200
+                        </span>
+
+                    </label>
+
+
+                    <label class="filter-option">
+
+                        <input
+                            type="radio"
+                            name="price"
+                            value="1200-plus"
+                        >
+
+                        <span class="filter-radio" aria-hidden="true"></span>
+
+                        <span>
+                            $1,200+
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- FEATURED -->
+
+            <div class="filter-section filter-section-last">
+
+                <div class="filter-section-title">
+
+                    <div>
+
+                        <h4>
+                            Product Status
+                        </h4>
+
+                        <p>
+                            Show selected products
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <label class="filter-featured-option">
+
+                    <input
+                        type="checkbox"
+                        id="featuredFilter"
+                    >
+
+                    <span class="filter-checkbox" aria-hidden="true"></span>
+
+                    <span>
+
+                        <strong>
+                            Featured products
+                        </strong>
+
+                        <small>
+                            Show only highlighted products
+                        </small>
+
+                    </span>
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <!-- PANEL FOOTER -->
+
+        <div class="filter-panel-footer">
+
+            <button
+                type="button"
+                class="filter-clear-button"
+                id="filterClearButton"
+            >
+                Clear all
+            </button>
+
+
+            <button
+                type="button"
+                class="filter-apply-button"
+                id="filterApplyButton"
+            >
+                <span>
+                    Show results
+                </span>
+
+                <span class="filter-apply-arrow" aria-hidden="true">
+                    →
+                </span>
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+                        </div>
+
+
+                     <div class="electronics-sort-area">
+
+    <span class="sort-label">Sort:</span>
+
+    <div class="electronics-sort-wrap">
+
+        <button
+            type="button"
+            class="electronics-sort-button"
+            id="sortButton"
+            aria-expanded="false"
+            aria-controls="sortMenu"
+        >
+            <span id="sortButtonLabel">Relevant</span>
+
+            <span class="sort-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6 9l6 6 6-6"></path>
+                </svg>
+            </span>
+        </button>
+
+        <div
+            class="electronics-sort-menu"
+            id="sortMenu"
+            hidden
+        >
+
+            <button
+                type="button"
+                class="sort-option active"
+                data-sort="relevant"
+            >
+                <span>Relevant</span>
+                <span class="sort-check" aria-hidden="true">✓</span>
+            </button>
+
+            <button
+                type="button"
+                class="sort-option"
+                data-sort="highest-rated"
+            >
+                <span>Highest Rated</span>
+                <span class="sort-check" aria-hidden="true">✓</span>
+            </button>
+
+            <button
+                type="button"
+                class="sort-option"
+                data-sort="most-reviewed"
+            >
+                <span>Most Reviewed</span>
+                <span class="sort-check" aria-hidden="true">✓</span>
+            </button>
+
+            <button
+                type="button"
+                class="sort-option"
+                data-sort="price-low"
+            >
+                <span>Price: Low to High</span>
+                <span class="sort-check" aria-hidden="true">✓</span>
+            </button>
+
+            <button
+                type="button"
+                class="sort-option"
+                data-sort="price-high"
+            >
+                <span>Price: High to Low</span>
+                <span class="sort-check" aria-hidden="true">✓</span>
+            </button>
+
+            <button
+                type="button"
+                class="sort-option"
+                data-sort="newest"
+            >
+                <span>Newest</span>
+                <span class="sort-check" aria-hidden="true">✓</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 PRODUCT SECTION FOUNDATION
+            ================================================== -->
+
+         <section
+             class="electronics-products-section section-block"
+             id="products"
+             aria-labelledby="electronicsProductsHeading"
+         >
+
+    <div class="products-section-header">
+
+        <div>
+            <span class="section-kicker">ELECTRONICS</span>
+
+            <h2 id="electronicsProductsHeading">Explore Electronics</h2>
+
+            <p>
+                Browse electronics products, compare available options,
+                and explore product information to make informed buying decisions.
+            </p>
+        </div>
+
+        <div
+            class="products-result-count"
+            id="productsResultCount"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+        >
+            0 products
+        </div>
+
+    </div>
+
+
+    <div
+        class="products-grid"
+        id="productsGrid"
+        aria-label="Electronics products"
+    >
+        <!-- Products will be rendered by JavaScript -->
+    </div>
+
+
+    <div
+        class="products-empty-state"
+        id="productsEmptyState"
+        hidden
+    >
+
+        <div
+            class="empty-state-icon"
+            aria-hidden="true"
+        >
+            <svg viewBox="0 0 24 24">
+                <circle
+                    cx="11"
+                    cy="11"
+                    r="6.5"
+                ></circle>
+
+                <path d="m16 16 4 4"></path>
+            </svg>
+        </div>
+
+        <h3>No products found</h3>
+
+        <p>
+            Try changing your search or filters.
+        </p>
+
+        <button
+            type="button"
+            id="clearProductsButton"
+        >
+            Clear Filters
+        </button>
+
+    </div>
+
+
+    <nav
+        class="products-pagination"
+        id="productsPagination"
+        aria-label="Electronics product pagination"
+    >
+        <!-- Pagination will be rendered by JavaScript -->
+    </nav>
+
+</section>
+
+
+        </div>
+
+
+
+
+    </main>
+    
+    
+<!-- ==========================================
+     REVIEWNEST — PREMIUM WEBSITE FOOTER
+=========================================== -->
+
+<footer class="rn-footer" id="rnFooter">
+
+    <!-- Newsletter / Brand CTA -->
+    <div class="rn-footer-top">
+
+        <div class="rn-footer-top-inner">
+
+            <div class="rn-footer-cta-content">
+
+                <span class="rn-footer-eyebrow">
+                    THE REVIEWNEST DIFFERENCE
+                </span>
+
+                <h2>
+                    Make Every Purchase
+                    <span>Count.</span>
+                </h2>
+
+                <p>
+                    Discover useful reviews, compare your options,
+                    and make smarter buying decisions with confidence.
+                </p>
+
+            </div>
+
+            <a href="#products" class="rn-footer-cta-button">
+                Explore Reviews
+
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M5 12H19M12 5L19 12L12 19"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main Footer -->
+    <div class="rn-footer-main">
+
+        <div class="rn-footer-grid">
+
+
+            <!-- Brand Column -->
+            <div class="rn-footer-brand-column">
+
+                <a
+                    href="/"
+                    class="rn-footer-brand"
+                    aria-label="ReviewNest homepage"
+                >
+
+                    <span
+                        class="rn-footer-logo"
+                        aria-hidden="true"
+                    >
+
+                        <svg
+                            viewBox="0 0 40 40"
+                            fill="none"
+                        >
+                            <rect
+                                x="2"
+                                y="2"
+                                width="36"
+                                height="36"
+                                rx="11"
+                                fill="currentColor"
+                            />
+
+                            <path
+                                d="M12 12H23C27 12 29 14.5 29 18C29 21 27.5 23 24.5 24L30 30H23L18.5 24.5H18V30H12V12Z"
+                                fill="white"
+                            />
+
+                            <path
+                                d="M18 17V20H23C24 20 25 19.5 25 18.5C25 17.5 24 17 23 17H18Z"
+                                fill="currentColor"
+                            />
+
+                        </svg>
+
+                    </span>
+
+
+                    <span class="rn-footer-brand-text">
+
+                        <span class="rn-footer-brand-name">
+                            Review<span>Nest</span>
+                        </span>
+
+                        <span class="rn-footer-brand-tagline">
+                            Smarter Choices. Better Living.
+                        </span>
+
+                    </span>
+
+                </a>
+
+
+                <p class="rn-footer-description">
+                    Your destination for product reviews,
+                    useful comparisons, and practical buying guides.
+                    Our goal is to help you understand your options
+                    and shop with greater confidence.
+                </p>
+
+
+                <!-- Social Media -->
+                <div class="rn-footer-social-section">
+
+                    <h3 class="rn-footer-social-heading">
+                        Follow Our Journey
+                    </h3>
+
+
+                    <div class="rn-footer-socials">
+
+
+                        <!-- Facebook -->
+                        <a
+                            href="https://www.facebook.com/"
+                            class="rn-social-link rn-social-facebook"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Follow ReviewNest on Facebook"
+                            title="Facebook"
+                        >
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M13.5 21V12.8H16.3L16.7 9.6H13.5V7.6C13.5 6.7 13.8 6.1 15.1 6.1H16.8V3.2C16.5 3.2 15.3 3.1 14 3.1C11.2 3.1 9.3 4.8 9.3 7.9V9.6H6.5V12.8H9.3V21H13.5Z"
+                                />
+                            </svg>
+
+                        </a>
+
+
+                        <!-- YouTube -->
+                        <a
+                            href="https://www.youtube.com/"
+                            class="rn-social-link rn-social-youtube"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Subscribe to ReviewNest on YouTube"
+                            title="YouTube"
+                        >
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M23.2 7.1C22.9 5.8 22.1 5 20.8 4.7C18.5 4.1 12 4.1 12 4.1S5.5 4.1 3.2 4.7C1.9 5 1.1 5.8 0.8 7.1C0.4 9 0.4 12 0.4 12S0.4 15 0.8 16.9C1.1 18.2 1.9 19 3.2 19.3C5.5 19.9 12 19.9 12 19.9S18.5 19.9 20.8 19.3C22.1 19 22.9 18.2 23.2 16.9C23.6 15 23.6 12 23.6 12S23.6 9 23.2 7.1ZM9.7 15.1V8.9L15.1 12L9.7 15.1Z"
+                                />
+                            </svg>
+
+                        </a>
+
+
+                        <!-- TikTok -->
+                        <a
+                            href="https://www.tiktok.com/"
+                            class="rn-social-link rn-social-tiktok"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Follow ReviewNest on TikTok"
+                            title="TikTok"
+                        >
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M19.6 6.1C18.1 6 16.8 5 16.3 3.6C16.1 3.1 16 2.5 16 2H12.1V15.5C12.1 17 10.9 18.2 9.4 18.2C7.9 18.2 6.7 17 6.7 15.5C6.7 14 7.9 12.8 9.4 12.8C9.8 12.8 10.2 12.9 10.6 13.1V9.1C10.2 9 9.8 9 9.4 9C5.8 9 2.9 11.9 2.9 15.5C2.9 19.1 5.8 22 9.4 22C13 22 15.9 19.1 15.9 15.5V8.6C17.1 9.5 18.5 10 20 10V6.1H19.6Z"
+                                />
+                            </svg>
+
+                        </a>
+
+
+                        <!-- Pinterest -->
+                        <a
+                            href="https://www.pinterest.com/"
+                            class="rn-social-link rn-social-pinterest"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Follow ReviewNest on Pinterest"
+                            title="Pinterest"
+                        >
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M12 2C6.5 2 3 5.9 3 10.5C3 13.2 4.5 15.7 6.8 16.8C6.8 15.8 6.8 14.9 7 14.2L8.1 9.5C7.9 9 7.8 8.5 7.8 8C7.8 6.4 8.8 5.2 10.2 5.2C11.4 5.2 12 6 12 7.1C12 8.3 11.2 10.1 10.8 11.7C10.5 13 11.4 14 12.6 14C14.7 14 16.2 11.3 16.2 8.2C16.2 5.8 14.6 4.1 11.7 4.1C8.4 4.1 6.3 6.5 6.3 9.2C6.3 10.3 6.6 11.2 7.3 11.9C7.5 12.1 7.6 12.2 7.5 12.5L7.2 13.4C7.1 13.7 6.9 13.8 6.6 13.6C5.1 13 4.4 11.3 4.4 9.5C4.4 6.5 7 2.9 12.1 2.9C16.2 2.9 18.9 5.9 18.9 9.1C18.9 13.2 16.7 16.3 13.5 16.3C12.2 16.3 11 15.6 10.6 14.8L9.8 17.9C9.5 19 8.9 20 8.4 20.7C9.6 21.1 10.8 21.3 12 21.3C17.5 21.3 22 16.8 22 11.3C22 5.8 17.5 2 12 2Z"
+                                />
+                            </svg>
+
+                        </a>
+
+
+                        <!-- Instagram -->
+                        <a
+                            href="https://www.instagram.com/"
+                            class="rn-social-link rn-social-instagram"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Follow ReviewNest on Instagram"
+                            title="Instagram"
+                        >
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                aria-hidden="true"
+                            >
+                                <rect
+                                    x="3"
+                                    y="3"
+                                    width="18"
+                                    height="18"
+                                    rx="5"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="4"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+
+                                <circle
+                                    cx="17.5"
+                                    cy="6.8"
+                                    r="1.2"
+                                    fill="currentColor"
+                                />
+
+                            </svg>
+
+                        </a>
+
+
+                    </div>
+
+                    <p class="rn-footer-social-note">
+                        Reviews, comparisons, and helpful videos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Explore Column -->
+            <div class="rn-footer-column">
+
+                <h3 class="rn-footer-column-title">
+                    Explore
+                </h3>
+
+                <ul class="rn-footer-links">
+
+                    <li>
+                        <a href="#products">
+                            Electronics
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#popular">
+                            Popular Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#featured">
+                            Featured Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="buying-guides.html">
+                            Buying Guides
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/reviews/">
+                            Product Reviews
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Company Column -->
+            <div class="rn-footer-column">
+
+                <h3 class="rn-footer-column-title">
+                    ReviewNest
+                </h3>
+
+                <ul class="rn-footer-links">
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="how-we-review.html">
+                            How We Review
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="editorial-process.html">
+                            Editorial Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="affiliate-disclosure.html">
+                            Affiliate Disclosure
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Help Column -->
+            <div class="rn-footer-column">
+
+                <h3 class="rn-footer-column-title">
+                    Helpful Information
+                </h3>
+
+                <ul class="rn-footer-links">
+
+                    <li>
+                        <a href="/privacy-policy/">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/terms/">
+                            Terms of Use
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/disclaimer/">
+                            Disclaimer
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/sitemap/">
+                            Sitemap
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- Trust / Transparency Bar -->
+    <div class="rn-footer-trust">
+
+        <div class="rn-footer-trust-inner">
+
+            <div class="rn-footer-trust-item">
+
+                <span
+                    class="rn-footer-trust-icon"
+                    aria-hidden="true"
+                >
+
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M12 3L19 6V11C19 15.5 16.1 19 12 21C7.9 19 5 15.5 5 11V6L12 3Z"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linejoin="round"
+                        />
+
+                        <path
+                            d="M9 12L11 14L15 10"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+
+                </span>
+
+                <span>
+                    <strong>Reader-Focused</strong>
+                    <small>Useful information first</small>
+                </span>
+
+            </div>
+
+
+            <div class="rn-footer-trust-item">
+
+                <span
+                    class="rn-footer-trust-icon"
+                    aria-hidden="true"
+                >
+
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M4 5H20V17H13L8 21V17H4V5Z"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linejoin="round"
+                        />
+
+                        <path
+                            d="M8 9H16M8 13H14"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+
+                </span>
+
+                <span>
+                    <strong>Clear Explanations</strong>
+                    <small>Understand your options</small>
+                </span>
+
+            </div>
+
+
+            <div class="rn-footer-trust-item">
+
+                <span
+                    class="rn-footer-trust-icon"
+                    aria-hidden="true"
+                >
+
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M12 3L14.5 8.5L20.5 9.2L16 13.3L17.2 19.5L12 16.5L6.8 19.5L8 13.3L3.5 9.2L9.5 8.5L12 3Z"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+
+                </span>
+
+                <span>
+                    <strong>Smarter Decisions</strong>
+                    <small>Shop with more confidence</small>
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Affiliate Disclosure -->
+    <div class="rn-footer-disclosure">
+
+        <p>
+            <strong>Transparency matters:</strong>
+            Some links on ReviewNest may be affiliate links.
+            If you purchase through these links, we may earn a commission
+            at no additional cost to you. This does not change our goal
+            of providing useful, honest, and reader-focused information.
+        </p>
+
+    </div>
+
+
+    <!-- Bottom Bar -->
+    <div class="rn-footer-bottom">
+
+        <div class="rn-footer-bottom-inner">
+
+            <p class="rn-footer-copyright">
+                &copy; <span id="rnCopyrightYear">2026</span>
+                ReviewNest. All rights reserved.
+            </p>
+
+            <p class="rn-footer-bottom-tagline">
+                Built for smarter buying decisions.
+            </p>
+
+            <a
+                href="#rnHeader"
+                class="rn-footer-back-to-top"
+            >
+
+                Back to top
+
+                <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M12 19V5M5 12L12 5L19 12"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- ==========================================
+     END REVIEWNEST PREMIUM FOOTER
+=========================================== -->
+
+
+<!-- ReviewNest Floating Back To Top Button -->
+
+<button
+    type="button"
+    class="rn-floating-top"
+    id="rnFloatingTop"
+    aria-label="Back to top"
+    title="Back to top"
+>
+    <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+    >
+        <path
+            d="M12 19V5M5 12L12 5L19 12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        />
+    </svg>
+</button>
+
+
+<script src="js/script.js"></script>
+<script src="js/electronics.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,786 @@
+
+/* =========================================================
+   ReviewNest — Affiliate Disclosure Page
+   File: css/affiliate-disclosure.css
+   Purpose: Main page styling
+   Responsive rules: affiliate-responsive.css
+   ========================================================= */
+
+
+/* ---------- 1. Design Variables ---------- */
+
+:root {
+    --affiliate-red: #b42318;
+    --affiliate-red-dark: #912018;
+    --affiliate-red-soft: #fff1ef;
+
+    --affiliate-ink: #191919;
+    --affiliate-text: #414141;
+    --affiliate-muted: #707070;
+
+    --affiliate-border: #e7e7e7;
+    --affiliate-background: #ffffff;
+    --affiliate-background-soft: #faf9f7;
+    --affiliate-background-warm: #f7f5f2;
+
+    --affiliate-container: 1180px;
+    --affiliate-radius: 5px;
+
+    --affiliate-font-body: "DM Sans", sans-serif;
+    --affiliate-font-heading: "Manrope", sans-serif;
+
+    --affiliate-shadow:
+        0 10px 30px rgba(25, 25, 25, 0.045);
+}
+
+
+/* ---------- 2. Reset and Base ---------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    margin: 0;
+    color: var(--affiliate-text);
+    background: var(--affiliate-background);
+    font-family: var(--affiliate-font-body);
+    font-size: 16px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+    font-family: var(--affiliate-font-body);
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--affiliate-ink);
+    font-family: var(--affiliate-font-heading);
+    line-height: 1.25;
+    letter-spacing: -0.035em;
+}
+
+h1 {
+    font-size: clamp(2.6rem, 5vw, 4.65rem);
+    font-weight: 800;
+}
+
+h2 {
+    font-size: clamp(1.9rem, 3vw, 2.65rem);
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.22rem;
+    font-weight: 800;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+::selection {
+    color: #ffffff;
+    background: var(--affiliate-red);
+}
+
+:focus-visible {
+    outline: 3px solid var(--affiliate-red);
+    outline-offset: 4px;
+}
+
+
+/* ---------- 3. Shared Layout ---------- */
+
+.affiliate-container {
+    width: min(
+        var(--affiliate-container),
+        calc(100% - 64px)
+    );
+    margin-inline: auto;
+}
+
+.affiliate-section {
+    padding-block: 95px;
+}
+
+.eyebrow {
+    margin-bottom: 18px;
+    color: var(--affiliate-red);
+    font-family: var(--affiliate-font-heading);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.section-heading {
+    max-width: 760px;
+    margin-bottom: 42px;
+}
+
+.section-heading h2 {
+    margin-bottom: 18px;
+}
+
+.section-heading > p:last-child {
+    max-width: 690px;
+    color: var(--affiliate-muted);
+}
+
+
+/* ---------- 4. Accessibility ---------- */
+
+.skip-link {
+    position: absolute;
+    z-index: 1000;
+    top: 12px;
+    left: 12px;
+    padding: 12px 18px;
+    transform: translateY(-160%);
+    color: #ffffff;
+    background: var(--affiliate-ink);
+    border-radius: var(--affiliate-radius);
+    font-weight: 700;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+
+/* ---------- 5. Header ---------- */
+
+.affiliate-header {
+    position: relative;
+    z-index: 10;
+    background: #ffffff;
+    border-bottom: 1px solid var(--affiliate-border);
+}
+
+.header-inner {
+    display: flex;
+    min-height: 86px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.site-logo {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    color: var(--affiliate-ink);
+    font-family: var(--affiliate-font-heading);
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.075em;
+    line-height: 1;
+}
+
+.site-logo span {
+    color: var(--affiliate-red);
+}
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+}
+
+.main-navigation a {
+    position: relative;
+    padding-block: 10px;
+    color: #454545;
+    font-size: 0.88rem;
+    font-weight: 600;
+    transition: color 180ms ease;
+}
+
+.main-navigation a::after {
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    left: 0;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: var(--affiliate-red);
+    content: "";
+    transition: transform 180ms ease;
+}
+
+.main-navigation a:hover {
+    color: var(--affiliate-red);
+}
+
+.main-navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.header-cta,
+.primary-button {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border: 1px solid var(--affiliate-red);
+    border-radius: var(--affiliate-radius);
+    color: #ffffff;
+    background: var(--affiliate-red);
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    transition:
+        background 180ms ease,
+        border-color 180ms ease,
+        transform 180ms ease;
+}
+
+.header-cta:hover,
+.primary-button:hover {
+    transform: translateY(-2px);
+    border-color: var(--affiliate-red-dark);
+    background: var(--affiliate-red-dark);
+}
+
+
+/* ---------- 6. Hero ---------- */
+
+.affiliate-hero {
+    position: relative;
+    overflow: hidden;
+    padding-block: 105px 85px;
+    background:
+        radial-gradient(
+            circle at 92% 20%,
+            rgba(180, 35, 24, 0.07),
+            transparent 29%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #fcfaf8 100%
+        );
+    border-bottom: 1px solid #f0eeeb;
+}
+
+.affiliate-hero .editorial-container,
+.affiliate-hero .affiliate-container {
+    position: relative;
+    z-index: 1;
+}
+
+.affiliate-hero .eyebrow {
+    margin-bottom: 24px;
+}
+
+.affiliate-hero h1 {
+    max-width: 850px;
+    margin-bottom: 25px;
+}
+
+.affiliate-hero h1 span {
+    color: var(--affiliate-red);
+}
+
+.hero-description {
+    max-width: 730px;
+    margin-bottom: 25px;
+    color: #555555;
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+.last-updated {
+    color: var(--affiliate-muted);
+    font-size: 0.83rem;
+    font-weight: 600;
+}
+
+
+/* ---------- 7. Main Disclosure ---------- */
+
+.disclosure-section {
+    background: #ffffff;
+}
+
+.disclosure-layout {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    align-items: start;
+    gap: 70px;
+}
+
+.disclosure-main h2 {
+    margin-bottom: 23px;
+}
+
+.disclosure-main > p:not(.eyebrow) {
+    color: #555555;
+    line-height: 1.9;
+}
+
+.disclosure-highlight {
+    margin-top: 30px;
+    padding: 22px 24px;
+    border-left: 3px solid var(--affiliate-red);
+    background: var(--affiliate-background-soft);
+    color: #494949;
+    line-height: 1.85;
+}
+
+.disclosure-highlight strong {
+    color: var(--affiliate-ink);
+}
+
+.disclosure-summary {
+    padding: 30px;
+    border: 1px solid var(--affiliate-border);
+    border-top: 4px solid var(--affiliate-red);
+    border-radius: var(--affiliate-radius);
+    background: var(--affiliate-background-soft);
+}
+
+.summary-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--affiliate-red);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.disclosure-summary h3 {
+    margin-bottom: 20px;
+    font-size: 1.35rem;
+}
+
+.disclosure-summary ul {
+    display: grid;
+    gap: 15px;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.disclosure-summary li {
+    padding-left: 3px;
+    color: #555555;
+    font-size: 0.92rem;
+    line-height: 1.75;
+}
+
+.disclosure-summary li::marker {
+    color: var(--affiliate-red);
+}
+
+
+/* ---------- 8. Earnings Cards ---------- */
+
+.earnings-section {
+    background: var(--affiliate-background-soft);
+    border-block: 1px solid #f0efec;
+}
+
+.earnings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.earnings-card {
+    min-height: 250px;
+    padding: 30px 27px;
+    border: 1px solid var(--affiliate-border);
+    border-radius: var(--affiliate-radius);
+    background: #ffffff;
+    box-shadow: var(--affiliate-shadow);
+    transition:
+        border-color 180ms ease,
+        transform 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.earnings-card:hover {
+    transform: translateY(-4px);
+    border-color: #d9b6b2;
+    box-shadow: 0 16px 34px rgba(25, 25, 25, 0.07);
+}
+
+.earnings-number {
+    display: inline-flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    border: 1px solid #f0d6d2;
+    border-radius: 3px;
+    color: var(--affiliate-red);
+    background: var(--affiliate-red-soft);
+    font-family: var(--affiliate-font-heading);
+    font-size: 0.84rem;
+    font-weight: 800;
+}
+
+.earnings-card h3 {
+    margin-bottom: 13px;
+}
+
+.earnings-card p {
+    color: var(--affiliate-muted);
+    font-size: 0.94rem;
+    line-height: 1.85;
+}
+
+.section-note {
+    margin-top: 28px;
+    color: var(--affiliate-muted);
+    font-size: 0.88rem;
+    line-height: 1.8;
+}
+
+
+/* ---------- 9. Editorial Independence ---------- */
+
+.independence-section {
+    background: #ffffff;
+}
+
+.independence-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.independence-content h2 {
+    max-width: 720px;
+    margin-bottom: 23px;
+}
+
+.independence-content > p:not(.eyebrow) {
+    color: #555555;
+    line-height: 1.9;
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 13px;
+    color: var(--affiliate-red);
+    font-size: 0.94rem;
+    font-weight: 800;
+}
+
+.text-link span {
+    transition: transform 180ms ease;
+}
+
+.text-link:hover {
+    color: var(--affiliate-red-dark);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.text-link:hover span {
+    transform: translateX(4px);
+}
+
+.independence-card {
+    padding: 35px;
+    border: 1px solid #e8dcd7;
+    border-top: 4px solid var(--affiliate-red);
+    border-radius: var(--affiliate-radius);
+    background: var(--affiliate-background-warm);
+}
+
+.card-mark {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border-radius: 50%;
+    color: var(--affiliate-red);
+    background: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.independence-card h3 {
+    margin-bottom: 14px;
+    font-size: 1.45rem;
+}
+
+.independence-card p {
+    color: var(--affiliate-muted);
+    line-height: 1.85;
+}
+
+
+/* ---------- 10. Pricing and Availability ---------- */
+
+.pricing-section {
+    background: var(--affiliate-background-warm);
+    border-block: 1px solid #eeebe6;
+}
+
+.pricing-inner {
+    max-width: 900px;
+}
+
+.pricing-inner h2 {
+    margin-bottom: 24px;
+}
+
+.pricing-inner > p:not(.eyebrow) {
+    color: #555555;
+    line-height: 1.9;
+}
+
+
+/* ---------- 11. Amazon Disclosure ---------- */
+
+.amazon-section {
+    background: #ffffff;
+}
+
+.amazon-inner {
+    max-width: 900px;
+}
+
+.amazon-inner h2 {
+    margin-bottom: 22px;
+}
+
+.amazon-inner > p:not(.eyebrow) {
+    color: #555555;
+    line-height: 1.9;
+}
+
+.amazon-disclosure {
+    margin: 28px 0;
+    padding: 25px 28px;
+    border-left: 4px solid var(--affiliate-red);
+    background: var(--affiliate-background-soft);
+    color: var(--affiliate-ink);
+    font-family: var(--affiliate-font-heading);
+    font-size: 1.12rem;
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+.program-note {
+    padding: 19px 22px;
+    border: 1px solid #eadedb;
+    border-radius: var(--affiliate-radius);
+    background: #fffaf9;
+    font-size: 0.91rem;
+}
+
+.program-note strong {
+    color: var(--affiliate-ink);
+}
+
+
+/* ---------- 12. Questions and Contact ---------- */
+
+.questions-section {
+    background: var(--affiliate-background-soft);
+    border-block: 1px solid #f0efec;
+}
+
+.questions-inner {
+    max-width: 800px;
+    text-align: center;
+}
+
+.questions-inner h2 {
+    margin-bottom: 20px;
+}
+
+.questions-inner > p:not(.eyebrow) {
+    margin-inline: auto;
+    color: var(--affiliate-muted);
+    line-height: 1.9;
+}
+
+.questions-inner .primary-button {
+    margin-top: 28px;
+}
+
+
+/* ---------- 13. Final Call to Action ---------- */
+
+.affiliate-final-cta {
+    padding-block: 72px;
+    color: #ffffff;
+    background: #201d1c;
+}
+
+.final-cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.final-cta-inner .eyebrow {
+    color: #ffaaa2;
+}
+
+.final-cta-inner h2 {
+    max-width: 680px;
+    margin-bottom: 14px;
+    color: #ffffff;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.final-cta-inner p:not(.eyebrow) {
+    max-width: 600px;
+    margin-bottom: 0;
+    color: #d0cecc;
+}
+
+.final-cta-inner .primary-button {
+    flex-shrink: 0;
+}
+
+
+/* ---------- 14. Footer ---------- */
+
+.affiliate-footer {
+    padding-top: 70px;
+    background: #ffffff;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.4fr repeat(3, 1fr);
+    gap: 48px;
+    padding-bottom: 55px;
+}
+
+.footer-brand .site-logo {
+    margin-bottom: 22px;
+}
+
+.footer-brand p {
+    max-width: 275px;
+    color: var(--affiliate-muted);
+    font-size: 0.92rem;
+    line-height: 1.8;
+}
+
+.footer-links-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.footer-links-group h2 {
+    margin-bottom: 8px;
+    font-size: 0.98rem;
+    letter-spacing: -0.01em;
+}
+
+.footer-links-group a {
+    color: var(--affiliate-muted);
+    font-size: 0.87rem;
+    line-height: 1.6;
+    transition: color 180ms ease;
+}
+
+.footer-links-group a:hover {
+    color: var(--affiliate-red);
+}
+
+.footer-links-group a[aria-current="page"] {
+    color: var(--affiliate-red);
+    font-weight: 700;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding-block: 24px;
+    border-top: 1px solid var(--affiliate-border);
+}
+
+.footer-bottom p {
+    margin-bottom: 0;
+    color: var(--affiliate-muted);
+    font-size: 0.8rem;
+    line-height: 1.8;
+}
+
+.footer-disclaimer {
+    max-width: 570px;
+    text-align: right;
+}
+
+
+/* ---------- 15. Reduced Motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

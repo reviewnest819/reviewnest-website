@@ -1,0 +1,2548 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>How We Review Products | ReviewNest</title>
+
+    <meta
+        name="description"
+        content="Discover how ReviewNest researches products, evaluates features, compares options, and creates helpful product reviews and buying guides."
+    >
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="how-we-review.html">
+
+    <!-- Shared Website Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Page-Specific Styles -->
+    <link rel="stylesheet" href="css/how-we-review.css">
+
+    <!-- Responsive Styles -->
+    <link rel="stylesheet" href="css/how-we-review-responsive.css">
+</head>
+
+<body class="how-we-review-page">
+
+    <!-- =====================================================
+         ACCESSIBILITY
+    ====================================================== -->
+
+    <a class="skip-link" href="#mainContent">
+        Skip to main content
+    </a>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+
+
+
+<!-- ==============================
+     REVIEWNEST HEADER
+================================== -->
+
+<header class="rn-header" id="rnHeader">
+
+  <div class="rn-header-inner">
+
+    <!-- LEFT: MENU + SEARCH -->
+    <div class="rn-header-left">
+
+      <!-- Menu Button -->
+      <button
+        class="rn-icon-button rn-menu-toggle"
+        id="rnMenuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="rnMobileMenu"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <path d="M4 6h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Search Button -->
+      <button
+        class="rn-icon-button rn-search-toggle"
+        id="rnSearchToggle"
+        type="button"
+        aria-label="Open search"
+        aria-expanded="false"
+        aria-controls="rnSearchPanel"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <circle cx="10.8" cy="10.8" r="6.8"></circle>
+          <path d="m16 16 4.5 4.5"></path>
+        </svg>
+      </button>
+
+    </div>
+
+
+    <!-- CENTER: DESKTOP NAVIGATION -->
+    <nav
+      class="rn-desktop-nav"
+      id="rnDesktopNav"
+      aria-label="Main navigation"
+    >
+
+      <a
+        href="electronics.html"
+        class="rn-nav-link"
+        data-nav="electronics"
+      >
+        Electronics
+      </a>
+
+      <a
+        href="reviews.html"
+        class="rn-nav-link"
+        data-nav="reviews"
+      >
+        Reviews
+      </a>
+
+      <a
+        href="buying-guides.html"
+        class="rn-nav-link"
+        data-nav="buying-guides"
+      >
+        Buying Guides
+      </a>
+
+    </nav>
+
+
+    <!-- RIGHT: REVIEWNEST BRAND -->
+    <a
+      class="rn-brand"
+      href="index.html"
+      aria-label="ReviewNest homepage"
+    >
+
+      <span class="rn-brand-icon" aria-hidden="true">
+  <svg
+    viewBox="0 0 40 40"
+    width="40"
+    height="40"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      x="0"
+      y="0"
+      width="40"
+      height="40"
+      rx="8"
+      fill="#B42318"
+    />
+
+    <text
+      x="20"
+      y="29"
+      text-anchor="middle"
+      font-family="Arial, sans-serif"
+      font-size="29"
+      font-weight="800"
+      fill="#FFFFFF"
+    >R</text>
+  </svg>
+</span>
+
+      <span class="rn-brand-text">
+        <span class="rn-brand-name">ReviewNest</span>
+        <span class="rn-brand-tagline">Honest Reviews. Smarter Choices.</span>
+      </span>
+
+    </a>
+
+  </div>
+
+
+  <!-- SEARCH PANEL -->
+  <div
+    class="rn-search-panel"
+    id="rnSearchPanel"
+    aria-hidden="true"
+    inert
+  >
+
+    <form
+      class="rn-search-form"
+      id="rnSearchForm"
+      role="search"
+      action="search.html"
+      method="get"
+    >
+
+      <label class="rn-sr-only" for="rnSearchInput">
+        Search products and reviews
+      </label>
+
+      <input
+        type="search"
+        id="rnSearchInput"
+        name="q"
+        placeholder="Search products, reviews, and buying guides..."
+        autocomplete="off"
+      >
+
+      <button type="submit" class="rn-search-submit">
+        Search
+      </button>
+
+      <button
+        type="button"
+        class="rn-search-close"
+        id="rnSearchClose"
+        aria-label="Close search"
+      >
+        &times;
+      </button>
+
+    </form>
+
+  </div>
+
+</header>
+
+
+<!-- ==============================
+     MOBILE SIDEBAR MENU
+================================== -->
+
+<div
+  class="rn-mobile-menu-overlay"
+  id="rnMenuOverlay"
+  aria-hidden="true"
+></div>
+
+<aside
+  class="rn-mobile-menu"
+  id="rnMobileMenu"
+  aria-label="Mobile navigation"
+  aria-hidden="true"
+  inert
+>
+
+  <div class="rn-mobile-menu-header">
+
+    <a class="rn-mobile-brand" href="index.html">
+      ReviewNest
+    </a>
+
+    <button
+      class="rn-mobile-menu-close"
+      id="rnMenuClose"
+      type="button"
+      aria-label="Close navigation menu"
+    >
+      &times;
+    </button>
+
+  </div>
+
+
+  <!-- Homepage Menu -->
+  <nav
+    class="rn-mobile-nav rn-home-menu"
+    data-page-menu="home"
+    aria-label="Homepage navigation"
+  >
+
+    <a href="index.html" class="rn-mobile-nav-link">
+      Home
+    </a>
+
+    <a href="electronics.html" class="rn-mobile-nav-link">
+      Electronics
+    </a>
+
+    <a href="reviews.html" class="rn-mobile-nav-link">
+      Reviews
+    </a>
+
+    <a href="buying-guides.html" class="rn-mobile-nav-link">
+      Buying Guides
+    </a>
+
+  </nav>
+
+
+  <!-- Electronics Page Menu -->
+  <nav
+    class="rn-mobile-nav rn-electronics-menu"
+    data-page-menu="electronics"
+    aria-label="Electronics navigation"
+    hidden
+  >
+
+    <a href="index.html" class="rn-mobile-nav-link">
+      Home
+    </a>
+
+    <a href="electronics.html" class="rn-mobile-nav-link">
+      All Electronics
+    </a>
+
+    <a href="electronics.html#headphones" class="rn-mobile-nav-link">
+      Headphones
+    </a>
+
+    <a href="electronics.html#speakers" class="rn-mobile-nav-link">
+      Speakers
+    </a>
+
+    <a href="electronics.html#smartwatches" class="rn-mobile-nav-link">
+      Smartwatches
+    </a>
+
+    <a href="electronics.html#laptops" class="rn-mobile-nav-link">
+      Laptops
+    </a>
+
+    <a href="buying-guides.html" class="rn-mobile-nav-link">
+      Buying Guides
+    </a>
+
+  </nav>
+
+</aside>
+
+
+<!-- ================================
+     End ReviewNest Header
+================================= -->
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main id="mainContent">
+
+
+        <!-- =================================================
+             HERO SECTION
+        ================================================== -->
+
+        <section class="hwr-hero">
+
+            <div class="hwr-container">
+
+                <nav class="hwr-breadcrumb" aria-label="Breadcrumb">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <span aria-hidden="true">/</span>
+
+                    <span aria-current="page">
+                        How We Review
+                    </span>
+
+                </nav>
+
+
+                <div class="hwr-hero-grid">
+
+                    <div class="hwr-hero-content">
+
+                        <span class="hwr-eyebrow">
+                            OUR REVIEW PHILOSOPHY
+                        </span>
+
+                        <h1>
+                            Better Research.
+                            <span>Clearer Choices.</span>
+                        </h1>
+
+                        <p class="hwr-hero-description">
+                            Choosing the right product should not feel
+                            complicated. We organize product information,
+                            compare important features, and explain the
+                            details that can help you make a more informed
+                            buying decision.
+                        </p>
+
+
+                        <div class="hwr-hero-actions">
+
+                            <a
+                                href="#our-process"
+                                class="hwr-button hwr-button-primary"
+                            >
+                                Explore Our Process
+
+                                <span aria-hidden="true">↓</span>
+                            </a>
+
+                            <a
+                                href="electronics.html"
+                                class="hwr-button hwr-button-secondary"
+                            >
+                                Browse Reviews
+                            </a>
+
+                        </div>
+
+
+                        <div class="hwr-hero-principles">
+
+                            <div class="hwr-hero-principle">
+
+                                <span
+                                    class="hwr-principle-icon"
+                                    aria-hidden="true"
+                                >
+                                    ✓
+                                </span>
+
+                                <span>
+                                    <strong>Clear Information</strong>
+                                    <small>Understand the details</small>
+                                </span>
+
+                            </div>
+
+
+                            <div class="hwr-hero-principle">
+
+                                <span
+                                    class="hwr-principle-icon"
+                                    aria-hidden="true"
+                                >
+                                    ◈
+                                </span>
+
+                                <span>
+                                    <strong>Useful Comparisons</strong>
+                                    <small>Explore your options</small>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hwr-hero-visual">
+
+                        <div class="hwr-hero-image-wrap">
+
+                            <img
+                                src="images/how-we-review/review-process.webp"
+                                alt="Product review workspace with products and research materials"
+                                class="hwr-hero-image"
+                                width="720"
+                                height="620"
+                                fetchpriority="high"
+                            >
+
+                            <div class="hwr-image-overlay-card">
+
+                                <span class="hwr-overlay-icon"
+                                      aria-hidden="true">
+                                    ✓
+                                </span>
+
+                                <span>
+                                    <strong>Our Approach</strong>
+
+                                    <small>
+                                        Research, compare, explain
+                                    </small>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="hwr-visual-decoration"
+                             aria-hidden="true">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PRINCIPLES STRIP
+        ================================================== -->
+
+        <section class="hwr-principles-section">
+
+            <div class="hwr-container">
+
+                <div class="hwr-principles-grid">
+
+                    <article class="hwr-principle-card">
+
+                        <span class="hwr-card-icon"
+                              aria-hidden="true">
+                            ◎
+                        </span>
+
+                        <h2>Useful Research</h2>
+
+                        <p>
+                            We focus on product information that helps
+                            readers understand their available options.
+                        </p>
+
+                    </article>
+
+
+                    <article class="hwr-principle-card">
+
+                        <span class="hwr-card-icon"
+                              aria-hidden="true">
+                            ⇄
+                        </span>
+
+                        <h2>Meaningful Comparisons</h2>
+
+                        <p>
+                            We explain relevant differences between
+                            products, features, and specifications.
+                        </p>
+
+                    </article>
+
+
+                    <article class="hwr-principle-card">
+
+                        <span class="hwr-card-icon"
+                              aria-hidden="true">
+                            ◉
+                        </span>
+
+                        <h2>Clear Explanations</h2>
+
+                        <p>
+                            We aim to make technical details easier
+                            to understand and evaluate.
+                        </p>
+
+                    </article>
+
+
+                    <article class="hwr-principle-card">
+
+                        <span class="hwr-card-icon"
+                              aria-hidden="true">
+                            ♧
+                        </span>
+
+                        <h2>Transparency</h2>
+
+                        <p>
+                            We explain our approach and disclose
+                            relevant affiliate relationships.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             INTRODUCTION
+        ================================================== -->
+
+        <section class="hwr-introduction hwr-section">
+
+            <div class="hwr-container">
+
+                <div class="hwr-introduction-grid">
+
+                    <div class="hwr-section-heading">
+
+                        <span class="hwr-eyebrow">
+                            WHY OUR PROCESS MATTERS
+                        </span>
+
+                        <h2>
+                            Product information is useful.
+                            <span>Context makes it better.</span>
+                        </h2>
+
+                    </div>
+
+
+                    <div class="hwr-introduction-content">
+
+                        <p>
+                            Product listings often contain specifications,
+                            marketing claims, customer ratings, and long
+                            feature lists. Understanding what those details
+                            mean in everyday use can be difficult.
+                        </p>
+
+                        <p>
+                            ReviewNest organizes relevant information
+                            into reviews and buying guides designed to
+                            help readers understand the differences
+                            between available products.
+                        </p>
+
+                        <p>
+                            Our approach emphasizes clear explanations,
+                            relevant comparisons, practical considerations,
+                            and transparent communication about what
+                            information is available.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             REVIEW PROCESS
+        ================================================== -->
+
+        <section
+            class="hwr-process-section hwr-section"
+            id="our-process"
+        >
+
+            <div class="hwr-container">
+
+                <div class="hwr-section-heading hwr-centered-heading">
+
+                    <span class="hwr-eyebrow">
+                        INSIDE OUR WORKFLOW
+                    </span>
+
+                    <h2>
+                        How We Build a
+                        <span>Product Review</span>
+                    </h2>
+
+                    <p>
+                        Our review content follows a structured approach
+                        to researching products, understanding their
+                        features, and explaining relevant buying factors.
+                    </p>
+
+                </div>
+
+
+                <div class="hwr-process-grid">
+
+
+                    <!-- STEP 1 -->
+
+                    <article class="hwr-process-card">
+
+                        <div class="hwr-process-card-top">
+
+                            <span class="hwr-process-number">
+                                01
+                            </span>
+
+                            <span class="hwr-process-icon"
+                                  aria-hidden="true">
+                                ⌕
+                            </span>
+
+                        </div>
+
+                        <img
+                            src="images/how-we-review/product-research.webp"
+                            alt="Product research and information gathering"
+                            class="hwr-process-image"
+                            width="520"
+                            height="340"
+                            loading="lazy"
+                        >
+
+                        <div class="hwr-process-content">
+
+                            <span class="hwr-process-label">
+                                DISCOVER
+                            </span>
+
+                            <h3>Research the Product</h3>
+
+                            <p>
+                                We identify the product and gather relevant
+                                available information, including its
+                                specifications, listed features, intended
+                                use, and manufacturer-provided details.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- STEP 2 -->
+
+                    <article class="hwr-process-card">
+
+                        <div class="hwr-process-card-top">
+
+                            <span class="hwr-process-number">
+                                02
+                            </span>
+
+                            <span class="hwr-process-icon"
+                                  aria-hidden="true">
+                                ▤
+                            </span>
+
+                        </div>
+
+                        <img
+                            src="images/how-we-review/product-analysis.webp"
+                            alt="Analyzing product features and specifications"
+                            class="hwr-process-image"
+                            width="520"
+                            height="340"
+                            loading="lazy"
+                        >
+
+                        <div class="hwr-process-content">
+
+                            <span class="hwr-process-label">
+                                UNDERSTAND
+                            </span>
+
+                            <h3>Evaluate Important Features</h3>
+
+                            <p>
+                                We examine relevant product details,
+                                potential advantages, limitations, and
+                                factors that may influence a buyer's
+                                decision.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- STEP 3 -->
+
+                    <article class="hwr-process-card">
+
+                        <div class="hwr-process-card-top">
+
+                            <span class="hwr-process-number">
+                                03
+                            </span>
+
+                            <span class="hwr-process-icon"
+                                  aria-hidden="true">
+                                ⇄
+                            </span>
+
+                        </div>
+
+                        <img
+                            src="images/how-we-review/product-comparison.webp"
+                            alt="Comparing different products and their features"
+                            class="hwr-process-image"
+                            width="520"
+                            height="340"
+                            loading="lazy"
+                        >
+
+                        <div class="hwr-process-content">
+
+                            <span class="hwr-process-label">
+                                COMPARE
+                            </span>
+
+                            <h3>Put Options in Context</h3>
+
+                            <p>
+                                Where relevant information is available,
+                                we compare products using factors such
+                                as features, specifications, price
+                                considerations, and intended use.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- STEP 4 -->
+
+                    <article class="hwr-process-card">
+
+                        <div class="hwr-process-card-top">
+
+                            <span class="hwr-process-number">
+                                04
+                            </span>
+
+                            <span class="hwr-process-icon"
+                                  aria-hidden="true">
+                                ✎
+                            </span>
+
+                        </div>
+
+                        <img
+                            src="images/how-we-review/review-writing.webp"
+                            alt="Preparing a clear and informative product review"
+                            class="hwr-process-image"
+                            width="520"
+                            height="340"
+                            loading="lazy"
+                        >
+
+                        <div class="hwr-process-content">
+
+                            <span class="hwr-process-label">
+                                EXPLAIN
+                            </span>
+
+                            <h3>Prepare Helpful Content</h3>
+
+                            <p>
+                                We organize the information into a
+                                readable review or buying guide that
+                                highlights important details and helps
+                                readers consider their options.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <div class="hwr-process-note">
+
+                    <span class="hwr-note-icon"
+                          aria-hidden="true">
+                        i
+                    </span>
+
+                    <p>
+                        <strong>Important distinction:</strong>
+                        Product research and specification analysis
+                        do not automatically mean hands-on testing.
+                        We distinguish documented information from
+                        actual testing whenever that distinction is
+                        relevant to a review.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EVALUATION CRITERIA
+        ================================================== -->
+
+        <section class="hwr-evaluation-section hwr-section">
+
+            <div class="hwr-container">
+
+                <div class="hwr-evaluation-grid">
+
+                    <div class="hwr-evaluation-content">
+
+                        <span class="hwr-eyebrow">
+                            WHAT WE LOOK AT
+                        </span>
+
+                        <h2>
+                            The Details That
+                            <span>Can Matter Most</span>
+                        </h2>
+
+                        <p>
+                            The most relevant evaluation factors depend
+                            on the product category and its intended use.
+                            We focus on details that can help readers
+                            understand a product's potential value,
+                            capabilities, and limitations.
+                        </p>
+
+
+                        <div class="hwr-evaluation-list">
+
+
+                            <article class="hwr-evaluation-item">
+
+                                <span class="hwr-evaluation-check"
+                                      aria-hidden="true">
+                                    ✓
+                                </span>
+
+                                <div>
+
+                                    <h3>Features and Specifications</h3>
+
+                                    <p>
+                                        Relevant technical details,
+                                        supported functions, compatibility,
+                                        and included features.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <article class="hwr-evaluation-item">
+
+                                <span class="hwr-evaluation-check"
+                                      aria-hidden="true">
+                                    ✓
+                                </span>
+
+                                <div>
+
+                                    <h3>Everyday Use</h3>
+
+                                    <p>
+                                        How listed features relate to
+                                        common use cases and practical
+                                        buyer needs.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <article class="hwr-evaluation-item">
+
+                                <span class="hwr-evaluation-check"
+                                      aria-hidden="true">
+                                    ✓
+                                </span>
+
+                                <div>
+
+                                    <h3>Advantages and Limitations</h3>
+
+                                    <p>
+                                        Relevant strengths, trade-offs,
+                                        compatibility requirements,
+                                        and possible drawbacks.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <article class="hwr-evaluation-item">
+
+                                <span class="hwr-evaluation-check"
+                                      aria-hidden="true">
+                                    ✓
+                                </span>
+
+                                <div>
+
+                                    <h3>Price and Alternatives</h3>
+
+                                    <p>
+                                        Available price information and
+                                        relevant alternatives, when
+                                        reliable information is available.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <article class="hwr-evaluation-item">
+
+                                <span class="hwr-evaluation-check"
+                                      aria-hidden="true">
+                                    ✓
+                                </span>
+
+                                <div>
+
+                                    <h3>Buyer Suitability</h3>
+
+                                    <p>
+                                        The type of buyer or use case
+                                        for which a product may be
+                                        worth considering.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hwr-evaluation-visual">
+
+                        <img
+                            src="images/how-we-review/evaluation-criteria.webp"
+                            alt="Product specifications and evaluation notes"
+                            class="hwr-evaluation-image"
+                            width="720"
+                            height="900"
+                            loading="lazy"
+                        >
+
+                        <div class="hwr-evaluation-caption">
+
+                            <span class="hwr-caption-icon"
+                                  aria-hidden="true">
+                                ◈
+                            </span>
+
+                            <div>
+
+                                <strong>Category-Specific Evaluation</strong>
+
+                                <p>
+                                    Different products require
+                                    different considerations.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CATEGORY DIFFERENCES
+        ================================================== -->
+
+        <section class="hwr-categories-section hwr-section">
+
+            <div class="hwr-container">
+
+                <div class="hwr-section-heading hwr-centered-heading">
+
+                    <span class="hwr-eyebrow">
+                        EVERY PRODUCT IS DIFFERENT
+                    </span>
+
+                    <h2>
+                        We Consider the
+                        <span>Product Category</span>
+                    </h2>
+
+                    <p>
+                        A useful review considers the characteristics
+                        and requirements of the product being evaluated.
+                    </p>
+
+                </div>
+
+
+                <div class="hwr-category-grid">
+
+
+                    <article class="hwr-category-card">
+
+                        <div class="hwr-category-image-wrap">
+
+                            <img
+                                src="images/how-we-review/electronics-category.webp"
+                                alt="Consumer electronics products"
+                                class="hwr-category-image"
+                                width="480"
+                                height="320"
+                                loading="lazy"
+                            >
+
+                            <span class="hwr-category-badge">
+                                CATEGORY 01
+                            </span>
+
+                        </div>
+
+                        <div class="hwr-category-content">
+
+                            <h3>Consumer Electronics</h3>
+
+                            <p>
+                                Features, specifications, connectivity,
+                                compatibility, battery information,
+                                supported functions, and everyday use.
+                            </p>
+
+                            <a href="electronics.html"
+                               class="hwr-text-link">
+
+                                Explore Electronics
+
+                                <span aria-hidden="true">→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="hwr-category-card">
+
+                        <div class="hwr-category-image-wrap">
+
+                            <img
+                                src="images/how-we-review/buying-guides.webp"
+                                alt="Research materials for comparing products"
+                                class="hwr-category-image"
+                                width="480"
+                                height="320"
+                                loading="lazy"
+                            >
+
+                            <span class="hwr-category-badge">
+                                CATEGORY 02
+                            </span>
+
+                        </div>
+
+                        <div class="hwr-category-content">
+
+                            <h3>Buying Guides</h3>
+
+                            <p>
+                                Important buying considerations,
+                                product differences, budget factors,
+                                and questions to ask before purchasing.
+                            </p>
+
+                            <a href="buying-guides.html"
+                               class="hwr-text-link">
+
+                                Explore Buying Guides
+
+                                <span aria-hidden="true">→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="hwr-category-card">
+
+                        <div class="hwr-category-image-wrap">
+
+                            <img
+                                src="images/how-we-review/product-comparison-guide.webp"
+                                alt="Comparing product options"
+                                class="hwr-category-image"
+                                width="480"
+                                height="320"
+                                loading="lazy"
+                            >
+
+                            <span class="hwr-category-badge">
+                                CATEGORY 03
+                            </span>
+
+                        </div>
+
+                        <div class="hwr-category-content">
+
+                            <h3>Product Comparisons</h3>
+
+                            <p>
+                                Similarities, differences, available
+                                specifications, and trade-offs between
+                                relevant product options.
+                            </p>
+
+                            <a href="electronics.html"
+                               class="hwr-text-link">
+
+                                Browse Product Reviews
+
+                                <span aria-hidden="true">→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             RATINGS EXPLAINED
+        ================================================== -->
+
+        <section class="hwr-ratings-section hwr-section">
+
+            <div class="hwr-container">
+
+                <div class="hwr-ratings-grid">
+
+                    <div class="hwr-ratings-visual">
+
+                        <div class="hwr-rating-illustration">
+
+                            <span class="hwr-rating-stars"
+                                  aria-hidden="true">
+                                ★★★★★
+                            </span>
+
+                            <span class="hwr-rating-heading">
+                                Ratings Need Context
+                            </span>
+
+                            <p>
+                                A number alone cannot explain
+                                every important detail.
+                            </p>
+
+                            <div class="hwr-rating-divider"></div>
+
+                            <div class="hwr-rating-mini-grid">
+
+                                <div>
+                                    <span aria-hidden="true">✓</span>
+                                    <small>Features</small>
+                                </div>
+
+                                <div>
+                                    <span aria-hidden="true">◈</span>
+                                    <small>Use Case</small>
+                                </div>
+
+                                <div>
+                                    <span aria-hidden="true">⇄</span>
+                                    <small>Comparison</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hwr-ratings-content">
+
+                        <span class="hwr-eyebrow">
+                            UNDERSTANDING RATINGS
+                        </span>
+
+                        <h2>
+                            Ratings Are
+                            <span>Only Part of the Story</span>
+                        </h2>
+
+                        <p>
+                            Numerical ratings can help summarize an
+                            opinion, but they do not replace the details
+                            behind a product's features, limitations,
+                            intended use, and overall suitability.
+                        </p>
+
+                        <p>
+                            When ratings are included, readers should
+                            be able to distinguish customer feedback
+                            from ReviewNest's own analysis and from
+                            any documented testing.
+                        </p>
+
+
+                        <div class="hwr-rating-points">
+
+                            <div class="hwr-rating-point">
+
+                                <span aria-hidden="true">01</span>
+
+                                <p>
+                                    <strong>Customer Ratings</strong>
+                                    <small>
+                                        Feedback attributed to its
+                                        stated source.
+                                    </small>
+                                </p>
+
+                            </div>
+
+
+                            <div class="hwr-rating-point">
+
+                                <span aria-hidden="true">02</span>
+
+                                <p>
+                                    <strong>Editorial Analysis</strong>
+                                    <small>
+                                        An explanation of available
+                                        product information.
+                                    </small>
+                                </p>
+
+                            </div>
+
+
+                            <div class="hwr-rating-point">
+
+                                <span aria-hidden="true">03</span>
+
+                                <p>
+                                    <strong>Hands-On Testing</strong>
+                                    <small>
+                                        Described as performed only
+                                        when it actually took place.
+                                    </small>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SOURCES AND INFORMATION
+        ================================================== -->
+
+        <section class="hwr-sources-section hwr-section">
+
+            <div class="hwr-container">
+
+                <div class="hwr-section-heading">
+
+                    <span class="hwr-eyebrow">
+                        UNDERSTANDING THE INFORMATION
+                    </span>
+
+                    <h2>
+                        Where Product Information
+                        <span>Comes From</span>
+                    </h2>
+
+                    <p>
+                        Different information sources serve different
+                        purposes. Understanding those differences
+                        helps readers interpret a review.
+                    </p>
+
+                </div>
+
+
+                <div class="hwr-sources-grid">
+
+
+                    <article class="hwr-source-card">
+
+                        <span class="hwr-source-icon"
+                              aria-hidden="true">
+                            ▤
+                        </span>
+
+                        <h3>Manufacturer Information</h3>
+
+                        <p>
+                            Product specifications, supported features,
+                            compatibility details, and information
+                            published by the manufacturer.
+                        </p>
+
+                    </article>
+
+
+                    <article class="hwr-source-card">
+
+                        <span class="hwr-source-icon"
+                              aria-hidden="true">
+                            ◉
+                        </span>
+
+                        <h3>Retailer Listings</h3>
+
+                        <p>
+                            Available listing details, product variants,
+                            listed prices, included accessories,
+                            and availability information.
+                        </p>
+
+                    </article>
+
+
+                    <article class="hwr-source-card">
+
+                        <span class="hwr-source-icon"
+                              aria-hidden="true">
+                            ≋
+                        </span>
+
+                        <h3>Customer Feedback</h3>
+
+                        <p>
+                            Customer opinions and experiences, where
+                            relevant and available, treated as feedback
+                            rather than guaranteed outcomes.
+                        </p>
+
+                    </article>
+
+
+                    <article class="hwr-source-card">
+
+                        <span class="hwr-source-icon"
+                              aria-hidden="true">
+                            ✓
+                        </span>
+
+                        <h3>Editorial Analysis</h3>
+
+                        <p>
+                            Our organization and explanation of
+                            relevant information to clarify product
+                            differences and buying considerations.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+
+                <div class="hwr-sources-notice">
+
+                    <span class="hwr-notice-icon"
+                          aria-hidden="true">
+                        !
+                    </span>
+
+                    <p>
+                        <strong>Information can change.</strong>
+                        Product specifications, availability, prices,
+                        warranties, and retailer policies may change
+                        over time. Verify important details with the
+                        manufacturer or seller before purchasing.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TRANSPARENCY
+        ================================================== -->
+
+        <section class="hwr-transparency-section hwr-section">
+
+            <div class="hwr-container">
+
+                <div class="hwr-transparency-card">
+
+                    <div class="hwr-transparency-content">
+
+                        <span class="hwr-eyebrow">
+                            HONEST COMMUNICATION
+                        </span>
+
+                        <h2>
+                            Transparency
+                            <span>Matters</span>
+                        </h2>
+
+                        <p>
+                            Readers should understand how a website
+                            operates and how commercial relationships
+                            may affect the links they use.
+                        </p>
+
+                        <p>
+                            ReviewNest may use affiliate links.
+                            When a reader makes a qualifying purchase
+                            through an affiliate link, we may earn
+                            a commission at no additional cost to
+                            the reader.
+                        </p>
+
+                        <p>
+                            Affiliate relationships should not be
+                            confused with product testing, customer
+                            feedback, or an independent assessment
+                            of product information.
+                        </p>
+
+
+                        <div class="hwr-transparency-actions">
+
+                            <a
+                                href="affiliate-disclosure.html"
+                                class="hwr-button hwr-button-primary"
+                            >
+                                Read Affiliate Disclosure
+                                <span aria-hidden="true">→</span>
+                            </a>
+
+                            <a
+                                href="editorial-process.html"
+                                class="hwr-button hwr-button-secondary"
+                            >
+                                Editorial Policy
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="hwr-transparency-visual">
+
+                        <img
+                            src="images/how-we-review/transparency.webp"
+                            alt="Clear and organized product information"
+                            class="hwr-transparency-image"
+                            width="640"
+                            height="700"
+                            loading="lazy"
+                        >
+
+                        <div class="hwr-transparency-badge">
+
+                            <span aria-hidden="true">✓</span>
+
+                            <span>
+                                <strong>Clear Disclosures</strong>
+                                <small>Know how links work</small>
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             WHAT WE DO NOT CLAIM
+        ================================================== -->
+
+        <section class="hwr-limitations-section hwr-section">
+
+            <div class="hwr-container">
+
+                <div class="hwr-section-heading hwr-centered-heading">
+
+                    <span class="hwr-eyebrow">
+                        CLEAR EXPECTATIONS
+                    </span>
+
+                    <h2>
+                        What Our Reviews
+                        <span>Do Not Automatically Mean</span>
+                    </h2>
+
+                    <p>
+                        We aim to make the scope and limitations
+                        of product information clear.
+                    </p>
+
+                </div>
+
+
+                <div class="hwr-limitations-grid">
+
+
+                    <article class="hwr-limitation-card">
+
+                        <span class="hwr-limitation-icon"
+                              aria-hidden="true">
+                            01
+                        </span>
+
+                        <h3>Not Every Product Is Hands-On Tested</h3>
+
+                        <p>
+                            A review based on research and specifications
+                            should not be interpreted as a physical test
+                            unless hands-on testing is specifically
+                            documented.
+                        </p>
+
+                    </article>
+
+
+                    <article class="hwr-limitation-card">
+
+                        <span class="hwr-limitation-icon"
+                              aria-hidden="true">
+                            02
+                        </span>
+
+                        <h3>Specifications Are Not Guarantees</h3>
+
+                        <p>
+                            Manufacturer claims and listed specifications
+                            describe stated product characteristics;
+                            actual results may vary with conditions
+                            and usage.
+                        </p>
+
+                    </article>
+
+
+                    <article class="hwr-limitation-card">
+
+                        <span class="hwr-limitation-icon"
+                              aria-hidden="true">
+                            03
+                        </span>
+
+                        <h3>One Product Is Not Right for Everyone</h3>
+
+                        <p>
+                            Different budgets, preferences, compatibility
+                            needs, and use cases can lead buyers to
+                            different choices.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FAQ
+        ================================================== -->
+
+        <section class="hwr-faq-section hwr-section"
+                 id="frequently-asked-questions">
+
+            <div class="hwr-container">
+
+                <div class="hwr-faq-grid">
+
+                    <div class="hwr-faq-intro">
+
+                        <span class="hwr-eyebrow">
+                            NEED MORE CLARITY?
+                        </span>
+
+                        <h2>
+                            Frequently Asked
+                            <span>Questions</span>
+                        </h2>
+
+                        <p>
+                            Learn more about our review approach,
+                            product information, and transparency.
+                        </p>
+
+                        <a href="contact.html"
+                           class="hwr-text-link">
+
+                            Contact ReviewNest
+
+                            <span aria-hidden="true">→</span>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="hwr-faq-list">
+
+
+                        <details class="hwr-faq-item">
+
+                            <summary>
+                                Does ReviewNest physically test every product?
+                            </summary>
+
+                            <div class="hwr-faq-answer">
+
+                                <p>
+                                    Not necessarily. Some content may be
+                                    based on available product information,
+                                    specifications, and comparative
+                                    research. Hands-on testing should
+                                    be identified as such only when
+                                    it has actually been performed.
+                                </p>
+
+                            </div>
+
+                        </details>
+
+
+
+                        <details class="hwr-faq-item">
+
+                            <summary>
+                                How do you evaluate product features?
+                            </summary>
+
+                            <div class="hwr-faq-answer">
+
+                                <p>
+                                    We consider factors relevant to the
+                                    product category, including features,
+                                    specifications, compatibility,
+                                    intended use, potential advantages,
+                                    limitations, and available alternatives.
+                                </p>
+
+                            </div>
+
+                        </details>
+
+
+
+                        <details class="hwr-faq-item">
+
+                            <summary>
+                                Do affiliate links affect the price I pay?
+                            </summary>
+
+                            <div class="hwr-faq-answer">
+
+                                <p>
+                                    An affiliate link generally does not
+                                    add a separate charge to your purchase.
+                                    The seller's pricing and applicable
+                                    charges still determine the final
+                                    amount you pay.
+                                </p>
+
+                            </div>
+
+                        </details>
+
+
+
+                        <details class="hwr-faq-item">
+
+                            <summary>
+                                Can product prices and availability change?
+                            </summary>
+
+                            <div class="hwr-faq-answer">
+
+                                <p>
+                                    Yes. Prices, stock, product variants,
+                                    offers, and retailer terms can change.
+                                    Confirm current details on the seller's
+                                    website before making a purchase.
+                                </p>
+
+                            </div>
+
+                        </details>
+
+
+
+                        <details class="hwr-faq-item">
+
+                            <summary>
+                                Are customer reviews the same as your analysis?
+                            </summary>
+
+                            <div class="hwr-faq-answer">
+
+                                <p>
+                                    No. Customer reviews represent
+                                    individual customer feedback.
+                                    Editorial analysis explains product
+                                    information and buying considerations.
+                                    These should be understood as
+                                    different kinds of information.
+                                </p>
+
+                            </div>
+
+                        </details>
+
+
+
+                        <details class="hwr-faq-item">
+
+                            <summary>
+                                How can I ask a question about a review?
+                            </summary>
+
+                            <div class="hwr-faq-answer">
+
+                                <p>
+                                    You can use the ReviewNest contact
+                                    page to send a question or share
+                                    feedback about our content.
+                                </p>
+
+                                <a href="contact.html"
+                                   class="hwr-text-link">
+
+                                    Visit Contact Us
+
+                                    <span aria-hidden="true">→</span>
+
+                                </a>
+
+                            </div>
+
+                        </details>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FINAL CTA
+        ================================================== -->
+
+        <section class="hwr-final-cta-section">
+
+            <div class="hwr-container">
+
+                <div class="hwr-final-cta">
+
+                    <div class="hwr-final-cta-content">
+
+                        <span class="hwr-eyebrow">
+                            YOUR NEXT SMARTER CHOICE
+                        </span>
+
+                        <h2>
+                            Ready to Explore
+                            <span>Your Options?</span>
+                        </h2>
+
+                        <p>
+                            Browse product reviews and buying guides
+                            to better understand the choices available
+                            to you.
+                        </p>
+
+                    </div>
+
+
+                    <div class="hwr-final-cta-actions">
+
+                        <a
+                            href="electronics.html"
+                            class="hwr-button hwr-button-light"
+                        >
+                            Explore Electronics
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a
+                            href="buying-guides.html"
+                            class="hwr-button hwr-button-outline-light"
+                        >
+                            Read Buying Guides
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+
+
+<!-- =========================================================
+     REVIEWNEST — PREMIUM WEBSITE FOOTER
+========================================================= -->
+
+<footer class="rn-footer" id="rnFooter">
+
+    <!-- Footer CTA -->
+    <div class="rn-footer-top">
+
+        <div class="rn-footer-top-inner">
+
+            <div class="rn-footer-cta-content">
+
+                <span class="rn-footer-eyebrow">
+                    THE REVIEWNEST DIFFERENCE
+                </span>
+
+                <h2>
+                    Make Every Purchase
+                    <span>Count.</span>
+                </h2>
+
+                <p>
+                    Discover useful product reviews, compare your
+                    options, and make more informed buying decisions
+                    with practical product information and buying guides.
+                </p>
+
+            </div>
+
+            <a
+                href="electronics.html"
+                class="rn-footer-cta-button"
+            >
+                Explore Reviews
+
+                <svg viewBox="0 0 24 24" fill="none"
+                     aria-hidden="true" focusable="false">
+                    <path
+                        d="M5 12H19M12 5L19 12L12 19"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                </svg>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main Footer -->
+    <div class="rn-footer-main">
+
+        <div class="rn-footer-grid">
+
+            <!-- Brand Column -->
+            <div class="rn-footer-brand-column">
+
+                <a
+                    href="index.html"
+                    class="rn-footer-brand"
+                    aria-label="ReviewNest homepage"
+                >
+
+                    <span class="rn-footer-logo"
+                          aria-hidden="true">
+
+                        <svg viewBox="0 0 40 40" fill="none"
+                             focusable="false">
+                            <rect
+                                x="2"
+                                y="2"
+                                width="36"
+                                height="36"
+                                rx="11"
+                                fill="currentColor"/>
+                            <path
+                                d="M12 12H23C27 12 29 14.5 29 18C29 21 27.5 23 24.5 24L30 30H23L18.5 24.5H18V30H12V12Z"
+                                fill="white"/>
+                            <path
+                                d="M18 17V20H23C24 20 25 19.5 25 18.5C25 17.5 24 17 23 17H18Z"
+                                fill="currentColor"/>
+                        </svg>
+
+                    </span>
+
+                    <span class="rn-footer-brand-text">
+
+                        <span class="rn-footer-brand-name">
+                            Review<span>Nest</span>
+                        </span>
+
+                        <span class="rn-footer-brand-tagline">
+                            Smarter Choices. Better Living.
+                        </span>
+
+                    </span>
+
+                </a>
+
+                <p class="rn-footer-description">
+                    ReviewNest provides product reviews, useful
+                    comparisons, and practical buying guides designed
+                    to help readers understand their options and
+                    shop with greater confidence.
+                </p>
+
+
+                <!-- Social Media
+                     IMPORTANT:
+                     Replace these platform homepages with the real
+                     ReviewNest profile URLs before publishing.
+                -->
+
+                <div class="rn-footer-social-section">
+
+                    <h3 class="rn-footer-social-heading">
+                        Follow Our Journey
+                    </h3>
+
+                    <div class="rn-footer-socials">
+
+                        <!-- Facebook -->
+                        <a
+                            href="https://www.facebook.com/"
+                            class="rn-social-link rn-social-facebook"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on Facebook"
+                            title="Facebook"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <path
+                                    fill="currentColor"
+                                    d="M13.5 21V12.8H16.3L16.7 9.6H13.5V7.6C13.5 6.7 13.8 6.1 15.1 6.1H16.8V3.2C16.5 3.2 15.3 3.1 14 3.1C11.2 3.1 9.3 4.8 9.3 7.9V9.6H6.5V12.8H9.3V21H13.5Z"/>
+                            </svg>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a
+                            href="https://www.youtube.com/"
+                            class="rn-social-link rn-social-youtube"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on YouTube"
+                            title="YouTube"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <path
+                                    fill="currentColor"
+                                    d="M23.2 7.1C22.9 5.8 22.1 5 20.8 4.7C18.5 4.1 12 4.1 12 4.1S5.5 4.1 3.2 4.7C1.9 5 1.1 5.8 0.8 7.1C0.4 9 0.4 12 0.4 12S0.4 15 0.8 16.9C1.1 18.2 1.9 19 3.2 19.3C5.5 19.9 12 19.9 12 19.9S18.5 19.9 20.8 19.3C22.1 19 22.9 18.2 23.2 16.9C23.6 15 23.6 12 23.6 12S23.6 9 23.2 7.1ZM9.7 15.1V8.9L15.1 12L9.7 15.1Z"/>
+                            </svg>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a
+                            href="https://www.tiktok.com/"
+                            class="rn-social-link rn-social-tiktok"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on TikTok"
+                            title="TikTok"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <path
+                                    fill="currentColor"
+                                    d="M19.6 6.1C18.1 6 16.8 5 16.3 3.6C16.1 3.1 16 2.5 16 2H12.1V15.5C12.1 17 10.9 18.2 9.4 18.2C7.9 18.2 6.7 17 6.7 15.5C6.7 14 7.9 12.8 9.4 12.8C9.8 12.8 10.2 12.9 10.6 13.1V9.1C10.2 9 9.8 9 9.4 9C5.8 9 2.9 11.9 2.9 15.5C2.9 19.1 5.8 22 9.4 22C13 22 15.9 19.1 15.9 15.5V8.6C17.1 9.5 18.5 10 20 10V6.1H19.6Z"/>
+                            </svg>
+                        </a>
+
+                        <!-- Pinterest -->
+                        <a
+                            href="https://www.pinterest.com/"
+                            class="rn-social-link rn-social-pinterest"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on Pinterest"
+                            title="Pinterest"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <path
+                                    fill="currentColor"
+                                    d="M12 2C6.5 2 3 5.9 3 10.5C3 13.2 4.5 15.7 6.8 16.8C6.8 15.8 6.8 14.9 7 14.2L8.1 9.5C7.9 9 7.8 8.5 7.8 8C7.8 6.4 8.8 5.2 10.2 5.2C11.4 5.2 12 6 12 7.1C12 8.3 11.2 10.1 10.8 11.7C10.5 13 11.4 14 12.6 14C14.7 14 16.2 11.3 16.2 8.2C16.2 5.8 14.6 4.1 11.7 4.1C8.4 4.1 6.3 6.5 6.3 9.2C6.3 10.3 6.6 11.2 7.3 11.9C7.5 12.1 7.6 12.2 7.5 12.5L7.2 13.4C7.1 13.7 6.9 13.8 6.6 13.6C5.1 13 4.4 11.3 4.4 9.5C4.4 6.5 7 2.9 12.1 2.9C16.2 2.9 18.9 5.9 18.9 9.1C18.9 13.2 16.7 16.3 13.5 16.3C12.2 16.3 11 15.6 10.6 14.8L9.8 17.9C9.5 19 8.9 20 8.4 20.7C9.6 21.1 10.8 21.3 12 21.3C17.5 21.3 22 16.8 22 11.3C22 5.8 17.5 2 12 2Z"/>
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a
+                            href="https://www.instagram.com/"
+                            class="rn-social-link rn-social-instagram"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on Instagram"
+                            title="Instagram"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 fill="none"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <rect
+                                    x="3"
+                                    y="3"
+                                    width="18"
+                                    height="18"
+                                    rx="5"
+                                    stroke="currentColor"
+                                    stroke-width="2"/>
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="4"
+                                    stroke="currentColor"
+                                    stroke-width="2"/>
+                                <circle
+                                    cx="17.5"
+                                    cy="6.8"
+                                    r="1.2"
+                                    fill="currentColor"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <p class="rn-footer-social-note">
+                        Product reviews, comparisons, and helpful videos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Explore Column -->
+            <nav class="rn-footer-column"
+                 aria-label="Explore ReviewNest">
+
+                <h3 class="rn-footer-column-title">
+                    Explore
+                </h3>
+
+                <ul class="rn-footer-links">
+
+                    <li>
+                        <a href="electronics.html">
+                            Electronics
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#popular-products">
+                            Popular Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#featured-products">
+                            Featured Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="buying-guides.html">
+                            Buying Guides
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="electronics.html">
+                            Product Reviews
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Company Column -->
+            <nav class="rn-footer-column"
+                 aria-label="About ReviewNest">
+
+                <h3 class="rn-footer-column-title">
+                    ReviewNest
+                </h3>
+
+                <ul class="rn-footer-links">
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="how-we-review.html">
+                            How We Review
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="editorial-process.html">
+                            Editorial Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="affiliate-disclosure.html">
+                            Affiliate Disclosure
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Helpful Information Column -->
+            <nav class="rn-footer-column"
+                 aria-label="Legal and helpful information">
+
+                <h3 class="rn-footer-column-title">
+                    Helpful Information
+                </h3>
+
+                <ul class="rn-footer-links">
+
+                    <li>
+                        <a href="privacy-policy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms-of-use.html">
+                            Terms of Use
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="disclaimer.html">
+                            Disclaimer
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sitemap.html">
+                            HTML Sitemap
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+
+    <!-- Trust / Transparency Bar -->
+    <div class="rn-footer-trust">
+
+        <div class="rn-footer-trust-inner">
+
+            <div class="rn-footer-trust-item">
+
+                <span class="rn-footer-trust-icon"
+                      aria-hidden="true">
+
+                    <svg viewBox="0 0 24 24" fill="none"
+                         focusable="false">
+                        <path
+                            d="M12 3L19 6V11C19 15.5 16.1 19 12 21C7.9 19 5 15.5 5 11V6L12 3Z"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linejoin="round"/>
+                        <path
+                            d="M9 12L11 14L15 10"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"/>
+                    </svg>
+
+                </span>
+
+                <span>
+                    <strong>Reader-Focused</strong>
+                    <small>Useful information first</small>
+                </span>
+
+            </div>
+
+
+            <div class="rn-footer-trust-item">
+
+                <span class="rn-footer-trust-icon"
+                      aria-hidden="true">
+
+                    <svg viewBox="0 0 24 24" fill="none"
+                         focusable="false">
+                        <path
+                            d="M4 5H20V17H13L8 21V17H4V5Z"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linejoin="round"/>
+                        <path
+                            d="M8 9H16M8 13H14"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"/>
+                    </svg>
+
+                </span>
+
+                <span>
+                    <strong>Clear Explanations</strong>
+                    <small>Understand your options</small>
+                </span>
+
+            </div>
+
+
+            <div class="rn-footer-trust-item">
+
+                <span class="rn-footer-trust-icon"
+                      aria-hidden="true">
+
+                    <svg viewBox="0 0 24 24" fill="none"
+                         focusable="false">
+                        <path
+                            d="M12 3L14.5 8.5L20.5 9.2L16 13.3L17.2 19.5L12 16.5L6.8 19.5L8 13.3L3.5 9.2L9.5 8.5L12 3Z"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linejoin="round"/>
+                    </svg>
+
+                </span>
+
+                <span>
+                    <strong>Smarter Decisions</strong>
+                    <small>Shop with more confidence</small>
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Affiliate Disclosure -->
+    <div class="rn-footer-disclosure">
+
+        <p>
+            <strong>Affiliate disclosure:</strong>
+            Some links on ReviewNest may be affiliate links.
+            If you make a qualifying purchase through these links,
+            we may earn a commission at no additional cost to you.
+            We aim to provide useful, honest, and reader-focused
+            information regardless of affiliate relationships.
+            Read our
+            <a href="affiliate-disclosure.html">
+                full affiliate disclosure
+            </a>.
+        </p>
+
+    </div>
+
+
+    <!-- Footer Bottom Bar -->
+    <div class="rn-footer-bottom">
+
+        <div class="rn-footer-bottom-inner">
+
+            <p class="rn-footer-copyright">
+                &copy;
+                <span id="rnCopyrightYear">2026</span>
+                ReviewNest. All rights reserved.
+            </p>
+
+            <p class="rn-footer-bottom-tagline">
+                Built for smarter buying decisions.
+            </p>
+
+            <a href="#rnHeader"
+               class="rn-footer-back-to-top">
+
+                Back to top
+
+                <svg viewBox="0 0 24 24" fill="none"
+                     aria-hidden="true"
+                     focusable="false">
+                    <path
+                        d="M12 19V5M5 12L12 5L19 12"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                </svg>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- =========================================================
+     END REVIEWNEST PREMIUM FOOTER
+========================================================= -->
+
+
+<!-- Floating Back-to-Top Button -->
+<button
+    type="button"
+    class="rn-floating-top"
+    id="rnFloatingTop"
+    aria-label="Back to top"
+    title="Back to top"
+>
+    <svg viewBox="0 0 24 24" fill="none"
+         aria-hidden="true"
+         focusable="false">
+        <path
+            d="M12 19V5M5 12L12 5L19 12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </svg>
+</button>
+
+
+<!-- =========================================================
+     REVIEWNEST — FOOTER FUNCTIONALITY
+/* ========================================
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         PAGE JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js" defer></script>
+    <script src="js/how-we-review.js" defer></script>
+
+</body>
+
+</html>

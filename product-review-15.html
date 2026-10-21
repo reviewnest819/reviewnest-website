@@ -1,0 +1,5946 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <!-- STEP 1: Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- STEP 2: Responsive Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STEP 3: SEO Title -->
+    <title>Product Reviews & Buying Guides | ReviewNest</title>
+
+    <!-- STEP 4: SEO Meta Description -->
+    <meta
+        name="description"
+        content="Explore product reviews and buying guides for US shoppers. Compare product features, understand pros and cons, and make informed buying decisions with ReviewNest."
+    >
+
+    <!-- STEP 5: Search Engine Indexing -->
+    <meta
+        name="robots"
+        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    >
+
+    <!-- STEP 6: Website Application Name -->
+    <meta name="application-name" content="ReviewNest">
+
+    <!-- STEP 7: Browser Theme Color -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- STEP 8: Open Graph Content Type -->
+    <meta property="og:type" content="article">
+
+    <!-- STEP 9: Open Graph Title -->
+    <meta
+        property="og:title"
+        content="Product Reviews & Buying Guides | ReviewNest"
+    >
+
+    <!-- STEP 10: Open Graph Description -->
+    <meta
+        property="og:description"
+        content="Explore product features, comparisons, pros and cons, and practical buying advice for US shoppers with ReviewNest."
+    >
+
+    <!-- STEP 11: Open Graph Website Name -->
+    <meta property="og:site_name" content="ReviewNest">
+
+    <!-- STEP 12: Open Graph Locale -->
+    <meta property="og:locale" content="en_US">
+
+    <!-- STEP 13: Font Connections and Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- DM Sans and Manrope -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Inter -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- STEP 14: Website Stylesheets -->
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Product Review Stylesheet -->
+    <link rel="stylesheet" href="css/product-review.css">
+
+    <!-- Product Review Responsive Stylesheet -->
+    <link rel="stylesheet" href="css/PRODUCT-REVIEW-RESPONSIVE.CSS">
+
+</head>
+
+<body class="product-review-page pr14-product-polish-enabled">
+
+
+<!-- =========================================================
+     LOADER
+========================================================= -->
+
+<div
+    class="review-loader"
+    id="reviewLoader"
+    aria-hidden="true"
+>
+
+    <div class="review-loader-inner">
+
+        <span class="loader-mark"></span>
+
+        <span>
+            Preparing your review...
+        </span>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+  <!-- =========================  
+         TOP BAR  
+    ========================== -->  
+
+
+
+
+<!-- ==============================
+     REVIEWNEST HEADER
+================================== -->
+
+<header class="rn-header" id="rnHeader">
+
+  <div class="rn-header-inner">
+
+    <!-- LEFT: MENU + SEARCH -->
+    <div class="rn-header-left">
+
+      <!-- Menu Button -->
+      <button
+        class="rn-icon-button rn-menu-toggle"
+        id="rnMenuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="rnMobileMenu"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <path d="M4 6h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Search Button -->
+      <button
+        class="rn-icon-button rn-search-toggle"
+        id="rnSearchToggle"
+        type="button"
+        aria-label="Open search"
+        aria-expanded="false"
+        aria-controls="rnSearchPanel"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <circle cx="10.8" cy="10.8" r="6.8"></circle>
+          <path d="m16 16 4.5 4.5"></path>
+        </svg>
+      </button>
+
+    </div>
+
+
+    <!-- CENTER: DESKTOP NAVIGATION -->
+    <nav
+      class="rn-desktop-nav"
+      id="rnDesktopNav"
+      aria-label="Main navigation"
+    >
+
+      <a
+        href="electronics.html"
+        class="rn-nav-link"
+        data-nav="electronics"
+      >
+        Electronics
+      </a>
+
+      <a
+        href="reviews.html"
+        class="rn-nav-link"
+        data-nav="reviews"
+      >
+        Reviews
+      </a>
+
+      <a
+        href="buying-guides.html"
+        class="rn-nav-link"
+        data-nav="buying-guides"
+      >
+        Buying Guides
+      </a>
+
+    </nav>
+
+
+    <!-- RIGHT: REVIEWNEST BRAND -->
+    <a
+      class="rn-brand"
+      href="index.html"
+      aria-label="ReviewNest homepage"
+    >
+
+      <span class="rn-brand-icon" aria-hidden="true">
+  <svg
+    viewBox="0 0 40 40"
+    width="40"
+    height="40"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      x="0"
+      y="0"
+      width="40"
+      height="40"
+      rx="8"
+      fill="#B42318"
+    />
+
+    <text
+      x="20"
+      y="29"
+      text-anchor="middle"
+      font-family="Arial, sans-serif"
+      font-size="29"
+      font-weight="800"
+      fill="#FFFFFF"
+    >R</text>
+  </svg>
+</span>
+
+      <span class="rn-brand-text">
+        <span class="rn-brand-name">ReviewNest</span>
+        <span class="rn-brand-tagline">Honest Reviews. Smarter Choices.</span>
+      </span>
+
+    </a>
+
+  </div>
+
+
+  <!-- SEARCH PANEL -->
+  <div
+    class="rn-search-panel"
+    id="rnSearchPanel"
+    aria-hidden="true"
+    inert
+  >
+
+    <form
+      class="rn-search-form"
+      id="rnSearchForm"
+      role="search"
+      action="search.html"
+      method="get"
+    >
+
+      <label class="rn-sr-only" for="rnSearchInput">
+        Search products and reviews
+      </label>
+
+      <input
+        type="search"
+        id="rnSearchInput"
+        name="q"
+        placeholder="Search products, reviews, and buying guides..."
+        autocomplete="off"
+      >
+
+      <button type="submit" class="rn-search-submit">
+        Search
+      </button>
+
+      <button
+        type="button"
+        class="rn-search-close"
+        id="rnSearchClose"
+        aria-label="Close search"
+      >
+        &times;
+      </button>
+
+    </form>
+
+  </div>
+
+</header>
+
+
+<!-- ==============================
+     MOBILE SIDEBAR MENU
+================================== -->
+
+<div
+  class="rn-mobile-menu-overlay"
+  id="rnMenuOverlay"
+  aria-hidden="true"
+></div>
+
+<aside
+  class="rn-mobile-menu"
+  id="rnMobileMenu"
+  aria-label="Mobile navigation"
+  aria-hidden="true"
+  inert
+>
+
+  <div class="rn-mobile-menu-header">
+
+    <a class="rn-mobile-brand" href="index.html">
+      ReviewNest
+    </a>
+
+    <button
+      class="rn-mobile-menu-close"
+      id="rnMenuClose"
+      type="button"
+      aria-label="Close navigation menu"
+    >
+      &times;
+    </button>
+
+  </div>
+
+
+  <!-- Homepage Menu -->
+  <nav
+    class="rn-mobile-nav rn-home-menu"
+    data-page-menu="home"
+    aria-label="Homepage navigation"
+  >
+
+    <a href="index.html" class="rn-mobile-nav-link">
+      Home
+    </a>
+
+    <a href="electronics.html" class="rn-mobile-nav-link">
+      Electronics
+    </a>
+
+    <a href="reviews.html" class="rn-mobile-nav-link">
+      Reviews
+    </a>
+
+    <a href="buying-guides.html" class="rn-mobile-nav-link">
+      Buying Guides
+    </a>
+
+  </nav>
+
+
+  <!-- Electronics Page Menu -->
+  <nav
+    class="rn-mobile-nav rn-electronics-menu"
+    data-page-menu="electronics"
+    aria-label="Electronics navigation"
+    hidden
+  >
+
+    <a href="index.html" class="rn-mobile-nav-link">
+      Home
+    </a>
+
+    <a href="electronics.html" class="rn-mobile-nav-link">
+      All Electronics
+    </a>
+
+    <a href="electronics.html#headphones" class="rn-mobile-nav-link">
+      Headphones
+    </a>
+
+    <a href="electronics.html#speakers" class="rn-mobile-nav-link">
+      Speakers
+    </a>
+
+    <a href="electronics.html#smartwatches" class="rn-mobile-nav-link">
+      Smartwatches
+    </a>
+
+    <a href="electronics.html#laptops" class="rn-mobile-nav-link">
+      Laptops
+    </a>
+
+    <a href="buying-guides.html" class="rn-mobile-nav-link">
+      Buying Guides
+    </a>
+
+  </nav>
+
+</aside>
+
+
+<!-- ================================
+     End ReviewNest Header
+================================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================================================
+     SHORT PREMIUM PRODUCT REVIEW
+========================================================= -->
+
+<main class="product-review-main">
+
+<div class="product-review-container">
+
+<!-- =========================================================
+     BREADCRUMB
+========================================================= -->
+
+<nav class="review-breadcrumb">
+
+<a href="index.html">Home</a>
+
+<span>›</span>
+
+<a href="category.html">Electronics</a>
+
+<span>›</span>
+
+<strong>Samsung Galaxy Tab A11+ 6GB/128GB</strong>
+
+</nav>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="premium-hero">
+
+<div class="hero-copy">
+
+    <span class="hero-kicker">
+        PRODUCT REVIEW
+    </span>
+
+    <h1>
+        Samsung Galaxy Tab A11+
+        <span>— 6GB RAM, 128GB, Gray</span>
+    </h1>
+
+    <p class="hero-description">
+        A quick look at Samsung's 11-inch Galaxy Tab A11+,
+        with 6GB RAM, 128GB storage, expandable storage,
+        90Hz display, quad Dolby Atmos speakers and Android 16.
+    </p>
+
+    <div class="hero-meta">
+
+        <div class="hero-rating">
+
+            <div class="hero-stars">
+                ★★★★★
+            </div>
+
+            <strong>4.6</strong>
+
+            <span>2,590 ratings</span>
+
+        </div>
+
+        <span class="hero-meta-divider"></span>
+
+        <span>Android Tablet</span>
+
+    </div>
+
+    <div class="hero-price-row">
+
+        <div>
+
+            <span>Current price</span>
+
+            <strong>Check current price</strong>
+
+        </div>
+
+        <a
+            href="#"
+            class="premium-amazon-button amazon-review-cta"
+        >
+            Check Price
+            <span>→</span>
+
+        </a>
+
+    </div>
+
+    <div class="hero-trust-line">
+
+        <span>✓</span>
+        11-inch
+        <span>•</span>
+        6GB / 128GB
+        <span>•</span>
+        Gray
+
+    </div>
+
+</div>
+
+
+<div class="hero-product-visual">
+
+    <div class="hero-visual-label">
+        REVIEWNEST
+    </div>
+
+    <div class="hero-image-frame">
+
+        <img
+            src="images/products/product-01.webp"
+            alt="Samsung Galaxy Tab A11 Plus 6GB 128GB Gray"
+            id="productReviewImage"
+        >
+
+        <div
+            class="product-image-placeholder"
+            id="productImagePlaceholder"
+        >
+
+            <span class="placeholder-symbol">
+                ◇
+            </span>
+
+            <strong>
+                Galaxy Tab A11+
+            </strong>
+
+            <small>
+                6GB / 128GB — Gray
+            </small>
+
+        </div>
+
+    </div>
+
+    <div class="hero-visual-caption">
+
+        <span>Samsung Galaxy Tab A11+</span>
+
+        <span>01 / REVIEW</span>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK VERDICT
+========================================================= -->
+
+<section class="editorial-statement">
+
+<div class="editorial-number">
+    01
+</div>
+
+<div class="editorial-statement-content">
+
+    <span class="eyebrow">
+        OUR QUICK VERDICT
+    </span>
+
+    <h2>
+        A well-rounded everyday tablet —
+        <em>with a sharp 11-inch display, solid performance and strong battery life.</em>
+    </h2>
+
+    <p>
+        The Galaxy Tab A11+ combines 6GB RAM, 128GB expandable
+        storage, a 90Hz 11-inch display, quad Dolby Atmos speakers
+        and Android 16. Independent testing found strong everyday
+        performance and practical battery life for this class.
+    </p>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     DECISION SNAPSHOT
+========================================================= -->
+
+<section class="decision-editorial-section">
+
+<div class="section-side-label">
+
+    <span>02</span>
+
+    <strong>
+        QUICK<br>
+        DECISION
+    </strong>
+
+</div>
+
+
+<div class="decision-editorial-content">
+
+    <div class="decision-intro">
+
+        <span class="eyebrow">
+            BEFORE YOU BUY
+        </span>
+
+        <h2>
+            The 4 things that matter most.
+        </h2>
+
+    </div>
+
+
+    <div class="decision-editorial-grid">
+
+
+        <article class="editorial-decision-card card-dark">
+
+            <span class="decision-index">01</span>
+
+            <span class="decision-label">
+                BEST FOR
+            </span>
+
+            <h3>
+                Everyday tablet use
+            </h3>
+
+            <p>
+                A strong fit for streaming, browsing, schoolwork,
+                social apps, casual gaming and everyday family use.
+            </p>
+
+        </article>
+
+
+        <article class="editorial-decision-card">
+
+            <span class="decision-index">02</span>
+
+            <span class="decision-label">
+                STRENGTH
+            </span>
+
+            <h3>
+                Display, performance and audio
+            </h3>
+
+            <p>
+                The 90Hz 11-inch screen, responsive everyday performance
+                and quad Dolby Atmos speakers make it a capable
+                entertainment-focused tablet.
+            </p>
+
+        </article>
+
+
+        <article class="editorial-decision-card card-warning">
+
+            <span class="decision-index">03</span>
+
+            <span class="decision-label">
+                LIMITATION
+            </span>
+
+            <h3>
+                Not a premium S-series tablet
+            </h3>
+
+            <p>
+                The A11+ is built for everyday use rather than
+                high-end tablet workloads. Independent testing found
+                demanding photo editing can push its limits.
+            </p>
+
+        </article>
+
+
+        <article class="editorial-decision-card">
+
+            <span class="decision-index">04</span>
+
+            <span class="decision-label">
+                VALUE
+            </span>
+
+            <h3>
+                Useful all-round package
+            </h3>
+
+            <p>
+                You get 6GB RAM, 128GB storage, microSD expansion,
+                an 11-inch 90Hz display and long-lasting battery
+                performance in one tablet.
+            </p>
+
+        </article>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     PROS / CONS
+========================================================= -->
+
+<section class="pros-cons-editorial">
+
+<div class="pros-cons-heading">
+
+    <span class="eyebrow">
+        THE TRADE-OFF
+    </span>
+
+    <h2>
+        What is good
+        <span>vs.</span>
+        what to consider.
+    </h2>
+
+</div>
+
+
+<div class="pros-cons-layout">
+
+
+    <!-- PROS -->
+
+    <div class="pros-block">
+
+        <div class="block-top">
+
+            <span>+</span>
+
+            <strong>
+                THE UPSIDE
+            </strong>
+
+        </div>
+
+
+        <div class="editorial-point">
+
+            <strong>01</strong>
+
+            <div>
+
+                <h3>
+                    11-inch 90Hz display
+                </h3>
+
+                <p>
+                    The 1920 × 1200 display provides a large viewing
+                    area, while the up-to-90Hz refresh rate makes
+                    scrolling and motion feel smoother.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="editorial-point">
+
+            <strong>02</strong>
+
+            <div>
+
+                <h3>
+                    Strong everyday performance
+                </h3>
+
+                <p>
+                    The 6GB configuration is designed for everyday
+                    apps, browsing, streaming and multitasking.
+                    Independent testing found solid performance for
+                    normal tablet use.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="editorial-point">
+
+            <strong>03</strong>
+
+            <div>
+
+                <h3>
+                    Long-lasting battery
+                </h3>
+
+                <p>
+                    The 7,040mAh battery delivered practical all-day
+                    use in independent testing, with around 10 hours
+                    in one mixed-work battery test.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CONS -->
+
+    <div class="cons-block">
+
+        <div class="block-top">
+
+            <span>!</span>
+
+            <strong>
+                THE TRADE-OFFS
+            </strong>
+
+        </div>
+
+
+        <div class="editorial-point">
+
+            <strong>01</strong>
+
+            <div>
+
+                <h3>
+                    TFT display, not OLED
+                </h3>
+
+                <p>
+                    The screen is sharp and smooth, but it does not
+                    provide the deeper blacks and contrast of Samsung's
+                    higher-end AMOLED tablets.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="editorial-point">
+
+            <strong>02</strong>
+
+            <div>
+
+                <h3>
+                    Wi-Fi performance can vary
+                </h3>
+
+                <p>
+                    Independent testing has reported occasional
+                    Wi-Fi performance drops, while Amazon customers
+                    also include reports of random Wi-Fi disconnections.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="editorial-point">
+
+            <strong>03</strong>
+
+            <div>
+
+                <h3>
+                    Not for demanding workloads
+                </h3>
+
+                <p>
+                    It handles everyday tasks well, but demanding
+                    workloads such as heavy photo editing can expose
+                    the limits of this mid-range tablet.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     BUYER FIT
+========================================================= -->
+
+<section class="buyer-fit-editorial">
+
+<div class="buyer-fit-intro">
+
+    <span class="eyebrow">
+        03 — FINAL FIT
+    </span>
+
+    <h2>
+        Should you buy it?
+    </h2>
+
+</div>
+
+
+<div class="buyer-fit-content">
+
+
+    <article class="buyer-fit-row buy-row">
+
+        <div class="fit-row-number">
+            01
+        </div>
+
+        <div class="fit-row-main">
+
+            <span>
+                BUY / CONSIDER
+            </span>
+
+            <h3>
+                Consider it if you want a reliable everyday Android tablet
+                for streaming, browsing, study and casual gaming.
+            </h3>
+
+            <p>
+                The large 90Hz display, 6GB RAM, expandable storage,
+                quad speakers and strong battery performance make it
+                a balanced choice for everyday use.
+            </p>
+
+        </div>
+
+        <div class="fit-row-symbol">
+            ✓
+        </div>
+
+    </article>
+
+
+    <article class="buyer-fit-row skip-row">
+
+        <div class="fit-row-number">
+            02
+        </div>
+
+        <div class="fit-row-main">
+
+            <span>
+                SKIP
+            </span>
+
+            <h3>
+                Look elsewhere if you need OLED quality,
+                S Pen functionality or high-end performance.
+            </h3>
+
+            <p>
+                The A11+ is aimed at everyday tablet use rather than
+                premium display quality or demanding professional workloads.
+            </p>
+
+        </div>
+
+        <div class="fit-row-symbol">
+            ×
+        </div>
+
+    </article>
+
+
+</div>
+
+</section>
+
+</div>
+
+</main>
+
+
+<!-- =========================================================
+     END SHORT PREMIUM REVIEW
+========================================================= -->
+
+
+
+
+<!-- =========================================================
+     QUICK FACTS EDITORIAL
+========================================================= -->
+
+<section class="facts-editorial">
+
+<div class="facts-title">
+
+    <span class="eyebrow">
+        THE DETAILS
+    </span>
+
+    <h2>
+        Important facts,
+        without the clutter.
+    </h2>
+
+</div>
+
+
+<div class="facts-editorial-list">
+
+    <div class="fact-editorial-row">
+
+        <span>
+            PRODUCT
+        </span>
+
+        <strong>
+            Samsung Galaxy Tab A11+
+        </strong>
+
+    </div>
+
+    <div class="fact-editorial-row">
+
+        <span>
+            CONFIGURATION
+        </span>
+
+        <strong>
+            6GB RAM / 128GB Storage
+        </strong>
+
+    </div>
+
+    <div class="fact-editorial-row">
+
+        <span>
+            DISPLAY
+        </span>
+
+        <strong>
+            11-inch, 1920 × 1200, up to 90Hz
+        </strong>
+
+    </div>
+
+    <div class="fact-editorial-row">
+
+        <span>
+            AMAZON RATING
+        </span>
+
+        <strong>
+            4.6 / 5
+        </strong>
+
+    </div>
+
+    <div class="fact-editorial-row">
+
+        <span>
+            RATINGS
+        </span>
+
+        <strong>
+            2,590 ratings
+        </strong>
+
+    </div>
+
+    <div class="fact-editorial-row">
+
+        <span>
+            CUSTOMER FEEDBACK
+        </span>
+
+        <strong>
+            Customers generally praise performance, display, battery and expandable storage; some report Wi-Fi issues
+        </strong>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     DETAILED REVIEW
+========================================================= -->
+
+<section class="deep-review-editorial">
+
+<div class="deep-review-label">
+
+    <span>
+        04
+    </span>
+
+    <strong>
+        DEEP REVIEW
+    </strong>
+
+</div>
+
+
+<article class="deep-review-body">
+
+    <span class="eyebrow">
+        LOOKING CLOSER
+    </span>
+
+    <h2>
+        What the product,
+        specifications and real-world testing tell us.
+    </h2>
+
+
+    <div class="deep-review-text">
+
+        <p class="lead-paragraph">
+
+            The supplied Amazon listing gives the Galaxy Tab A11+
+            a 4.6/5 rating from 2,590 ratings. This configuration
+            has 6GB RAM, 128GB storage, an 11-inch 1920 × 1200 display
+            and expandable storage.
+
+        </p>
+
+        <p>
+
+            Its 90Hz display, quad Dolby Atmos speakers, Android 16
+            and MediaTek processor make it primarily an everyday
+            entertainment and productivity tablet rather than a
+            high-end professional device.
+
+        </p>
+
+        <p>
+
+            Independent testing of the exact SM-X230 6GB/128GB Wi-Fi
+            configuration confirms a MediaTek Dimensity 7300 processor,
+            microSD expansion and a 5MP front camera. Testing also lists
+            no fingerprint sensor and no bundled S Pen. 2
+
+        </p>
+
+
+        <div class="quote-highlight">
+
+            <span>
+                REVIEWNEST PRINCIPLE
+            </span>
+
+            <blockquote>
+
+                “The Galaxy Tab A11+ makes the most sense when you want
+                a balanced everyday tablet rather than a premium
+                high-performance model.”
+
+            </blockquote>
+
+        </div>
+
+
+        <h3>
+            Display
+        </h3>
+
+        <p>
+
+            The 11-inch 1920 × 1200 screen supports up to 90Hz.
+            Independent testing found the display sharp and measured
+            strong brightness and contrast for this class. It remains
+            a TFT LCD rather than an AMOLED panel. 3
+
+        </p>
+
+
+        <h3>
+            Everyday performance
+        </h3>
+
+        <p>
+
+            The 6GB/128GB configuration is suited to browsing,
+            streaming, social apps, schoolwork and everyday
+            multitasking. Independent testing found the A11+
+            responsive in normal use, while demanding photo editing
+            can push the hardware harder. 4
+
+        </p>
+
+
+        <h3>
+            Battery life
+        </h3>
+
+        <p>
+
+            The supplied specification lists a 7,040mAh battery.
+            Independent testing of the Galaxy Tab A11+ found roughly
+            10 hours in one demanding battery scenario, while another
+            standardized Wi-Fi test reached about 14 hours 10 minutes.
+            Real battery life depends on brightness, apps and usage. 5
+
+        </p>
+
+
+        <h3>
+            Audio and entertainment
+        </h3>
+
+        <p>
+
+            Samsung equips the A11+ with four speakers and Dolby Atmos.
+            Independent reviews consistently identify the speaker system
+            as one of the tablet's strengths for everyday media use. 6
+
+        </p>
+
+
+        <h3>
+            Storage
+        </h3>
+
+        <p>
+
+            The listed configuration provides 128GB internal storage
+            with microSD expansion. Independent testing of the exact
+            SM-X230 6GB/128GB model confirms a microSD card slot. 7
+
+        </p>
+
+
+        <h3>
+            Cameras
+        </h3>
+
+        <p>
+
+            The supplied listing identifies a 5MP front camera.
+            Independent testing also lists an 8MP rear camera and
+            5MP front camera, with 1080p video support. 8
+
+        </p>
+
+
+        <h3>
+            Connectivity
+        </h3>
+
+        <p>
+
+            This 6GB/128GB Wi-Fi configuration is the SM-X230 model.
+            Independent product testing identifies Wi-Fi 5 and Bluetooth,
+            but no cellular LTE or 5G connection on this variant. 9
+
+        </p>
+
+
+        <h3>
+            Customer feedback
+        </h3>
+
+        <p>
+
+            Amazon customers generally praise the tablet's performance,
+            display, battery and expandable storage. Some users,
+            however, report random Wi-Fi disconnections, so connectivity
+            is one area worth considering before purchase.
+
+        </p>
+
+
+        <h3>
+            Who is it really for?
+        </h3>
+
+        <p>
+
+            The strongest fit is for families, students and everyday
+            users who want an 11-inch Android tablet for streaming,
+            browsing, study, social apps and casual gaming. It is less
+            suitable for buyers specifically seeking AMOLED display
+            quality, S Pen support or high-end professional performance.
+
+        </p>
+
+    </div>
+
+</article>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!--===================================================
+     FINAL GUIDANCE
+========================================================= -->
+<section class="premium-final-section"><div class="final-number">
+    05
+</div><div class="final-content"><span class="eyebrow">
+    FINAL THOUGHT
+</span>
+
+<h2>
+    Samsung Galaxy Tab A11+ is a balanced everyday Android tablet —
+    especially if you want a large 11-inch display, smooth 90Hz viewing,
+    expandable storage and strong everyday performance.
+</h2>
+
+<p>
+
+    The Galaxy Tab A11+ combines 6GB RAM, 128GB storage,
+    an 11-inch 1920×1200 display, up to 90Hz refresh rate,
+    quad speakers with Dolby Atmos and Android 16.
+    It is designed for streaming, browsing, study, social apps
+    and everyday tablet use.
+
+</p>
+
+
+<a
+    href="#"
+    class="premium-amazon-button amazon-review-cta"
+>
+
+    Check Current Amazon Price
+
+    <span>
+        →
+    </span>
+
+</a>
+
+</div></section><!-- =========================================================
+     SUGGESTED PRODUCT
+========================================================= --><section class="suggested-premium-section"><div class="suggested-premium-heading"><span class="eyebrow">
+    ONE MORE OPTION
+</span>
+
+<h2>
+    Want another Android tablet setup?
+</h2>
+
+<p>
+    If you want a different Android tablet experience,
+    compare another model before deciding.
+    The right option depends on your screen-size preference,
+    performance needs, storage requirements and budget.
+</p>
+
+</div><article class="suggested-premium-card"><div class="suggested-premium-image">
+
+    <img
+        src="images/products/product-02.webp"
+        alt="Alternative Android tablet"
+        id="suggestedProductImage"
+    >
+
+</div>
+
+
+<div class="suggested-premium-content">
+
+    <span class="suggested-product-label">
+        RELATED ALTERNATIVE
+    </span>
+
+    <h3>
+        Alternative Android Tablet
+    </h3>
+
+    <p>
+
+        A different option for Android users who want
+        a tablet for everyday entertainment, browsing
+        and productivity.
+
+    </p>
+
+
+    <div class="suggested-mini-facts">
+
+        <span>
+            Android tablet
+        </span>
+
+        <span>
+            Everyday use
+        </span>
+
+        <span>
+            Productivity
+        </span>
+
+    </div>
+
+
+    <a
+        href="#"
+        class="suggested-premium-link"
+    >
+
+        Compare this alternative
+
+        <span>
+            →
+        </span>
+
+    </a>
+
+</div>
+
+</article></section></div><!-- =========================================
+     PHASE 3 — QUICK DECISION CENTER
+========================================= --><section class="pr3-decision-center" id="decision-center"><div class="pr3-section-heading"><span class="pr3-eyebrow">
+    QUICK DECISION
+</span>
+
+<h2>
+    Is this product right for you?
+</h2>
+
+<p>
+    Customer feedback is positive overall about the Galaxy Tab A11+,
+    especially for everyday performance, display quality, battery life
+    and expandable storage. Independent testing also found strong
+    everyday performance, a sharp display and good battery life,
+    while demanding workloads remain outside its main strength.
+</p>
+
+</div><div class="pr3-decision-grid"><!-- Best For -->
+
+<article class="pr3-decision-card pr3-best-card">
+
+    <div class="pr3-card-icon" aria-hidden="true">
+        <span>✓</span>
+    </div>
+
+    <div class="pr3-card-content">
+
+        <span class="pr3-card-label">
+            BEST FOR
+        </span>
+
+        <h3>
+            Everyday Android tablet use
+        </h3>
+
+        <p>
+            A strong match for users who want an 11-inch display,
+            smooth 90Hz viewing, 6GB RAM, expandable storage,
+            quad Dolby Atmos speakers and long battery life.
+        </p>
+
+        <ul class="pr3-mini-list">
+            <li>11-inch 1920×1200 display with up to 90Hz</li>
+            <li>6GB RAM with 128GB expandable storage</li>
+            <li>Quad speakers with Dolby Atmos and Android 16</li>
+        </ul>
+
+    </div>
+
+</article>
+
+
+<!-- Think Twice -->
+
+<article class="pr3-decision-card pr3-skip-card">
+
+    <div class="pr3-card-icon" aria-hidden="true">
+        <span>!</span>
+    </div>
+
+    <div class="pr3-card-content">
+
+        <span class="pr3-card-label">
+            THINK TWICE IF
+        </span>
+
+        <h3>
+            You need premium display
+            or high-end performance
+        </h3>
+
+        <p>
+            The A11+ is aimed at everyday use rather than
+            flagship-level workloads. The display is LCD rather
+            than OLED, and demanding editing tasks can push
+            the tablet beyond its comfort zone.
+        </p>
+
+        <ul class="pr3-mini-list">
+            <li>You specifically want an OLED display</li>
+            <li>You regularly perform demanding editing or heavy workloads</li>
+            <li>You need premium features such as S Pen support</li>
+        </ul>
+
+    </div>
+
+</article>
+
+</div><!-- Bottom Line --><div class="pr3-bottom-line"><div class="pr3-bottom-line-mark">
+    <span>RN</span>
+</div>
+
+<div class="pr3-bottom-line-content">
+
+    <span class="pr3-card-label">
+        THE BOTTOM LINE
+    </span>
+
+    <h3>
+        Galaxy Tab A11+ makes the most sense when
+        everyday performance, a large 90Hz display,
+        expandable storage and battery life matter most.
+    </h3>
+
+    <p>
+        Its strongest advantages are the 11-inch display,
+        solid everyday performance, 6GB RAM, expandable 128GB
+        storage, quad Dolby Atmos speakers and long battery life.
+        Buyers should look elsewhere if they need OLED,
+        S Pen functionality or high-end performance.
+    </p>
+
+</div>
+
+</div><!-- Decision Facts --><div class="pr3-facts-wrapper"><div class="pr3-facts-header">
+
+    <span class="pr3-eyebrow">
+        AT A GLANCE
+    </span>
+
+    <h3>
+        The buying factors that matter most
+    </h3>
+
+</div>
+
+
+<div class="pr3-facts-grid">
+
+
+    <div class="pr3-fact">
+
+        <span class="pr3-fact-number">
+            01
+        </span>
+
+        <div>
+
+            <strong>
+                Display
+            </strong>
+
+            <p>
+                11-inch 1920×1200 display with up to 90Hz
+                refresh rate for smoother everyday viewing.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pr3-fact">
+
+        <span class="pr3-fact-number">
+            02
+        </span>
+
+        <div>
+
+            <strong>
+                Performance & Storage
+            </strong>
+
+            <p>
+                6GB RAM, 128GB internal storage and microSD
+                expansion support make it practical for everyday apps,
+                media and multitasking.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pr3-fact">
+
+        <span class="pr3-fact-number">
+            03
+        </span>
+
+        <div>
+
+            <strong>
+                Audio & Entertainment
+            </strong>
+
+            <p>
+                Quad speakers with Dolby Atmos provide a stronger
+                entertainment setup for videos, music and streaming.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pr3-fact">
+
+        <span class="pr3-fact-number">
+            04
+        </span>
+
+        <div>
+
+            <strong>
+                Battery & Connectivity
+            </strong>
+
+            <p>
+                The Wi-Fi model uses a large 7,040mAh battery,
+                USB-C charging and Wi-Fi connectivity, with
+                Bluetooth support.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div></section><!-- END PHASE 3 --><!-- =========================================
+     PHASE 4 — PROS & CONS
+========================================= --><section class="pr4-pros-cons" id="pros-cons"><div class="pr4-heading"><div class="pr4-heading-copy">
+
+    <span class="pr4-eyebrow">
+        THE TRADE-OFFS
+    </span>
+
+    <h2>
+        What the evidence says
+        this Android tablet gets right —
+        and where buyers should be careful.
+    </h2>
+
+    <p>
+        We used the supplied product information, customer feedback
+        and exact-variant testing, focusing on the features and
+        trade-offs that matter most when buying the Galaxy Tab A11+.
+    </p>
+
+</div>
+
+
+<div class="pr4-heading-note">
+
+    <span class="pr4-note-line"></span>
+
+    <span>
+        EVIDENCE BEFORE DECISION
+    </span>
+
+</div>
+
+</div><div class="pr4-tradeoff-grid"><!-- PROS -->
+
+<article class="pr4-panel pr4-pros-panel">
+
+    <div class="pr4-panel-top">
+
+        <div
+            class="pr4-panel-icon"
+            aria-hidden="true"
+        >
+            <span>+</span>
+        </div>
+
+        <div>
+
+            <span class="pr4-panel-label">
+                WHERE IT SHINES
+            </span>
+
+            <h3>
+                What the product evidence supports
+            </h3>
+
+        </div>
+
+    </div>
+
+
+    <div class="pr4-point-list">
+
+
+        <div class="pr4-point">
+
+            <div class="pr4-point-number">
+                01
+            </div>
+
+            <div class="pr4-point-content">
+
+                <h4>
+                    Large, sharp 11-inch display
+                </h4>
+
+                <p>
+                    The 11-inch 1920×1200 display provides a
+                    spacious viewing area, while up to 90Hz refresh
+                    helps make scrolling and everyday interaction smoother.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="pr4-point">
+
+            <div class="pr4-point-number">
+                02
+            </div>
+
+            <div class="pr4-point-content">
+
+                <h4>
+                    Strong everyday performance
+                </h4>
+
+                <p>
+                    The 6GB configuration with MediaTek Dimensity 7300
+                    delivers responsive everyday use for browsing,
+                    streaming, social apps and general multitasking.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="pr4-point">
+
+            <div class="pr4-point-number">
+                03
+            </div>
+
+            <div class="pr4-point-content">
+
+                <h4>
+                    Battery, storage and audio make a practical package
+                </h4>
+
+                <p>
+                    The 7,040mAh battery, microSD expansion and
+                    quad Dolby Atmos speakers give the tablet a
+                    useful combination for everyday entertainment.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+<!-- CONS -->
+
+<article class="pr4-panel pr4-cons-panel">
+
+    <div class="pr4-panel-top">
+
+        <div
+            class="pr4-panel-icon"
+            aria-hidden="true"
+        >
+            <span>−</span>
+        </div>
+
+        <div>
+
+            <span class="pr4-panel-label">
+                WHERE TO BE CAREFUL
+            </span>
+
+            <h3>
+                What buyers should consider
+            </h3>
+
+        </div>
+
+    </div>
+
+
+    <div class="pr4-point-list">
+
+
+        <div class="pr4-point">
+
+            <div class="pr4-point-number">
+                01
+            </div>
+
+            <div class="pr4-point-content">
+
+                <h4>
+                    The display is LCD, not OLED
+                </h4>
+
+                <p>
+                    The 11-inch panel is sharp and useful for everyday
+                    viewing, but buyers wanting OLED-level contrast
+                    and deeper blacks should consider a higher-tier tablet.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="pr4-point">
+
+            <div class="pr4-point-number">
+                02
+            </div>
+
+            <div class="pr4-point-content">
+
+                <h4>
+                    Heavy workloads are not its main strength
+                </h4>
+
+                <p>
+                    Testing found strong everyday performance, but
+                    demanding photo and video editing can push the
+                    tablet toward its limits.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="pr4-point">
+
+            <div class="pr4-point-number">
+                03
+            </div>
+
+            <div class="pr4-point-content">
+
+                <h4>
+                    This exact configuration is Wi-Fi only
+                </h4>
+
+                <p>
+                    The 6GB/128GB Wi-Fi configuration does not include
+                    LTE or 5G cellular connectivity. Buyers needing
+                    mobile data should look at the separate cellular variant.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</article>
+
+</div><!-- DECISION STRIP --><div class="pr4-decision-strip"><div class="pr4-strip-marker">
+    <span>RN</span>
+</div>
+
+<div class="pr4-strip-content">
+
+    <span class="pr4-strip-label">
+        WHAT THIS MEANS FOR YOU
+    </span>
+
+    <p>
+        The evidence supports the Galaxy Tab A11+ as a strong
+        everyday Android tablet with a large 90Hz display,
+        responsive performance, expandable storage and long
+        battery life. The main considerations are the LCD panel,
+        lack of cellular connectivity in this exact Wi-Fi version
+        and limits with demanding workloads.
+    </p>
+
+</div>
+
+</div></section>
+
+<!-- END PHASE 4 -->
+
+
+
+
+
+<!-- =========================================
+     PHASE 5 — PREMIUM EDITORIAL REVIEW
+========================================= --><section class="pr5-editorial-review" id="editorial-review"><!-- EDITORIAL INTRO --><div class="pr5-editorial-intro"><div class="pr5-intro-index">
+    <span>01</span>
+    <i></i>
+</div>
+
+<div class="pr5-intro-main">
+
+    <span class="pr5-kicker">
+        THE REVIEW, IN CONTEXT
+    </span>
+
+    <h2>
+        What actually matters
+        when you use the Galaxy Tab A11+.
+    </h2>
+
+    <p>
+        The Galaxy Tab A11+ combines an 11-inch display,
+        6GB RAM, 128GB expandable storage, Android 16,
+        quad Dolby Atmos speakers and a large battery.
+        Testing shows it is strongest as an everyday tablet,
+        while demanding workloads are less suitable.
+    </p>
+
+</div>
+
+<div class="pr5-intro-side">
+    <span>REVIEWNEST</span>
+    <strong>BUY WITH<br>CLARITY.</strong>
+</div>
+
+</div><!-- FEATURE STORY --><div class="pr5-feature-story"><div class="pr5-feature-visual">
+
+    <div class="pr5-visual-grid"></div>
+
+    <div class="pr5-visual-caption">
+
+        <span>01</span>
+
+        <p>
+            Display quality, everyday performance, battery life,
+            storage expansion and audio define the experience.
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="pr5-feature-copy">
+
+    <span class="pr5-small-label">
+        EVERYDAY EXPERIENCE
+    </span>
+
+    <h3>
+        A balanced Android tablet
+        built for everyday use.
+    </h3>
+
+    <p>
+        The Galaxy Tab A11+ is designed around comfortable
+        everyday tablet use, combining a large 11-inch display
+        with 6GB RAM, 128GB storage and expandable microSD storage.
+    </p>
+
+    <p>
+        Its up-to-90Hz display, quad Dolby Atmos speakers,
+        Android 16 and large battery make it well suited to
+        streaming, browsing, study, social apps and general
+        entertainment.
+    </p>
+
+    <div class="pr5-inline-fact">
+
+        <span class="pr5-fact-line"></span>
+
+        <strong>
+            The key question is whether you need a reliable
+            everyday tablet or something more premium for
+            demanding creative and professional workloads.
+        </strong>
+
+    </div>
+
+</div>
+
+</div><!-- THREE INSIGHT ROW --><div class="pr5-insight-row"><article class="pr5-insight">
+
+    <span class="pr5-insight-number">
+        01
+    </span>
+
+    <div>
+
+        <span class="pr5-small-label">
+            DISPLAY
+        </span>
+
+        <h3>
+            The 11-inch 90Hz screen is one of its strongest features.
+        </h3>
+
+        <p>
+            The 1920×1200 LCD provides a sharp 16:10 viewing area,
+            while the up-to-90Hz refresh rate makes scrolling and
+            everyday interaction feel smoother.
+        </p>
+
+    </div>
+
+</article>
+
+
+<article class="pr5-insight">
+
+    <span class="pr5-insight-number">
+        02
+    </span>
+
+    <div>
+
+        <span class="pr5-small-label">
+            PERFORMANCE
+        </span>
+
+        <h3>
+            6GB RAM and the MediaTek platform suit everyday tasks.
+        </h3>
+
+        <p>
+            Testing found responsive everyday operation for browsing,
+            streaming and common apps, while demanding photo and
+            video editing can expose the tablet's limits.
+        </p>
+
+    </div>
+
+</article>
+
+
+<article class="pr5-insight">
+
+    <span class="pr5-insight-number">
+        03
+    </span>
+
+    <div>
+
+        <span class="pr5-small-label">
+            BATTERY & AUDIO
+        </span>
+
+        <h3>
+            Long battery life and quad speakers strengthen entertainment.
+        </h3>
+
+        <p>
+            The 7,040mAh battery provides strong endurance,
+            while quad speakers with Dolby Atmos make the tablet
+            well suited to movies, music and streaming.
+        </p>
+
+    </div>
+
+</article>
+
+</div><!-- BIG STATEMENT --><div class="pr5-statement"><span class="pr5-statement-mark">
+    “
+</span>
+
+<div>
+
+    <p>
+        Galaxy Tab A11+ is mainly about getting the everyday tablet
+        experience right: a large 90Hz display, responsive performance,
+        expandable storage, strong battery life and useful audio.
+        The real decision is whether those strengths match your workload.
+    </p>
+
+    <span class="pr5-statement-source">
+        REVIEWNEST · EVIDENCE-BASED BUYING VIEW
+    </span>
+
+</div>
+
+</div><!-- DEEP DIVE --><div class="pr5-deep-dive"><div class="pr5-deep-index">
+
+    <span>02</span>
+
+    <div></div>
+
+</div>
+
+<div class="pr5-deep-content">
+
+    <span class="pr5-kicker">
+        GOING DEEPER
+    </span>
+
+    <h2>
+        Where the Galaxy Tab A11+
+        earns its value.
+    </h2>
+
+    <div class="pr5-deep-grid">
+
+        <div class="pr5-deep-main">
+
+            <p class="pr5-lead">
+                The strongest parts of the Galaxy Tab A11+ are its
+                large 11-inch display, responsive everyday performance,
+                expandable storage and long battery life.
+            </p>
+
+            <p>
+                The 1920×1200 screen supports up to 90Hz refresh,
+                while the 6GB RAM and MediaTek Dimensity 7300 platform
+                provide a solid foundation for browsing, streaming,
+                social apps and everyday multitasking.
+            </p>
+
+            <p>
+                The main compromise is that this is still an
+                everyday-focused tablet. The LCD panel is not OLED,
+                and demanding creative workloads can push its
+                performance limits.
+            </p>
+
+        </div>
+
+        <aside class="pr5-deep-aside">
+
+            <span class="pr5-small-label">
+                KEEP IN MIND
+            </span>
+
+            <strong>
+                The Galaxy Tab A11+ is strongest when you want
+                a comfortable everyday Android tablet rather than
+                a premium high-performance creative machine.
+            </strong>
+
+            <span class="pr5-aside-line"></span>
+
+            <p>
+                The supplied Amazon listing shows 4.6/5 from 2,590
+                ratings. Customer feedback is generally positive
+                around performance, display, battery and storage,
+                while some users report Wi-Fi connectivity issues.
+            </p>
+
+        </aside>
+
+    </div>
+
+</div>
+
+</div></section>
+<!-- end of phase 5 -->
+
+
+
+
+
+
+
+<!-- SECTION HEADER -->
+<div class="pr6-header">
+
+    <div class="pr6-header-index">
+        <span>06</span>
+        <i></i>
+    </div>
+
+    <div class="pr6-header-content">
+
+        <span class="pr6-eyebrow">
+            THE SPECIFICATIONS
+        </span>
+
+        <h2>
+            The details that
+            actually matter.
+        </h2>
+
+        <p>
+            Key details from the product listing and exact-variant
+            testing, including display, processor, memory, storage,
+            cameras, battery, connectivity and software.
+        </p>
+
+    </div>
+
+    <div class="pr6-header-note">
+
+        <span>
+            REVIEWNEST
+        </span>
+
+        <strong>
+            KNOW THE<br>
+            DETAILS.
+        </strong>
+
+    </div>
+
+</div>
+
+
+<!-- KEY SPECS -->
+<div class="pr6-key-specs">
+
+    <div class="pr6-section-label">
+
+        <span>01</span>
+
+        <div>
+
+            <strong>
+                KEY SPECIFICATIONS
+            </strong>
+
+            <p>
+                Important product details at a glance.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pr6-spec-grid">
+
+
+        <div class="pr6-spec-card">
+
+            <span class="pr6-spec-label">
+                PRODUCT
+            </span>
+
+            <strong>
+                Samsung Galaxy Tab A11+
+            </strong>
+
+            <p>
+                6GB RAM, 128GB storage, Gray, Wi-Fi configuration
+                with expandable storage.
+            </p>
+
+        </div>
+
+
+        <div class="pr6-spec-card">
+
+            <span class="pr6-spec-label">
+                DISPLAY
+            </span>
+
+            <strong>
+                11" 1920×1200 / Up to 90Hz
+            </strong>
+
+            <p>
+                Large 16:10 LCD display designed for streaming,
+                browsing, study and everyday use.
+            </p>
+
+        </div>
+
+
+        <div class="pr6-spec-card">
+
+            <span class="pr6-spec-label">
+                PROCESSOR
+            </span>
+
+            <strong>
+                MediaTek Dimensity 7300
+            </strong>
+
+            <p>
+                Mid-range platform providing responsive everyday
+                performance for common tablet workloads.
+            </p>
+
+        </div>
+
+
+        <div class="pr6-spec-card">
+
+            <span class="pr6-spec-label">
+                MEMORY
+            </span>
+
+            <strong>
+                6GB RAM
+            </strong>
+
+            <p>
+                The supplied configuration uses 6GB RAM for
+                everyday apps and multitasking.
+            </p>
+
+        </div>
+
+
+        <div class="pr6-spec-card">
+
+            <span class="pr6-spec-label">
+                STORAGE
+            </span>
+
+            <strong>
+                128GB + microSD
+            </strong>
+
+            <p>
+                128GB internal storage with microSD expansion
+                support for additional space.
+            </p>
+
+        </div>
+
+
+        <div class="pr6-spec-card">
+
+            <span class="pr6-spec-label">
+                AMAZON RATING
+            </span>
+
+            <strong>
+                4.6 / 5
+            </strong>
+
+            <p>
+                Based on 2,590 ratings in the supplied
+                Amazon listing.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- DETAILED SPEC TABLE -->
+<div class="pr6-detail-section">
+
+    <div class="pr6-section-label">
+
+        <span>02</span>
+
+        <div>
+
+            <strong>
+                FULL PRODUCT DETAILS
+            </strong>
+
+            <p>
+                Supplied listing and exact-variant information organized for easy reading.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pr6-spec-table">
+
+
+        <div class="pr6-table-row pr6-table-head">
+
+            <span>
+                SPECIFICATION
+            </span>
+
+            <span>
+                DETAILS
+            </span>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Brand
+            </span>
+
+            <strong>
+                Samsung
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Product
+            </span>
+
+            <strong>
+                Samsung Galaxy Tab A11+
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Configuration
+            </span>
+
+            <strong>
+                6GB RAM / 128GB Storage
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Color
+            </span>
+
+            <strong>
+                Gray
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Operating System
+            </span>
+
+            <strong>
+                Android 16
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Display Size
+            </span>
+
+            <strong>
+                11 inches
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Display Resolution
+            </span>
+
+            <strong>
+                1920 × 1200
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Refresh Rate
+            </span>
+
+            <strong>
+                Up to 90Hz
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Display Type
+            </span>
+
+            <strong>
+                LCD / TFT
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Processor
+            </span>
+
+            <strong>
+                MediaTek Dimensity 7300
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                RAM
+            </span>
+
+            <strong>
+                6GB
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Internal Storage
+            </span>
+
+            <strong>
+                128GB
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Expandable Storage
+            </span>
+
+            <strong>
+                microSD supported
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Rear Camera
+            </span>
+
+            <strong>
+                8MP
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Front Camera
+            </span>
+
+            <strong>
+                5MP
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Battery
+            </span>
+
+            <strong>
+                7,040mAh
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Speakers
+            </span>
+
+            <strong>
+                Quad Speakers with Dolby Atmos
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Connectivity
+            </span>
+
+            <strong>
+                Wi-Fi + Bluetooth
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Cellular Connectivity
+            </span>
+
+            <strong>
+                None on this Wi-Fi configuration
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                USB
+            </span>
+
+            <strong>
+                USB-C
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Headphone Jack
+            </span>
+
+            <strong>
+                3.5mm
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Biometric Unlock
+            </span>
+
+            <strong>
+                Face Recognition
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Fingerprint Sensor
+            </span>
+
+            <strong>
+                Not included
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                S Pen
+            </span>
+
+            <strong>
+                Not supported on this configuration
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Water Protection
+            </span>
+
+            <strong>
+                IP52
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Weight
+            </span>
+
+            <strong>
+                Approximately 480g
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Customer Rating
+            </span>
+
+            <strong>
+                4.6 / 5
+            </strong>
+
+        </div>
+
+
+        <div class="pr6-table-row">
+
+            <span>
+                Customer Ratings
+            </span>
+
+            <strong>
+                2,590
+            </strong>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- WHAT IT MEANS -->
+<div class="pr6-meaning-section">
+
+    <div class="pr6-section-label">
+
+        <span>03</span>
+
+        <div>
+
+            <strong>
+                WHAT THESE SPECS MEAN
+            </strong>
+
+            <p>
+                The features that can affect your buying decision.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="pr6-meaning-grid">
+
+
+        <article class="pr6-meaning-card">
+
+            <span class="pr6-meaning-number">
+                01
+            </span>
+
+            <div>
+
+                <span class="pr6-meaning-label">
+                    11-INCH DISPLAY
+                </span>
+
+                <h3>
+                    Gives you more room for entertainment and work.
+                </h3>
+
+                <p>
+                    The 1920×1200 display provides a spacious
+                    16:10 viewing area, while up to 90Hz refresh
+                    makes scrolling and navigation smoother.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="pr6-meaning-card">
+
+            <span class="pr6-meaning-number">
+                02
+            </span>
+
+            <div>
+
+                <span class="pr6-meaning-label">
+                    6GB + 128GB
+                </span>
+
+                <h3>
+                    A practical configuration for everyday use.
+                </h3>
+
+                <p>
+                    6GB RAM handles common apps and multitasking,
+                    while 128GB storage provides useful space and
+                    can be expanded with a microSD card.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="pr6-meaning-card">
+
+            <span class="pr6-meaning-number">
+                03
+            </span>
+
+            <div>
+
+                <span class="pr6-meaning-label">
+                    BATTERY & AUDIO
+                </span>
+
+                <h3>
+                    Built for longer entertainment sessions.
+                </h3>
+
+                <p>
+                    The 7,040mAh battery provides strong endurance,
+                    while quad Dolby Atmos speakers make movies,
+                    music and streaming more enjoyable.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="pr6-meaning-card">
+
+            <span class="pr6-meaning-number">
+                04
+            </span>
+
+            <div>
+
+                <span class="pr6-meaning-label">
+                    WI-FI CONFIGURATION
+                </span>
+
+                <h3>
+                    This exact version does not include mobile data.
+                </h3>
+
+                <p>
+                    The 6GB/128GB Wi-Fi configuration does not include
+                    LTE or 5G. Choose a separate cellular version if
+                    you need mobile internet without Wi-Fi.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</div>
+
+
+<!-- BOX CONTENT -->
+<div class="pr6-box-section">
+
+    <div class="pr6-box-copy">
+
+        <span class="pr6-eyebrow">
+            IN THE BOX
+        </span>
+
+        <h3>
+            What to expect
+            with this purchase.
+        </h3>
+
+        <p>
+            The supplied product information identifies the
+            Galaxy Tab A11+ tablet and its included setup.
+            Exact accessory contents can vary by seller or bundle,
+            so check the current Amazon listing before purchasing.
+        </p>
+
+    </div>
+
+
+    <div class="pr6-box-list">
+
+        <div class="pr6-box-item">
+            <span>01</span>
+            <strong>Samsung Galaxy Tab A11+ Tablet</strong>
+        </div>
+
+        <div class="pr6-box-item">
+            <span>02</span>
+            <strong>Charging / USB-C Accessories</strong>
+        </div>
+
+        <div class="pr6-box-item">
+            <span>03</span>
+            <strong>Product Documentation</strong>
+        </div>
+
+        <div class="pr6-box-item">
+            <span>04</span>
+            <strong>Exact Bundle Contents — Check Listing</strong>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- BUYING NOTE -->
+<div class="pr6-buying-note">
+
+    <div class="pr6-note-icon">
+        !
+    </div>
+
+    <div>
+
+        <span>
+            BEFORE YOU BUY
+        </span>
+
+        <h3>
+            Confirm the exact 6GB/128GB Wi-Fi configuration.
+        </h3>
+
+        <p>
+            Samsung also sells other Galaxy Tab A11+ configurations.
+            Make sure the listing you purchase is the 6GB RAM,
+            128GB storage Gray Wi-Fi version if that is the model
+            you want.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- HEADER -->
+<div class="pr7-header">
+
+    <div class="pr7-header-index">
+        <span>07</span>
+        <i></i>
+    </div>
+
+    <div class="pr7-header-main">
+
+        <span class="pr7-eyebrow">
+            COMPARE BEFORE YOU BUY
+        </span>
+
+        <h2>
+            Galaxy Tab A11+ vs. a Simpler Android Tablet
+        </h2>
+
+        <p>
+            A practical comparison for buyers deciding whether
+            the Galaxy Tab A11+'s larger display, 90Hz refresh rate,
+            6GB RAM and expandable storage are worth choosing over
+            a simpler Android tablet.
+        </p>
+
+    </div>
+
+    <div class="pr7-header-mark">
+
+        <span>RN</span>
+
+        <strong>
+            COMPARE<br>
+            WITH CLARITY.
+        </strong>
+
+    </div>
+
+</div>
+
+
+<!-- COMPARISON CARDS -->
+<div class="pr7-compare-grid">
+
+    <!-- CURRENT PRODUCT -->
+
+    <article class="pr7-product-card pr7-current">
+
+        <div class="pr7-product-top">
+
+            <span class="pr7-product-label">
+                THIS PRODUCT
+            </span>
+
+            <span class="pr7-product-badge">
+                REVIEWED
+            </span>
+
+        </div>
+
+        <div class="pr7-product-image">
+
+            <img
+                src="images/products/product-01.webp"
+                alt="Samsung Galaxy Tab A11+ 6GB 128GB Gray"
+            >
+
+        </div>
+
+        <div class="pr7-product-info">
+
+            <h3>
+                Samsung Galaxy Tab A11+
+            </h3>
+
+            <p>
+                6GB RAM, 128GB storage, 11-inch 90Hz display,
+                expandable storage, quad Dolby Atmos speakers
+                and Android 16.
+            </p>
+
+            <div class="pr7-price">
+
+                <span>
+                    Current price
+                </span>
+
+                <strong>
+                    Check Amazon
+                </strong>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- ALTERNATIVE -->
+
+    <article class="pr7-product-card">
+
+        <div class="pr7-product-top">
+
+            <span class="pr7-product-label">
+                ALTERNATIVE
+            </span>
+
+        </div>
+
+        <div class="pr7-product-image">
+
+            <img
+                src="images/products/product-02.webp"
+                alt="Simpler Android tablet"
+            >
+
+        </div>
+
+        <div class="pr7-product-info">
+
+            <h3>
+                Simpler Android Tablet
+            </h3>
+
+            <p>
+                A simpler option for buyers who mainly need
+                basic Android tablet functions such as browsing,
+                streaming and light everyday use.
+            </p>
+
+            <div class="pr7-price">
+
+                <span>
+                    Current price
+                </span>
+
+                <strong>
+                    Check Amazon
+                </strong>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</div>
+
+
+<!-- COMPARISON TABLE -->
+<div class="pr7-comparison-table-wrap">
+
+    <div class="pr7-table-heading">
+
+        <span>
+            AT A GLANCE
+        </span>
+
+        <strong>
+            The differences that matter.
+        </strong>
+
+    </div>
+
+
+    <div class="pr7-table">
+
+
+        <div class="pr7-table-row pr7-table-head">
+
+            <span>
+                FACTOR
+            </span>
+
+            <strong>
+                Galaxy Tab A11+
+            </strong>
+
+            <strong>
+                Simpler Android Tablet
+            </strong>
+
+        </div>
+
+
+        <div class="pr7-table-row">
+
+            <span>
+                Display
+            </span>
+
+            <strong>
+                11" / 1920×1200 / Up to 90Hz
+            </strong>
+
+            <strong>
+                Depends on model
+            </strong>
+
+        </div>
+
+
+        <div class="pr7-table-row">
+
+            <span>
+                RAM
+            </span>
+
+            <strong>
+                6GB
+            </strong>
+
+            <strong>
+                Depends on model
+            </strong>
+
+        </div>
+
+
+        <div class="pr7-table-row">
+
+            <span>
+                Storage
+            </span>
+
+            <strong>
+                128GB + microSD
+            </strong>
+
+            <strong>
+                Depends on model
+            </strong>
+
+        </div>
+
+
+        <div class="pr7-table-row">
+
+            <span>
+                Speakers
+            </span>
+
+            <strong>
+                Quad / Dolby Atmos
+            </strong>
+
+            <strong>
+                Depends on model
+            </strong>
+
+        </div>
+
+
+        <div class="pr7-table-row">
+
+            <span>
+                Best Fit
+            </span>
+
+            <strong>
+                Everyday multimedia and productivity
+            </strong>
+
+            <strong>
+                Basic tablet needs
+            </strong>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- DIFFERENCE CARDS -->
+<div class="pr7-difference-section">
+
+    <div class="pr7-section-title">
+
+        <span>
+            THE KEY DIFFERENCES
+        </span>
+
+        <h3>
+            When does the Galaxy Tab A11+ make more sense?
+        </h3>
+
+    </div>
+
+
+    <div class="pr7-difference-grid">
+
+
+        <article class="pr7-difference-card">
+
+            <span>
+                01
+            </span>
+
+            <div>
+
+                <strong>
+                    The 11-inch 90Hz display adds comfort
+                </strong>
+
+                <p>
+                    The larger 1920×1200 display gives more room
+                    for videos, browsing, study and multitasking,
+                    while the higher refresh rate improves smoothness.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="pr7-difference-card">
+
+            <span>
+                02
+            </span>
+
+            <div>
+
+                <strong>
+                    6GB RAM and expandable storage add flexibility
+                </strong>
+
+                <p>
+                    The 6GB configuration is designed for everyday
+                    multitasking, while the 128GB internal storage
+                    can be expanded with a microSD card.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="pr7-difference-card">
+
+            <span>
+                03
+            </span>
+
+            <div>
+
+                <strong>
+                    A simpler tablet may be enough for basic use
+                </strong>
+
+                <p>
+                    If you mainly browse, stream and use light apps,
+                    a simpler Android tablet may meet your needs
+                    without requiring the A11+'s larger feature set.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</div>
+
+
+<!-- FINAL COMPARISON NOTE -->
+<div class="pr7-comparison-note">
+
+    <div class="pr7-note-mark">
+        →
+    </div>
+
+    <div>
+
+        <span>
+            BEFORE MAKING A DECISION
+        </span>
+
+        <p>
+            Choose the Galaxy Tab A11+ if you want a larger 11-inch
+            90Hz display, 6GB RAM, expandable storage, stronger audio
+            and solid everyday performance. Consider a simpler Android
+            tablet if your needs are limited to basic browsing,
+            streaming and light apps.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- HEADER -->
+<div class="pr8-header">
+
+    <div class="pr8-header-index">
+        <span>08</span>
+        <i></i>
+    </div>
+
+    <div class="pr8-header-main">
+
+        <span class="pr8-eyebrow">
+            BUY WITH CONFIDENCE
+        </span>
+
+        <h2>
+            What should you know before buying the Galaxy Tab A11+?
+        </h2>
+
+        <p>
+            The important details to check before deciding whether
+            this 11-inch Android tablet is right for your everyday needs.
+        </p>
+
+    </div>
+
+    <div class="pr8-header-mark">
+
+        <span>RN</span>
+
+        <strong>
+            BUY<br>
+            WITH CLARITY.
+        </strong>
+
+    </div>
+
+</div>
+
+
+<!-- BEFORE YOU BUY -->
+<div class="pr8-before-buy">
+
+    <div class="pr8-section-heading">
+
+        <span>
+            BEFORE YOU BUY
+        </span>
+
+        <h3>
+            Check these first.
+        </h3>
+
+    </div>
+
+
+    <div class="pr8-check-grid">
+
+        <!-- CHECK 01 -->
+        <article class="pr8-check-card">
+
+            <div class="pr8-check-number">
+                01
+            </div>
+
+            <div class="pr8-check-content">
+
+                <span>
+                    CONFIGURATION
+                </span>
+
+                <h4>
+                    Is the listing the 6GB/128GB version?
+                </h4>
+
+                <p>
+                    Samsung sells multiple A11+ configurations.
+                    Confirm that the listing matches the 6GB RAM,
+                    128GB storage version you intend to buy.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- CHECK 02 -->
+        <article class="pr8-check-card">
+
+            <div class="pr8-check-number">
+                02
+            </div>
+
+            <div class="pr8-check-content">
+
+                <span>
+                    PERFORMANCE
+                </span>
+
+                <h4>
+                    Will the tablet handle your workload?
+                </h4>
+
+                <p>
+                    The A11+ is well suited to browsing, streaming,
+                    study, social apps and everyday multitasking,
+                    but demanding creative workloads are not its strength.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- CHECK 03 -->
+        <article class="pr8-check-card">
+
+            <div class="pr8-check-number">
+                03
+            </div>
+
+            <div class="pr8-check-content">
+
+                <span>
+                    DISPLAY
+                </span>
+
+                <h4>
+                    Are you comfortable with an LCD display?
+                </h4>
+
+                <p>
+                    The 11-inch screen is sharp and supports up to
+                    90Hz, but it is not OLED. Buyers seeking deeper
+                    blacks and premium contrast should consider higher-tier models.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- CHECK 04 -->
+        <article class="pr8-check-card">
+
+            <div class="pr8-check-number">
+                04
+            </div>
+
+            <div class="pr8-check-content">
+
+                <span>
+                    CONNECTIVITY
+                </span>
+
+                <h4>
+                    Do you need LTE or 5G?
+                </h4>
+
+                <p>
+                    The exact 6GB/128GB Wi-Fi configuration does not
+                    include cellular connectivity. Choose a cellular
+                    variant if mobile data is important to you.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</div>
+
+
+<!-- BUYING FACTORS -->
+<div class="pr8-factors">
+
+    <div class="pr8-section-heading">
+
+        <span>
+            THE BUYING FACTORS
+        </span>
+
+        <h3>
+            What matters most for this tablet?
+        </h3>
+
+    </div>
+
+
+    <div class="pr8-factor-grid">
+
+        <!-- FACTOR 01 -->
+        <article class="pr8-factor-card">
+
+            <div class="pr8-factor-top">
+
+                <span>
+                    01
+                </span>
+
+                <strong>
+                    Display
+                </strong>
+
+            </div>
+
+            <p>
+                The 11-inch 1920×1200 display and up-to-90Hz
+                refresh rate are central to the everyday viewing
+                and navigation experience.
+            </p>
+
+        </article>
+
+
+        <!-- FACTOR 02 -->
+        <article class="pr8-factor-card">
+
+            <div class="pr8-factor-top">
+
+                <span>
+                    02
+                </span>
+
+                <strong>
+                    Performance & Storage
+                </strong>
+
+            </div>
+
+            <p>
+                6GB RAM, 128GB storage and microSD expansion
+                provide a practical setup for apps, media,
+                browsing and everyday multitasking.
+            </p>
+
+        </article>
+
+
+        <!-- FACTOR 03 -->
+        <article class="pr8-factor-card">
+
+            <div class="pr8-factor-top">
+
+                <span>
+                    03
+                </span>
+
+                <strong>
+                    Battery & Entertainment
+                </strong>
+
+            </div>
+
+            <p>
+                The 7,040mAh battery and quad Dolby Atmos speakers
+                make the A11+ particularly useful for streaming,
+                movies, music and longer everyday sessions.
+            </p>
+
+        </article>
+
+    </div>
+
+</div>
+
+
+<!-- WHO SHOULD BUY -->
+<div class="pr8-fit-section">
+
+    <div class="pr8-fit-card pr8-fit-buy">
+
+        <div class="pr8-fit-label">
+            GOOD FIT
+        </div>
+
+        <h3>
+            Who should consider it?
+        </h3>
+
+        <ul>
+
+            <li>
+                Students who need a large screen for study and everyday apps.
+            </li>
+
+            <li>
+                Streaming and entertainment users who want an 11-inch display.
+            </li>
+
+            <li>
+                Buyers who want 6GB RAM and expandable 128GB storage.
+            </li>
+
+            <li>
+                Everyday users who value battery life and quad Dolby Atmos speakers.
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="pr8-fit-card pr8-fit-skip">
+
+        <div class="pr8-fit-label">
+            THINK TWICE
+        </div>
+
+        <h3>
+            Who may want another option?
+        </h3>
+
+        <ul>
+
+            <li>
+                Buyers who specifically want an OLED display.
+            </li>
+
+            <li>
+                Users who regularly perform demanding creative workloads.
+            </li>
+
+            <li>
+                Buyers who need LTE or 5G in this exact configuration.
+            </li>
+
+            <li>
+                Users who want premium stylus-focused tablet features.
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+
+<!-- BUYING TIP -->
+<div class="pr8-buying-tip">
+
+    <div class="pr8-tip-mark">
+        ✓
+    </div>
+
+    <div class="pr8-tip-content">
+
+        <span>
+            REVIEWNEST BUYING TIP
+        </span>
+
+        <p>
+            Do not choose the Galaxy Tab A11+ only because of its
+            11-inch display and feature list. First confirm the
+            6GB/128GB configuration, then decide whether its LCD
+            display, Wi-Fi-only setup and everyday-focused performance
+            match your needs.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- PRICE NOTE -->
+<div class="pr8-price-note">
+
+    <span>
+        PRICE & AVAILABILITY
+    </span>
+
+    <p>
+        The supplied product details did not include a fixed current
+        purchase price. Amazon pricing and availability can change,
+        so check the exact current listing before purchasing.
+    </p>
+
+</div>
+
+
+<!-- HEADER -->
+<div class="pr9-header">
+
+    <div class="pr9-header-index">
+        <span>09</span>
+        <i></i>
+    </div>
+
+    <div class="pr9-header-main">
+
+        <span class="pr9-eyebrow">
+            FIND YOUR FIT
+        </span>
+
+        <h2>
+            Is Samsung Galaxy Tab A11+ right for you?
+        </h2>
+
+        <p>
+            Your best choice depends on whether you need a large
+            display, everyday performance, expandable storage and
+            long battery life for your Android tablet use.
+        </p>
+
+    </div>
+
+    <div class="pr9-header-mark">
+
+        <span>RN</span>
+
+        <strong>
+            YOUR<br>
+            BEST FIT.
+        </strong>
+
+    </div>
+
+</div>
+
+
+<!-- BUYER PROFILES -->
+<div class="pr9-profiles">
+
+    <div class="pr9-section-heading">
+
+        <span>
+            BEST FOR
+        </span>
+
+        <h3>
+            Which buyers are the strongest match?
+        </h3>
+
+    </div>
+
+
+    <div class="pr9-profile-grid">
+
+        <!-- PROFILE 01 -->
+        <article class="pr9-profile-card">
+
+            <div class="pr9-profile-top">
+
+                <span class="pr9-profile-number">
+                    01
+                </span>
+
+                <span class="pr9-profile-tag">
+                    STUDENTS
+                </span>
+
+            </div>
+
+            <h4>
+                Students Who Need a Larger Screen
+            </h4>
+
+            <p>
+                A strong match for students who use a tablet
+                for notes, research, reading, videos and everyday
+                productivity apps.
+            </p>
+
+        </article>
+
+
+        <!-- PROFILE 02 -->
+        <article class="pr9-profile-card">
+
+            <div class="pr9-profile-top">
+
+                <span class="pr9-profile-number">
+                    02
+                </span>
+
+                <span class="pr9-profile-tag">
+                    ENTERTAINMENT
+                </span>
+
+            </div>
+
+            <h4>
+                Streaming & Media Users
+            </h4>
+
+            <p>
+                Useful for buyers who want an 11-inch display,
+                quad Dolby Atmos speakers and strong battery life
+                for movies, shows, music and browsing.
+            </p>
+
+        </article>
+
+
+        <!-- PROFILE 03 -->
+        <article class="pr9-profile-card">
+
+            <div class="pr9-profile-top">
+
+                <span class="pr9-profile-number">
+                    03
+                </span>
+
+                <span class="pr9-profile-tag">
+                    FAMILY
+                </span>
+
+            </div>
+
+            <h4>
+                Everyday Family Tablet Users
+            </h4>
+
+            <p>
+                A practical fit for households that need one
+                Android tablet for browsing, streaming, social apps,
+                reading and casual everyday tasks.
+            </p>
+
+        </article>
+
+
+        <!-- PROFILE 04 -->
+        <article class="pr9-profile-card">
+
+            <div class="pr9-profile-top">
+
+                <span class="pr9-profile-number">
+                    04
+                </span>
+
+                <span class="pr9-profile-tag">
+                    PRODUCTIVITY
+                </span>
+
+            </div>
+
+            <h4>
+                Everyday Productivity Users
+            </h4>
+
+            <p>
+                A good choice for buyers who want responsive
+                everyday performance, expandable storage and
+                a large screen without moving into flagship pricing.
+            </p>
+
+        </article>
+
+    </div>
+
+</div>
+
+
+<!-- INTEREST MATCH -->
+<div class="pr9-interest">
+
+    <div class="pr9-section-heading">
+
+        <span>
+            INTEREST MATCH
+        </span>
+
+        <h3>
+            What matters to you?
+        </h3>
+
+    </div>
+
+
+    <div class="pr9-interest-grid">
+
+        <article class="pr9-interest-card">
+
+            <div class="pr9-interest-icon">
+                ✓
+            </div>
+
+            <div>
+
+                <strong>
+                    Large 90Hz Display
+                </strong>
+
+                <span>
+                    11-inch 1920×1200 screen with up to 90Hz refresh
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <article class="pr9-interest-card">
+
+            <div class="pr9-interest-icon">
+                ✓
+            </div>
+
+            <div>
+
+                <strong>
+                    Expandable Storage
+                </strong>
+
+                <span>
+                    128GB internal storage with microSD expansion
+                </span>
+
+            </div>
+
+        </article>
+
+
+        <article class="pr9-interest-card">
+
+            <div class="pr9-interest-icon">
+                ✓
+            </div>
+
+            <div>
+
+                <strong>
+                    Battery & Audio
+                </strong>
+
+                <span>
+                    7,040mAh battery and quad speakers with Dolby Atmos
+                </span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</div>
+
+
+<!-- NOT FOR EVERYONE -->
+<div class="pr9-not-fit">
+
+    <div class="pr9-not-fit-copy">
+
+        <span>
+            CONSIDER ANOTHER OPTION
+        </span>
+
+        <h3>
+            It may not be for you if...
+        </h3>
+
+    </div>
+
+
+    <div class="pr9-not-fit-points">
+
+        <div class="pr9-not-fit-point">
+
+            <span>01</span>
+
+            <p>
+                You specifically want an OLED display with premium contrast.
+            </p>
+
+        </div>
+
+
+        <div class="pr9-not-fit-point">
+
+            <span>02</span>
+
+            <p>
+                You regularly perform demanding photo or video editing.
+            </p>
+
+        </div>
+
+
+        <div class="pr9-not-fit-point">
+
+            <span>03</span>
+
+            <p>
+                You need LTE or 5G rather than Wi-Fi-only connectivity.
+            </p>
+
+        </div>
+
+
+        <div class="pr9-not-fit-point">
+
+            <span>04</span>
+
+            <p>
+                You want premium stylus-focused features or flagship performance.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- FINAL FIT NOTE -->
+<div class="pr9-fit-note">
+
+    <div class="pr9-fit-note-mark">
+        ?
+    </div>
+
+    <div class="pr9-fit-note-content">
+
+        <span>
+            REVIEWNEST FIT CHECK
+        </span>
+
+        <p>
+            Our decision: Galaxy Tab A11+ makes the most sense for
+            everyday Android tablet users who want a large 90Hz display,
+            solid performance, expandable storage, long battery life
+            and strong built-in audio. If you need OLED, cellular
+            connectivity or high-end creative performance, another
+            tablet may be the better fit.
+        </p>
+
+    </div>
+
+</div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========================================
+     PHASE 10 — PREMIUM FAQ
+========================================= -->
+
+<section class="pr10-faq" id="faq">
+
+    <!-- HEADER -->
+    <div class="pr10-header">
+
+        <div class="pr10-header-index">
+            <span>10</span>
+            <i></i>
+        </div>
+
+        <div class="pr10-header-main">
+
+            <span class="pr10-eyebrow">
+                QUICK ANSWERS
+            </span>
+
+            <h2>
+                Questions you may have about the Samsung Galaxy Tab A11+.
+            </h2>
+
+            <p>
+                Clear answers based on the supplied product information,
+                customer feedback and exact-product details.
+            </p>
+
+        </div>
+
+        <div class="pr10-header-mark">
+            <span>RN</span>
+
+            <strong>
+                KNOW<br>
+                BEFORE YOU BUY.
+            </strong>
+        </div>
+
+    </div>
+
+
+    <!-- FAQ LIST -->
+    <div class="pr10-faq-list">
+
+
+        <!-- FAQ 01 -->
+        <details class="pr10-faq-item">
+
+            <summary>
+                <span class="pr10-faq-number">01</span>
+
+                <span class="pr10-faq-question">
+                    What is the Samsung Galaxy Tab A11+?
+                </span>
+
+                <span class="pr10-faq-toggle">
+                    +
+                </span>
+            </summary>
+
+            <div class="pr10-faq-answer">
+
+                <p>
+                    The Samsung Galaxy Tab A11+ is an 11-inch Android tablet
+                    with 6GB RAM, 128GB storage, a 90Hz display, quad Dolby
+                    Atmos speakers and expandable microSD storage.
+                </p>
+
+            </div>
+
+        </details>
+
+
+        <!-- FAQ 02 -->
+        <details class="pr10-faq-item">
+
+            <summary>
+                <span class="pr10-faq-number">02</span>
+
+                <span class="pr10-faq-question">
+                    How much RAM and storage does this version have?
+                </span>
+
+                <span class="pr10-faq-toggle">
+                    +
+                </span>
+            </summary>
+
+            <div class="pr10-faq-answer">
+
+                <p>
+                    This version has 6GB of RAM and 128GB of internal storage.
+                    Storage can also be expanded with a microSD card up to 2TB.
+                </p>
+
+            </div>
+
+        </details>
+
+
+        <!-- FAQ 03 -->
+        <details class="pr10-faq-item">
+
+            <summary>
+                <span class="pr10-faq-number">03</span>
+
+                <span class="pr10-faq-question">
+                    Is the Galaxy Tab A11+ good for everyday use?
+                </span>
+
+                <span class="pr10-faq-toggle">
+                    +
+                </span>
+            </summary>
+
+            <div class="pr10-faq-answer">
+
+                <p>
+                    Yes. Its 6GB RAM, modern processor, 90Hz display and
+                    Android 16 make it well suited to browsing, streaming,
+                    study, social apps and everyday multitasking.
+                </p>
+
+            </div>
+
+        </details>
+
+
+        <!-- FAQ 04 -->
+        <details class="pr10-faq-item">
+
+            <summary>
+                <span class="pr10-faq-number">04</span>
+
+                <span class="pr10-faq-question">
+                    What display does the Galaxy Tab A11+ have?
+                </span>
+
+                <span class="pr10-faq-toggle">
+                    +
+                </span>
+            </summary>
+
+            <div class="pr10-faq-answer">
+
+                <p>
+                    It has an 11-inch TFT display with a 1920 × 1200
+                    resolution and up to a 90Hz refresh rate for smoother
+                    scrolling and motion.
+                </p>
+
+            </div>
+
+        </details>
+
+
+        <!-- FAQ 05 -->
+        <details class="pr10-faq-item">
+
+            <summary>
+                <span class="pr10-faq-number">05</span>
+
+                <span class="pr10-faq-question">
+                    How good is the Galaxy Tab A11+ battery?
+                </span>
+
+                <span class="pr10-faq-toggle">
+                    +
+                </span>
+            </summary>
+
+            <div class="pr10-faq-answer">
+
+                <p>
+                    It has a 7,040mAh battery and supports up to 25W
+                    Super Fast Charging. Samsung rates video playback
+                    for up to 15 hours, although real-world battery life
+                    varies with usage.
+                </p>
+
+            </div>
+
+        </details>
+
+
+        <!-- FAQ 06 -->
+        <details class="pr10-faq-item">
+
+            <summary>
+                <span class="pr10-faq-number">06</span>
+
+                <span class="pr10-faq-question">
+                    Does the Galaxy Tab A11+ support microSD storage?
+                </span>
+
+                <span class="pr10-faq-toggle">
+                    +
+                </span>
+            </summary>
+
+            <div class="pr10-faq-answer">
+
+                <p>
+                    Yes. The 128GB model supports microSD cards up to
+                    2TB, giving you more space for photos, videos,
+                    music and other files.
+                </p>
+
+            </div>
+
+        </details>
+
+
+        <!-- FAQ 07 -->
+        <details class="pr10-faq-item">
+
+            <summary>
+                <span class="pr10-faq-number">07</span>
+
+                <span class="pr10-faq-question">
+                    Is the Galaxy Tab A11+ worth buying?
+                </span>
+
+                <span class="pr10-faq-toggle">
+                    +
+                </span>
+            </summary>
+
+            <div class="pr10-faq-answer">
+
+                <p>
+                    It can be a strong choice if you want a balanced
+                    everyday Android tablet with a 90Hz screen, 6GB RAM,
+                    expandable storage, long battery life and quad speakers.
+                    It is less suitable if you specifically need an OLED
+                    display, S Pen support or premium flagship performance.
+                </p>
+
+            </div>
+
+        </details>
+
+
+        <!-- FAQ 08 -->
+        <details class="pr10-faq-item">
+
+            <summary>
+                <span class="pr10-faq-number">08</span>
+
+                <span class="pr10-faq-question">
+                    What should I check before ordering?
+                </span>
+
+                <span class="pr10-faq-toggle">
+                    +
+                </span>
+            </summary>
+
+            <div class="pr10-faq-answer">
+
+                <p>
+                    Confirm that the listing is the 6GB RAM / 128GB storage
+                    version you want. Then check the current price,
+                    availability, warranty and exact connectivity before buying.
+                </p>
+
+            </div>
+
+        </details>
+
+
+    </div>
+
+
+    <!-- FAQ NOTE -->
+    <div class="pr10-faq-note">
+
+        <div class="pr10-faq-note-mark">
+            ?
+        </div>
+
+        <div class="pr10-faq-note-content">
+
+            <span>
+                REVIEWNEST NOTE
+            </span>
+
+            <p>
+                The key question is not simply whether the Galaxy Tab A11+
+                has enough features. It is whether its 11-inch 90Hz display,
+                6GB RAM, expandable storage, battery and speakers match
+                the way you plan to use your tablet.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END PHASE 10 -->
+
+
+
+
+<!-- =========================================
+     PHASE 11 — RELATED PRODUCTS
+========================================= -->
+
+<section class="pr11-related" id="related-products">
+
+    <!-- HEADER -->
+    <div class="pr11-header">
+
+        <div class="pr11-header-index">
+            <span>11</span>
+            <i></i>
+        </div>
+
+        <div class="pr11-header-main">
+
+            <span class="pr11-eyebrow">
+                EXPLORE MORE
+            </span>
+
+            <h2>
+                You may also want to consider.
+            </h2>
+
+            <p>
+                Compare the Galaxy Tab A11+ with other tablet options
+                before deciding which setup best matches your needs
+                and budget.
+            </p>
+
+        </div>
+
+        <div class="pr11-header-mark">
+            <span>RN</span>
+
+            <strong>
+                FIND<br>
+                YOUR MATCH.
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- RELATED PRODUCTS -->
+    <div class="pr11-products">
+
+
+        <!-- PRODUCT 01 — PREMIUM ALTERNATIVE -->
+        <article class="pr11-product-card">
+
+            <div class="pr11-product-image">
+
+                <span class="pr11-product-badge">
+                    PREMIUM ALTERNATIVE
+                </span>
+
+                <img
+                    src="images/related-product-01.webp"
+                    alt="Premium Android tablet alternative"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="pr11-product-content">
+
+                <div class="pr11-product-meta">
+
+                    <span>
+                        PREMIUM TABLET ALTERNATIVE
+                    </span>
+
+                </div>
+
+                <h3>
+                    Premium Android Tablet
+                </h3>
+
+                <p>
+                    Consider a premium Android tablet if you want to compare
+                    the Galaxy Tab A11+ with a higher-end option offering
+                    stronger display, performance or productivity features.
+                </p>
+
+                <div class="pr11-product-bottom">
+
+                    <strong class="pr11-product-price">
+                        Check current price
+                    </strong>
+
+                    <a
+                        href="#"
+                        class="pr11-product-link"
+                    >
+                        View Review
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 02 — SIMPLE ALTERNATIVE -->
+        <article class="pr11-product-card">
+
+            <div class="pr11-product-image">
+
+                <span class="pr11-product-badge">
+                    SIMPLE ALTERNATIVE
+                </span>
+
+                <img
+                    src="images/related-product-02.webp"
+                    alt="Simple Android tablet alternative"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="pr11-product-content">
+
+                <div class="pr11-product-meta">
+
+                    <span>
+                        ANDROID TABLET ALTERNATIVE
+                    </span>
+
+                </div>
+
+                <h3>
+                    Simple Android Tablet
+                </h3>
+
+                <p>
+                    A simpler Android tablet may make more sense if you
+                    mainly want basic browsing, streaming, apps and
+                    everyday touchscreen use at a lower cost.
+                </p>
+
+                <div class="pr11-product-bottom">
+
+                    <strong class="pr11-product-price">
+                        Check current price
+                    </strong>
+
+                    <a
+                        href="#"
+                        class="pr11-product-link"
+                    >
+                        View Review
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 03 — TABLET ALTERNATIVE -->
+        <article class="pr11-product-card">
+
+            <div class="pr11-product-image">
+
+                <span class="pr11-product-badge">
+                    PRODUCTIVITY ALTERNATIVE
+                </span>
+
+                <img
+                    src="images/related-product-03.webp"
+                    alt="Productivity-focused tablet alternative"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="pr11-product-content">
+
+                <div class="pr11-product-meta">
+
+                    <span>
+                        PRODUCTIVITY TABLET ALTERNATIVE
+                    </span>
+
+                </div>
+
+                <h3>
+                    Productivity-Focused Tablet
+                </h3>
+
+                <p>
+                    A productivity-focused tablet may be a better fit if
+                    your priority is note-taking, accessories, multitasking
+                    or a more work-oriented tablet experience.
+                </p>
+
+                <div class="pr11-product-bottom">
+
+                    <strong class="pr11-product-price">
+                        Check current price
+                    </strong>
+
+                    <a
+                        href="#"
+                        class="pr11-product-link"
+                    >
+                        View Review
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- COMPARISON PROMPT -->
+    <div class="pr11-compare-prompt">
+
+        <div class="pr11-prompt-mark">
+            ↔
+        </div>
+
+        <div class="pr11-prompt-content">
+
+            <span>
+                NOT SURE WHICH ONE?
+            </span>
+
+            <p>
+                Compare the Galaxy Tab A11+ with other tablet options
+                before making your final decision.
+            </p>
+
+        </div>
+
+        <a
+            href="#comparison"
+            class="pr11-prompt-link"
+        >
+            Compare Products
+            <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- END PHASE 11 -->
+
+
+
+
+<!-- =========================================
+     PHASE 12 — PREMIUM CONVERSION / CTA
+========================================= -->
+
+<section class="pr12-conversion" id="conversion">
+
+    <!-- HEADER -->
+    <div class="pr12-header">
+
+        <div class="pr12-header-index">
+            <span>12</span>
+            <i></i>
+        </div>
+
+        <div class="pr12-header-main">
+
+            <span class="pr12-eyebrow">
+                READY TO DECIDE?
+            </span>
+
+            <h2>
+                Ready to check the current Samsung Galaxy Tab A11+ price?
+            </h2>
+
+            <p>
+                Review the important details, confirm the exact configuration,
+                compare your options, then check the current Amazon listing.
+            </p>
+
+        </div>
+
+        <div class="pr12-header-mark">
+            <span>RN</span>
+
+            <strong>
+                SHOP<br>
+                WITH CONFIDENCE.
+            </strong>
+        </div>
+
+    </div>
+
+
+    <!-- MAIN CTA -->
+    <div class="pr12-cta">
+
+        <div class="pr12-cta-visual">
+
+            <div class="pr12-cta-glow"></div>
+
+            <span class="pr12-cta-badge">
+                REVIEWNEST REVIEW
+            </span>
+
+            <div class="pr12-cta-product">
+
+                <img
+                    src="images/product-main.webp"
+                    alt="Samsung Galaxy Tab A11+ 11-inch tablet with 6GB RAM, 128GB storage and Gray finish"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="pr12-cta-content">
+
+            <span class="pr12-cta-label">
+                FINAL CHECK
+            </span>
+
+            <h3>
+                Samsung Galaxy Tab A11+ — 6GB RAM / 128GB Storage — Gray
+            </h3>
+
+            <p>
+                Check the latest price, exact configuration, included
+                features and Amazon listing details before purchasing.
+            </p>
+
+            <div class="pr12-cta-actions">
+
+                <a
+                    href="#"
+                    class="pr12-amazon-button"
+                    target="_blank"
+                    rel="nofollow sponsored noopener"
+                >
+                    <span>
+                        Check Price on Amazon
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+                </a>
+
+                <a
+                    href="#comparison"
+                    class="pr12-secondary-button"
+                >
+                    Compare Alternatives
+                </a>
+
+            </div>
+
+            <div class="pr12-cta-trust">
+
+                <span>✓</span>
+
+                <p>
+                    Amazon prices, availability and product details can
+                    change. Always verify the current listing before buying.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- DECISION STRIP -->
+    <div class="pr12-decision-strip">
+
+        <div class="pr12-decision-item">
+
+            <span class="pr12-decision-icon">
+                ✓
+            </span>
+
+            <div>
+                <strong>
+                    Reviewed
+                </strong>
+
+                <span>
+                    Key Galaxy Tab A11+ details covered
+                </span>
+            </div>
+
+        </div>
+
+
+        <div class="pr12-decision-item">
+
+            <span class="pr12-decision-icon">
+                ↔
+            </span>
+
+            <div>
+                <strong>
+                    Compared
+                </strong>
+
+                <span>
+                    Tablet alternatives considered
+                </span>
+            </div>
+
+        </div>
+
+
+        <div class="pr12-decision-item">
+
+            <span class="pr12-decision-icon">
+                ✓
+            </span>
+
+            <div>
+                <strong>
+                    Ready
+                </strong>
+
+                <span>
+                    Verify configuration and current listing
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- FINAL NOTE -->
+    <div class="pr12-final-note">
+
+        <div class="pr12-final-mark">
+            RN
+        </div>
+
+        <div class="pr12-final-content">
+
+            <span>
+                REVIEWNEST
+            </span>
+
+            <p>
+                Our goal is simple: help you understand the Galaxy Tab A11+,
+                its 11-inch 90Hz display, 6GB RAM, 128GB storage,
+                expandable memory, battery, quad speakers and exact
+                configuration before you spend your money.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END PHASE 12 -->
+
+
+
+
+<!-- =========================================
+     PHASE 13 — ADVANCED PRODUCT UX
+========================================= -->
+
+<section class="pr13-product-ux" id="product-ux">
+
+    <!-- SECTION HEADER -->
+    <div class="pr13-header">
+
+        <div class="pr13-header-index">
+            <span>13</span>
+            <i></i>
+        </div>
+
+        <div class="pr13-header-main">
+
+            <span class="pr13-eyebrow">
+                PRODUCT EXPERIENCE
+            </span>
+
+            <h2>
+                Everything important, one step away.
+            </h2>
+
+            <p>
+                Move quickly between the details that matter
+                before deciding whether the Galaxy Tab A11+ is right for you.
+            </p>
+
+        </div>
+
+        <div class="pr13-header-mark">
+            <span>RN</span>
+
+            <strong>
+                REVIEW<br>
+                WITH CLARITY.
+            </strong>
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT CONTROL PANEL -->
+    <div class="pr13-control-panel">
+
+        <!-- PRODUCT MINI INFO -->
+        <div class="pr13-product-info">
+
+            <div class="pr13-product-thumb">
+
+                <img
+                    src="images/product-main.webp"
+                    alt="Samsung Galaxy Tab A11+ 11-inch tablet with 6GB RAM and 128GB storage"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+            </div>
+
+            <div class="pr13-product-meta">
+
+                <span class="pr13-product-label">
+                    FEATURED PRODUCT
+                </span>
+
+                <h3>
+                    Samsung Galaxy Tab A11+ — 6GB RAM / 128GB Storage — Gray
+                </h3>
+
+                <div class="pr13-product-rating">
+
+                    <span class="pr13-stars">
+                        ★★★★★
+                    </span>
+
+                    <span>
+                        Amazon rating: 4.6 / 5
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT ACTIONS -->
+        <div class="pr13-product-actions">
+
+            <a
+                href="#comparison"
+                class="pr13-action-button pr13-action-secondary"
+            >
+                <span>↔</span>
+                Compare
+            </a>
+
+            <a
+                href="#specifications"
+                class="pr13-action-button pr13-action-secondary"
+            >
+                <span>▣</span>
+                Key Specs
+            </a>
+
+            <a
+                href="#faq"
+                class="pr13-action-button pr13-action-secondary"
+            >
+                <span>?</span>
+                FAQ
+            </a>
+
+            <a
+                href="#conversion"
+                class="pr13-action-button pr13-action-primary"
+            >
+                <span>→</span>
+                Check Price
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- QUICK NAVIGATION -->
+    <div class="pr13-navigation">
+
+        <div class="pr13-navigation-head">
+
+            <div>
+                <span class="pr13-navigation-eyebrow">
+                    QUICK NAVIGATION
+                </span>
+
+                <h3>
+                    Jump to what you need.
+                </h3>
+            </div>
+
+            <span class="pr13-navigation-count">
+                06 SECTIONS
+            </span>
+
+        </div>
+
+
+        <div class="pr13-navigation-grid">
+
+            <a
+                href="#overview"
+                class="pr13-nav-card"
+            >
+                <span class="pr13-nav-number">
+                    01
+                </span>
+
+                <div>
+                    <strong>
+                        Overview
+                    </strong>
+
+                    <small>
+                        The big picture
+                    </small>
+                </div>
+
+                <b>→</b>
+            </a>
+
+
+            <a
+                href="#pros-cons"
+                class="pr13-nav-card"
+            >
+                <span class="pr13-nav-number">
+                    02
+                </span>
+
+                <div>
+                    <strong>
+                        Pros &amp; Cons
+                    </strong>
+
+                    <small>
+                        Strengths and trade-offs
+                    </small>
+                </div>
+
+                <b>→</b>
+            </a>
+
+
+            <a
+                href="#specifications"
+                class="pr13-nav-card"
+            >
+                <span class="pr13-nav-number">
+                    03
+                </span>
+
+                <div>
+                    <strong>
+                        Key Specs
+                    </strong>
+
+                    <small>
+                        Important details
+                    </small>
+                </div>
+
+                <b>→</b>
+            </a>
+
+
+            <a
+                href="#comparison"
+                class="pr13-nav-card"
+            >
+                <span class="pr13-nav-number">
+                    04
+                </span>
+
+                <div>
+                    <strong>
+                        Comparison
+                    </strong>
+
+                    <small>
+                        See the alternatives
+                    </small>
+                </div>
+
+                <b>→</b>
+            </a>
+
+
+            <a
+                href="#buying-guide"
+                class="pr13-nav-card"
+            >
+                <span class="pr13-nav-number">
+                    05
+                </span>
+
+                <div>
+                    <strong>
+                        Buying Guide
+                    </strong>
+
+                    <small>
+                        What to consider
+                    </small>
+                </div>
+
+                <b>→</b>
+            </a>
+
+
+            <a
+                href="#faq"
+                class="pr13-nav-card"
+            >
+                <span class="pr13-nav-number">
+                    06
+                </span>
+
+                <div>
+                    <strong>
+                        FAQ
+                    </strong>
+
+                    <small>
+                        Common questions
+                    </small>
+                </div>
+
+                <b>→</b>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- DECISION SHORTCUTS -->
+    <div class="pr13-shortcuts">
+
+        <div class="pr13-shortcut">
+
+            <div class="pr13-shortcut-icon">
+                ✓
+            </div>
+
+            <div class="pr13-shortcut-content">
+
+                <span>
+                    WANT THE SHORT VERSION?
+                </span>
+
+                <strong>
+                    Start with the Pros &amp; Cons.
+                </strong>
+
+                <p>
+                    See the key strengths and trade-offs before reading deeper.
+                </p>
+
+            </div>
+
+            <a href="#pros-cons">
+                Explore →
+            </a>
+
+        </div>
+
+
+        <div class="pr13-shortcut">
+
+            <div class="pr13-shortcut-icon">
+                ↔
+            </div>
+
+            <div class="pr13-shortcut-content">
+
+                <span>
+                    STILL DECIDING?
+                </span>
+
+                <strong>
+                    Compare the Galaxy Tab A11+ with alternatives.
+                </strong>
+
+                <p>
+                    See whether its 90Hz display, 6GB RAM, expandable storage,
+                    battery and speakers match your needs.
+                </p>
+
+            </div>
+
+            <a href="#comparison">
+                Compare →
+            </a>
+
+        </div>
+
+
+        <div class="pr13-shortcut">
+
+            <div class="pr13-shortcut-icon">
+                $
+            </div>
+
+            <div class="pr13-shortcut-content">
+
+                <span>
+                    READY TO BUY?
+                </span>
+
+                <strong>
+                    Check the current Amazon listing.
+                </strong>
+
+                <p>
+                    Verify the latest price, exact configuration,
+                    features and availability before buying.
+                </p>
+
+            </div>
+
+            <a href="#conversion">
+                Check →
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- FINAL UX NOTE -->
+    <div class="pr13-final-note">
+
+        <span class="pr13-final-icon">
+            RN
+        </span>
+
+        <p>
+            A better review should make it easier to find
+            the information you actually need before buying.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- END PHASE 13 -->
+
+
+
+
+
+
+
+</main>
+
+
+
+
+
+<!-- =========================================================
+     REVIEWNEST — PREMIUM WEBSITE FOOTER
+========================================================= -->
+
+<footer class="rn-footer" id="rnFooter">
+
+    <!-- Footer CTA -->
+    <div class="rn-footer-top">
+
+        <div class="rn-footer-top-inner">
+
+            <div class="rn-footer-cta-content">
+
+                <span class="rn-footer-eyebrow">
+                    THE REVIEWNEST DIFFERENCE
+                </span>
+
+                <h2>
+                    Make Every Purchase
+                    <span>Count.</span>
+                </h2>
+
+                <p>
+                    Discover useful product reviews, compare your
+                    options, and make more informed buying decisions
+                    with practical product information and buying guides.
+                </p>
+
+            </div>
+
+            <a
+                href="electronics.html"
+                class="rn-footer-cta-button"
+            >
+                Explore Reviews
+
+                <svg viewBox="0 0 24 24" fill="none"
+                     aria-hidden="true" focusable="false">
+                    <path
+                        d="M5 12H19M12 5L19 12L12 19"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                </svg>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main Footer -->
+    <div class="rn-footer-main">
+
+        <div class="rn-footer-grid">
+
+            <!-- Brand Column -->
+            <div class="rn-footer-brand-column">
+
+                <a
+                    href="index.html"
+                    class="rn-footer-brand"
+                    aria-label="ReviewNest homepage"
+                >
+
+                    <span class="rn-footer-logo"
+                          aria-hidden="true">
+
+                        <svg viewBox="0 0 40 40" fill="none"
+                             focusable="false">
+                            <rect
+                                x="2"
+                                y="2"
+                                width="36"
+                                height="36"
+                                rx="11"
+                                fill="currentColor"/>
+                            <path
+                                d="M12 12H23C27 12 29 14.5 29 18C29 21 27.5 23 24.5 24L30 30H23L18.5 24.5H18V30H12V12Z"
+                                fill="white"/>
+                            <path
+                                d="M18 17V20H23C24 20 25 19.5 25 18.5C25 17.5 24 17 23 17H18Z"
+                                fill="currentColor"/>
+                        </svg>
+
+                    </span>
+
+                    <span class="rn-footer-brand-text">
+
+                        <span class="rn-footer-brand-name">
+                            Review<span>Nest</span>
+                        </span>
+
+                        <span class="rn-footer-brand-tagline">
+                            Smarter Choices. Better Living.
+                        </span>
+
+                    </span>
+
+                </a>
+
+                <p class="rn-footer-description">
+                    ReviewNest provides product reviews, useful
+                    comparisons, and practical buying guides designed
+                    to help readers understand their options and
+                    shop with greater confidence.
+                </p>
+
+
+                <!-- Social Media
+                     IMPORTANT:
+                     Replace these platform homepages with the real
+                     ReviewNest profile URLs before publishing.
+                -->
+
+                <div class="rn-footer-social-section">
+
+                    <h3 class="rn-footer-social-heading">
+                        Follow Our Journey
+                    </h3>
+
+                    <div class="rn-footer-socials">
+
+                        <!-- Facebook -->
+                        <a
+                            href="https://www.facebook.com/"
+                            class="rn-social-link rn-social-facebook"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on Facebook"
+                            title="Facebook"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <path
+                                    fill="currentColor"
+                                    d="M13.5 21V12.8H16.3L16.7 9.6H13.5V7.6C13.5 6.7 13.8 6.1 15.1 6.1H16.8V3.2C16.5 3.2 15.3 3.1 14 3.1C11.2 3.1 9.3 4.8 9.3 7.9V9.6H6.5V12.8H9.3V21H13.5Z"/>
+                            </svg>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a
+                            href="https://www.youtube.com/"
+                            class="rn-social-link rn-social-youtube"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on YouTube"
+                            title="YouTube"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <path
+                                    fill="currentColor"
+                                    d="M23.2 7.1C22.9 5.8 22.1 5 20.8 4.7C18.5 4.1 12 4.1 12 4.1S5.5 4.1 3.2 4.7C1.9 5 1.1 5.8 0.8 7.1C0.4 9 0.4 12 0.4 12S0.4 15 0.8 16.9C1.1 18.2 1.9 19 3.2 19.3C5.5 19.9 12 19.9 12 19.9S18.5 19.9 20.8 19.3C22.1 19 22.9 18.2 23.2 16.9C23.6 15 23.6 12 23.6 12S23.6 9 23.2 7.1ZM9.7 15.1V8.9L15.1 12L9.7 15.1Z"/>
+                            </svg>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a
+                            href="https://www.tiktok.com/"
+                            class="rn-social-link rn-social-tiktok"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on TikTok"
+                            title="TikTok"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <path
+                                    fill="currentColor"
+                                    d="M19.6 6.1C18.1 6 16.8 5 16.3 3.6C16.1 3.1 16 2.5 16 2H12.1V15.5C12.1 17 10.9 18.2 9.4 18.2C7.9 18.2 6.7 17 6.7 15.5C6.7 14 7.9 12.8 9.4 12.8C9.8 12.8 10.2 12.9 10.6 13.1V9.1C10.2 9 9.8 9 9.4 9C5.8 9 2.9 11.9 2.9 15.5C2.9 19.1 5.8 22 9.4 22C13 22 15.9 19.1 15.9 15.5V8.6C17.1 9.5 18.5 10 20 10V6.1H19.6Z"/>
+                            </svg>
+                        </a>
+
+                        <!-- Pinterest -->
+                        <a
+                            href="https://www.pinterest.com/"
+                            class="rn-social-link rn-social-pinterest"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on Pinterest"
+                            title="Pinterest"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <path
+                                    fill="currentColor"
+                                    d="M12 2C6.5 2 3 5.9 3 10.5C3 13.2 4.5 15.7 6.8 16.8C6.8 15.8 6.8 14.9 7 14.2L8.1 9.5C7.9 9 7.8 8.5 7.8 8C7.8 6.4 8.8 5.2 10.2 5.2C11.4 5.2 12 6 12 7.1C12 8.3 11.2 10.1 10.8 11.7C10.5 13 11.4 14 12.6 14C14.7 14 16.2 11.3 16.2 8.2C16.2 5.8 14.6 4.1 11.7 4.1C8.4 4.1 6.3 6.5 6.3 9.2C6.3 10.3 6.6 11.2 7.3 11.9C7.5 12.1 7.6 12.2 7.5 12.5L7.2 13.4C7.1 13.7 6.9 13.8 6.6 13.6C5.1 13 4.4 11.3 4.4 9.5C4.4 6.5 7 2.9 12.1 2.9C16.2 2.9 18.9 5.9 18.9 9.1C18.9 13.2 16.7 16.3 13.5 16.3C12.2 16.3 11 15.6 10.6 14.8L9.8 17.9C9.5 19 8.9 20 8.4 20.7C9.6 21.1 10.8 21.3 12 21.3C17.5 21.3 22 16.8 22 11.3C22 5.8 17.5 2 12 2Z"/>
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a
+                            href="https://www.instagram.com/"
+                            class="rn-social-link rn-social-instagram"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on Instagram"
+                            title="Instagram"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 fill="none"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <rect
+                                    x="3"
+                                    y="3"
+                                    width="18"
+                                    height="18"
+                                    rx="5"
+                                    stroke="currentColor"
+                                    stroke-width="2"/>
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="4"
+                                    stroke="currentColor"
+                                    stroke-width="2"/>
+                                <circle
+                                    cx="17.5"
+                                    cy="6.8"
+                                    r="1.2"
+                                    fill="currentColor"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <p class="rn-footer-social-note">
+                        Product reviews, comparisons, and helpful videos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Explore Column -->
+            <nav class="rn-footer-column"
+                 aria-label="Explore ReviewNest">
+
+                <h3 class="rn-footer-column-title">
+                    Explore
+                </h3>
+
+                <ul class="rn-footer-links">
+
+                    <li>
+                        <a href="electronics.html">
+                            Electronics
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#popular-products">
+                            Popular Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#featured-products">
+                            Featured Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="buying-guides.html">
+                            Buying Guides
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="electronics.html">
+                            Product Reviews
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Company Column -->
+            <nav class="rn-footer-column"
+                 aria-label="About ReviewNest">
+
+                <h3 class="rn-footer-column-title">
+                    ReviewNest
+                </h3>
+
+                <ul class="rn-footer-links">
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="how-we-review.html">
+                            How We Review
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="editorial-process.html">
+                            Editorial Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="affiliate-disclosure.html">
+                            Affiliate Disclosure
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Helpful Information Column -->
+            <nav class="rn-footer-column"
+                 aria-label="Legal and helpful information">
+
+                <h3 class="rn-footer-column-title">
+                    Helpful Information
+                </h3>
+
+                <ul class="rn-footer-links">
+
+                    <li>
+                        <a href="privacy-policy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms-of-use.html">
+                            Terms of Use
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="disclaimer.html">
+                            Disclaimer
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sitemap.html">
+                            HTML Sitemap
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+
+    <!-- Trust / Transparency Bar -->
+    <div class="rn-footer-trust">
+
+        <div class="rn-footer-trust-inner">
+
+            <div class="rn-footer-trust-item">
+
+                <span class="rn-footer-trust-icon"
+                      aria-hidden="true">
+
+                    <svg viewBox="0 0 24 24" fill="none"
+                         focusable="false">
+                        <path
+                            d="M12 3L19 6V11C19 15.5 16.1 19 12 21C7.9 19 5 15.5 5 11V6L12 3Z"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linejoin="round"/>
+                        <path
+                            d="M9 12L11 14L15 10"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"/>
+                    </svg>
+
+                </span>
+
+                <span>
+                    <strong>Reader-Focused</strong>
+                    <small>Useful information first</small>
+                </span>
+
+            </div>
+
+
+            <div class="rn-footer-trust-item">
+
+                <span class="rn-footer-trust-icon"
+                      aria-hidden="true">
+
+                    <svg viewBox="0 0 24 24" fill="none"
+                         focusable="false">
+                        <path
+                            d="M4 5H20V17H13L8 21V17H4V5Z"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linejoin="round"/>
+                        <path
+                            d="M8 9H16M8 13H14"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"/>
+                    </svg>
+
+                </span>
+
+                <span>
+                    <strong>Clear Explanations</strong>
+                    <small>Understand your options</small>
+                </span>
+
+            </div>
+
+
+            <div class="rn-footer-trust-item">
+
+                <span class="rn-footer-trust-icon"
+                      aria-hidden="true">
+
+                    <svg viewBox="0 0 24 24" fill="none"
+                         focusable="false">
+                        <path
+                            d="M12 3L14.5 8.5L20.5 9.2L16 13.3L17.2 19.5L12 16.5L6.8 19.5L8 13.3L3.5 9.2L9.5 8.5L12 3Z"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linejoin="round"/>
+                    </svg>
+
+                </span>
+
+                <span>
+                    <strong>Smarter Decisions</strong>
+                    <small>Shop with more confidence</small>
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Affiliate Disclosure -->
+    <div class="rn-footer-disclosure">
+
+        <p>
+            <strong>Affiliate disclosure:</strong>
+            Some links on ReviewNest may be affiliate links.
+            If you make a qualifying purchase through these links,
+            we may earn a commission at no additional cost to you.
+            We aim to provide useful, honest, and reader-focused
+            information regardless of affiliate relationships.
+            Read our
+            <a href="affiliate-disclosure.html">
+                full affiliate disclosure
+            </a>.
+        </p>
+
+    </div>
+
+
+    <!-- Footer Bottom Bar -->
+    <div class="rn-footer-bottom">
+
+        <div class="rn-footer-bottom-inner">
+
+            <p class="rn-footer-copyright">
+                &copy;
+                <span id="rnCopyrightYear">2026</span>
+                ReviewNest. All rights reserved.
+            </p>
+
+            <p class="rn-footer-bottom-tagline">
+                Built for smarter buying decisions.
+            </p>
+
+            <a href="#rnHeader"
+               class="rn-footer-back-to-top">
+
+                Back to top
+
+                <svg viewBox="0 0 24 24" fill="none"
+                     aria-hidden="true"
+                     focusable="false">
+                    <path
+                        d="M12 19V5M5 12L12 5L19 12"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                </svg>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- =========================================================
+     END REVIEWNEST PREMIUM FOOTER
+========================================================= -->
+
+
+<!-- Floating Back-to-Top Button -->
+<button
+    type="button"
+    class="rn-floating-top"
+    id="rnFloatingTop"
+    aria-label="Back to top"
+    title="Back to top"
+>
+    <svg viewBox="0 0 24 24" fill="none"
+         aria-hidden="true"
+         focusable="false">
+        <path
+            d="M12 19V5M5 12L12 5L19 12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </svg>
+</button>
+
+
+<!-- =========================================================
+     REVIEWNEST — FOOTER FUNCTIONALITY
+========================================================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/script.js"defer></script>
+
+
+<script src="js/product-review.js"defer></script>
+
+
+<script src="js/product-data.js"defer></script>
+
+</body>
+</html>

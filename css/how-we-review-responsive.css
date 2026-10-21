@@ -1,0 +1,1868 @@
+/* =========================================================
+   REVIEWNEST
+   HOW WE REVIEW — RESPONSIVE STYLESHEET
+   Version: 2.0
+   Matches: how-we-review.css
+========================================================= */
+
+
+/* =========================================================
+   01. RESPONSIVE SAFETY
+========================================================= */
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+.how-we-review-page {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: clip;
+}
+
+.how-we-review-page *,
+.how-we-review-page *::before,
+.how-we-review-page *::after {
+    box-sizing: border-box;
+}
+
+.how-we-review-page img,
+.how-we-review-page video,
+.how-we-review-page iframe,
+.how-we-review-page svg {
+    max-width: 100%;
+}
+
+.hwr-container,
+.hwr-header-inner,
+.hwr-hero-grid,
+.hwr-introduction-grid,
+.hwr-evaluation-grid,
+.hwr-ratings-grid,
+.hwr-transparency-card,
+.hwr-faq-grid,
+.hwr-footer-grid {
+    min-width: 0;
+}
+
+.hwr-container > *,
+.hwr-hero-grid > *,
+.hwr-introduction-grid > *,
+.hwr-evaluation-grid > *,
+.hwr-ratings-grid > *,
+.hwr-transparency-card > *,
+.hwr-faq-grid > *,
+.hwr-footer-grid > * {
+    min-width: 0;
+}
+
+.how-we-review-page p,
+.how-we-review-page h1,
+.how-we-review-page h2,
+.how-we-review-page h3,
+.how-we-review-page h4,
+.how-we-review-page a {
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   02. LARGE LAPTOPS
+   1200px AND BELOW
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .hwr-container {
+        width: calc(100% - 48px);
+    }
+
+    .hwr-header-inner {
+        width: calc(100% - 48px);
+        gap: 20px;
+    }
+
+    .hwr-navigation {
+        gap: 18px;
+    }
+
+    .hwr-hero-grid {
+        gap: 38px;
+    }
+
+    .hwr-hero-content h1 {
+        font-size: clamp(42px, 5vw, 58px);
+    }
+
+    .hwr-hero-image {
+        height: 420px;
+    }
+
+    .hwr-introduction-grid {
+        gap: 55px;
+    }
+
+    .hwr-evaluation-grid,
+    .hwr-ratings-grid {
+        gap: 55px;
+    }
+
+    .hwr-evaluation-image {
+        height: 600px;
+    }
+
+    .hwr-category-grid {
+        gap: 18px;
+    }
+
+    .hwr-category-content {
+        padding: 21px;
+    }
+
+    .hwr-transparency-card {
+        gap: 38px;
+        padding: 42px;
+    }
+
+    .hwr-footer-grid {
+        gap: 30px;
+    }
+}
+
+
+/* =========================================================
+   03. TABLETS AND SMALL LAPTOPS
+   1000px AND BELOW
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    /* Shared spacing */
+
+    .hwr-section {
+        padding-top: 76px;
+        padding-bottom: 76px;
+    }
+
+    .hwr-container {
+        width: calc(100% - 40px);
+    }
+
+
+    /* Header */
+
+    .hwr-header-inner {
+        width: calc(100% - 40px);
+        min-height: 74px;
+        gap: 16px;
+    }
+
+    .hwr-brand-mark {
+        width: 40px;
+        height: 40px;
+        flex-basis: 40px;
+    }
+
+    .hwr-brand-name {
+        font-size: 19px;
+    }
+
+    .hwr-navigation {
+        gap: 14px;
+    }
+
+    .hwr-navigation a {
+        font-size: 11px;
+    }
+
+    .hwr-header-button {
+        padding: 10px 12px;
+        font-size: 10px;
+    }
+
+
+    /* Hero */
+
+    .hwr-hero {
+        padding-top: 24px;
+        padding-bottom: 60px;
+    }
+
+    .hwr-breadcrumb {
+        margin-bottom: 34px;
+    }
+
+    .hwr-hero-grid {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 0.9fr);
+
+        gap: 28px;
+    }
+
+    .hwr-hero-content h1 {
+        font-size: clamp(38px, 4.8vw, 49px);
+    }
+
+    .hwr-hero-description {
+        font-size: 14px;
+    }
+
+    .hwr-hero-principles {
+        gap: 15px;
+    }
+
+    .hwr-hero-image-wrap {
+        min-height: 340px;
+        border-radius: 22px;
+    }
+
+    .hwr-hero-image {
+        height: 380px;
+    }
+
+    .hwr-image-overlay-card {
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+
+        padding: 13px;
+    }
+
+
+    /* Principles strip */
+
+    .hwr-principles-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hwr-principle-card {
+        border-right: 1px solid var(--hwr-border);
+        border-bottom: 1px solid var(--hwr-border);
+    }
+
+    .hwr-principle-card:nth-child(2n) {
+        border-right: 0;
+    }
+
+    .hwr-principle-card:nth-last-child(-n + 2) {
+        border-bottom: 0;
+    }
+
+
+    /* Introduction */
+
+    .hwr-introduction-grid {
+        grid-template-columns:
+            minmax(0, 0.9fr)
+            minmax(0, 1.1fr);
+
+        gap: 35px;
+    }
+
+
+    /* Review process */
+
+    .hwr-process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .hwr-process-image {
+        height: 190px;
+    }
+
+
+    /* Evaluation */
+
+    .hwr-evaluation-grid {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 0.9fr);
+
+        gap: 35px;
+    }
+
+    .hwr-evaluation-image {
+        height: 520px;
+    }
+
+    .hwr-evaluation-caption {
+        width: calc(100% - 15px);
+        padding: 15px;
+    }
+
+
+    /* Categories */
+
+    .hwr-category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hwr-category-image {
+        height: 220px;
+    }
+
+    .hwr-category-content > p {
+        min-height: 0;
+    }
+
+
+    /* Ratings */
+
+    .hwr-ratings-grid {
+        grid-template-columns:
+            minmax(0, 0.9fr)
+            minmax(0, 1.1fr);
+
+        gap: 35px;
+    }
+
+    .hwr-ratings-visual {
+        min-height: 390px;
+        padding: 24px;
+    }
+
+    .hwr-rating-illustration {
+        padding: 28px 20px;
+    }
+
+
+    /* Sources */
+
+    .hwr-sources-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    /* Transparency */
+
+    .hwr-transparency-card {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 0.9fr);
+
+        gap: 28px;
+        padding: 32px;
+    }
+
+    .hwr-transparency-image {
+        height: 390px;
+    }
+
+
+    /* Limitations */
+
+    .hwr-limitations-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    /* FAQ */
+
+    .hwr-faq-grid {
+        grid-template-columns:
+            minmax(0, 0.8fr)
+            minmax(0, 1.2fr);
+
+        gap: 35px;
+    }
+
+
+    /* CTA */
+
+    .hwr-final-cta {
+        padding: 40px;
+        gap: 28px;
+    }
+
+
+    /* Footer */
+
+    .hwr-footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 36px;
+    }
+}
+
+
+/* =========================================================
+   04. TABLET PORTRAIT
+   800px AND BELOW
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .hwr-section {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .hwr-section-heading {
+        margin-bottom: 35px;
+    }
+
+    .hwr-section-heading h2 {
+        font-size: clamp(29px, 5vw, 40px);
+    }
+
+
+    /* Header */
+
+    .hwr-header-inner {
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .hwr-navigation {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        gap: 16px 22px;
+    }
+
+
+    /* Hero */
+
+    .hwr-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .hwr-hero-content {
+        max-width: 680px;
+    }
+
+    .hwr-hero-content h1 {
+        max-width: 650px;
+        font-size: clamp(40px, 7vw, 56px);
+    }
+
+    .hwr-hero-description {
+        max-width: 650px;
+    }
+
+    .hwr-hero-visual {
+        width: 100%;
+        max-width: 620px;
+        margin-inline: auto;
+    }
+
+    .hwr-hero-image-wrap {
+        min-height: 0;
+    }
+
+    .hwr-hero-image {
+        width: 100%;
+        height: clamp(300px, 58vw, 430px);
+    }
+
+
+    /* Introduction */
+
+    .hwr-introduction-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .hwr-introduction .hwr-section-heading {
+        max-width: 680px;
+    }
+
+    .hwr-introduction-content {
+        padding-top: 0;
+    }
+
+
+    /* Evaluation */
+
+    .hwr-evaluation-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hwr-evaluation-content {
+        max-width: 700px;
+    }
+
+    .hwr-evaluation-visual {
+        width: 100%;
+        max-width: 620px;
+        margin-inline: auto;
+        padding-left: 0;
+    }
+
+    .hwr-evaluation-image {
+        height: clamp(340px, 75vw, 500px);
+    }
+
+    .hwr-evaluation-caption {
+        right: 10px;
+        left: 10px;
+        width: auto;
+    }
+
+
+    /* Ratings */
+
+    .hwr-ratings-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .hwr-ratings-visual {
+        width: 100%;
+        max-width: 540px;
+        min-height: 360px;
+        margin-inline: auto;
+    }
+
+    .hwr-ratings-content {
+        max-width: 700px;
+    }
+
+
+    /* Transparency */
+
+    .hwr-transparency-card {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hwr-transparency-content {
+        max-width: 680px;
+    }
+
+    .hwr-transparency-visual {
+        width: 100%;
+        max-width: 620px;
+        margin-inline: auto;
+    }
+
+    .hwr-transparency-image {
+        height: clamp(300px, 65vw, 430px);
+    }
+
+
+    /* FAQ */
+
+    .hwr-faq-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .hwr-faq-intro {
+        position: static;
+        max-width: 650px;
+    }
+
+
+    /* CTA */
+
+    .hwr-final-cta {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .hwr-final-cta-content {
+        max-width: 680px;
+    }
+
+    .hwr-final-cta-actions {
+        width: 100%;
+        max-width: 400px;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hwr-final-cta-actions .hwr-button {
+        flex: 1 1 180px;
+    }
+}
+
+
+/* =========================================================
+   05. MOBILE
+   760px AND BELOW
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .hwr-container {
+        width: calc(100% - 36px);
+        max-width: 100%;
+    }
+
+    .hwr-section {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    .hwr-section-heading {
+        margin-bottom: 30px;
+    }
+
+    .hwr-section-heading h2 {
+        font-size: clamp(28px, 6vw, 36px);
+        line-height: 1.2;
+    }
+
+    .hwr-section-heading > p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .hwr-eyebrow {
+        margin-bottom: 14px;
+        font-size: 10px;
+    }
+
+
+    /* Header */
+
+    .hwr-header-inner {
+        width: calc(100% - 36px);
+        min-height: 0;
+
+        gap: 12px;
+    }
+
+    .hwr-brand {
+        gap: 9px;
+    }
+
+    .hwr-brand-mark {
+        width: 37px;
+        height: 37px;
+        flex-basis: 37px;
+
+        border-radius: 10px;
+        font-size: 22px;
+    }
+
+    .hwr-brand-name {
+        font-size: 18px;
+    }
+
+    .hwr-brand-tagline {
+        font-size: 8px;
+    }
+
+    .hwr-navigation {
+        gap: 12px 18px;
+    }
+
+    .hwr-navigation a {
+        font-size: 11px;
+    }
+
+    .hwr-navigation a::after {
+        bottom: -5px;
+    }
+
+    .hwr-header-button {
+        min-height: 39px;
+        padding: 9px 11px;
+        font-size: 10px;
+    }
+
+
+    /* Hero */
+
+    .hwr-hero {
+        padding-top: 22px;
+        padding-bottom: 45px;
+    }
+
+    .hwr-breadcrumb {
+        gap: 7px;
+        margin-bottom: 28px;
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .hwr-hero-grid {
+        gap: 28px;
+    }
+
+    .hwr-hero-content .hwr-eyebrow {
+        margin-bottom: 15px;
+    }
+
+    .hwr-hero-content h1 {
+        margin-bottom: 18px;
+
+        font-size: clamp(34px, 8vw, 47px);
+        line-height: 1.1;
+        letter-spacing: -0.055em;
+    }
+
+    .hwr-hero-content h1 span {
+        margin-top: 5px;
+    }
+
+    .hwr-hero-description {
+        margin-bottom: 22px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .hwr-hero-actions {
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .hwr-button {
+        max-width: 100%;
+        white-space: normal;
+    }
+
+    .how-we-review-page .hwr-button {
+        min-height: 46px;
+        padding: 12px 15px;
+        font-size: 12px;
+    }
+
+    .hwr-hero-principles {
+        gap: 14px 20px;
+    }
+
+    .hwr-hero-principle {
+        gap: 9px;
+    }
+
+    .hwr-principle-icon {
+        width: 33px;
+        height: 33px;
+        flex-basis: 33px;
+        font-size: 15px;
+    }
+
+    .hwr-hero-principle strong {
+        font-size: 10px;
+    }
+
+    .hwr-hero-principle small {
+        font-size: 9px;
+    }
+
+    .hwr-hero-visual {
+        padding: 0 6px 9px 0;
+    }
+
+    .hwr-hero-image-wrap {
+        border-radius: 18px;
+    }
+
+    .hwr-hero-image {
+        height: clamp(245px, 65vw, 360px);
+    }
+
+    .hwr-image-overlay-card {
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+
+        gap: 10px;
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .hwr-overlay-icon {
+        width: 34px;
+        height: 34px;
+        flex-basis: 34px;
+        font-size: 17px;
+    }
+
+    .hwr-image-overlay-card strong {
+        font-size: 11px;
+    }
+
+    .hwr-image-overlay-card small {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .hwr-visual-decoration {
+        right: -5px;
+        bottom: -5px;
+
+        width: 90px;
+        height: 90px;
+        background-size: 11px 11px;
+    }
+
+
+    /* Principles strip */
+
+    .hwr-principles-section {
+        padding-bottom: 20px;
+    }
+
+    .hwr-principles-grid {
+        border-radius: 14px;
+    }
+
+    .hwr-principle-card {
+        padding: 20px 16px;
+    }
+
+    .hwr-card-icon {
+        width: 37px;
+        height: 37px;
+        margin-bottom: 12px;
+
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    .hwr-principle-card h2 {
+        font-size: 13px;
+    }
+
+    .hwr-principle-card p {
+        font-size: 11px;
+        line-height: 1.75;
+    }
+
+
+    /* Introduction */
+
+    .hwr-introduction {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    .hwr-introduction-grid {
+        gap: 20px;
+    }
+
+    .hwr-introduction .hwr-section-heading h2 span {
+        display: inline;
+    }
+
+    .hwr-introduction-content p {
+        margin-bottom: 16px;
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+
+    /* Process cards */
+
+    .hwr-process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 13px;
+    }
+
+    .hwr-process-card {
+        border-radius: 12px;
+    }
+
+    .hwr-process-card-top {
+        padding: 14px 14px 11px;
+    }
+
+    .hwr-process-number {
+        font-size: 21px;
+    }
+
+    .hwr-process-icon {
+        width: 33px;
+        height: 33px;
+        font-size: 17px;
+    }
+
+    .hwr-process-image {
+        height: 135px;
+    }
+
+    .hwr-process-content {
+        padding: 16px 14px 18px;
+    }
+
+    .hwr-process-label {
+        margin-bottom: 8px;
+        font-size: 8px;
+    }
+
+    .hwr-process-content h3 {
+        margin-bottom: 9px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .hwr-process-content p {
+        font-size: 11px;
+        line-height: 1.75;
+    }
+
+    .hwr-process-note {
+        gap: 10px;
+        margin-top: 20px;
+        padding: 16px;
+    }
+
+    .hwr-note-icon {
+        width: 25px;
+        height: 25px;
+        flex-basis: 25px;
+        font-size: 11px;
+    }
+
+    .hwr-process-note p {
+        font-size: 11px;
+        line-height: 1.75;
+    }
+
+
+    /* Evaluation */
+
+    .hwr-evaluation-grid {
+        gap: 32px;
+    }
+
+    .hwr-evaluation-content > h2,
+    .hwr-ratings-content > h2 {
+        margin-bottom: 17px;
+        font-size: clamp(29px, 6vw, 37px);
+    }
+
+    .hwr-evaluation-content > h2 span,
+    .hwr-ratings-content > h2 span {
+        display: inline;
+    }
+
+    .hwr-evaluation-content > p {
+        margin-bottom: 23px;
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+    .hwr-evaluation-item {
+        gap: 11px;
+        padding: 15px 0;
+    }
+
+    .hwr-evaluation-check {
+        width: 25px;
+        height: 25px;
+        flex-basis: 25px;
+        font-size: 11px;
+    }
+
+    .hwr-evaluation-item h3 {
+        font-size: 13px;
+    }
+
+    .hwr-evaluation-item p {
+        font-size: 11px;
+        line-height: 1.75;
+    }
+
+    .hwr-evaluation-image {
+        height: clamp(280px, 80vw, 400px);
+        border-radius: 18px;
+    }
+
+    .hwr-evaluation-caption {
+        right: 6px;
+        left: 6px;
+        gap: 10px;
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .hwr-caption-icon {
+        width: 35px;
+        height: 35px;
+        flex-basis: 35px;
+        font-size: 19px;
+    }
+
+    .hwr-evaluation-caption strong {
+        font-size: 11px;
+    }
+
+    .hwr-evaluation-caption p {
+        font-size: 10px;
+        line-height: 1.55;
+    }
+
+
+    /* Category cards */
+
+    .hwr-category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .hwr-category-card {
+        border-radius: 12px;
+    }
+
+    .hwr-category-image {
+        height: 150px;
+    }
+
+    .hwr-category-badge {
+        top: 9px;
+        left: 9px;
+        padding: 6px 8px;
+        font-size: 8px;
+    }
+
+    .hwr-category-content {
+        padding: 15px;
+    }
+
+    .hwr-category-content h3 {
+        margin-bottom: 9px;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+
+    .hwr-category-content > p {
+        margin-bottom: 15px;
+        font-size: 11px;
+        line-height: 1.75;
+    }
+
+    .hwr-text-link {
+        gap: 6px;
+        font-size: 10px;
+    }
+
+    .hwr-text-link:hover {
+        gap: 8px;
+    }
+
+
+    /* Ratings */
+
+    .hwr-ratings-grid {
+        gap: 28px;
+    }
+
+    .hwr-ratings-visual {
+        min-height: 0;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .hwr-rating-illustration {
+        max-width: 360px;
+        padding: 25px 18px;
+        border-radius: 16px;
+    }
+
+    .hwr-rating-stars {
+        margin-bottom: 15px;
+        font-size: 24px;
+        letter-spacing: 3px;
+    }
+
+    .hwr-rating-heading {
+        font-size: 17px;
+    }
+
+    .hwr-rating-illustration > p {
+        margin-bottom: 18px;
+        font-size: 11px;
+    }
+
+    .hwr-rating-divider {
+        margin-bottom: 18px;
+    }
+
+    .hwr-rating-mini-grid {
+        gap: 6px;
+    }
+
+    .hwr-rating-mini-grid > div {
+        gap: 7px;
+    }
+
+    .hwr-rating-mini-grid > div > span {
+        width: 33px;
+        height: 33px;
+        font-size: 15px;
+    }
+
+    .hwr-rating-mini-grid small {
+        font-size: 9px;
+    }
+
+    .hwr-ratings-content > p {
+        font-size: 12px;
+        line-height: 1.85;
+    }
+
+    .hwr-rating-points {
+        margin-top: 20px;
+    }
+
+    .hwr-rating-point {
+        gap: 12px;
+        padding: 13px 0;
+    }
+
+    .hwr-rating-point strong {
+        font-size: 12px;
+    }
+
+    .hwr-rating-point small {
+        font-size: 10px;
+    }
+
+
+    /* Sources */
+
+    .hwr-sources-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 13px;
+    }
+
+    .hwr-source-card {
+        padding: 19px 15px;
+        border-radius: 12px;
+    }
+
+    .hwr-source-icon {
+        width: 37px;
+        height: 37px;
+        margin-bottom: 14px;
+        font-size: 18px;
+    }
+
+    .hwr-source-card h3 {
+        margin-bottom: 9px;
+        font-size: 14px;
+    }
+
+    .hwr-source-card p {
+        font-size: 11px;
+        line-height: 1.75;
+    }
+
+    .hwr-sources-notice {
+        gap: 10px;
+        margin-top: 18px;
+        padding: 15px;
+    }
+
+    .hwr-notice-icon {
+        width: 25px;
+        height: 25px;
+        flex-basis: 25px;
+        font-size: 12px;
+    }
+
+    .hwr-sources-notice p {
+        font-size: 11px;
+        line-height: 1.75;
+    }
+
+
+    /* Transparency */
+
+    .hwr-transparency-card {
+        gap: 25px;
+        padding: 24px 20px;
+        border-radius: 20px;
+    }
+
+    .hwr-transparency-content h2 {
+        margin-bottom: 16px;
+        font-size: clamp(29px, 6vw, 38px);
+    }
+
+    .hwr-transparency-content h2 span {
+        display: inline;
+    }
+
+    .hwr-transparency-content > p {
+        font-size: 12px;
+        line-height: 1.85;
+    }
+
+    .hwr-transparency-actions {
+        gap: 9px;
+        margin-top: 21px;
+    }
+
+    .hwr-transparency-image {
+        height: clamp(260px, 65vw, 360px);
+        border-radius: 15px;
+    }
+
+    .hwr-transparency-badge {
+        right: 5px;
+        gap: 9px;
+        padding: 11px 13px;
+        border-radius: 11px;
+    }
+
+    .hwr-transparency-badge > span:first-child {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+        font-size: 14px;
+    }
+
+    .hwr-transparency-badge strong {
+        font-size: 10px;
+    }
+
+    .hwr-transparency-badge small {
+        font-size: 9px;
+    }
+
+
+    /* Limitations */
+
+    .hwr-limitations-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 13px;
+    }
+
+    .hwr-limitation-card {
+        padding: 20px 16px;
+        border-radius: 12px;
+    }
+
+    .hwr-limitation-icon {
+        width: 36px;
+        height: 36px;
+        margin-bottom: 15px;
+        font-size: 11px;
+    }
+
+    .hwr-limitation-card h3 {
+        margin-bottom: 9px;
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    .hwr-limitation-card p {
+        font-size: 11px;
+        line-height: 1.75;
+    }
+
+
+    /* FAQ */
+
+    .hwr-faq-grid {
+        gap: 23px;
+    }
+
+    .hwr-faq-intro h2 {
+        margin-bottom: 14px;
+        font-size: clamp(29px, 6vw, 36px);
+    }
+
+    .hwr-faq-intro > p {
+        margin-bottom: 17px;
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .hwr-faq-item summary {
+        padding: 18px 39px 18px 0;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .hwr-faq-item summary::after {
+        width: 27px;
+        height: 27px;
+        font-size: 18px;
+    }
+
+    .hwr-faq-answer {
+        padding: 0 8px 19px 0;
+    }
+
+    .hwr-faq-answer p {
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
+
+    /* Final CTA */
+
+    .hwr-final-cta-section {
+        padding-bottom: 50px;
+    }
+
+    .hwr-final-cta {
+        gap: 23px;
+        padding: 29px 22px;
+        border-radius: 20px;
+    }
+
+    .hwr-final-cta-content h2 {
+        margin-bottom: 14px;
+        font-size: clamp(29px, 6vw, 38px);
+    }
+
+    .hwr-final-cta-content h2 span {
+        display: inline;
+    }
+
+    .hwr-final-cta-content > p {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .hwr-final-cta-actions {
+        max-width: none;
+        flex-direction: column;
+    }
+
+    .hwr-final-cta-actions .hwr-button {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+
+
+    /* Footer */
+
+    .hwr-footer > .hwr-container {
+        padding-top: 45px;
+    }
+
+    .hwr-footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px 22px;
+        padding-bottom: 32px;
+    }
+
+    .hwr-footer-brand-column {
+        grid-column: 1 / -1;
+    }
+
+    .hwr-footer-brand-column > p {
+        max-width: 450px;
+        margin-top: 17px;
+        font-size: 11px;
+    }
+
+    .hwr-footer-heading {
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+
+    .hwr-footer-links {
+        gap: 11px;
+    }
+
+    .hwr-footer-links a {
+        font-size: 10px;
+    }
+
+    .hwr-footer-disclosure {
+        padding: 18px 0;
+    }
+
+    .hwr-footer-disclosure p {
+        font-size: 10px;
+        line-height: 1.8;
+    }
+
+    .hwr-footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        padding: 18px 0;
+    }
+
+    .hwr-footer-bottom p {
+        font-size: 10px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================================================
+   06. SMALL MOBILE
+   480px AND BELOW
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .hwr-container {
+        width: calc(100% - 28px);
+    }
+
+    .hwr-section {
+        padding-top: 43px;
+        padding-bottom: 43px;
+    }
+
+    .hwr-section-heading {
+        margin-bottom: 25px;
+    }
+
+    .hwr-section-heading h2 {
+        font-size: 28px;
+    }
+
+
+    /* Header */
+
+    .hwr-header-inner {
+        width: calc(100% - 28px);
+        gap: 9px;
+    }
+
+    .hwr-brand {
+        gap: 7px;
+    }
+
+    .hwr-brand-mark {
+        width: 34px;
+        height: 34px;
+        flex-basis: 34px;
+        font-size: 20px;
+    }
+
+    .hwr-brand-name {
+        font-size: 16px;
+    }
+
+    .hwr-brand-tagline {
+        max-width: 160px;
+        font-size: 7px;
+    }
+
+    .hwr-header-button {
+        min-height: 36px;
+        padding: 8px 9px;
+        font-size: 9px;
+    }
+
+    .hwr-navigation {
+        gap: 12px 15px;
+    }
+
+
+    /* Hero */
+
+    .hwr-hero-content h1 {
+        font-size: clamp(31px, 8vw, 38px);
+    }
+
+    .hwr-hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .hwr-hero-actions .hwr-button {
+        width: 100%;
+    }
+
+    .hwr-hero-principles {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hwr-hero-image {
+        height: 255px;
+    }
+
+    .hwr-image-overlay-card {
+        right: 7px;
+        bottom: 7px;
+        left: 7px;
+        padding: 10px;
+    }
+
+    .hwr-image-overlay-card strong {
+        font-size: 10px;
+    }
+
+    .hwr-image-overlay-card small {
+        font-size: 9px;
+    }
+
+
+    /* Principles */
+
+    .hwr-principle-card {
+        padding: 16px 12px;
+    }
+
+    .hwr-principle-card h2 {
+        font-size: 12px;
+    }
+
+    .hwr-principle-card p {
+        font-size: 10px;
+    }
+
+
+    /* Process */
+
+    .hwr-process-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .hwr-process-image {
+        height: 190px;
+    }
+
+    .hwr-process-content {
+        padding: 18px;
+    }
+
+    .hwr-process-content h3 {
+        font-size: 16px;
+    }
+
+    .hwr-process-content p {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+
+    /* Categories */
+
+    .hwr-category-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .hwr-category-image {
+        height: 210px;
+    }
+
+    .hwr-category-content {
+        padding: 19px;
+    }
+
+    .hwr-category-content h3 {
+        font-size: 17px;
+    }
+
+    .hwr-category-content > p {
+        font-size: 12px;
+    }
+
+    .hwr-text-link {
+        font-size: 11px;
+    }
+
+
+    /* Sources */
+
+    .hwr-sources-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .hwr-source-card {
+        padding: 20px;
+    }
+
+    .hwr-source-card h3 {
+        font-size: 15px;
+    }
+
+    .hwr-source-card p {
+        font-size: 12px;
+    }
+
+
+    /* Limitations */
+
+    .hwr-limitations-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .hwr-limitation-card {
+        padding: 22px;
+    }
+
+    .hwr-limitation-card h3 {
+        font-size: 15px;
+    }
+
+    .hwr-limitation-card p {
+        font-size: 12px;
+    }
+
+
+    /* Evaluation */
+
+    .hwr-evaluation-image {
+        height: 290px;
+    }
+
+    .hwr-evaluation-caption {
+        right: 4px;
+        left: 4px;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .hwr-caption-icon {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+        font-size: 16px;
+    }
+
+    .hwr-evaluation-caption strong {
+        font-size: 10px;
+    }
+
+    .hwr-evaluation-caption p {
+        font-size: 9px;
+    }
+
+
+    /* Ratings */
+
+    .hwr-ratings-visual {
+        padding: 13px;
+    }
+
+    .hwr-rating-illustration {
+        padding: 23px 13px;
+    }
+
+    .hwr-rating-mini-grid {
+        gap: 4px;
+    }
+
+    .hwr-rating-mini-grid small {
+        font-size: 8px;
+    }
+
+
+    /* Transparency */
+
+    .hwr-transparency-card {
+        padding: 22px 16px;
+    }
+
+    .hwr-transparency-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .hwr-transparency-actions .hwr-button {
+        width: 100%;
+    }
+
+    .hwr-transparency-image {
+        height: 260px;
+    }
+
+    .hwr-transparency-badge {
+        right: 3px;
+        padding: 9px 10px;
+    }
+
+
+    /* CTA */
+
+    .hwr-final-cta {
+        padding: 25px 17px;
+    }
+
+    .hwr-final-cta-content h2 {
+        font-size: 29px;
+    }
+
+
+    /* Footer */
+
+    .hwr-footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 16px;
+    }
+
+    .hwr-footer-brand-column {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* =========================================================
+   07. VERY SMALL PHONES
+   360px AND BELOW
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .hwr-container {
+        width: calc(100% - 24px);
+    }
+
+    .hwr-header-inner {
+        width: calc(100% - 24px);
+    }
+
+    .hwr-brand-mark {
+        width: 31px;
+        height: 31px;
+        flex-basis: 31px;
+        font-size: 18px;
+    }
+
+    .hwr-brand-name {
+        font-size: 15px;
+    }
+
+    .hwr-brand-tagline {
+        max-width: 130px;
+        font-size: 7px;
+    }
+
+    .hwr-header-button {
+        padding: 8px;
+        font-size: 8px;
+    }
+
+    .hwr-navigation {
+        gap: 11px;
+    }
+
+    .hwr-navigation a {
+        font-size: 10px;
+    }
+
+    .hwr-hero-content h1 {
+        font-size: 31px;
+    }
+
+    .hwr-hero-description {
+        font-size: 13px;
+    }
+
+    .hwr-hero-image {
+        height: 230px;
+    }
+
+    .hwr-principles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hwr-principle-card,
+    .hwr-principle-card:nth-child(2n),
+    .hwr-principle-card:nth-last-child(-n + 2) {
+        border-right: 0;
+        border-bottom: 1px solid var(--hwr-border);
+    }
+
+    .hwr-principle-card:last-child {
+        border-bottom: 0;
+    }
+
+    .hwr-process-card-top {
+        padding: 13px;
+    }
+
+    .hwr-process-image {
+        height: 165px;
+    }
+
+    .hwr-process-content {
+        padding: 15px 13px;
+    }
+
+    .hwr-category-image {
+        height: 175px;
+    }
+
+    .hwr-rating-illustration {
+        padding: 20px 10px;
+    }
+
+    .hwr-rating-stars {
+        font-size: 21px;
+        letter-spacing: 2px;
+    }
+
+    .hwr-rating-mini-grid > div > span {
+        width: 29px;
+        height: 29px;
+        font-size: 13px;
+    }
+
+    .hwr-final-cta {
+        padding: 23px 14px;
+    }
+
+    .hwr-footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hwr-footer-brand-column {
+        grid-column: auto;
+    }
+}
+
+
+/* =========================================================
+   08. TOUCH DEVICE SUPPORT
+========================================================= */
+
+@media (hover: none) {
+
+    .hwr-process-card:hover,
+    .hwr-category-card:hover,
+    .hwr-source-card:hover,
+    .hwr-limitation-card:hover {
+        transform: none;
+    }
+
+    .hwr-category-card:hover .hwr-category-image {
+        transform: none;
+    }
+
+    .hwr-navigation a,
+    .hwr-text-link,
+    .hwr-footer-links a {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+
+/* =========================================================
+   09. ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .how-we-review-page *,
+    .how-we-review-page *::before,
+    .how-we-review-page *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+/* =========================================================
+   END OF RESPONSIVE STYLESHEET
+========================================================= */

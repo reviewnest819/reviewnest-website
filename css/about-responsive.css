@@ -1,0 +1,597 @@
+
+/* =========================================
+   REVIEWNEST ABOUT PAGE
+   Responsive: Tablet, Mobile & Desktop
+========================================= */
+
+/* Large tablets and smaller desktops */
+@media (max-width: 1100px) {
+
+  .about-header-inner {
+    gap: 18px;
+  }
+
+  .about-navigation {
+    gap: 16px;
+  }
+
+  .about-hero-grid {
+    gap: 42px;
+  }
+
+  .about-hero-visual {
+    height: 470px;
+  }
+
+  .about-story-grid {
+    gap: 55px;
+  }
+
+  .about-mission-content {
+    padding: 42px;
+  }
+
+  .about-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-transparency-grid {
+    gap: 55px;
+  }
+
+  .about-transparency-visual {
+    height: 500px;
+  }
+
+  .about-footer-main {
+    gap: 35px;
+  }
+}
+
+
+/* Tablets */
+@media (max-width: 800px) {
+
+  .about-container {
+    width: min(100% - 40px, 680px);
+  }
+
+  .about-header-inner {
+    width: calc(100% - 40px);
+    min-height: 75px;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 15px 0;
+  }
+
+  .about-logo {
+    font-size: 27px;
+  }
+
+  .about-navigation {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 23px;
+    overflow-x: auto;
+    padding: 4px 0 7px;
+  }
+
+  .about-navigation a {
+    flex-shrink: 0;
+    font-size: 12px;
+  }
+
+  .about-header-cta {
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+
+  .about-hero {
+    padding: 58px 0 70px;
+  }
+
+  .about-hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    gap: 28px;
+  }
+
+  .about-hero-content h1 {
+    font-size: clamp(39px, 6vw, 53px);
+    letter-spacing: -1.4px;
+  }
+
+  .about-hero-description {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .about-hero-visual {
+    height: 410px;
+  }
+
+  .about-image-caption {
+    right: -8px;
+    bottom: 18px;
+    padding: 13px;
+  }
+
+  .about-image-caption strong {
+    font-size: 13px;
+  }
+
+  .about-image-caption p {
+    font-size: 10px;
+  }
+
+  .about-story,
+  .about-process,
+  .about-transparency {
+    padding: 75px 0;
+  }
+
+  .about-story-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+
+  .about-section-heading h2,
+  .about-section-intro h2 {
+    font-size: 38px;
+  }
+
+  .about-story-copy {
+    padding-top: 12px;
+  }
+
+  .about-story-copy .about-lead {
+    font-size: 19px;
+  }
+
+  .about-mission-visual {
+    padding: 75px 0;
+  }
+
+  .about-mission-image-wrap {
+    min-height: 340px;
+  }
+
+  .about-mission-content {
+    padding: 30px;
+  }
+
+  .about-mission-content h2 {
+    font-size: 35px;
+  }
+
+  .about-transparency-grid {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    gap: 35px;
+  }
+
+  .about-transparency-visual {
+    height: 430px;
+  }
+
+  .about-transparency-content h2 {
+    font-size: 38px;
+  }
+
+  .about-transparency-label {
+    right: -8px;
+    padding: 12px;
+    font-size: 10px;
+  }
+
+  .about-cta {
+    padding: 70px 0;
+  }
+
+  .about-footer-main {
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 25px;
+  }
+}
+
+
+/* Mobile phones */
+@media (max-width: 600px) {
+
+  .about-container {
+    width: calc(100% - 36px);
+  }
+
+  .about-header-inner {
+    width: calc(100% - 36px);
+    min-height: 0;
+    gap: 12px;
+  }
+
+  .about-logo {
+    font-size: 26px;
+  }
+
+  .about-header-cta {
+    padding: 9px 10px;
+    font-size: 10px;
+  }
+
+  .about-navigation {
+    gap: 22px;
+  }
+
+  .about-hero {
+    padding: 43px 0 58px;
+  }
+
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-hero-content {
+    padding: 0;
+  }
+
+  .about-eyebrow {
+    margin-bottom: 14px;
+    font-size: 10px;
+    letter-spacing: 1.7px;
+  }
+
+  .about-hero-content h1 {
+    max-width: 470px;
+    margin-bottom: 19px;
+    font-size: clamp(39px, 10vw, 54px);
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+  }
+
+  .about-hero-content h1 span {
+    margin-top: 5px;
+  }
+
+  .about-hero-description {
+    margin-bottom: 23px;
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .about-primary-link {
+    min-height: 46px;
+    padding: 12px 16px;
+    font-size: 12px;
+  }
+
+  .about-hero-note {
+    margin-top: 18px;
+    font-size: 10px;
+  }
+
+  .about-hero-visual {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 4 / 4.3;
+  }
+
+  .about-image-caption {
+    right: 10px;
+    bottom: 12px;
+    width: calc(100% - 20px);
+    padding: 13px;
+  }
+
+  .about-caption-mark {
+    width: 33px;
+    height: 33px;
+    font-size: 19px;
+  }
+
+  .about-story,
+  .about-process,
+  .about-transparency {
+    padding: 64px 0;
+  }
+
+  .about-story-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-section-heading h2,
+  .about-section-intro h2 {
+    font-size: clamp(34px, 8.5vw, 43px);
+    letter-spacing: -1.2px;
+  }
+
+  .about-story-copy {
+    padding-top: 0;
+  }
+
+  .about-story-copy p {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+
+  .about-story-copy .about-lead {
+    font-size: 20px;
+    line-height: 1.65;
+  }
+
+  .about-mission-visual {
+    padding: 55px 0;
+  }
+
+  .about-mission-card {
+    grid-template-columns: 1fr;
+  }
+
+  .about-mission-image-wrap {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
+
+  .about-mission-content {
+    padding: 30px 23px 34px;
+  }
+
+  .about-mission-content h2 {
+    font-size: clamp(34px, 8vw, 42px);
+    letter-spacing: -1.2px;
+  }
+
+  .about-mission-content > p:not(.about-eyebrow) {
+    font-size: 13px;
+    line-height: 1.9;
+  }
+
+  .about-text-link {
+    font-size: 12px;
+  }
+
+  .about-section-intro {
+    margin-bottom: 34px;
+    text-align: left;
+  }
+
+  .about-section-intro > p:last-child {
+    margin-left: 0;
+    font-size: 13px;
+    line-height: 1.9;
+  }
+
+  .about-process-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .about-process-card {
+    padding: 24px 22px 26px;
+  }
+
+  .about-process-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 22px;
+  }
+
+  .about-process-icon svg {
+    width: 29px;
+    height: 29px;
+  }
+
+  .about-process-card h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+  }
+
+  .about-process-card p {
+    font-size: 13px;
+    line-height: 1.85;
+  }
+
+  .about-transparency-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .about-transparency-visual {
+    height: auto;
+    aspect-ratio: 4 / 3.7;
+  }
+
+  .about-transparency-label {
+    right: 9px;
+    bottom: 12px;
+    padding: 11px 13px;
+    font-size: 10px;
+  }
+
+  .about-transparency-content h2 {
+    font-size: clamp(35px, 8.5vw, 44px);
+    letter-spacing: -1.2px;
+  }
+
+  .about-transparency-content > p:not(.about-eyebrow) {
+    font-size: 13px;
+    line-height: 1.9;
+  }
+
+  .about-principle {
+    grid-template-columns: 39px minmax(0, 1fr);
+    gap: 13px;
+    padding: 20px 0;
+  }
+
+  .about-principle-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .about-principle-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .about-principle h3 {
+    font-size: 16px;
+  }
+
+  .about-principle p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .about-cta {
+    padding: 62px 0;
+  }
+
+  .about-cta-inner h2 {
+    font-size: clamp(35px, 8.5vw, 44px);
+    letter-spacing: -1.2px;
+  }
+
+  .about-cta-inner > p:not(.about-eyebrow) {
+    font-size: 13px;
+    line-height: 1.9;
+  }
+
+  .about-footer {
+    padding: 48px 0 20px;
+  }
+
+  .about-footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: 34px 20px;
+    padding-bottom: 34px;
+  }
+
+  .about-footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .about-footer-brand > p {
+    max-width: 320px;
+    font-size: 12px;
+  }
+
+  .about-footer-links {
+    gap: 11px;
+  }
+
+  .about-footer-links h2 {
+    font-size: 11px;
+  }
+
+  .about-footer-links a {
+    font-size: 11px;
+  }
+
+  .about-footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+    padding-top: 18px;
+  }
+
+  .about-footer-bottom p {
+    font-size: 10px;
+  }
+}
+
+
+/* Small mobile phones */
+@media (max-width: 380px) {
+
+  .about-container {
+    width: calc(100% - 28px);
+  }
+
+  .about-header-inner {
+    width: calc(100% - 28px);
+  }
+
+  .about-logo {
+    font-size: 24px;
+  }
+
+  .about-header-cta {
+    gap: 5px;
+    padding: 8px;
+    font-size: 9px;
+  }
+
+  .about-navigation {
+    gap: 18px;
+  }
+
+  .about-hero-content h1 {
+    font-size: 37px;
+  }
+
+  .about-image-caption {
+    gap: 9px;
+    padding: 10px;
+  }
+
+  .about-image-caption strong {
+    font-size: 12px;
+  }
+
+  .about-section-heading h2,
+  .about-section-intro h2,
+  .about-mission-content h2,
+  .about-transparency-content h2,
+  .about-cta-inner h2 {
+    font-size: 33px;
+  }
+
+  .about-mission-content {
+    padding: 26px 18px 30px;
+  }
+
+  .about-process-card {
+    padding: 22px 18px;
+  }
+
+  .about-footer-main {
+    gap: 28px 14px;
+  }
+}
+
+
+/* Very narrow screens */
+@media (max-width: 320px) {
+
+  .about-container {
+    width: calc(100% - 24px);
+  }
+
+  .about-header-inner {
+    width: calc(100% - 24px);
+  }
+
+  .about-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .about-header-cta {
+    max-width: 112px;
+  }
+
+  .about-navigation {
+    gap: 15px;
+  }
+
+  .about-navigation a {
+    font-size: 11px;
+  }
+
+  .about-footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .about-footer-brand {
+    grid-column: auto;
+  }
+}

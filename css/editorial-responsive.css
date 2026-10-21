@@ -1,0 +1,521 @@
+
+/* =========================================================
+   ReviewNest — Editorial Process Responsive Styles
+   File: css/editorial-responsive.css
+   Works with: editorial-process.css
+   ========================================================= */
+
+
+/* ---------- Large Tablets and Small Laptops ---------- */
+
+@media (max-width: 1100px) {
+
+    .editorial-container {
+        width: calc(100% - 48px);
+    }
+
+    .header-inner {
+        gap: 20px;
+    }
+
+    .main-navigation {
+        gap: 18px;
+    }
+
+    .main-navigation a {
+        font-size: 0.83rem;
+    }
+
+    .site-logo {
+        font-size: 1.65rem;
+    }
+
+    .header-cta {
+        padding-inline: 16px;
+        font-size: 0.84rem;
+    }
+
+    .editorial-section {
+        padding-block: 82px;
+    }
+
+    .intro-layout,
+    .recommendation-layout {
+        gap: 48px;
+    }
+
+    .transparency-layout {
+        gap: 45px;
+    }
+
+    .process-card {
+        padding: 25px 22px;
+    }
+
+    .footer-main {
+        gap: 30px;
+    }
+}
+
+
+/* ---------- Tablets ---------- */
+
+@media (max-width: 900px) {
+
+    .header-inner {
+        min-height: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-block: 20px;
+        row-gap: 20px;
+    }
+
+    .main-navigation {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 12px 25px;
+        padding-top: 15px;
+        border-top: 1px solid var(--editorial-border);
+    }
+
+    .main-navigation a {
+        font-size: 0.88rem;
+    }
+
+    .editorial-hero {
+        padding-block: 85px;
+    }
+
+    .editorial-section {
+        padding-block: 70px;
+    }
+
+    .intro-layout,
+    .recommendation-layout {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .intro-layout .section-heading h2,
+    .recommendation-layout .section-heading h2 {
+        max-width: 680px;
+    }
+
+    .intro-layout .section-heading,
+    .recommendation-layout .section-heading {
+        margin-bottom: 0;
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .process-card {
+        min-height: 245px;
+    }
+
+    .transparency-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .transparency-note {
+        max-width: 620px;
+    }
+
+    .footer-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 38px 45px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-disclaimer {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .final-cta-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+
+/* ---------- Mobile Phones ---------- */
+
+@media (max-width: 600px) {
+
+    html {
+        scroll-padding-top: 20px;
+    }
+
+    .editorial-container {
+        width: calc(100% - 36px);
+    }
+
+    body {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    h1 {
+        font-size: clamp(2.25rem, 10vw, 3.2rem);
+        line-height: 1.16;
+        letter-spacing: -0.045em;
+    }
+
+    h2 {
+        font-size: clamp(1.75rem, 7vw, 2.25rem);
+        line-height: 1.25;
+    }
+
+    h3 {
+        font-size: 1.12rem;
+    }
+
+    .editorial-section {
+        padding-block: 55px;
+    }
+
+    .header-inner {
+        gap: 18px 12px;
+        padding-block: 17px;
+    }
+
+    .site-logo {
+        font-size: 1.55rem;
+    }
+
+    .header-cta {
+        min-height: 42px;
+        padding: 9px 12px;
+        font-size: 0.79rem;
+    }
+
+    .main-navigation {
+        gap: 10px 19px;
+        padding-top: 13px;
+    }
+
+    .main-navigation a {
+        padding-block: 5px;
+        font-size: 0.82rem;
+    }
+
+    .main-navigation a::after {
+        bottom: 0;
+    }
+
+    .editorial-hero {
+        padding-block: 62px 58px;
+    }
+
+    .editorial-hero .eyebrow {
+        margin-bottom: 19px;
+    }
+
+    .editorial-hero h1 {
+        margin-bottom: 21px;
+    }
+
+    .hero-description {
+        margin-bottom: 25px;
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .hero-trust-points {
+        gap: 9px;
+    }
+
+    .hero-trust-points span {
+        min-height: 33px;
+        padding: 6px 10px;
+        font-size: 0.75rem;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+        margin-bottom: 15px;
+    }
+
+    .eyebrow {
+        margin-bottom: 14px;
+        font-size: 0.71rem;
+    }
+
+    .intro-content > p {
+        line-height: 1.85;
+    }
+
+    .intro-note {
+        padding: 17px;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .process-card {
+        min-height: auto;
+        padding: 23px;
+    }
+
+    .process-number {
+        width: 39px;
+        height: 39px;
+        margin-bottom: 19px;
+    }
+
+    .process-card h3 {
+        margin-bottom: 10px;
+    }
+
+    .process-card p {
+        font-size: 0.91rem;
+    }
+
+    .evidence-item {
+        grid-template-columns: 43px minmax(0, 1fr);
+        gap: 16px;
+        padding-block: 24px;
+    }
+
+    .evidence-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 0.78rem;
+    }
+
+    .evidence-item h3 {
+        font-size: 1.05rem;
+    }
+
+    .evidence-item p {
+        font-size: 0.92rem;
+    }
+
+    .transparency-note {
+        padding: 25px 22px;
+    }
+
+    .transparency-note h3 {
+        font-size: 1.3rem;
+    }
+
+    .standards-list {
+        gap: 16px;
+        margin-block: 23px;
+    }
+
+    .standards-list li {
+        padding-left: 27px;
+        font-size: 0.94rem;
+    }
+
+    .corrections-inner .primary-button {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .editorial-final-cta {
+        padding-block: 52px;
+    }
+
+    .final-cta-inner {
+        gap: 22px;
+    }
+
+    .final-cta-inner h2 {
+        font-size: 1.8rem;
+    }
+
+    .final-cta-inner .primary-button {
+        width: 100%;
+    }
+
+    .editorial-footer {
+        padding-top: 48px;
+    }
+
+    .footer-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 32px 20px;
+        padding-bottom: 35px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-brand p {
+        max-width: 320px;
+    }
+
+    .footer-links-group {
+        gap: 12px;
+    }
+
+    .footer-links-group h2 {
+        font-size: 0.94rem;
+    }
+
+    .footer-links-group a {
+        font-size: 0.82rem;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-bottom {
+        padding-block: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 0.77rem;
+    }
+}
+
+
+/* ---------- Extra-Small Phones ---------- */
+
+@media (max-width: 380px) {
+
+    .editorial-container {
+        width: calc(100% - 28px);
+    }
+
+    .header-inner {
+        gap: 15px 8px;
+    }
+
+    .site-logo {
+        font-size: 1.4rem;
+    }
+
+    .header-cta {
+        padding-inline: 9px;
+        font-size: 0.74rem;
+    }
+
+    .main-navigation {
+        gap: 9px 14px;
+    }
+
+    .main-navigation a {
+        font-size: 0.78rem;
+    }
+
+    .editorial-hero {
+        padding-block: 50px;
+    }
+
+    h1 {
+        font-size: 2.15rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .hero-trust-points {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .hero-trust-points span {
+        width: fit-content;
+        max-width: 100%;
+    }
+
+    .process-card {
+        padding: 20px;
+    }
+
+    .evidence-item {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .transparency-note {
+        padding: 21px 18px;
+    }
+
+    .footer-main {
+        gap: 28px 15px;
+    }
+
+    .footer-links-group a {
+        font-size: 0.78rem;
+    }
+}
+
+
+/* ---------- Very-Narrow Phones ---------- */
+
+@media (max-width: 320px) {
+
+    .editorial-container {
+        width: calc(100% - 24px);
+    }
+
+    .header-inner {
+        align-items: flex-start;
+    }
+
+    .site-logo {
+        font-size: 1.3rem;
+    }
+
+    .header-cta {
+        min-height: 38px;
+        padding: 8px;
+        font-size: 0.7rem;
+    }
+
+    .main-navigation {
+        column-gap: 12px;
+    }
+
+    .main-navigation a {
+        font-size: 0.74rem;
+    }
+
+    h1 {
+        font-size: 1.95rem;
+    }
+
+    h2 {
+        font-size: 1.55rem;
+    }
+
+    .hero-description {
+        font-size: 0.94rem;
+    }
+
+    .process-card {
+        padding: 17px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-bottom p {
+        overflow-wrap: anywhere;
+    }
+}

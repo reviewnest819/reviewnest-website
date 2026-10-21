@@ -1,0 +1,966 @@
+/* =========================================================
+   REVIEWNEST — HTML SITEMAP
+   File: css/html-sitemap.css
+   Main desktop and shared page styling
+   ========================================================= */
+
+
+/* =========================
+   1. PAGE VARIABLES
+   ========================= */
+
+.html-sitemap-page {
+    --sitemap-primary: #b42318;
+    --sitemap-primary-dark: #912018;
+    --sitemap-primary-light: #fef3f2;
+
+    --sitemap-text: #101828;
+    --sitemap-text-secondary: #475467;
+    --sitemap-text-muted: #667085;
+
+    --sitemap-border: #eaecf0;
+    --sitemap-background: #f9fafb;
+    --sitemap-surface: #ffffff;
+
+    --sitemap-radius-sm: 8px;
+    --sitemap-radius-md: 12px;
+    --sitemap-radius-lg: 18px;
+
+    --sitemap-shadow:
+        0 4px 16px rgba(16, 24, 40, 0.04);
+
+    --sitemap-transition:
+        0.2s ease;
+}
+
+
+/* =========================
+   2. BASE PAGE STYLES
+   ========================= */
+
+.html-sitemap-page {
+    margin: 0;
+    padding: 0;
+
+    color: var(--sitemap-text);
+    background: var(--sitemap-background);
+
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.html-sitemap-page *,
+.html-sitemap-page *::before,
+.html-sitemap-page *::after {
+    box-sizing: border-box;
+}
+
+.html-sitemap-page img {
+    max-width: 100%;
+    height: auto;
+}
+
+.html-sitemap-page a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.html-sitemap-page button {
+    font: inherit;
+}
+
+.html-sitemap-page h1,
+.html-sitemap-page h2,
+.html-sitemap-page p {
+    margin-top: 0;
+}
+
+.html-sitemap-page h1,
+.html-sitemap-page h2 {
+    color: var(--sitemap-text);
+    line-height: 1.25;
+}
+
+
+/* =========================
+   3. MAIN LAYOUT
+   ========================= */
+
+.html-sitemap-page .html-sitemap-main {
+    min-height: 100vh;
+    margin-left: 270px;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+.html-sitemap-page .html-sitemap-container {
+    width: 100%;
+    max-width: 1380px;
+
+    margin: 0 auto;
+    padding: 36px 40px 64px;
+
+    min-width: 0;
+}
+
+
+/* =========================
+   4. TOPBAR
+   ========================= */
+
+.html-sitemap-page .html-sitemap-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 14px 40px;
+
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid var(--sitemap-border);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.html-sitemap-page .breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    min-width: 0;
+
+    color: var(--sitemap-text-muted);
+    font-size: 13px;
+}
+
+.html-sitemap-page .breadcrumb a {
+    color: var(--sitemap-text-secondary);
+
+    transition:
+        color var(--sitemap-transition);
+}
+
+.html-sitemap-page .breadcrumb a:hover {
+    color: var(--sitemap-primary);
+}
+
+.html-sitemap-page .breadcrumb span[aria-current="page"] {
+    color: var(--sitemap-text);
+    font-weight: 600;
+}
+
+
+/* =========================
+   5. MOBILE MENU BUTTON
+   ========================= */
+
+.html-sitemap-page .mobile-menu-toggle {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+
+    padding: 8px;
+
+    border: 1px solid var(--sitemap-border);
+    border-radius: var(--sitemap-radius-sm);
+
+    background: var(--sitemap-surface);
+    cursor: pointer;
+}
+
+.html-sitemap-page .mobile-menu-toggle span {
+    display: block;
+
+    width: 19px;
+    height: 2px;
+
+    border-radius: 2px;
+    background: var(--sitemap-text);
+
+    transition:
+        transform var(--sitemap-transition),
+        opacity var(--sitemap-transition);
+}
+
+.html-sitemap-page .mobile-menu-toggle:hover {
+    background: var(--sitemap-background);
+}
+
+.html-sitemap-page .mobile-menu-toggle:focus-visible,
+.html-sitemap-page .sidebar-close:focus-visible {
+    outline: 3px solid rgba(180, 35, 24, 0.25);
+    outline-offset: 3px;
+}
+
+
+/* =========================
+   6. HERO SECTION
+   ========================= */
+
+.html-sitemap-page .html-sitemap-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 58px 40px 54px;
+
+    color: #ffffff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7f1d1d 0%,
+            #b42318 52%,
+            #d92d20 100%
+        );
+}
+
+.html-sitemap-page .html-sitemap-hero::before {
+    content: "";
+
+    position: absolute;
+    top: -120px;
+    right: -70px;
+
+    width: 340px;
+    height: 340px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.html-sitemap-page .html-sitemap-hero::after {
+    content: "";
+
+    position: absolute;
+    right: 45px;
+    bottom: -180px;
+
+    width: 300px;
+    height: 300px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.html-sitemap-page .html-sitemap-hero-content {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 1380px;
+
+    margin: 0 auto;
+}
+
+.html-sitemap-page .html-sitemap-eyebrow {
+    display: inline-block;
+
+    margin-bottom: 17px;
+    padding: 7px 12px;
+
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.13);
+
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    border-radius: 50px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+.html-sitemap-page .html-sitemap-hero h1 {
+    margin-bottom: 18px;
+
+    color: #ffffff;
+
+    font-size: clamp(34px, 4vw, 50px);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    line-height: 1.12;
+}
+
+.html-sitemap-page .html-sitemap-hero p {
+    max-width: 700px;
+
+    margin-bottom: 0;
+
+    color: rgba(255, 255, 255, 0.91);
+
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+
+/* =========================
+   7. INTRODUCTION
+   ========================= */
+
+.html-sitemap-page .html-sitemap-intro {
+    max-width: 850px;
+
+    margin-bottom: 32px;
+}
+
+.html-sitemap-page .html-sitemap-intro h2 {
+    margin-bottom: 12px;
+
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.html-sitemap-page .html-sitemap-intro p {
+    margin-bottom: 0;
+
+    color: var(--sitemap-text-secondary);
+
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+
+/* =========================
+   8. SITEMAP GRID
+   ========================= */
+
+.html-sitemap-page .html-sitemap-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+
+    align-items: stretch;
+}
+
+
+/* =========================
+   9. SITEMAP CARDS
+   ========================= */
+
+.html-sitemap-page .sitemap-card {
+    min-width: 0;
+
+    padding: 26px;
+
+    background: var(--sitemap-surface);
+
+    border: 1px solid var(--sitemap-border);
+    border-radius: var(--sitemap-radius-lg);
+
+    box-shadow: var(--sitemap-shadow);
+
+    transition:
+        border-color var(--sitemap-transition),
+        box-shadow var(--sitemap-transition),
+        transform var(--sitemap-transition);
+}
+
+.html-sitemap-page .sitemap-card:hover {
+    border-color: #f0b7b3;
+
+    box-shadow:
+        0 10px 28px rgba(16, 24, 40, 0.07);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   10. CARD HEADERS
+   ========================= */
+
+.html-sitemap-page .sitemap-card-header {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    margin-bottom: 14px;
+}
+
+.html-sitemap-page .sitemap-card-number {
+    display: inline-flex;
+
+    width: 39px;
+    height: 39px;
+
+    flex-shrink: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    color: var(--sitemap-primary);
+
+    background: var(--sitemap-primary-light);
+
+    border: 1px solid #fecdca;
+    border-radius: 11px;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+}
+
+.html-sitemap-page .sitemap-card-header h2 {
+    min-width: 0;
+
+    margin-bottom: 0;
+
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: -0.35px;
+}
+
+
+/* =========================
+   11. CARD DESCRIPTIONS
+   ========================= */
+
+.html-sitemap-page .sitemap-card-description {
+    margin-bottom: 22px;
+
+    color: var(--sitemap-text-muted);
+
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   12. SITEMAP LINK LIST
+   ========================= */
+
+.html-sitemap-page .sitemap-link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.html-sitemap-page .sitemap-link-list li {
+    min-width: 0;
+
+    margin: 0;
+    padding: 0;
+
+    border-bottom: 1px solid #f2f4f7;
+}
+
+.html-sitemap-page .sitemap-link-list li:last-child {
+    border-bottom: none;
+}
+
+.html-sitemap-page .sitemap-link-list a {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    min-width: 0;
+
+    padding: 12px 2px;
+
+    color: var(--sitemap-text-secondary);
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.65;
+
+    overflow-wrap: anywhere;
+
+    transition:
+        color var(--sitemap-transition),
+        padding-left var(--sitemap-transition);
+}
+
+.html-sitemap-page .sitemap-link-list a::before {
+    content: "";
+
+    width: 6px;
+    height: 6px;
+
+    flex-shrink: 0;
+
+    margin-top: 8px;
+
+    background: #d0d5dd;
+    border-radius: 50%;
+
+    transition:
+        background var(--sitemap-transition),
+        transform var(--sitemap-transition);
+}
+
+.html-sitemap-page .sitemap-link-list a:hover {
+    padding-left: 7px;
+
+    color: var(--sitemap-primary);
+}
+
+.html-sitemap-page .sitemap-link-list a:hover::before {
+    background: var(--sitemap-primary);
+
+    transform: scale(1.2);
+}
+
+.html-sitemap-page .sitemap-link-list a:focus-visible {
+    color: var(--sitemap-primary);
+
+    outline: 2px solid rgba(180, 35, 24, 0.35);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+
+/* =========================
+   13. XML SITEMAP NOTICE
+   ========================= */
+
+.html-sitemap-page .sitemap-xml-notice {
+    margin-top: 34px;
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--sitemap-border);
+    border-left: 4px solid var(--sitemap-primary);
+    border-radius: var(--sitemap-radius-md);
+
+    box-shadow: var(--sitemap-shadow);
+}
+
+.html-sitemap-page .sitemap-xml-content {
+    max-width: 850px;
+}
+
+.html-sitemap-page .sitemap-xml-notice h2 {
+    margin-bottom: 14px;
+
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.45px;
+}
+
+.html-sitemap-page .sitemap-xml-notice p {
+    margin-bottom: 14px;
+
+    color: var(--sitemap-text-secondary);
+
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.html-sitemap-page .sitemap-xml-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+
+    margin: 3px 0 14px;
+    padding: 11px 18px;
+
+    color: #ffffff;
+    background: var(--sitemap-primary);
+
+    border: 1px solid var(--sitemap-primary);
+    border-radius: var(--sitemap-radius-sm);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition:
+        background var(--sitemap-transition),
+        border-color var(--sitemap-transition),
+        transform var(--sitemap-transition);
+}
+
+.html-sitemap-page .sitemap-xml-link:hover {
+    color: #ffffff;
+
+    background: var(--sitemap-primary-dark);
+    border-color: var(--sitemap-primary-dark);
+
+    transform: translateY(-1px);
+}
+
+.html-sitemap-page .sitemap-xml-link:focus-visible {
+    outline: 3px solid rgba(180, 35, 24, 0.25);
+    outline-offset: 3px;
+}
+
+.html-sitemap-page .sitemap-xml-notice .sitemap-xml-note {
+    margin-bottom: 0;
+
+    color: var(--sitemap-text-muted);
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   14. HELP SECTION
+   ========================= */
+
+.html-sitemap-page .sitemap-help {
+    margin-top: 34px;
+    padding: 36px 30px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px solid var(--sitemap-border);
+    border-radius: var(--sitemap-radius-lg);
+}
+
+.html-sitemap-page .sitemap-help h2 {
+    margin-bottom: 13px;
+
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+}
+
+.html-sitemap-page .sitemap-help > p {
+    max-width: 650px;
+
+    margin: 0 auto 24px;
+
+    color: var(--sitemap-text-secondary);
+
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+
+/* =========================
+   15. HELP ACTION BUTTONS
+   ========================= */
+
+.html-sitemap-page .sitemap-help-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.html-sitemap-page .sitemap-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 46px;
+
+    padding: 12px 20px;
+
+    color: #ffffff;
+    background: var(--sitemap-primary);
+
+    border: 1px solid var(--sitemap-primary);
+    border-radius: var(--sitemap-radius-sm);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition:
+        background var(--sitemap-transition),
+        border-color var(--sitemap-transition),
+        transform var(--sitemap-transition);
+}
+
+.html-sitemap-page .sitemap-button:hover {
+    color: #ffffff;
+
+    background: var(--sitemap-primary-dark);
+    border-color: var(--sitemap-primary-dark);
+
+    transform: translateY(-1px);
+}
+
+.html-sitemap-page .sitemap-button-secondary {
+    color: var(--sitemap-text);
+
+    background: #ffffff;
+    border-color: #d0d5dd;
+}
+
+.html-sitemap-page .sitemap-button-secondary:hover {
+    color: var(--sitemap-primary);
+
+    background: var(--sitemap-primary-light);
+    border-color: #f0b7b3;
+}
+
+.html-sitemap-page .sitemap-button:focus-visible {
+    outline: 3px solid rgba(180, 35, 24, 0.25);
+    outline-offset: 3px;
+}
+
+
+/* =========================
+   16. FOOTER
+   ========================= */
+
+.html-sitemap-page .html-sitemap-footer {
+    margin-top: auto;
+
+    background: #ffffff;
+
+    border-top: 1px solid var(--sitemap-border);
+}
+
+.html-sitemap-page .html-sitemap-footer-inner {
+    width: 100%;
+    max-width: 1380px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    margin: 0 auto;
+    padding: 24px 40px;
+}
+
+.html-sitemap-page .html-sitemap-footer-inner > p {
+    margin-bottom: 0;
+
+    color: var(--sitemap-text-muted);
+
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.html-sitemap-page .html-sitemap-footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+.html-sitemap-page .html-sitemap-footer-links a {
+    color: var(--sitemap-text-secondary);
+
+    font-size: 12px;
+    font-weight: 500;
+
+    transition:
+        color var(--sitemap-transition);
+}
+
+.html-sitemap-page .html-sitemap-footer-links a:hover {
+    color: var(--sitemap-primary);
+}
+
+
+/* =========================
+   17. PAGE LOADER
+   ========================= */
+
+.html-sitemap-page .page-loader {
+    position: fixed;
+    inset: 0;
+
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    opacity: 1;
+    visibility: visible;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+.html-sitemap-page .page-loader.loaded {
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+}
+
+.html-sitemap-page .loader-spinner {
+    width: 42px;
+    height: 42px;
+
+    border: 3px solid #fee4e2;
+    border-top-color: var(--sitemap-primary);
+
+    border-radius: 50%;
+
+    animation: html-sitemap-spin 0.8s linear infinite;
+}
+
+@keyframes html-sitemap-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================
+   18. MOBILE OVERLAY
+   ========================= */
+
+.html-sitemap-page .mobile-overlay {
+    position: fixed;
+    inset: 0;
+
+    z-index: 998;
+
+    background: rgba(16, 24, 40, 0.52);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+}
+
+.html-sitemap-page.menu-open .mobile-overlay {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* =========================
+   19. REDUCED MOTION
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .html-sitemap-page *,
+    .html-sitemap-page *::before,
+    .html-sitemap-page *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+/* =========================
+   20. PRINT STYLES
+   ========================= */
+
+@media print {
+
+    .html-sitemap-page {
+        color: #000000;
+        background: #ffffff;
+    }
+
+    .html-sitemap-page .sidebar,
+    .html-sitemap-page .html-sitemap-topbar,
+    .html-sitemap-page .page-loader,
+    .html-sitemap-page .mobile-overlay,
+    .html-sitemap-page .sitemap-help-actions {
+        display: none !important;
+    }
+
+    .html-sitemap-page .html-sitemap-main {
+        margin-left: 0;
+        min-height: auto;
+    }
+
+    .html-sitemap-page .html-sitemap-hero {
+        padding: 25px 0;
+
+        color: #000000;
+        background: #ffffff;
+    }
+
+    .html-sitemap-page .html-sitemap-hero h1,
+    .html-sitemap-page .html-sitemap-hero p {
+        color: #000000;
+    }
+
+    .html-sitemap-page .html-sitemap-container {
+        max-width: 100%;
+        padding: 20px 0;
+    }
+
+    .html-sitemap-page .html-sitemap-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .html-sitemap-page .sitemap-card,
+    .html-sitemap-page .sitemap-xml-notice,
+    .html-sitemap-page .sitemap-help {
+        break-inside: avoid;
+
+        box-shadow: none;
+        border-color: #cccccc;
+    }
+
+    .html-sitemap-page .html-sitemap-footer-inner {
+        padding: 15px 0;
+    }
+
+    .html-sitemap-page a {
+        color: #000000;
+    }
+
+}
+
+
+
+/* Loader visibility fallback */
+.html-sitemap-page .page-loader {
+    animation: sitemap-loader-hide 0s ease 2s forwards;
+}
+
+@keyframes sitemap-loader-hide {
+    to {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}

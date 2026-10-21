@@ -1,0 +1,4292 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact ReviewNest | Get in Touch With Our Team</title>
+
+    <meta name="description" content="Contact ReviewNest with your questions, feedback, product review corrections, or editorial inquiries. We're here to help you make more informed buying decisions.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="theme-color" content="#b42318">
+    
+      <!-- Existing Website CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/contact-page.css">
+    <link rel="stylesheet" href="css/contact-responsive.css">
+    
+      <!-- Existing Website JavaScript -->
+  <script src="js/script.js" defer></script>
+    
+    
+    
+    
+    <style>
+      /* =========================================================
+   REVIEWNEST — CONTACT PAGE
+   File: css/contact-page.css
+   Purpose: Core visual design and desktop layout
+   Responsive rules: css/contact-responsive.css
+========================================================= */
+
+
+/* =========================================================
+   1. DESIGN TOKENS
+========================================================= */
+
+:root {
+    --contact-red: #b42318;
+    --contact-red-dark: #912018;
+    --contact-red-soft: #fff3f1;
+
+    --contact-ink: #202124;
+    --contact-text: #41434a;
+    --contact-muted: #70737b;
+
+    --contact-border: #e6e7e9;
+    --contact-border-strong: #d5d7da;
+
+    --contact-background: #ffffff;
+    --contact-background-soft: #f8f7f6;
+    --contact-background-warm: #f5f2ef;
+
+    --contact-container: 1180px;
+
+    --contact-radius-sm: 5px;
+    --contact-radius-md: 9px;
+    --contact-radius-lg: 14px;
+
+    --contact-shadow-card:
+        0 5px 22px rgba(32, 33, 36, 0.045);
+
+    --contact-shadow-hover:
+        0 12px 30px rgba(32, 33, 36, 0.085);
+
+    --contact-transition:
+        180ms ease;
+}
+
+
+/* =========================================================
+   2. RESET AND BASE STYLES
+========================================================= */
+
+.contact-page,
+.contact-page * {
+    box-sizing: border-box;
+}
+
+.contact-page {
+    margin: 0;
+    min-width: 0;
+
+    background: var(--contact-background);
+    color: var(--contact-ink);
+
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.contact-page img,
+.contact-page svg {
+    display: block;
+    max-width: 100%;
+}
+
+.contact-page img {
+    height: auto;
+}
+
+.contact-page button,
+.contact-page input,
+.contact-page select,
+.contact-page textarea {
+    font: inherit;
+}
+
+.contact-page button,
+.contact-page a,
+.contact-page input,
+.contact-page select,
+.contact-page textarea {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.contact-page a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-page button {
+    cursor: pointer;
+}
+
+.contact-page h1,
+.contact-page h2,
+.contact-page h3,
+.contact-page p {
+    margin-top: 0;
+}
+
+.contact-page h1,
+.contact-page h2,
+.contact-page h3 {
+    font-family: "Manrope", Arial, sans-serif;
+    color: var(--contact-ink);
+}
+
+.contact-page h1,
+.contact-page h2,
+.contact-page h3,
+.contact-page p {
+    overflow-wrap: break-word;
+}
+
+.contact-page p {
+    color: var(--contact-text);
+}
+
+.contact-page ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-container {
+    width: min(
+        var(--contact-container),
+        calc(100% - 64px)
+    );
+
+    margin-inline: auto;
+}
+
+
+/* =========================================================
+   3. ACCESSIBILITY
+========================================================= */
+
+.contact-skip-link {
+    position: absolute;
+    z-index: 1000;
+
+    top: 10px;
+    left: 10px;
+
+    padding: 10px 16px;
+
+    color: #ffffff !important;
+    background: var(--contact-red);
+
+    border-radius: var(--contact-radius-sm);
+
+    transform: translateY(-160%);
+    transition: transform var(--contact-transition);
+}
+
+.contact-skip-link:focus {
+    transform: translateY(0);
+}
+
+.contact-page a:focus-visible,
+.contact-page button:focus-visible,
+.contact-page input:focus-visible,
+.contact-page select:focus-visible,
+.contact-page textarea:focus-visible {
+    outline: 3px solid rgba(180, 35, 24, 0.35);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   4. SITE HEADER
+========================================================= */
+
+.contact-header {
+    position: relative;
+    z-index: 20;
+
+    width: 100%;
+
+    background: var(--contact-background);
+    border-bottom: 1px solid var(--contact-border);
+}
+
+.contact-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 28px;
+    min-height: 82px;
+}
+
+
+/* Logo */
+
+.contact-logo {
+    display: inline-flex;
+    align-items: center;
+
+    flex-shrink: 0;
+    gap: 9px;
+
+    color: var(--contact-ink);
+
+    text-decoration: none;
+}
+
+.contact-logo-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    color: #ffffff;
+    background: var(--contact-red);
+
+    border-radius: 8px;
+}
+
+.contact-logo-mark svg {
+    width: 25px;
+    height: 25px;
+}
+
+.contact-logo-text {
+    font-family: "Manrope", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+
+    letter-spacing: -1.1px;
+    line-height: 1.2;
+
+    white-space: nowrap;
+}
+
+.contact-logo-text span {
+    color: var(--contact-red);
+}
+
+
+/* Main navigation */
+
+.contact-main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 27px;
+}
+
+.contact-main-nav a {
+    position: relative;
+
+    padding-block: 8px;
+
+    color: #50515a;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition:
+        color var(--contact-transition);
+}
+
+.contact-main-nav a::after {
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    left: 0;
+
+    height: 2px;
+
+    background: var(--contact-red);
+
+    content: "";
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform var(--contact-transition);
+}
+
+.contact-main-nav a:hover,
+.contact-main-nav a:focus-visible {
+    color: var(--contact-red);
+}
+
+.contact-main-nav a:hover::after,
+.contact-main-nav a:focus-visible::after {
+    transform: scaleX(1);
+}
+
+
+/* Header CTA */
+
+.contact-header-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+    min-height: 43px;
+
+    padding: 10px 17px;
+
+    flex-shrink: 0;
+
+    color: #ffffff !important;
+    background: var(--contact-red);
+
+    border: 1px solid var(--contact-red);
+    border-radius: var(--contact-radius-sm);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition:
+        background var(--contact-transition),
+        border-color var(--contact-transition),
+        transform var(--contact-transition);
+}
+
+.contact-header-cta span {
+    font-size: 17px;
+    line-height: 1;
+}
+
+.contact-header-cta:hover {
+    background: var(--contact-red-dark);
+    border-color: var(--contact-red-dark);
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   5. SHARED SECTION ELEMENTS
+========================================================= */
+
+.contact-eyebrow {
+    display: inline-block;
+
+    margin-bottom: 17px;
+
+    color: var(--contact-red);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.65px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.contact-section-heading {
+    max-width: 690px;
+
+    margin: 0 auto 43px;
+
+    text-align: center;
+}
+
+.contact-section-heading .contact-eyebrow {
+    margin-bottom: 13px;
+}
+
+.contact-section-heading h2 {
+    margin-bottom: 14px;
+
+    font-size: 34px;
+    font-weight: 800;
+
+    letter-spacing: -1.25px;
+    line-height: 1.25;
+}
+
+.contact-section-heading p {
+    max-width: 590px;
+
+    margin: 0 auto;
+
+    color: var(--contact-muted);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   6. CONTACT HERO
+========================================================= */
+
+.contact-hero {
+    position: relative;
+    isolation: isolate;
+
+    overflow: hidden;
+
+    padding: 84px 0 78px;
+
+    background:
+        radial-gradient(
+            ellipse at 88% 18%,
+            rgba(180, 35, 24, 0.075),
+            transparent 36%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #fcfaf9 100%
+        );
+
+    border-bottom: 1px solid #f0ecea;
+}
+
+.contact-hero::after {
+    position: absolute;
+    z-index: -1;
+
+    right: -105px;
+    bottom: -195px;
+
+    width: 390px;
+    height: 390px;
+
+    border: 1px solid rgba(180, 35, 24, 0.075);
+    border-radius: 50%;
+
+    content: "";
+}
+
+.contact-hero-content {
+    max-width: 760px;
+
+    margin-inline: auto;
+
+    text-align: center;
+}
+
+.contact-hero .contact-eyebrow {
+    margin-bottom: 17px;
+}
+
+.contact-hero h1 {
+    margin-bottom: 22px;
+
+    font-size: clamp(48px, 6vw, 68px);
+    font-weight: 800;
+
+    letter-spacing: -3.3px;
+    line-height: 1.12;
+}
+
+.contact-hero h1 span {
+    color: var(--contact-red);
+}
+
+.contact-hero-description {
+    max-width: 660px;
+
+    margin: 0 auto;
+
+    color: #62636a;
+
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.contact-hero-trust {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 13px 26px;
+
+    margin-top: 29px;
+}
+
+.contact-trust-item {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    color: #484950;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.contact-trust-item svg {
+    width: 19px;
+    height: 19px;
+
+    flex-shrink: 0;
+
+    color: var(--contact-red);
+}
+
+
+/* =========================================================
+   7. CONTACT OPTIONS
+========================================================= */
+
+.contact-options-section {
+    padding: 86px 0 91px;
+
+    background: var(--contact-background);
+}
+
+.contact-options-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+.contact-option-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    min-width: 0;
+    min-height: 275px;
+
+    padding: 31px 28px 28px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--contact-border);
+    border-radius: var(--contact-radius-md);
+
+    box-shadow: var(--contact-shadow-card);
+
+    transition:
+        border-color var(--contact-transition),
+        box-shadow var(--contact-transition),
+        transform var(--contact-transition);
+}
+
+.contact-option-card:hover {
+    border-color: #e5c4c0;
+    box-shadow: var(--contact-shadow-hover);
+    transform: translateY(-3px);
+}
+
+.contact-option-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 51px;
+    height: 51px;
+
+    margin-bottom: 23px;
+
+    color: var(--contact-red);
+    background: var(--contact-red-soft);
+
+    border: 1px solid #f8dfdb;
+    border-radius: 10px;
+}
+
+.contact-option-icon svg {
+    width: 25px;
+    height: 25px;
+}
+
+.contact-option-card h3 {
+    margin-bottom: 12px;
+
+    font-size: 18px;
+    font-weight: 800;
+
+    letter-spacing: -0.45px;
+    line-height: 1.4;
+}
+
+.contact-option-card p {
+    margin-bottom: 24px;
+
+    color: var(--contact-muted);
+
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+.contact-option-link {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: auto;
+
+    color: var(--contact-red) !important;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    transition: gap var(--contact-transition);
+}
+
+.contact-option-link span {
+    font-size: 17px;
+    line-height: 1;
+}
+
+.contact-option-link:hover {
+    gap: 13px;
+}
+
+
+/* =========================================================
+   8. MESSAGE SECTION
+========================================================= */
+
+.contact-message-section {
+    padding: 91px 0 96px;
+
+    background: var(--contact-background-soft);
+
+    border-top: 1px solid #f0efed;
+    border-bottom: 1px solid #eeecea;
+}
+
+.contact-message-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.84fr)
+        minmax(0, 1.16fr);
+
+    align-items: start;
+
+    gap: 66px;
+}
+
+
+/* Message introduction */
+
+.contact-message-intro {
+    padding-top: 17px;
+}
+
+.contact-message-intro > .contact-eyebrow {
+    margin-bottom: 16px;
+}
+
+.contact-message-intro > h2 {
+    max-width: 440px;
+
+    margin-bottom: 18px;
+
+    font-size: 38px;
+    font-weight: 800;
+
+    letter-spacing: -1.5px;
+    line-height: 1.25;
+}
+
+.contact-message-intro > p {
+    max-width: 455px;
+
+    margin-bottom: 29px;
+
+    color: var(--contact-muted);
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* Privacy note */
+
+.contact-message-note {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 16px;
+
+    margin-top: 33px;
+    padding: 21px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--contact-border);
+    border-left: 3px solid var(--contact-red);
+
+    border-radius: var(--contact-radius-sm);
+}
+
+.contact-note-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    color: var(--contact-red);
+    background: var(--contact-red-soft);
+
+    border-radius: 8px;
+}
+
+.contact-note-icon svg {
+    width: 21px;
+    height: 21px;
+}
+
+.contact-message-note h3 {
+    margin-bottom: 6px;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    line-height: 1.5;
+}
+
+.contact-message-note p {
+    margin-bottom: 0;
+
+    color: var(--contact-muted);
+
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* Editorial information note */
+
+.contact-editorial-note {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-top: 23px;
+}
+
+.contact-editorial-note-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    flex-shrink: 0;
+
+    color: var(--contact-red);
+    background: #f4e5e2;
+
+    border-radius: 50%;
+
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.contact-editorial-note p {
+    margin-bottom: 0;
+
+    color: #77777d;
+
+    font-size: 12px;
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   9. CONTACT FORM CARD
+========================================================= */
+
+.contact-form-card {
+    min-width: 0;
+
+    padding: 37px 36px 32px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--contact-border);
+    border-radius: var(--contact-radius-lg);
+
+    box-shadow:
+        0 8px 35px rgba(32, 33, 36, 0.055);
+}
+
+.contact-form-heading {
+    margin-bottom: 28px;
+    padding-bottom: 23px;
+
+    border-bottom: 1px solid var(--contact-border);
+}
+
+.contact-form-heading h2 {
+    margin-bottom: 8px;
+
+    font-size: 24px;
+    font-weight: 800;
+
+    letter-spacing: -0.7px;
+    line-height: 1.4;
+}
+
+.contact-form-heading p {
+    margin-bottom: 0;
+
+    color: var(--contact-muted);
+
+    font-size: 12px;
+}
+
+.contact-form-heading p span {
+    color: var(--contact-red);
+    font-weight: 800;
+}
+
+
+/* Form field layout */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 21px;
+}
+
+.contact-form-field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+
+    min-width: 0;
+}
+
+.contact-form-field > label {
+    color: #34353b;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    line-height: 1.6;
+}
+
+.contact-form-field > label span {
+    color: var(--contact-red);
+}
+
+.contact-form-field input,
+.contact-form-field select,
+.contact-form-field textarea {
+    display: block;
+
+    width: 100%;
+    min-width: 0;
+
+    color: var(--contact-ink);
+    background: #ffffff;
+
+    border: 1px solid var(--contact-border-strong);
+    border-radius: var(--contact-radius-sm);
+
+    font-family: "DM Sans", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.6;
+
+    transition:
+        border-color var(--contact-transition),
+        box-shadow var(--contact-transition),
+        background var(--contact-transition);
+}
+
+.contact-form-field input,
+.contact-form-field select {
+    min-height: 49px;
+
+    padding: 12px 14px;
+}
+
+.contact-form-field textarea {
+    min-height: 148px;
+
+    padding: 13px 14px;
+
+    resize: vertical;
+}
+
+.contact-form-field input::placeholder,
+.contact-form-field textarea::placeholder {
+    color: #999ba2;
+    opacity: 1;
+}
+
+.contact-form-field select {
+    cursor: pointer;
+}
+
+.contact-form-field select:invalid {
+    color: #85868d;
+}
+
+.contact-form-field select option {
+    color: var(--contact-ink);
+    background: #ffffff;
+}
+
+.contact-form-field input:hover,
+.contact-form-field select:hover,
+.contact-form-field textarea:hover {
+    border-color: #bfc0c4;
+}
+
+.contact-form-field input:focus,
+.contact-form-field select:focus,
+.contact-form-field textarea:focus {
+    outline: none;
+
+    border-color: var(--contact-red);
+
+    box-shadow:
+        0 0 0 3px rgba(180, 35, 24, 0.09);
+}
+
+.contact-form-field input:focus-visible,
+.contact-form-field select:focus-visible,
+.contact-form-field textarea:focus-visible {
+    outline: 2px solid rgba(180, 35, 24, 0.2);
+    outline-offset: 2px;
+}
+
+.contact-form-field input:invalid:not(:placeholder-shown) {
+    border-color: #c13b32;
+}
+
+.contact-field-help {
+    margin: 0;
+
+    color: #85868d !important;
+
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
+/* Privacy acknowledgment */
+
+.contact-form-consent {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 11px;
+
+    padding: 15px;
+
+    background: #faf9f8;
+
+    border: 1px solid #eeece9;
+    border-radius: var(--contact-radius-sm);
+}
+
+.contact-form-consent input {
+    width: 16px;
+    height: 16px;
+
+    flex-shrink: 0;
+
+    margin: 3px 0 0;
+
+    accent-color: var(--contact-red);
+
+    cursor: pointer;
+}
+
+.contact-form-consent label {
+    color: #606169;
+
+    font-size: 11px;
+    line-height: 1.8;
+
+    cursor: pointer;
+}
+
+.contact-form-consent label span {
+    color: var(--contact-red);
+}
+
+
+/* Submit button */
+
+.contact-submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    width: 100%;
+    min-height: 53px;
+
+    padding: 14px 20px;
+
+    color: #ffffff;
+
+    background: var(--contact-red);
+
+    border: 1px solid var(--contact-red);
+    border-radius: var(--contact-radius-sm);
+
+    font-size: 13px;
+    font-weight: 800;
+
+    transition:
+        background var(--contact-transition),
+        border-color var(--contact-transition),
+        box-shadow var(--contact-transition),
+        transform var(--contact-transition);
+}
+
+.contact-submit-button svg {
+    width: 19px;
+    height: 19px;
+
+    flex-shrink: 0;
+
+    transition: transform var(--contact-transition);
+}
+
+.contact-submit-button:hover {
+    background: var(--contact-red-dark);
+    border-color: var(--contact-red-dark);
+
+    box-shadow:
+        0 5px 15px rgba(180, 35, 24, 0.16);
+
+    transform: translateY(-1px);
+}
+
+.contact-submit-button:hover svg {
+    transform: translateX(3px);
+}
+
+.contact-submit-button:active {
+    transform: translateY(0);
+}
+
+.contact-form-disclaimer {
+    margin: -5px 0 0;
+
+    color: #85868d !important;
+
+    font-size: 10px;
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   10. WHAT TO EXPECT SECTION
+========================================================= */
+
+.contact-expect-section {
+    padding: 91px 0 94px;
+
+    background: #ffffff;
+}
+
+.contact-expect-heading {
+    max-width: 690px;
+
+    margin-bottom: 48px;
+}
+
+.contact-expect-heading .contact-eyebrow {
+    margin-bottom: 13px;
+}
+
+.contact-expect-heading h2 {
+    margin-bottom: 15px;
+
+    font-size: 34px;
+    font-weight: 800;
+
+    letter-spacing: -1.25px;
+    line-height: 1.3;
+}
+
+.contact-expect-heading p {
+    max-width: 630px;
+
+    margin-bottom: 0;
+
+    color: var(--contact-muted);
+
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.contact-expect-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 35px;
+}
+
+.contact-expect-item {
+    min-width: 0;
+
+    padding-top: 22px;
+
+    border-top: 2px solid var(--contact-border);
+}
+
+.contact-expect-number {
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    color: var(--contact-red);
+
+    font-family: "Manrope", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.contact-expect-item h3 {
+    margin-bottom: 12px;
+
+    font-size: 17px;
+    font-weight: 800;
+
+    letter-spacing: -0.35px;
+    line-height: 1.5;
+}
+
+.contact-expect-item p {
+    margin-bottom: 0;
+
+    color: var(--contact-muted);
+
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   11. ABOUT / EDITORIAL HELP CARD
+========================================================= */
+
+.contact-help-section {
+    padding: 0 0 94px;
+
+    background: #ffffff;
+}
+
+.contact-help-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 45px;
+
+    padding: 43px 45px;
+
+    background:
+        radial-gradient(
+            ellipse at 100% 0%,
+            rgba(180, 35, 24, 0.065),
+            transparent 42%
+        ),
+        var(--contact-background-soft);
+
+    border: 1px solid var(--contact-border);
+    border-radius: var(--contact-radius-lg);
+}
+
+.contact-help-content {
+    max-width: 620px;
+}
+
+.contact-help-content .contact-eyebrow {
+    margin-bottom: 12px;
+}
+
+.contact-help-content h2 {
+    margin-bottom: 13px;
+
+    font-size: 27px;
+    font-weight: 800;
+
+    letter-spacing: -0.9px;
+    line-height: 1.4;
+}
+
+.contact-help-content p {
+    margin-bottom: 0;
+
+    color: var(--contact-muted);
+
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.contact-help-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 12px;
+
+    min-width: 190px;
+    flex-shrink: 0;
+}
+
+.contact-help-primary,
+.contact-help-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 45px;
+
+    padding: 11px 16px;
+
+    border-radius: var(--contact-radius-sm);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-align: center;
+
+    transition:
+        background var(--contact-transition),
+        border-color var(--contact-transition),
+        color var(--contact-transition),
+        transform var(--contact-transition);
+}
+
+.contact-help-primary {
+    color: #ffffff !important;
+
+    background: var(--contact-red);
+
+    border: 1px solid var(--contact-red);
+}
+
+.contact-help-primary span {
+    font-size: 16px;
+}
+
+.contact-help-primary:hover {
+    background: var(--contact-red-dark);
+    border-color: var(--contact-red-dark);
+
+    transform: translateY(-1px);
+}
+
+.contact-help-secondary {
+    color: #41434a !important;
+
+    background: #ffffff;
+
+    border: 1px solid var(--contact-border-strong);
+}
+
+.contact-help-secondary:hover {
+    color: var(--contact-red) !important;
+
+    border-color: var(--contact-red);
+}
+
+
+/* =========================================================
+   12. FOOTER
+========================================================= */
+
+.contact-footer {
+    color: #e9e9ec;
+
+    background: #202124;
+}
+
+.contact-footer-main {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.5fr)
+        repeat(3, minmax(0, 1fr));
+
+    gap: 47px;
+
+    padding: 66px 0 53px;
+}
+
+
+/* Footer brand */
+
+.contact-footer-brand {
+    max-width: 300px;
+}
+
+.contact-footer-logo {
+    margin-bottom: 19px;
+}
+
+.contact-footer-logo .contact-logo-text {
+    color: #ffffff;
+}
+
+.contact-footer-logo .contact-logo-text span {
+    color: #ef756d;
+}
+
+.contact-footer-brand > p {
+    max-width: 275px;
+
+    margin-bottom: 0;
+
+    color: #b6b7bd;
+
+    font-size: 12px;
+    line-height: 1.95;
+}
+
+
+/* Footer navigation columns */
+
+.contact-footer-column h2 {
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    font-family: "Manrope", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: -0.15px;
+    line-height: 1.5;
+}
+
+.contact-footer-column ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.contact-footer-column li {
+    min-width: 0;
+}
+
+.contact-footer-column a {
+    display: inline-block;
+
+    color: #bfc0c6;
+
+    font-size: 12px;
+    line-height: 1.7;
+
+    overflow-wrap: anywhere;
+
+    transition:
+        color var(--contact-transition);
+}
+
+.contact-footer-column a:hover,
+.contact-footer-column a[aria-current="page"] {
+    color: #ff9188;
+}
+
+
+/* Footer bottom */
+
+.contact-footer-bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 28px;
+
+    padding: 23px 0 25px;
+
+    border-top: 1px solid #3b3c40;
+}
+
+.contact-footer-bottom > p {
+    margin-bottom: 0;
+
+    color: #a9aab0;
+
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.contact-footer-disclaimer {
+    max-width: 540px;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   13. REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-page *,
+    .contact-page *::before,
+    .contact-page *::after {
+        scroll-behavior: auto !important;
+
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   REVIEWNEST — CONTACT PAGE RESPONSIVE STYLES
+   File: css/contact-responsive.css
+
+   Requires:
+   css/contact-page.css
+
+   Breakpoints:
+   1100px — Laptop / small desktop
+    900px — Tablet landscape
+    800px — Tablet / compact navigation
+    600px — Mobile
+    420px — Small mobile
+    350px — Extra-small mobile
+========================================================= */
+
+
+/* =========================================================
+   1. LAPTOP AND SMALL DESKTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .contact-container {
+        width: calc(100% - 48px);
+    }
+
+    .contact-header-inner {
+        gap: 18px;
+    }
+
+    .contact-logo-text {
+        font-size: 22px;
+    }
+
+    .contact-main-nav {
+        gap: 18px;
+    }
+
+    .contact-main-nav a {
+        font-size: 12px;
+    }
+
+    .contact-header-cta {
+        gap: 7px;
+        padding-inline: 12px;
+
+        font-size: 11px;
+    }
+
+    .contact-hero {
+        padding: 76px 0 70px;
+    }
+
+    .contact-options-section {
+        padding: 76px 0 80px;
+    }
+
+    .contact-options-grid {
+        gap: 19px;
+    }
+
+    .contact-option-card {
+        padding: 27px 23px 25px;
+    }
+
+    .contact-message-section {
+        padding: 80px 0 85px;
+    }
+
+    .contact-message-layout {
+        gap: 40px;
+    }
+
+    .contact-form-card {
+        padding: 32px 29px 29px;
+    }
+
+    .contact-expect-section {
+        padding: 80px 0 82px;
+    }
+
+    .contact-expect-grid {
+        gap: 25px;
+    }
+
+    .contact-help-card {
+        gap: 30px;
+        padding: 36px;
+    }
+
+    .contact-footer-main {
+        gap: 30px;
+    }
+}
+
+
+/* =========================================================
+   2. TABLET LANDSCAPE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .contact-header-inner {
+        min-height: 76px;
+        gap: 14px;
+    }
+
+    .contact-logo-mark {
+        width: 33px;
+        height: 33px;
+    }
+
+    .contact-logo-mark svg {
+        width: 23px;
+        height: 23px;
+    }
+
+    .contact-logo-text {
+        font-size: 21px;
+        letter-spacing: -0.9px;
+    }
+
+    .contact-main-nav {
+        gap: 13px;
+    }
+
+    .contact-main-nav a {
+        font-size: 11px;
+    }
+
+    .contact-header-cta {
+        min-height: 40px;
+        padding: 9px 10px;
+
+        font-size: 10px;
+    }
+
+    .contact-options-grid {
+        gap: 15px;
+    }
+
+    .contact-option-card {
+        padding: 24px 19px;
+    }
+
+    .contact-option-card h3 {
+        font-size: 16px;
+    }
+
+    .contact-option-card p {
+        font-size: 12px;
+    }
+
+    .contact-message-layout {
+        grid-template-columns:
+            minmax(0, 0.8fr)
+            minmax(0, 1.2fr);
+
+        gap: 28px;
+    }
+
+    .contact-message-intro > h2 {
+        font-size: 33px;
+    }
+
+    .contact-form-card {
+        padding: 27px 23px 25px;
+    }
+
+    .contact-form-heading h2 {
+        font-size: 22px;
+    }
+
+    .contact-help-card {
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+    .contact-help-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: 100%;
+        min-width: 0;
+    }
+
+    .contact-help-primary,
+    .contact-help-secondary {
+        flex: 1 1 180px;
+    }
+
+    .contact-footer-main {
+        grid-template-columns:
+            minmax(0, 1.3fr)
+            repeat(2, minmax(0, 1fr));
+
+        gap: 36px 27px;
+    }
+
+    .contact-footer-brand {
+        grid-column: 1 / -1;
+
+        max-width: 420px;
+    }
+}
+
+
+/* =========================================================
+   3. TABLET AND COMPACT NAVIGATION
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .contact-container {
+        width: calc(100% - 40px);
+    }
+
+    /* Header */
+
+    .contact-header-inner {
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        gap: 14px 18px;
+
+        padding-top: 16px;
+        padding-bottom: 0;
+    }
+
+    .contact-logo {
+        min-width: 0;
+    }
+
+    .contact-header-cta {
+        margin-left: auto;
+    }
+
+    .contact-main-nav {
+        order: 3;
+
+        display: flex;
+        justify-content: flex-start;
+
+        width: 100%;
+        min-width: 0;
+
+        gap: 24px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        padding: 9px 0 12px;
+
+        border-top: 1px solid #f0f0f0;
+
+        scrollbar-width: thin;
+        scrollbar-color: #d9d9d9 transparent;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .contact-main-nav a {
+        flex: 0 0 auto;
+
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .contact-main-nav a::after {
+        bottom: -3px;
+    }
+
+    /* Hero */
+
+    .contact-hero {
+        padding: 66px 0 63px;
+    }
+
+    .contact-hero-content {
+        max-width: 650px;
+    }
+
+    .contact-hero h1 {
+        font-size: clamp(43px, 7vw, 57px);
+        letter-spacing: -2.5px;
+    }
+
+    .contact-hero-description {
+        font-size: 15px;
+        line-height: 1.85;
+    }
+
+    .contact-hero-trust {
+        gap: 12px 20px;
+    }
+
+    /* Shared headings */
+
+    .contact-section-heading {
+        margin-bottom: 34px;
+    }
+
+    .contact-section-heading h2 {
+        font-size: 30px;
+    }
+
+    /* Contact cards */
+
+    .contact-options-section {
+        padding: 67px 0 72px;
+    }
+
+    .contact-options-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 18px;
+    }
+
+    .contact-option-card {
+        min-height: 260px;
+
+        padding: 26px 23px;
+    }
+
+    .contact-option-card:last-child {
+        grid-column: 1 / -1;
+
+        min-height: auto;
+    }
+
+    .contact-option-card:last-child p {
+        max-width: 550px;
+    }
+
+    /* Message section */
+
+    .contact-message-section {
+        padding: 69px 0 74px;
+    }
+
+    .contact-message-layout {
+        grid-template-columns: minmax(0, 1fr);
+
+        gap: 34px;
+    }
+
+    .contact-message-intro {
+        padding-top: 0;
+    }
+
+    .contact-message-intro > h2 {
+        max-width: 600px;
+
+        font-size: 34px;
+    }
+
+    .contact-message-intro > p {
+        max-width: 620px;
+    }
+
+    .contact-message-note {
+        max-width: 620px;
+    }
+
+    .contact-editorial-note {
+        max-width: 620px;
+    }
+
+    .contact-form-card {
+        padding: 32px;
+    }
+
+    /* Editorial values */
+
+    .contact-expect-section {
+        padding: 70px 0 73px;
+    }
+
+    .contact-expect-heading {
+        margin-bottom: 37px;
+    }
+
+    .contact-expect-heading h2 {
+        font-size: 30px;
+    }
+
+    .contact-expect-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 28px 23px;
+    }
+
+    .contact-expect-item:last-child {
+        grid-column: 1 / -1;
+    }
+
+    /* Help panel */
+
+    .contact-help-section {
+        padding-bottom: 73px;
+    }
+
+    .contact-help-card {
+        padding: 32px;
+    }
+
+    /* Footer */
+
+    .contact-footer-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 35px 28px;
+
+        padding: 53px 0 42px;
+    }
+
+    .contact-footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .contact-footer-bottom {
+        flex-direction: column;
+
+        gap: 9px;
+    }
+
+    .contact-footer-disclaimer {
+        max-width: 620px;
+
+        text-align: left;
+    }
+}
+
+
+/* =========================================================
+   4. MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .contact-container {
+        width: calc(100% - 36px);
+    }
+
+    .contact-page {
+        font-size: 15px;
+    }
+
+    /* Header */
+
+    .contact-header-inner {
+        gap: 12px;
+        padding-top: 14px;
+    }
+
+    .contact-logo {
+        gap: 7px;
+    }
+
+    .contact-logo-mark {
+        width: 30px;
+        height: 30px;
+
+        border-radius: 7px;
+    }
+
+    .contact-logo-mark svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    .contact-logo-text {
+        font-size: 20px;
+        letter-spacing: -0.85px;
+    }
+
+    .contact-header-cta {
+        min-height: 37px;
+
+        gap: 5px;
+
+        padding: 8px 9px;
+
+        font-size: 10px;
+    }
+
+    .contact-header-cta span {
+        font-size: 14px;
+    }
+
+    .contact-main-nav {
+        gap: 22px;
+
+        padding-top: 10px;
+        padding-bottom: 12px;
+    }
+
+    /* Hero */
+
+    .contact-hero {
+        padding: 56px 0 51px;
+    }
+
+    .contact-hero::after {
+        right: -185px;
+        bottom: -220px;
+
+        width: 330px;
+        height: 330px;
+    }
+
+    .contact-hero .contact-eyebrow {
+        margin-bottom: 13px;
+    }
+
+    .contact-eyebrow {
+        margin-bottom: 13px;
+
+        font-size: 10px;
+        letter-spacing: 1.4px;
+    }
+
+    .contact-hero h1 {
+        margin-bottom: 18px;
+
+        font-size: clamp(39px, 10vw, 49px);
+        letter-spacing: -2px;
+        line-height: 1.15;
+    }
+
+    .contact-hero-description {
+        font-size: 14px;
+        line-height: 1.85;
+    }
+
+    .contact-hero-trust {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 11px;
+
+        margin-top: 23px;
+    }
+
+    .contact-trust-item {
+        font-size: 12px;
+    }
+
+    /* Section headings */
+
+    .contact-section-heading {
+        margin-bottom: 29px;
+    }
+
+    .contact-section-heading h2 {
+        margin-bottom: 12px;
+
+        font-size: 27px;
+        letter-spacing: -0.85px;
+        line-height: 1.35;
+    }
+
+    .contact-section-heading p {
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+    /* Contact cards */
+
+    .contact-options-section {
+        padding: 56px 0 61px;
+    }
+
+    .contact-options-grid {
+        grid-template-columns: minmax(0, 1fr);
+
+        gap: 15px;
+    }
+
+    .contact-option-card,
+    .contact-option-card:last-child {
+        min-height: 0;
+
+        padding: 24px 22px;
+    }
+
+    .contact-option-icon {
+        width: 45px;
+        height: 45px;
+
+        margin-bottom: 18px;
+    }
+
+    .contact-option-icon svg {
+        width: 23px;
+        height: 23px;
+    }
+
+    .contact-option-card h3 {
+        margin-bottom: 9px;
+
+        font-size: 17px;
+    }
+
+    .contact-option-card p {
+        margin-bottom: 18px;
+
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .contact-option-link {
+        font-size: 12px;
+    }
+
+    /* Contact form area */
+
+    .contact-message-section {
+        padding: 58px 0 61px;
+    }
+
+    .contact-message-layout {
+        gap: 29px;
+    }
+
+    .contact-message-intro > h2 {
+        margin-bottom: 14px;
+
+        font-size: 30px;
+        letter-spacing: -1px;
+    }
+
+    .contact-message-intro > p {
+        margin-bottom: 21px;
+
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+    .contact-message-note {
+        gap: 12px;
+
+        margin-top: 25px;
+        padding: 16px;
+    }
+
+    .contact-note-icon {
+        width: 33px;
+        height: 33px;
+    }
+
+    .contact-note-icon svg {
+        width: 19px;
+        height: 19px;
+    }
+
+    .contact-message-note h3 {
+        font-size: 13px;
+    }
+
+    .contact-message-note p {
+        font-size: 11px;
+    }
+
+    .contact-editorial-note {
+        gap: 10px;
+
+        margin-top: 18px;
+    }
+
+    .contact-editorial-note p {
+        font-size: 11px;
+    }
+
+    /* Form card */
+
+    .contact-form-card {
+        padding: 24px 19px 22px;
+
+        border-radius: 10px;
+    }
+
+    .contact-form-heading {
+        margin-bottom: 22px;
+        padding-bottom: 18px;
+    }
+
+    .contact-form-heading h2 {
+        font-size: 21px;
+        letter-spacing: -0.5px;
+    }
+
+    .contact-form-heading p {
+        font-size: 11px;
+    }
+
+    .contact-form {
+        gap: 18px;
+    }
+
+    .contact-form-field {
+        gap: 8px;
+    }
+
+    .contact-form-field > label {
+        font-size: 12px;
+    }
+
+    .contact-form-field input,
+    .contact-form-field select {
+        min-height: 47px;
+
+        padding: 11px 12px;
+
+        font-size: 13px;
+    }
+
+    .contact-form-field textarea {
+        min-height: 135px;
+
+        padding: 12px;
+
+        font-size: 13px;
+    }
+
+    .contact-field-help {
+        font-size: 10px;
+    }
+
+    .contact-form-consent {
+        gap: 9px;
+
+        padding: 12px;
+    }
+
+    .contact-form-consent input {
+        width: 16px;
+        height: 16px;
+    }
+
+    .contact-form-consent label {
+        font-size: 10px;
+        line-height: 1.8;
+    }
+
+    .contact-submit-button {
+        min-height: 49px;
+
+        padding: 12px 16px;
+
+        font-size: 12px;
+    }
+
+    .contact-form-disclaimer {
+        font-size: 10px;
+    }
+
+    /* What to expect */
+
+    .contact-expect-section {
+        padding: 58px 0 62px;
+    }
+
+    .contact-expect-heading {
+        margin-bottom: 30px;
+    }
+
+    .contact-expect-heading h2 {
+        font-size: 27px;
+        letter-spacing: -0.85px;
+    }
+
+    .contact-expect-heading p {
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+    .contact-expect-grid {
+        grid-template-columns: minmax(0, 1fr);
+
+        gap: 23px;
+    }
+
+    .contact-expect-item:last-child {
+        grid-column: auto;
+    }
+
+    .contact-expect-item {
+        padding-top: 18px;
+    }
+
+    .contact-expect-number {
+        margin-bottom: 11px;
+    }
+
+    .contact-expect-item h3 {
+        margin-bottom: 8px;
+
+        font-size: 16px;
+    }
+
+    .contact-expect-item p {
+        font-size: 12px;
+        line-height: 1.85;
+    }
+
+    /* Help card */
+
+    .contact-help-section {
+        padding-bottom: 59px;
+    }
+
+    .contact-help-card {
+        gap: 22px;
+
+        padding: 24px 20px;
+
+        border-radius: 10px;
+    }
+
+    .contact-help-content h2 {
+        font-size: 23px;
+        letter-spacing: -0.6px;
+        line-height: 1.4;
+    }
+
+    .contact-help-content p {
+        font-size: 12px;
+        line-height: 1.85;
+    }
+
+    .contact-help-actions {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .contact-help-primary,
+    .contact-help-secondary {
+        flex: 1 1 auto;
+
+        width: 100%;
+        min-height: 45px;
+
+        font-size: 12px;
+    }
+
+    /* Footer */
+
+    .contact-footer-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 29px 19px;
+
+        padding: 42px 0 33px;
+    }
+
+    .contact-footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .contact-footer-logo {
+        margin-bottom: 15px;
+    }
+
+    .contact-footer-brand > p {
+        max-width: 320px;
+
+        font-size: 12px;
+    }
+
+    .contact-footer-column h2 {
+        margin-bottom: 14px;
+
+        font-size: 12px;
+    }
+
+    .contact-footer-column ul {
+        gap: 10px;
+    }
+
+    .contact-footer-column a {
+        font-size: 11px;
+    }
+
+    .contact-footer-bottom {
+        gap: 9px;
+
+        padding: 19px 0 22px;
+    }
+
+    .contact-footer-bottom > p {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================================
+   5. SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .contact-container {
+        width: calc(100% - 30px);
+    }
+
+    /* Prevent header elements from becoming cramped */
+
+    .contact-header-inner {
+        gap: 11px 8px;
+    }
+
+    .contact-logo {
+        gap: 6px;
+    }
+
+    .contact-logo-mark {
+        width: 28px;
+        height: 28px;
+    }
+
+    .contact-logo-mark svg {
+        width: 19px;
+        height: 19px;
+    }
+
+    .contact-logo-text {
+        font-size: 18px;
+        letter-spacing: -0.7px;
+    }
+
+    .contact-header-cta {
+        min-height: 35px;
+
+        gap: 4px;
+
+        padding: 7px 8px;
+
+        font-size: 9px;
+    }
+
+    .contact-header-cta span {
+        font-size: 13px;
+    }
+
+    .contact-main-nav {
+        gap: 19px;
+    }
+
+    .contact-main-nav a {
+        font-size: 11px;
+    }
+
+    .contact-hero {
+        padding: 47px 0 44px;
+    }
+
+    .contact-hero h1 {
+        font-size: 40px;
+        letter-spacing: -1.8px;
+    }
+
+    .contact-hero-description {
+        font-size: 13px;
+    }
+
+    .contact-trust-item {
+        font-size: 11px;
+    }
+
+    .contact-options-section {
+        padding: 48px 0 51px;
+    }
+
+    .contact-section-heading h2 {
+        font-size: 25px;
+    }
+
+    .contact-option-card,
+    .contact-option-card:last-child {
+        padding: 21px 18px;
+    }
+
+    .contact-message-section {
+        padding: 49px 0 52px;
+    }
+
+    .contact-message-intro > h2 {
+        font-size: 27px;
+    }
+
+    .contact-form-card {
+        padding: 21px 15px 19px;
+    }
+
+    .contact-form-heading h2 {
+        font-size: 19px;
+    }
+
+    .contact-form {
+        gap: 16px;
+    }
+
+    .contact-form-field input,
+    .contact-form-field select {
+        padding-inline: 10px;
+    }
+
+    .contact-form-field textarea {
+        padding: 10px;
+    }
+
+    .contact-form-consent {
+        padding: 10px;
+    }
+
+    .contact-expect-section {
+        padding: 49px 0 52px;
+    }
+
+    .contact-expect-heading h2 {
+        font-size: 25px;
+    }
+
+    .contact-help-section {
+        padding-bottom: 49px;
+    }
+
+    .contact-help-card {
+        padding: 21px 16px;
+    }
+
+    .contact-help-content h2 {
+        font-size: 21px;
+    }
+
+    .contact-footer-main {
+        gap: 27px 14px;
+    }
+}
+
+
+/* =========================================================
+   6. EXTRA-SMALL MOBILE
+========================================================= */
+
+@media (max-width: 350px) {
+
+    .contact-container {
+        width: calc(100% - 24px);
+    }
+
+    .contact-header-inner {
+        gap: 10px 6px;
+    }
+
+    .contact-logo {
+        gap: 5px;
+    }
+
+    .contact-logo-mark {
+        width: 25px;
+        height: 25px;
+
+        border-radius: 5px;
+    }
+
+    .contact-logo-mark svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .contact-logo-text {
+        font-size: 16px;
+        letter-spacing: -0.55px;
+    }
+
+    .contact-header-cta {
+        max-width: 105px;
+        min-height: 33px;
+
+        padding: 6px 7px;
+
+        font-size: 9px;
+        white-space: nowrap;
+    }
+
+    .contact-main-nav {
+        gap: 17px;
+    }
+
+    .contact-main-nav a {
+        font-size: 10px;
+    }
+
+    .contact-hero {
+        padding: 42px 0 39px;
+    }
+
+    .contact-hero h1 {
+        font-size: 36px;
+        letter-spacing: -1.5px;
+    }
+
+    .contact-hero-description {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .contact-hero-trust {
+        gap: 9px;
+    }
+
+    .contact-trust-item {
+        gap: 6px;
+
+        font-size: 10px;
+    }
+
+    .contact-trust-item svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .contact-section-heading h2 {
+        font-size: 23px;
+    }
+
+    .contact-section-heading p {
+        font-size: 12px;
+    }
+
+    .contact-option-card,
+    .contact-option-card:last-child {
+        padding: 19px 15px;
+    }
+
+    .contact-option-card h3 {
+        font-size: 16px;
+    }
+
+    .contact-option-card p {
+        font-size: 12px;
+    }
+
+    .contact-message-intro > h2 {
+        font-size: 25px;
+    }
+
+    .contact-message-intro > p {
+        font-size: 12px;
+    }
+
+    .contact-message-note {
+        gap: 9px;
+        padding: 12px;
+    }
+
+    .contact-note-icon {
+        width: 29px;
+        height: 29px;
+    }
+
+    .contact-note-icon svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .contact-message-note p {
+        font-size: 10px;
+    }
+
+    .contact-form-card {
+        padding: 18px 12px 16px;
+    }
+
+    .contact-form-heading h2 {
+        font-size: 18px;
+    }
+
+    .contact-form-field > label {
+        font-size: 11px;
+    }
+
+    .contact-form-field input,
+    .contact-form-field select,
+    .contact-form-field textarea {
+        font-size: 12px;
+    }
+
+    .contact-form-consent label {
+        font-size: 9px;
+    }
+
+    .contact-submit-button {
+        min-height: 46px;
+        font-size: 11px;
+    }
+
+    .contact-expect-heading h2 {
+        font-size: 23px;
+    }
+
+    .contact-expect-item h3 {
+        font-size: 15px;
+    }
+
+    .contact-expect-item p {
+        font-size: 11px;
+    }
+
+    .contact-help-card {
+        padding: 19px 14px;
+    }
+
+    .contact-help-content h2 {
+        font-size: 19px;
+    }
+
+    .contact-help-content p {
+        font-size: 11px;
+    }
+
+    .contact-help-primary,
+    .contact-help-secondary {
+        padding-inline: 10px;
+        font-size: 11px;
+    }
+
+    .contact-footer-main {
+        gap: 25px 12px;
+    }
+
+    .contact-footer-column h2 {
+        font-size: 11px;
+    }
+
+    .contact-footer-column a {
+        font-size: 10px;
+    }
+
+    .contact-footer-bottom > p {
+        font-size: 9px;
+    }
+}
+
+
+/* =========================================================
+   7. VERY NARROW SCREENS
+========================================================= */
+
+@media (max-width: 280px) {
+
+    .contact-container {
+        width: calc(100% - 20px);
+    }
+
+    .contact-header-inner {
+        align-items: flex-start;
+    }
+
+    .contact-logo-text {
+        font-size: 15px;
+    }
+
+    .contact-header-cta {
+        max-width: 95px;
+
+        white-space: normal;
+        text-align: center;
+    }
+
+    .contact-main-nav {
+        gap: 14px;
+    }
+
+    .contact-hero h1 {
+        font-size: 32px;
+    }
+
+    .contact-options-section,
+    .contact-message-section,
+    .contact-expect-section {
+        padding-block: 40px;
+    }
+
+    .contact-form-card {
+        padding: 15px 10px;
+    }
+
+    .contact-footer-main {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .contact-footer-brand {
+        grid-column: auto;
+    }
+}
+
+
+    </style>
+    
+</head>
+
+<body class="contact-page">
+
+    <a class="contact-skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <!-- =========================
+         SITE HEADER
+    ========================== -->
+
+    
+    
+    <!-- ==============================
+     REVIEWNEST HEADER
+================================== -->
+
+<header class="rn-header" id="rnHeader">
+
+  <div class="rn-header-inner">
+
+    <!-- LEFT: MENU + SEARCH -->
+    <div class="rn-header-left">
+
+      <!-- Menu Button -->
+      <button
+        class="rn-icon-button rn-menu-toggle"
+        id="rnMenuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="rnMobileMenu"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <path d="M4 6h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Search Button -->
+      <button
+        class="rn-icon-button rn-search-toggle"
+        id="rnSearchToggle"
+        type="button"
+        aria-label="Open search"
+        aria-expanded="false"
+        aria-controls="rnSearchPanel"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          aria-hidden="true"
+        >
+          <circle cx="10.8" cy="10.8" r="6.8"></circle>
+          <path d="m16 16 4.5 4.5"></path>
+        </svg>
+      </button>
+
+    </div>
+
+
+    <!-- CENTER: DESKTOP NAVIGATION -->
+    <nav
+      class="rn-desktop-nav"
+      id="rnDesktopNav"
+      aria-label="Main navigation"
+    >
+
+      <a
+        href="electronics.html"
+        class="rn-nav-link"
+        data-nav="electronics"
+      >
+        Electronics
+      </a>
+
+      <a
+        href="reviews.html"
+        class="rn-nav-link"
+        data-nav="reviews"
+      >
+        Reviews
+      </a>
+
+      <a
+        href="buying-guides.html"
+        class="rn-nav-link"
+        data-nav="buying-guides"
+      >
+        Buying Guides
+      </a>
+
+    </nav>
+
+
+    <!-- RIGHT: REVIEWNEST BRAND -->
+    <a
+      class="rn-brand"
+      href="index.html"
+      aria-label="ReviewNest homepage"
+    >
+
+      <span class="rn-brand-icon" aria-hidden="true">
+  <svg
+    viewBox="0 0 40 40"
+    width="40"
+    height="40"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      x="0"
+      y="0"
+      width="40"
+      height="40"
+      rx="8"
+      fill="#B42318"
+    />
+
+    <text
+      x="20"
+      y="29"
+      text-anchor="middle"
+      font-family="Arial, sans-serif"
+      font-size="29"
+      font-weight="800"
+      fill="#FFFFFF"
+    >R</text>
+  </svg>
+</span>
+
+      <span class="rn-brand-text">
+        <span class="rn-brand-name">ReviewNest</span>
+        <span class="rn-brand-tagline">Honest Reviews. Smarter Choices.</span>
+      </span>
+
+    </a>
+
+  </div>
+
+
+  <!-- SEARCH PANEL -->
+  <div
+    class="rn-search-panel"
+    id="rnSearchPanel"
+    aria-hidden="true"
+    inert
+  >
+
+    <form
+      class="rn-search-form"
+      id="rnSearchForm"
+      role="search"
+      action="search.html"
+      method="get"
+    >
+
+      <label class="rn-sr-only" for="rnSearchInput">
+        Search products and reviews
+      </label>
+
+      <input
+        type="search"
+        id="rnSearchInput"
+        name="q"
+        placeholder="Search products, reviews, and buying guides..."
+        autocomplete="off"
+      >
+
+      <button type="submit" class="rn-search-submit">
+        Search
+      </button>
+
+      <button
+        type="button"
+        class="rn-search-close"
+        id="rnSearchClose"
+        aria-label="Close search"
+      >
+        &times;
+      </button>
+
+    </form>
+
+  </div>
+
+</header>
+
+
+<!-- ==============================
+     MOBILE SIDEBAR MENU
+================================== -->
+
+<div
+  class="rn-mobile-menu-overlay"
+  id="rnMenuOverlay"
+  aria-hidden="true"
+></div>
+
+<aside
+  class="rn-mobile-menu"
+  id="rnMobileMenu"
+  aria-label="Mobile navigation"
+  aria-hidden="true"
+  inert
+>
+
+  <div class="rn-mobile-menu-header">
+
+    <a class="rn-mobile-brand" href="index.html">
+      ReviewNest
+    </a>
+
+    <button
+      class="rn-mobile-menu-close"
+      id="rnMenuClose"
+      type="button"
+      aria-label="Close navigation menu"
+    >
+      &times;
+    </button>
+
+  </div>
+
+
+  <!-- Homepage Menu -->
+  <nav
+    class="rn-mobile-nav rn-home-menu"
+    data-page-menu="home"
+    aria-label="Homepage navigation"
+  >
+
+    <a href="index.html" class="rn-mobile-nav-link">
+      Home
+    </a>
+
+    <a href="electronics.html" class="rn-mobile-nav-link">
+      Electronics
+    </a>
+
+    <a href="reviews.html" class="rn-mobile-nav-link">
+      Reviews
+    </a>
+
+    <a href="buying-guides.html" class="rn-mobile-nav-link">
+      Buying Guides
+    </a>
+
+  </nav>
+
+
+  <!-- Electronics Page Menu -->
+  <nav
+    class="rn-mobile-nav rn-electronics-menu"
+    data-page-menu="electronics"
+    aria-label="Electronics navigation"
+    hidden
+  >
+
+    <a href="index.html" class="rn-mobile-nav-link">
+      Home
+    </a>
+
+    <a href="electronics.html" class="rn-mobile-nav-link">
+      All Electronics
+    </a>
+
+    <a href="electronics.html#headphones" class="rn-mobile-nav-link">
+      Headphones
+    </a>
+
+    <a href="electronics.html#speakers" class="rn-mobile-nav-link">
+      Speakers
+    </a>
+
+    <a href="electronics.html#smartwatches" class="rn-mobile-nav-link">
+      Smartwatches
+    </a>
+
+    <a href="electronics.html#laptops" class="rn-mobile-nav-link">
+      Laptops
+    </a>
+
+    <a href="buying-guides.html" class="rn-mobile-nav-link">
+      Buying Guides
+    </a>
+
+  </nav>
+
+</aside>
+
+
+<!-- ================================
+     End ReviewNest Header
+================================= -->
+    
+    
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main id="main-content">
+
+        <!-- CONTACT HERO -->
+
+        <section class="contact-hero">
+            <div class="contact-container">
+
+                <div class="contact-hero-content">
+
+                    <span class="contact-eyebrow">
+                        WE'RE HERE TO HELP
+                    </span>
+
+                    <h1>
+                        Let's talk<span>.</span>
+                    </h1>
+
+                    <p class="contact-hero-description">
+                        Have a question about our research, a product review,
+                        or how ReviewNest works? We'd love to hear from you.
+                        Your feedback helps us make our information more
+                        useful, clear, and trustworthy.
+                    </p>
+
+                    <div class="contact-hero-trust">
+
+                        <span class="contact-trust-item">
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12.5L9.5 17L19 7"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                            Reader-focused support
+                        </span>
+
+                        <span class="contact-trust-item">
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12.5L9.5 17L19 7"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                            Honest communication
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT OPTIONS -->
+
+        <section class="contact-options-section">
+            <div class="contact-container">
+
+                <div class="contact-section-heading">
+
+                    <span class="contact-eyebrow">
+                        HOW CAN WE HELP?
+                    </span>
+
+                    <h2>
+                        The right conversation starts here.
+                    </h2>
+
+                    <p>
+                        Choose the type of inquiry that best describes
+                        what you want to discuss.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-options-grid">
+
+                    <!-- GENERAL INQUIRIES -->
+
+                    <article class="contact-option-card">
+
+                        <div class="contact-option-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="5" width="18" height="14" rx="2"
+                                      stroke="currentColor"
+                                      stroke-width="1.7"/>
+                                <path d="M4 7L12 13L20 7"
+                                      stroke="currentColor"
+                                      stroke-width="1.7"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        <h3>General Inquiries</h3>
+
+                        <p>
+                            Have a question about ReviewNest, our website,
+                            or the information we publish? Send us your
+                            inquiry through the message form below.
+                        </p>
+
+                        <a href="#contact-form" class="contact-option-link">
+                            Send an inquiry
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- EDITORIAL FEEDBACK -->
+
+                    <article class="contact-option-card">
+
+                        <div class="contact-option-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 20H21"
+                                      stroke="currentColor"
+                                      stroke-width="1.7"
+                                      stroke-linecap="round"/>
+                                <path d="M16.5 3.5A2.12 2.12 0 0 1 19.5 6.5L8 18L4 19L5 15L16.5 3.5Z"
+                                      stroke="currentColor"
+                                      stroke-width="1.7"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        <h3>Editorial Feedback</h3>
+
+                        <p>
+                            Spotted an incorrect specification, outdated
+                            detail, unclear statement, or something that
+                            needs a closer look? Tell us about it.
+                        </p>
+
+                        <a href="#contact-form" class="contact-option-link">
+                            Share feedback
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </article>
+
+
+                    <!-- PARTNERSHIP INQUIRIES -->
+
+                    <article class="contact-option-card">
+
+                        <div class="contact-option-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M16 21V19C16 16.8 14.2 15 12 15H6C3.8 15 2 16.8 2 19V21"
+                                      stroke="currentColor"
+                                      stroke-width="1.7"
+                                      stroke-linecap="round"/>
+                                <circle cx="9" cy="7" r="4"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"/>
+                                <path d="M20 8V14M17 11H23"
+                                      stroke="currentColor"
+                                      stroke-width="1.7"
+                                      stroke-linecap="round"/>
+                            </svg>
+                        </div>
+
+                        <h3>Business Inquiries</h3>
+
+                        <p>
+                            Have a relevant business, media, or partnership
+                            proposal? Introduce your idea and explain how
+                            it relates to ReviewNest.
+                        </p>
+
+                        <a href="#contact-form" class="contact-option-link">
+                            Discuss your idea
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- MESSAGE FORM AND TRUST PANEL -->
+
+        <section class="contact-message-section" id="contact-form">
+            <div class="contact-container">
+
+                <div class="contact-message-layout">
+
+                    <!-- FORM INTRODUCTION -->
+
+                    <div class="contact-message-intro">
+
+                        <span class="contact-eyebrow">
+                            GET IN TOUCH
+                        </span>
+
+                        <h2>
+                            Send us a message.
+                        </h2>
+
+                        <p>
+                            Tell us what you need help with. Please include
+                            enough detail to help us understand your question
+                            or feedback.
+                        </p>
+
+
+                        <div class="contact-message-note">
+
+                            <div class="contact-note-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 22S20 18 20 11V5L12 2L4 5V11C4 18 12 22 12 22Z"
+                                          stroke="currentColor"
+                                          stroke-width="1.7"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M9 12L11 14L15 10"
+                                          stroke="currentColor"
+                                          stroke-width="1.7"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
+                            <div>
+                                <h3>Your privacy matters</h3>
+
+                                <p>
+                                    Only share information needed to explain
+                                    your inquiry. Do not include passwords,
+                                    payment details, or other sensitive
+                                    personal information.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-editorial-note">
+
+                            <span class="contact-editorial-note-mark"
+                                  aria-hidden="true">i</span>
+
+                            <p>
+                                ReviewNest aims to provide useful,
+                                transparent product information. Editorial
+                                feedback is welcome, and relevant corrections
+                                can help improve our content.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTACT FORM -->
+
+                    <div class="contact-form-card">
+
+                        <div class="contact-form-heading">
+                            <h2>Write to ReviewNest</h2>
+
+                            <p>
+                                Fields marked with
+                                <span aria-hidden="true">*</span>
+                                are required.
+                            </p>
+                        </div>
+
+
+                        <!--
+                            IMPORTANT:
+                            This form is front-end markup only.
+                            Connect a verified form service or backend
+                            before publishing it as a working contact form.
+                        -->
+
+                        <form
+                            class="contact-form"
+                            id="reviewnest-contact-form"
+                            action="#"
+                            method="post"
+                        >
+
+                            <div class="contact-form-field">
+
+                                <label for="contact-name">
+                                    Your name
+                                    <span aria-hidden="true">*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="contact-name"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    autocomplete="name"
+                                    minlength="2"
+                                    maxlength="100"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="contact-form-field">
+
+                                <label for="contact-email">
+                                    Email address
+                                    <span aria-hidden="true">*</span>
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="contact-email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    maxlength="254"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="contact-form-field">
+
+                                <label for="contact-topic">
+                                    What is your message about?
+                                    <span aria-hidden="true">*</span>
+                                </label>
+
+                                <select
+                                    id="contact-topic"
+                                    name="topic"
+                                    required
+                                >
+                                    <option value="" selected disabled>
+                                        Select an inquiry type
+                                    </option>
+
+                                    <option value="general">
+                                        General question
+                                    </option>
+
+                                    <option value="editorial-feedback">
+                                        Editorial feedback or correction
+                                    </option>
+
+                                    <option value="product-review">
+                                        Product review question
+                                    </option>
+
+                                    <option value="business">
+                                        Business or partnership inquiry
+                                    </option>
+
+                                    <option value="website">
+                                        Website issue
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+                                </select>
+
+                            </div>
+
+
+                            <div class="contact-form-field">
+
+                                <label for="contact-subject">
+                                    Subject
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="contact-subject"
+                                    name="subject"
+                                    placeholder="Briefly describe your inquiry"
+                                    maxlength="150"
+                                >
+
+                            </div>
+
+
+                            <div class="contact-form-field">
+
+                                <label for="contact-message">
+                                    Your message
+                                    <span aria-hidden="true">*</span>
+                                </label>
+
+                                <textarea
+                                    id="contact-message"
+                                    name="message"
+                                    rows="6"
+                                    minlength="10"
+                                    maxlength="5000"
+                                    placeholder="Tell us how we can help..."
+                                    required
+                                ></textarea>
+
+                                <p class="contact-field-help">
+                                    Please avoid sharing confidential or
+                                    sensitive personal information.
+                                </p>
+
+                            </div>
+
+
+                            <div class="contact-form-consent">
+
+                                <input
+                                    type="checkbox"
+                                    id="contact-privacy"
+                                    name="privacy_acknowledgment"
+                                    value="acknowledged"
+                                    required
+                                >
+
+                                <label for="contact-privacy">
+                                    I understand that my information should
+                                    be used to handle my inquiry in accordance
+                                    with the site's privacy policy.
+                                    <span aria-hidden="true">*</span>
+                                </label>
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="contact-submit-button"
+                            >
+                                Send Message
+
+                                <svg viewBox="0 0 24 24" fill="none"
+                                     aria-hidden="true">
+                                    <path d="M5 12H19M12 5L19 12L12 19"
+                                          stroke="currentColor"
+                                          stroke-width="1.8"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+
+                            </button>
+
+
+                            <p class="contact-form-disclaimer">
+                                This form requires a working submission
+                                service before it can deliver messages.
+                            </p>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- WHAT TO EXPECT -->
+
+        <section class="contact-expect-section">
+            <div class="contact-container">
+
+                <div class="contact-expect-content">
+
+                    <div class="contact-expect-heading">
+
+                        <span class="contact-eyebrow">
+                            OUR APPROACH
+                        </span>
+
+                        <h2>
+                            Every useful detail counts.
+                        </h2>
+
+                        <p>
+                            Clear communication and accurate information
+                            are important parts of building a trustworthy
+                            product research resource.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-expect-grid">
+
+                        <article class="contact-expect-item">
+
+                            <span class="contact-expect-number">01</span>
+
+                            <h3>We value your feedback</h3>
+
+                            <p>
+                                Reader questions and constructive suggestions
+                                can help us identify areas where our content
+                                needs clarification or improvement.
+                            </p>
+
+                        </article>
+
+
+                        <article class="contact-expect-item">
+
+                            <span class="contact-expect-number">02</span>
+
+                            <h3>We take accuracy seriously</h3>
+
+                            <p>
+                                Reports about product details or factual
+                                errors should include enough context for
+                                the information to be reviewed.
+                            </p>
+
+                        </article>
+
+
+                        <article class="contact-expect-item">
+
+                            <span class="contact-expect-number">03</span>
+
+                            <h3>We aim for transparency</h3>
+
+                            <p>
+                                Learn about our research approach, editorial
+                                standards, and affiliate relationships through
+                                our transparency resources.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT AND EDITORIAL LINKS -->
+
+        <section class="contact-help-section">
+            <div class="contact-container">
+
+                <div class="contact-help-card">
+
+                    <div class="contact-help-content">
+
+                        <span class="contact-eyebrow">
+                            LEARN MORE ABOUT US
+                        </span>
+
+                        <h2>
+                            Want to understand how we work?
+                        </h2>
+
+                        <p>
+                            Explore our mission and research approach to
+                            understand how ReviewNest aims to help shoppers
+                            compare products and make informed decisions.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-help-actions">
+
+                        <a href="about.html" class="contact-help-primary">
+                            About ReviewNest
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a href="editorial-process.html"
+                           class="contact-help-secondary">
+                            Our Editorial Process
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+<!-- =========================================================
+     REVIEWNEST — PREMIUM WEBSITE FOOTER
+========================================================= -->
+
+<footer class="rn-footer" id="rnFooter">
+
+    <!-- Footer CTA -->
+    <div class="rn-footer-top">
+
+        <div class="rn-footer-top-inner">
+
+            <div class="rn-footer-cta-content">
+
+                <span class="rn-footer-eyebrow">
+                    THE REVIEWNEST DIFFERENCE
+                </span>
+
+                <h2>
+                    Make Every Purchase
+                    <span>Count.</span>
+                </h2>
+
+                <p>
+                    Discover useful product reviews, compare your
+                    options, and make more informed buying decisions
+                    with practical product information and buying guides.
+                </p>
+
+            </div>
+
+            <a
+                href="electronics.html"
+                class="rn-footer-cta-button"
+            >
+                Explore Reviews
+
+                <svg viewBox="0 0 24 24" fill="none"
+                     aria-hidden="true" focusable="false">
+                    <path
+                        d="M5 12H19M12 5L19 12L12 19"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                </svg>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main Footer -->
+    <div class="rn-footer-main">
+
+        <div class="rn-footer-grid">
+
+            <!-- Brand Column -->
+            <div class="rn-footer-brand-column">
+
+                <a
+                    href="index.html"
+                    class="rn-footer-brand"
+                    aria-label="ReviewNest homepage"
+                >
+
+                    <span class="rn-footer-logo"
+                          aria-hidden="true">
+
+                        <svg viewBox="0 0 40 40" fill="none"
+                             focusable="false">
+                            <rect
+                                x="2"
+                                y="2"
+                                width="36"
+                                height="36"
+                                rx="11"
+                                fill="currentColor"/>
+                            <path
+                                d="M12 12H23C27 12 29 14.5 29 18C29 21 27.5 23 24.5 24L30 30H23L18.5 24.5H18V30H12V12Z"
+                                fill="white"/>
+                            <path
+                                d="M18 17V20H23C24 20 25 19.5 25 18.5C25 17.5 24 17 23 17H18Z"
+                                fill="currentColor"/>
+                        </svg>
+
+                    </span>
+
+                    <span class="rn-footer-brand-text">
+
+                        <span class="rn-footer-brand-name">
+                            Review<span>Nest</span>
+                        </span>
+
+                        <span class="rn-footer-brand-tagline">
+                            Smarter Choices. Better Living.
+                        </span>
+
+                    </span>
+
+                </a>
+
+                <p class="rn-footer-description">
+                    ReviewNest provides product reviews, useful
+                    comparisons, and practical buying guides designed
+                    to help readers understand their options and
+                    shop with greater confidence.
+                </p>
+
+
+                <!-- Social Media
+                     IMPORTANT:
+                     Replace these platform homepages with the real
+                     ReviewNest profile URLs before publishing.
+                -->
+
+                <div class="rn-footer-social-section">
+
+                    <h3 class="rn-footer-social-heading">
+                        Follow Our Journey
+                    </h3>
+
+                    <div class="rn-footer-socials">
+
+                        <!-- Facebook -->
+                        <a
+                            href="https://www.facebook.com/"
+                            class="rn-social-link rn-social-facebook"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on Facebook"
+                            title="Facebook"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <path
+                                    fill="currentColor"
+                                    d="M13.5 21V12.8H16.3L16.7 9.6H13.5V7.6C13.5 6.7 13.8 6.1 15.1 6.1H16.8V3.2C16.5 3.2 15.3 3.1 14 3.1C11.2 3.1 9.3 4.8 9.3 7.9V9.6H6.5V12.8H9.3V21H13.5Z"/>
+                            </svg>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a
+                            href="https://www.youtube.com/"
+                            class="rn-social-link rn-social-youtube"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on YouTube"
+                            title="YouTube"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <path
+                                    fill="currentColor"
+                                    d="M23.2 7.1C22.9 5.8 22.1 5 20.8 4.7C18.5 4.1 12 4.1 12 4.1S5.5 4.1 3.2 4.7C1.9 5 1.1 5.8 0.8 7.1C0.4 9 0.4 12 0.4 12S0.4 15 0.8 16.9C1.1 18.2 1.9 19 3.2 19.3C5.5 19.9 12 19.9 12 19.9S18.5 19.9 20.8 19.3C22.1 19 22.9 18.2 23.2 16.9C23.6 15 23.6 12 23.6 12S23.6 9 23.2 7.1ZM9.7 15.1V8.9L15.1 12L9.7 15.1Z"/>
+                            </svg>
+                        </a>
+
+                        <!-- TikTok -->
+                        <a
+                            href="https://www.tiktok.com/"
+                            class="rn-social-link rn-social-tiktok"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on TikTok"
+                            title="TikTok"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <path
+                                    fill="currentColor"
+                                    d="M19.6 6.1C18.1 6 16.8 5 16.3 3.6C16.1 3.1 16 2.5 16 2H12.1V15.5C12.1 17 10.9 18.2 9.4 18.2C7.9 18.2 6.7 17 6.7 15.5C6.7 14 7.9 12.8 9.4 12.8C9.8 12.8 10.2 12.9 10.6 13.1V9.1C10.2 9 9.8 9 9.4 9C5.8 9 2.9 11.9 2.9 15.5C2.9 19.1 5.8 22 9.4 22C13 22 15.9 19.1 15.9 15.5V8.6C17.1 9.5 18.5 10 20 10V6.1H19.6Z"/>
+                            </svg>
+                        </a>
+
+                        <!-- Pinterest -->
+                        <a
+                            href="https://www.pinterest.com/"
+                            class="rn-social-link rn-social-pinterest"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on Pinterest"
+                            title="Pinterest"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <path
+                                    fill="currentColor"
+                                    d="M12 2C6.5 2 3 5.9 3 10.5C3 13.2 4.5 15.7 6.8 16.8C6.8 15.8 6.8 14.9 7 14.2L8.1 9.5C7.9 9 7.8 8.5 7.8 8C7.8 6.4 8.8 5.2 10.2 5.2C11.4 5.2 12 6 12 7.1C12 8.3 11.2 10.1 10.8 11.7C10.5 13 11.4 14 12.6 14C14.7 14 16.2 11.3 16.2 8.2C16.2 5.8 14.6 4.1 11.7 4.1C8.4 4.1 6.3 6.5 6.3 9.2C6.3 10.3 6.6 11.2 7.3 11.9C7.5 12.1 7.6 12.2 7.5 12.5L7.2 13.4C7.1 13.7 6.9 13.8 6.6 13.6C5.1 13 4.4 11.3 4.4 9.5C4.4 6.5 7 2.9 12.1 2.9C16.2 2.9 18.9 5.9 18.9 9.1C18.9 13.2 16.7 16.3 13.5 16.3C12.2 16.3 11 15.6 10.6 14.8L9.8 17.9C9.5 19 8.9 20 8.4 20.7C9.6 21.1 10.8 21.3 12 21.3C17.5 21.3 22 16.8 22 11.3C22 5.8 17.5 2 12 2Z"/>
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a
+                            href="https://www.instagram.com/"
+                            class="rn-social-link rn-social-instagram"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Find ReviewNest on Instagram"
+                            title="Instagram"
+                        >
+                            <svg viewBox="0 0 24 24"
+                                 fill="none"
+                                 aria-hidden="true"
+                                 focusable="false">
+                                <rect
+                                    x="3"
+                                    y="3"
+                                    width="18"
+                                    height="18"
+                                    rx="5"
+                                    stroke="currentColor"
+                                    stroke-width="2"/>
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="4"
+                                    stroke="currentColor"
+                                    stroke-width="2"/>
+                                <circle
+                                    cx="17.5"
+                                    cy="6.8"
+                                    r="1.2"
+                                    fill="currentColor"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <p class="rn-footer-social-note">
+                        Product reviews, comparisons, and helpful videos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Explore Column -->
+            <nav class="rn-footer-column"
+                 aria-label="Explore ReviewNest">
+
+                <h3 class="rn-footer-column-title">
+                    Explore
+                </h3>
+
+                <ul class="rn-footer-links">
+
+                    <li>
+                        <a href="electronics.html">
+                            Electronics
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#popular-products">
+                            Popular Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#featured-products">
+                            Featured Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="buying-guides.html">
+                            Buying Guides
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="electronics.html">
+                            Product Reviews
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Company Column -->
+            <nav class="rn-footer-column"
+                 aria-label="About ReviewNest">
+
+                <h3 class="rn-footer-column-title">
+                    ReviewNest
+                </h3>
+
+                <ul class="rn-footer-links">
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="how-we-review.html">
+                            How We Review
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="editorial-process.html">
+                            Editorial Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="affiliate-disclosure.html">
+                            Affiliate Disclosure
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <!-- Helpful Information Column -->
+            <nav class="rn-footer-column"
+                 aria-label="Legal and helpful information">
+
+                <h3 class="rn-footer-column-title">
+                    Helpful Information
+                </h3>
+
+                <ul class="rn-footer-links">
+
+                    <li>
+                        <a href="privacy-policy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms-of-use.html">
+                            Terms of Use
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="disclaimer.html">
+                            Disclaimer
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sitemap.html">
+                            HTML Sitemap
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+
+    <!-- Trust / Transparency Bar -->
+    <div class="rn-footer-trust">
+
+        <div class="rn-footer-trust-inner">
+
+            <div class="rn-footer-trust-item">
+
+                <span class="rn-footer-trust-icon"
+                      aria-hidden="true">
+
+                    <svg viewBox="0 0 24 24" fill="none"
+                         focusable="false">
+                        <path
+                            d="M12 3L19 6V11C19 15.5 16.1 19 12 21C7.9 19 5 15.5 5 11V6L12 3Z"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linejoin="round"/>
+                        <path
+                            d="M9 12L11 14L15 10"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"/>
+                    </svg>
+
+                </span>
+
+                <span>
+                    <strong>Reader-Focused</strong>
+                    <small>Useful information first</small>
+                </span>
+
+            </div>
+
+
+            <div class="rn-footer-trust-item">
+
+                <span class="rn-footer-trust-icon"
+                      aria-hidden="true">
+
+                    <svg viewBox="0 0 24 24" fill="none"
+                         focusable="false">
+                        <path
+                            d="M4 5H20V17H13L8 21V17H4V5Z"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linejoin="round"/>
+                        <path
+                            d="M8 9H16M8 13H14"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linecap="round"/>
+                    </svg>
+
+                </span>
+
+                <span>
+                    <strong>Clear Explanations</strong>
+                    <small>Understand your options</small>
+                </span>
+
+            </div>
+
+
+            <div class="rn-footer-trust-item">
+
+                <span class="rn-footer-trust-icon"
+                      aria-hidden="true">
+
+                    <svg viewBox="0 0 24 24" fill="none"
+                         focusable="false">
+                        <path
+                            d="M12 3L14.5 8.5L20.5 9.2L16 13.3L17.2 19.5L12 16.5L6.8 19.5L8 13.3L3.5 9.2L9.5 8.5L12 3Z"
+                            stroke="currentColor"
+                            stroke-width="1.7"
+                            stroke-linejoin="round"/>
+                    </svg>
+
+                </span>
+
+                <span>
+                    <strong>Smarter Decisions</strong>
+                    <small>Shop with more confidence</small>
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Affiliate Disclosure -->
+    <div class="rn-footer-disclosure">
+
+        <p>
+            <strong>Affiliate disclosure:</strong>
+            Some links on ReviewNest may be affiliate links.
+            If you make a qualifying purchase through these links,
+            we may earn a commission at no additional cost to you.
+            We aim to provide useful, honest, and reader-focused
+            information regardless of affiliate relationships.
+            Read our
+            <a href="affiliate-disclosure.html">
+                full affiliate disclosure
+            </a>.
+        </p>
+
+    </div>
+
+
+    <!-- Footer Bottom Bar -->
+    <div class="rn-footer-bottom">
+
+        <div class="rn-footer-bottom-inner">
+
+            <p class="rn-footer-copyright">
+                &copy;
+                <span id="rnCopyrightYear">2026</span>
+                ReviewNest. All rights reserved.
+            </p>
+
+            <p class="rn-footer-bottom-tagline">
+                Built for smarter buying decisions.
+            </p>
+
+            <a href="#rnHeader"
+               class="rn-footer-back-to-top">
+
+                Back to top
+
+                <svg viewBox="0 0 24 24" fill="none"
+                     aria-hidden="true"
+                     focusable="false">
+                    <path
+                        d="M12 19V5M5 12L12 5L19 12"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"/>
+                </svg>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- =========================================================
+     END REVIEWNEST PREMIUM FOOTER
+========================================================= -->
+
+
+<!-- Floating Back-to-Top Button -->
+<button
+    type="button"
+    class="rn-floating-top"
+    id="rnFloatingTop"
+    aria-label="Back to top"
+    title="Back to top"
+>
+    <svg viewBox="0 0 24 24" fill="none"
+         aria-hidden="true"
+         focusable="false">
+        <path
+            d="M12 19V5M5 12L12 5L19 12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </svg>
+</button>
+
+
+<!-- =========================================================
+     REVIEWNEST — FOOTER FUNCTIONALITY
+/* ========================================
+
+
+
+
+
+
+    <!-- YEAR UPDATE -->
+
+    <script>
+        (function () {
+            const yearElement = document.getElementById("contact-current-year");
+
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
+        })();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,3270 @@
+/* =========================================================
+REVIEWNEST
+ELECTRONICS CATEGORY PAGE
+STEP 1 — MAIN DESKTOP CSS
+========================================================= */
+
+/* =========================================================
+PAGE FOUNDATION
+========================================================= */
+
+.electronics-page {
+width: 100%;
+background: var(--color-bg);
+}
+
+.electronics-container {
+width: min(100%, var(--container));
+margin: 0 auto;
+}
+
+/* =========================================================
+HERO
+========================================================= */
+
+.electronics-hero {
+padding: 54px 40px 36px;
+background: var(--color-bg);
+}
+
+.electronics-breadcrumb {
+display: flex;
+align-items: center;
+gap: 8px;
+margin-bottom: 24px;
+font-size: 13px;
+}
+
+.electronics-breadcrumb a {
+color: var(--color-text-soft);
+text-decoration: none;
+transition: color 180ms ease;
+}
+
+.electronics-breadcrumb a:hover {
+color: var(--color-primary);
+}
+
+.electronics-breadcrumb span {
+color: var(--color-text-light);
+}
+
+.electronics-kicker {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+margin-bottom: 12px;
+color: var(--color-primary);
+font-size: 12px;
+font-weight: 800;
+letter-spacing: .12em;
+text-transform: uppercase;
+}
+
+.electronics-kicker::before {
+content: "";
+width: 7px;
+height: 7px;
+border-radius: 50%;
+background: var(--color-primary);
+}
+
+.electronics-hero h1 {
+max-width: 900px;
+margin: 0;
+color: var(--color-text);
+font-size: clamp(38px, 4.5vw, 60px);
+line-height: 1.04;
+letter-spacing: -.04em;
+}
+
+.electronics-hero h1 span {
+color: var(--color-primary);
+}
+
+.electronics-intro {
+max-width: 740px;
+margin: 20px 0 0;
+color: var(--color-text-soft);
+font-size: 17px;
+line-height: 1.7;
+}
+
+/* =========================================================
+SEARCH
+========================================================= */
+
+.electronics-search-section {
+padding: 0 40px 30px;
+background: var(--color-bg);
+}
+
+.electronics-search-box {
+width: min(100%, 900px);
+min-height: 62px;
+display: flex;
+align-items: center;
+gap: 8px;
+margin: 0 auto;
+padding: 7px;
+background: var(--color-surface);
+border: 1px solid var(--color-border);
+border-radius: 14px;
+box-shadow: 0 10px 30px rgba(16, 24, 40, .06);
+}
+
+.electronics-search-icon {
+width: 46px;
+height: 46px;
+flex: 0 0 46px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--color-text-soft);
+}
+
+.electronics-search-icon svg {
+width: 21px;
+height: 21px;
+fill: none;
+stroke: currentColor;
+stroke-width: 1.8;
+stroke-linecap: round;
+}
+
+.electronics-search-box input {
+min-width: 0;
+flex: 1;
+height: 46px;
+padding: 0 8px;
+border: 0;
+outline: 0;
+background: transparent;
+color: var(--color-text);
+font: inherit;
+font-size: 15px;
+}
+
+.electronics-search-box input::placeholder {
+color: var(--color-text-light);
+}
+
+.electronics-search-button {
+min-width: 105px;
+height: 46px;
+padding: 0 20px;
+border: 0;
+border-radius: 10px;
+background: var(--color-primary);
+color: #fff;
+font: inherit;
+font-size: 14px;
+font-weight: 700;
+cursor: pointer;
+transition:
+background 180ms ease,
+transform 180ms ease;
+}
+
+.electronics-search-button:hover {
+background: var(--color-primary-dark);
+}
+
+.electronics-search-button:active {
+transform: scale(.97);
+}
+
+/* =========================================================
+CONTROLS
+========================================================= */
+
+.electronics-controls-section {
+padding: 0 40px 34px;
+background: var(--color-bg);
+}
+
+.electronics-controls {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 20px;
+padding: 16px 18px;
+background: var(--color-surface);
+border: 1px solid var(--color-border);
+border-radius: 14px;
+}
+
+.electronics-filter-area,
+.electronics-sort-area {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.electronics-control-button,
+.electronics-sort-button {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+min-height: 40px;
+padding: 0 14px;
+border: 1px solid var(--color-border);
+border-radius: 9px;
+background: var(--color-surface);
+color: var(--color-text);
+font: inherit;
+font-size: 13px;
+font-weight: 700;
+cursor: pointer;
+transition:
+border-color 180ms ease,
+color 180ms ease,
+background 180ms ease;
+}
+
+.electronics-control-button:hover,
+.electronics-sort-button:hover {
+border-color: var(--color-primary);
+color: var(--color-primary);
+background: var(--color-surface-soft);
+}
+
+.control-icon {
+font-size: 15px;
+}
+
+.electronics-control-note {
+color: var(--color-text-light);
+font-size: 12px;
+}
+
+.sort-label {
+color: var(--color-text-soft);
+font-size: 13px;
+}
+
+/* =========================================================
+PRODUCTS
+========================================================= */
+
+.electronics-products-section {
+padding: 42px 40px 70px;
+background: var(--color-bg);
+}
+
+.electronics-section-heading {
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+gap: 25px;
+margin-bottom: 28px;
+}
+
+.electronics-section-heading h2 {
+margin: 0;
+color: var(--color-text);
+font-size: clamp(26px, 3vw, 36px);
+line-height: 1.15;
+letter-spacing: -.03em;
+}
+
+.electronics-section-heading p {
+max-width: 650px;
+margin: 10px 0 0;
+color: var(--color-text-soft);
+font-size: 14px;
+line-height: 1.65;
+}
+
+.electronics-result-count {
+flex: 0 0 auto;
+color: var(--color-text-soft);
+font-size: 13px;
+font-weight: 600;
+}
+
+/* =========================================================
+PRODUCT GRID FOUNDATION
+========================================================= */
+
+.electronics-product-grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 22px;
+}
+
+.electronics-placeholder-card {
+min-height: 340px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px dashed var(--color-border);
+border-radius: 16px;
+background: var(--color-surface);
+color: var(--color-text-light);
+font-size: 13px;
+transition:
+border-color 180ms ease,
+transform 180ms ease;
+}
+
+.electronics-placeholder-card:hover {
+border-color: var(--color-primary);
+transform: translateY(-2px);
+}
+
+/* =========================================================
+PAGINATION FOUNDATION
+========================================================= */
+
+.electronics-pagination {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+margin-top: 36px;
+}
+
+.pagination-button {
+min-width: 42px;
+height: 42px;
+padding: 0 12px;
+border: 1px solid var(--color-border);
+border-radius: 9px;
+background: var(--color-surface);
+color: var(--color-text);
+font: inherit;
+font-size: 14px;
+font-weight: 700;
+cursor: pointer;
+transition:
+border-color 180ms ease,
+background 180ms ease,
+color 180ms ease,
+transform 180ms ease;
+}
+
+.pagination-button:hover {
+border-color: var(--color-primary);
+color: var(--color-primary);
+}
+
+.pagination-button:active {
+transform: scale(.96);
+}
+
+.pagination-button.active {
+border-color: var(--color-primary);
+background: var(--color-primary);
+color: #fff;
+}
+
+/* =========================================================
+REVIEWNEST ELECTRONICS
+STEP 2 — PRODUCT DATA SYSTEM
+========================================================= */
+
+/* Products Section */
+
+.electronics-products-section {
+width: 100%;
+max-width: var(--container, 1380px);
+margin: 0 auto;
+padding: 80px 32px;
+}
+
+/*.products-section-header {
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+gap: 30px;
+margin-bottom: 34px;
+}
+
+.products-section-header h2 {
+margin: 7px 0 8px;
+font-size: clamp(28px, 3vw, 42px);
+line-height: 1.12;
+letter-spacing: -0.03em;
+color: var(--color-text);
+}
+
+.products-section-header p {
+margin: 0;
+max-width: 620px;
+color: var(--color-text-soft);
+font-size: 16px;
+line-height: 1.7;
+}*/
+
+.section-kicker {
+display: inline-block;
+color: var(--color-primary);
+font-size: 12px;
+font-weight: 800;
+letter-spacing: 0.12em;
+}
+
+.products-result-count {
+flex: 0 0 auto;
+padding: 10px 15px;
+border: 1px solid var(--color-border);
+border-radius: 10px;
+background: var(--color-surface);
+color: var(--color-text-soft);
+font-size: 14px;
+font-weight: 700;
+white-space: nowrap;
+}
+
+/* Product Grid */
+
+.products-grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 24px;
+min-height: 200px;
+}
+
+/* Temporary Step 2 Product Shell */
+
+.product-card {
+min-width: 0;
+border: 1px solid var(--color-border);
+border-radius: 18px;
+background: var(--color-surface);
+overflow: hidden;
+}
+
+.product-card-image {
+width: 100%;
+aspect-ratio: 4 / 3;
+background: var(--color-surface-soft);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.product-card-image img {
+width: 100%;
+height: 100%;
+display: block;
+object-fit: cover;
+}
+
+.product-card-body {
+padding: 20px;
+}
+
+.product-card-title {
+margin: 0 0 8px;
+color: var(--color-text);
+font-size: 18px;
+line-height: 1.35;
+}
+
+.product-card-description {
+margin: 0;
+color: var(--color-text-soft);
+font-size: 14px;
+line-height: 1.65;
+}
+
+.product-card-meta {
+margin-top: 15px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 12px;
+}
+
+.product-card-price {
+color: var(--color-text);
+font-size: 18px;
+font-weight: 800;
+}
+
+.product-card-rating {
+color: var(--color-text-soft);
+font-size: 13px;
+font-weight: 700;
+}
+
+/* Empty State */
+
+.products-empty-state {
+padding: 70px 24px;
+border: 1px dashed var(--color-border);
+border-radius: 18px;
+background: var(--color-surface);
+text-align: center;
+}
+
+.products-empty-state[hidden] {
+display: none;
+}
+
+.empty-state-icon {
+width: 54px;
+height: 54px;
+margin: 0 auto 18px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+background: var(--color-surface-soft);
+color: var(--color-text-soft);
+}
+
+.empty-state-icon svg {
+width: 25px;
+height: 25px;
+fill: none;
+stroke: currentColor;
+stroke-width: 1.8;
+stroke-linecap: round;
+}
+
+.products-empty-state h3 {
+margin: 0 0 8px;
+color: var(--color-text);
+font-size: 22px;
+}
+
+.products-empty-state p {
+margin: 0 0 22px;
+color: var(--color-text-soft);
+}
+
+.products-empty-state button {
+min-height: 44px;
+padding: 0 18px;
+border: 0;
+border-radius: 10px;
+background: var(--color-primary);
+color: #fff;
+font-weight: 700;
+cursor: pointer;
+}
+
+/* Pagination Foundation */
+
+.products-pagination {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+margin-top: 38px;
+}
+
+.pagination-button {
+min-width: 42px;
+height: 42px;
+padding: 0 12px;
+border: 1px solid var(--color-border);
+border-radius: 10px;
+background: var(--color-surface);
+color: var(--color-text);
+font-size: 14px;
+font-weight: 700;
+cursor: pointer;
+}
+
+.pagination-button.active {
+background: var(--color-primary);
+border-color: var(--color-primary);
+color: #fff;
+}
+
+.pagination-button:disabled {
+opacity: 0.45;
+cursor: not-allowed;
+}
+
+/* =========================================================
+ReviewNest Electronics
+STEP 3 — Premium Product Review Card
+========================================================= */
+
+/* ---------------------------------------------------------
+PRODUCT GRID FOUNDATION
+--------------------------------------------------------- */
+
+.products-grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 24px;
+width: 100%;
+}
+
+/* ---------------------------------------------------------
+PREMIUM PRODUCT CARD
+--------------------------------------------------------- */
+
+.product-card {
+position: relative;
+display: flex;
+flex-direction: column;
+min-width: 0;
+overflow: hidden;
+
+background: var(--color-surface);  
+border: 1px solid var(--color-border);  
+border-radius: 18px;  
+
+box-shadow:  
+    0 2px 4px rgba(16, 24, 40, 0.02),  
+    0 8px 24px rgba(16, 24, 40, 0.05);  
+
+transition:  
+    transform 260ms cubic-bezier(.2,.8,.2,1),  
+    box-shadow 260ms cubic-bezier(.2,.8,.2,1),  
+    border-color 260ms ease;  
+
+animation:  
+    productCardReveal 500ms cubic-bezier(.2,.8,.2,1) both;
+
+}
+
+/* ---------------------------------------------------------
+CARD HOVER
+--------------------------------------------------------- */
+
+.product-card:hover {
+transform: translateY(-6px);
+
+border-color: rgba(180, 35, 24, 0.18);  
+
+box-shadow:  
+    0 6px 12px rgba(16, 24, 40, 0.04),  
+    0 18px 45px rgba(16, 24, 40, 0.10);
+
+}
+
+/* ---------------------------------------------------------
+CARD FOCUS
+--------------------------------------------------------- */
+
+.product-card:focus-within {
+border-color: rgba(23, 92, 211, 0.35);
+
+box-shadow:  
+    0 0 0 4px rgba(23, 92, 211, 0.08),  
+    0 16px 40px rgba(16, 24, 40, 0.08);
+
+}
+
+/* ---------------------------------------------------------
+IMAGE AREA
+--------------------------------------------------------- */
+
+.product-card-image {
+position: relative;
+
+width: 100%;  
+aspect-ratio: 4 / 3;  
+
+overflow: hidden;  
+
+background:  
+    linear-gradient(  
+        135deg,  
+        #f8fafc 0%,  
+        #eef1f5 100%  
+    );
+
+}
+
+/* ---------------------------------------------------------
+PRODUCT IMAGE
+--------------------------------------------------------- */
+
+.product-card-image img {
+display: block;
+
+width: 100%;  
+height: 100%;  
+
+object-fit: cover;  
+
+transition:  
+    transform 500ms cubic-bezier(.2,.8,.2,1),  
+    filter 300ms ease;
+
+}
+
+/* Image zoom */
+
+.product-card:hover
+.product-card-image img {
+transform: scale(1.055);
+}
+
+/* ---------------------------------------------------------
+IMAGE OVERLAY
+--------------------------------------------------------- */
+
+.product-card-image::after {
+content: "";
+
+position: absolute;  
+inset: 0;  
+
+background:  
+    linear-gradient(  
+        to bottom,  
+        rgba(16, 24, 40, 0.02),  
+        rgba(16, 24, 40, 0.08)  
+    );  
+
+opacity: 0;  
+
+pointer-events: none;  
+
+transition:  
+    opacity 300ms ease;
+
+}
+
+.product-card:hover
+.product-card-image::after {
+opacity: 1;
+}
+
+/* ---------------------------------------------------------
+PRODUCT BADGE
+--------------------------------------------------------- */
+
+.product-badge {
+position: absolute;
+
+top: 14px;  
+left: 14px;  
+
+z-index: 2;  
+
+display: inline-flex;  
+align-items: center;  
+justify-content: center;  
+
+min-height: 30px;  
+padding: 6px 10px;  
+
+border: 1px solid rgba(255,255,255,.65);  
+border-radius: 999px;  
+
+background: rgba(255,255,255,.92);  
+
+color: var(--color-text);  
+
+font-size: 11px;  
+font-weight: 800;  
+line-height: 1;  
+letter-spacing: .03em;  
+
+box-shadow:  
+    0 4px 12px rgba(16,24,40,.10);  
+
+backdrop-filter: blur(10px);  
+-webkit-backdrop-filter: blur(10px);
+
+}
+
+/* ---------------------------------------------------------
+CARD CONTENT
+--------------------------------------------------------- */
+
+.product-card-content {
+display: flex;
+flex: 1;
+flex-direction: column;
+
+padding: 20px;
+
+}
+
+/* ---------------------------------------------------------
+CATEGORY
+--------------------------------------------------------- */
+
+.product-category {
+display: block;
+
+margin-bottom: 7px;  
+
+color: var(--color-primary);  
+
+font-size: 11px;  
+font-weight: 800;  
+line-height: 1.3;  
+
+letter-spacing: .08em;  
+text-transform: uppercase;
+
+}
+
+/* ---------------------------------------------------------
+PRODUCT NAME
+--------------------------------------------------------- */
+
+.product-name {
+margin: 0;
+
+color: var(--color-text);  
+
+font-size: 20px;  
+font-weight: 750;  
+line-height: 1.3;  
+letter-spacing: -.025em;  
+
+text-wrap: balance;
+
+}
+
+/* ---------------------------------------------------------
+DESCRIPTION
+--------------------------------------------------------- */
+
+.product-description {
+display: -webkit-box;
+
+margin: 10px 0 16px;  
+
+overflow: hidden;  
+
+color: var(--color-text-soft);  
+
+font-size: 14px;  
+line-height: 1.65;  
+
+-webkit-box-orient: vertical;  
+-webkit-line-clamp: 3;
+
+}
+
+/* ---------------------------------------------------------
+RATING ROW
+--------------------------------------------------------- */
+
+.product-card-rating-row {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+
+gap: 8px;  
+
+margin-bottom: 20px;
+
+}
+
+/* ---------------------------------------------------------
+RATING
+--------------------------------------------------------- */
+
+.product-rating {
+display: inline-flex;
+align-items: center;
+
+gap: 6px;
+
+}
+
+.product-stars {
+color: #f59e0b;
+
+font-size: 15px;  
+line-height: 1;  
+
+letter-spacing: 1px;
+
+}
+
+.product-rating-number {
+color: var(--color-text);
+
+font-size: 13px;  
+font-weight: 800;
+
+}
+
+/* ---------------------------------------------------------
+REVIEW COUNT
+--------------------------------------------------------- */
+
+.product-review-count {
+color: var(--color-text-light);
+
+font-size: 12px;  
+font-weight: 600;
+
+}
+
+/* ---------------------------------------------------------
+CARD BOTTOM
+--------------------------------------------------------- */
+
+.product-card-bottom {
+display: flex;
+align-items: flex-end;
+justify-content: space-between;
+
+gap: 14px;  
+
+margin-top: auto;
+
+}
+
+/* ---------------------------------------------------------
+PRICE
+--------------------------------------------------------- */
+
+.product-price {
+color: var(--color-text);
+
+font-size: 24px;  
+font-weight: 850;  
+line-height: 1;  
+
+letter-spacing: -.035em;
+
+}
+
+/* ---------------------------------------------------------
+REVIEW BUTTON
+--------------------------------------------------------- */
+
+.product-review-button {
+position: relative;
+
+display: inline-flex;  
+align-items: center;  
+justify-content: center;  
+
+min-height: 42px;  
+
+padding: 10px 15px;  
+
+border: 1px solid rgba(180, 35, 24, .18);  
+border-radius: 10px;  
+
+background: var(--color-primary);  
+
+color: #fff;  
+
+font: inherit;  
+font-size: 13px;  
+font-weight: 800;  
+
+white-space: nowrap;  
+
+cursor: pointer;  
+
+overflow: hidden;  
+
+transition:  
+    transform 180ms ease,  
+    background 180ms ease,  
+    box-shadow 180ms ease,  
+    border-color 180ms ease;
+
+}
+
+/* Button shine */
+
+.product-review-button::before {
+content: "";
+
+position: absolute;  
+
+top: 0;  
+left: -120%;  
+
+width: 70%;  
+height: 100%;  
+
+background:  
+    linear-gradient(  
+        90deg,  
+        transparent,  
+        rgba(255,255,255,.24),  
+        transparent  
+    );  
+
+transform: skewX(-20deg);  
+
+transition:  
+    left 550ms ease;
+
+}
+
+.product-review-button:hover::before {
+left: 140%;
+}
+
+.product-review-button:hover {
+background: var(--color-primary-dark);
+
+border-color: var(--color-primary-dark);  
+
+transform: translateY(-1px);  
+
+box-shadow:  
+    0 8px 18px rgba(180, 35, 24, .20);
+
+}
+
+.product-review-button:active {
+transform: translateY(0) scale(.98);
+}
+
+.product-review-button:focus-visible {
+outline: 3px solid rgba(180, 35, 24, .18);
+outline-offset: 3px;
+}
+
+/* ---------------------------------------------------------
+PRODUCT CARD REVEAL ANIMATION
+--------------------------------------------------------- */
+
+@keyframes productCardReveal {
+
+from {  
+    opacity: 0;  
+    transform: translateY(14px);  
+}  
+
+to {  
+    opacity: 1;  
+    transform: translateY(0);  
+}
+
+}
+
+/* ---------------------------------------------------------
+STAGGERED CARD ANIMATION
+--------------------------------------------------------- */
+
+.product-card:nth-child(1) {
+animation-delay: 30ms;
+}
+
+.product-card:nth-child(2) {
+animation-delay: 60ms;
+}
+
+.product-card:nth-child(3) {
+animation-delay: 90ms;
+}
+
+.product-card:nth-child(4) {
+animation-delay: 120ms;
+}
+
+.product-card:nth-child(5) {
+animation-delay: 150ms;
+}
+
+.product-card:nth-child(6) {
+animation-delay: 180ms;
+}
+
+.product-card:nth-child(7) {
+animation-delay: 210ms;
+}
+
+.product-card:nth-child(8) {
+animation-delay: 240ms;
+}
+
+.product-card:nth-child(9) {
+animation-delay: 270ms;
+}
+
+.product-card:nth-child(10) {
+animation-delay: 300ms;
+}
+
+.product-card:nth-child(11) {
+animation-delay: 330ms;
+}
+
+.product-card:nth-child(12) {
+animation-delay: 360ms;
+}
+
+.product-card:nth-child(13) {
+animation-delay: 390ms;
+}
+
+.product-card:nth-child(14) {
+animation-delay: 420ms;
+}
+
+.product-card:nth-child(15) {
+animation-delay: 450ms;
+}
+
+/* ---------------------------------------------------------
+EMPTY STATE
+--------------------------------------------------------- */
+
+.products-empty-state {
+width: 100%;
+
+padding: 70px 24px;  
+
+text-align: center;  
+
+border: 1px solid var(--color-border);  
+border-radius: 18px;  
+
+background: var(--color-surface);
+
+}
+
+.products-empty-state[hidden] {
+display: none;
+}
+
+.empty-state-icon {
+display: flex;
+
+align-items: center;  
+justify-content: center;  
+
+width: 58px;  
+height: 58px;  
+
+margin: 0 auto 18px;  
+
+border-radius: 16px;  
+
+background: var(--color-surface-soft);  
+
+color: var(--color-text-soft);
+
+}
+
+.empty-state-icon svg {
+width: 27px;
+height: 27px;
+
+fill: none;  
+
+stroke: currentColor;  
+stroke-width: 1.7;  
+stroke-linecap: round;
+
+}
+
+.products-empty-state h3 {
+margin: 0 0 8px;
+
+color: var(--color-text);  
+
+font-size: 21px;
+
+}
+
+.products-empty-state p {
+margin: 0 0 22px;
+
+color: var(--color-text-soft);  
+
+font-size: 14px;
+
+}
+
+.products-empty-state button {
+min-height: 42px;
+
+padding: 9px 16px;  
+
+border: 1px solid var(--color-border);  
+border-radius: 10px;  
+
+background: var(--color-surface);  
+
+color: var(--color-text);  
+
+font: inherit;  
+font-size: 13px;  
+font-weight: 750;  
+
+cursor: pointer;  
+
+transition:  
+    background 180ms ease,  
+    border-color 180ms ease,  
+    transform 180ms ease;
+
+}
+
+.products-empty-state button:hover {
+background: var(--color-surface-soft);
+border-color: #d0d5dd;
+}
+
+.products-empty-state button:active {
+transform: scale(.98);
+}
+
+/* ---------------------------------------------------------
+PAGINATION
+--------------------------------------------------------- */
+
+.products-pagination {
+display: flex;
+align-items: center;
+justify-content: center;
+
+flex-wrap: wrap;  
+
+gap: 8px;  
+
+margin-top: 34px;
+
+}
+
+.pagination-button {
+display: inline-flex;
+
+align-items: center;  
+justify-content: center;  
+
+min-width: 40px;  
+height: 40px;  
+
+padding: 0 12px;  
+
+border: 1px solid var(--color-border);  
+border-radius: 10px;  
+
+background: var(--color-surface);  
+
+color: var(--color-text-soft);  
+
+font: inherit;  
+font-size: 13px;  
+font-weight: 750;  
+
+cursor: pointer;  
+
+transition:  
+    background 180ms ease,  
+    border-color 180ms ease,  
+    color 180ms ease,  
+    transform 180ms ease;
+
+}
+
+.pagination-button:hover:not(:disabled) {
+border-color: rgba(180,35,24,.25);
+
+color: var(--color-primary);  
+
+background: #fff;  
+
+transform: translateY(-1px);
+
+}
+
+.pagination-button.active {
+border-color: var(--color-primary);
+
+background: var(--color-primary);  
+
+color: #fff;  
+
+box-shadow:  
+    0 5px 14px rgba(180,35,24,.18);
+
+}
+
+.pagination-button:disabled {
+opacity: .45;
+cursor: not-allowed;
+}
+
+.pagination-button:focus-visible {
+outline: 3px solid rgba(23,92,211,.14);
+outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------
+REDUCED MOTION
+--------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+.product-card,  
+.product-card-image img,  
+.product-card-image::after,  
+.product-review-button,  
+.product-review-button::before,  
+.pagination-button {  
+    animation: none !important;  
+    transition: none !important;  
+}
+
+}
+
+/* =========================================================
+STEP 6 — FILTER SYSTEM
+Electronics Category
+========================================================= */
+
+.electronics-filter-wrap {
+position: relative;
+display: inline-flex;
+align-items: center;
+}
+
+.filter-control-row {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+/* FILTER BUTTON */
+
+.electronics-filter-wrap .electronics-control-button {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 9px;
+min-height: 44px;
+padding: 0 16px;
+
+border: 1px solid var(--color-border);  
+border-radius: 10px;  
+
+background: var(--color-surface);  
+color: var(--color-text);  
+
+font-family: inherit;  
+font-size: 13px;  
+font-weight: 750;  
+
+cursor: pointer;  
+
+box-shadow: 0 2px 8px rgba(16, 24, 40, .04);  
+
+transition:  
+    background 180ms ease,  
+    border-color 180ms ease,  
+    color 180ms ease,  
+    box-shadow 180ms ease,  
+    transform 180ms ease;
+
+}
+
+.electronics-filter-wrap .electronics-control-button:hover {
+border-color: rgba(180, 35, 24, .35);
+background: #fff8f7;
+color: var(--color-primary);
+
+box-shadow: 0 5px 14px rgba(16, 24, 40, .08);
+
+}
+
+.electronics-filter-wrap .electronics-control-button:active {
+transform: scale(.98);
+}
+
+/* FILTER ICON */
+
+.filter-button-icon {
+width: 18px;
+height: 18px;
+
+display: inline-flex;  
+align-items: center;  
+justify-content: center;
+
+}
+
+.filter-button-icon svg {
+width: 18px;
+height: 18px;
+
+fill: none;  
+stroke: currentColor;  
+stroke-width: 1.8;  
+stroke-linecap: round;  
+stroke-linejoin: round;
+
+}
+
+/* ACTIVE FILTER COUNT */
+
+.filter-active-count {
+min-height: 32px;
+
+display: inline-flex;  
+align-items: center;  
+justify-content: center;  
+
+padding: 0 11px;  
+
+border: 1px solid rgba(180, 35, 24, .18);  
+border-radius: 999px;  
+
+background: #fff8f7;  
+color: var(--color-primary);  
+
+font-size: 12px;  
+font-weight: 750;  
+white-space: nowrap;
+
+}
+
+/* FILTER BACKDROP */
+
+.filter-backdrop {
+position: fixed;
+inset: 0;
+z-index: 900;
+
+background: rgba(16, 24, 40, .42);  
+
+backdrop-filter: blur(2px);  
+-webkit-backdrop-filter: blur(2px);
+
+}
+
+.filter-backdrop[hidden] {
+display: none;
+}
+
+/* FILTER PANEL */
+
+.electronics-filter-panel {
+position: absolute;
+top: calc(100% + 12px);
+left: 0;
+
+z-index: 1000;  
+
+width: 390px;  
+max-width: calc(100vw - 32px);  
+
+overflow: hidden;  
+
+border: 1px solid var(--color-border);  
+border-radius: 16px;  
+
+background: var(--color-surface);  
+
+box-shadow:  
+    0 20px 50px rgba(16, 24, 40, .16),  
+    0 4px 12px rgba(16, 24, 40, .06);
+
+}
+
+.electronics-filter-panel[hidden] {
+display: none;
+}
+
+/* PANEL HEADER */
+
+.filter-panel-top {
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+gap: 18px;
+
+padding: 22px 22px 18px;  
+
+border-bottom: 1px solid var(--color-border);
+
+}
+
+.filter-panel-heading {
+min-width: 0;
+}
+
+.filter-panel-heading .section-kicker {
+display: block;
+
+margin-bottom: 6px;  
+
+color: var(--color-primary);  
+
+font-size: 10px;  
+font-weight: 800;  
+letter-spacing: .12em;
+
+}
+
+.filter-panel-heading h3 {
+margin: 0;
+
+color: var(--color-text);  
+
+font-size: 19px;  
+line-height: 1.3;
+
+}
+
+.filter-panel-heading p {
+margin: 6px 0 0;
+
+color: var(--color-text-soft);  
+
+font-size: 12px;  
+line-height: 1.5;
+
+}
+
+/* CLOSE BUTTON */
+
+.filter-close-button {
+flex: 0 0 auto;
+
+width: 36px;  
+height: 36px;  
+
+display: inline-flex;  
+align-items: center;  
+justify-content: center;  
+
+padding: 0;  
+
+border: 1px solid var(--color-border);  
+border-radius: 9px;  
+
+background: var(--color-surface);  
+color: var(--color-text-soft);  
+
+cursor: pointer;  
+
+transition:  
+    background 180ms ease,  
+    color 180ms ease,  
+    border-color 180ms ease;
+
+}
+
+.filter-close-button:hover {
+background: var(--color-surface-soft);
+color: var(--color-text);
+border-color: #d0d5dd;
+}
+
+.filter-close-button svg {
+width: 17px;
+height: 17px;
+
+fill: none;  
+stroke: currentColor;  
+stroke-width: 2;  
+stroke-linecap: round;
+
+}
+
+/* PANEL BODY */
+
+.filter-panel-body {
+max-height: 460px;
+overflow-y: auto;
+
+padding: 4px 22px 8px;  
+
+scrollbar-width: thin;
+
+}
+
+/* FILTER SECTION */
+
+.filter-section {
+padding: 18px 0;
+
+border-bottom: 1px solid var(--color-border);
+
+}
+
+.filter-section-last {
+border-bottom: 0;
+}
+
+.filter-section-title h4 {
+margin: 0;
+
+color: var(--color-text);  
+
+font-size: 13px;  
+font-weight: 800;
+
+}
+
+.filter-section-title p {
+margin: 4px 0 12px;
+
+color: var(--color-text-soft);  
+
+font-size: 11px;
+
+}
+
+/* OPTIONS */
+
+.filter-options {
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+
+.filter-option {
+position: relative;
+
+min-height: 40px;  
+
+display: flex;  
+align-items: center;  
+gap: 10px;  
+
+padding: 7px 9px;  
+
+border-radius: 8px;  
+
+color: var(--color-text);  
+
+font-size: 12px;  
+font-weight: 600;  
+
+cursor: pointer;  
+
+transition:  
+    background 160ms ease,  
+    color 160ms ease;
+
+}
+
+.filter-option:hover {
+background: var(--color-surface-soft);
+}
+
+.filter-option input {
+position: absolute;
+
+width: 1px;  
+height: 1px;  
+
+opacity: 0;  
+pointer-events: none;
+
+}
+
+/* CUSTOM RADIO */
+
+.filter-radio {
+width: 18px;
+height: 18px;
+
+flex: 0 0 18px;  
+
+display: inline-flex;  
+align-items: center;  
+justify-content: center;  
+
+border: 1.5px solid #98a2b3;  
+border-radius: 50%;  
+
+background: #fff;  
+
+transition:  
+    border-color 160ms ease,  
+    box-shadow 160ms ease,  
+    background 160ms ease;
+
+}
+
+.filter-option input:checked + .filter-radio {
+border-color: var(--color-primary);
+box-shadow: inset 0 0 0 4px #fff;
+background: var(--color-primary);
+}
+
+/* RATING */
+
+.rating-stars {
+color: #f79009;
+
+font-size: 13px;  
+letter-spacing: 1px;
+
+}
+
+.rating-text {
+color: var(--color-text-soft);
+
+font-size: 11px;
+
+}
+
+/* FEATURED */
+
+.filter-featured-option {
+display: flex;
+align-items: center;
+gap: 11px;
+
+padding: 10px;  
+
+border: 1px solid var(--color-border);  
+border-radius: 10px;  
+
+background: var(--color-surface-soft);  
+
+cursor: pointer;
+
+}
+
+.filter-featured-option input {
+position: absolute;
+opacity: 0;
+pointer-events: none;
+}
+
+.filter-checkbox {
+width: 19px;
+height: 19px;
+
+flex: 0 0 19px;  
+
+border: 1.5px solid #98a2b3;  
+border-radius: 5px;  
+
+background: #fff;  
+
+transition:  
+    background 160ms ease,  
+    border-color 160ms ease;
+
+}
+
+.filter-featured-option input:checked + .filter-checkbox {
+border-color: var(--color-primary);
+background: var(--color-primary);
+}
+
+.filter-featured-option input:checked + .filter-checkbox::after {
+content: "✓";
+
+display: block;  
+
+color: #fff;  
+
+font-size: 12px;  
+font-weight: 800;  
+
+line-height: 17px;  
+text-align: center;
+
+}
+
+.filter-featured-option strong {
+display: block;
+
+color: var(--color-text);  
+
+font-size: 12px;
+
+}
+
+.filter-featured-option small {
+display: block;
+
+margin-top: 3px;  
+
+color: var(--color-text-soft);  
+
+font-size: 10px;
+
+}
+
+/* PANEL FOOTER */
+
+.filter-panel-footer {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 12px;
+
+padding: 15px 22px;  
+
+border-top: 1px solid var(--color-border);  
+background: #fff;
+
+}
+
+.filter-clear-button,
+.filter-apply-button {
+min-height: 40px;
+
+border-radius: 9px;  
+
+font-family: inherit;  
+font-size: 12px;  
+font-weight: 750;  
+
+cursor: pointer;  
+
+transition:  
+    background 180ms ease,  
+    border-color 180ms ease,  
+    color 180ms ease,  
+    transform 180ms ease;
+
+}
+
+.filter-clear-button {
+padding: 0 13px;
+
+border: 1px solid var(--color-border);  
+
+background: #fff;  
+color: var(--color-text-soft);
+
+}
+
+.filter-clear-button:hover {
+background: var(--color-surface-soft);
+color: var(--color-text);
+}
+
+.filter-apply-button {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+
+padding: 0 16px;  
+
+border: 1px solid var(--color-primary);  
+
+background: var(--color-primary);  
+color: #fff;  
+
+box-shadow: 0 5px 14px rgba(180, 35, 24, .16);
+
+}
+
+.filter-apply-button:hover {
+background: var(--color-primary-dark);
+border-color: var(--color-primary-dark);
+}
+
+.filter-apply-button:active,
+.filter-clear-button:active {
+transform: scale(.98);
+}
+
+.filter-apply-arrow {
+font-size: 17px;
+line-height: 1;
+}
+
+/* KEYBOARD FOCUS */
+
+.electronics-filter-wrap button:focus-visible,
+.filter-option:focus-within,
+.filter-featured-option:focus-within {
+outline: 3px solid rgba(180, 35, 24, .14);
+outline-offset: 2px;
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+.electronics-filter-wrap *,  
+.filter-option,  
+.filter-featured-option {  
+    transition: none !important;  
+}
+
+}
+
+/* =========================================================
+REVIEWNEST — STEP 7
+PREMIUM SORT DROPDOWN
+========================================================= */
+
+.electronics-sort-area {
+position: relative;
+display: flex;
+align-items: center;
+gap: 10px;
+margin-left: auto;
+}
+
+.sort-label {
+color: #667085;
+font-size: 14px;
+font-weight: 500;
+line-height: 1;
+white-space: nowrap;
+}
+
+.electronics-sort-wrap {
+position: relative;
+width: 210px;
+}
+
+/* Main sort button */
+.electronics-sort-button {
+width: 100%;
+min-height: 44px;
+padding: 0 13px 0 15px;
+
+display: flex;  
+align-items: center;  
+justify-content: space-between;  
+gap: 12px;  
+
+background: #ffffff;  
+border: 1px solid #d0d5dd;  
+border-radius: 8px;  
+
+color: #101828;  
+font-family: inherit;  
+font-size: 14px;  
+font-weight: 600;  
+line-height: 1;  
+
+cursor: pointer;  
+
+box-shadow:  
+    0 1px 2px rgba(16, 24, 40, 0.04);  
+
+transition:  
+    border-color 0.18s ease,  
+    box-shadow 0.18s ease,  
+    background-color 0.18s ease;
+
+}
+
+.electronics-sort-button:hover {
+background: #ffffff;
+border-color: #98a2b3;
+box-shadow:
+0 2px 5px rgba(16, 24, 40, 0.08);
+}
+
+.electronics-sort-button:focus-visible {
+outline: none;
+border-color: #175cd3;
+box-shadow:
+0 0 0 3px rgba(23, 92, 211, 0.14);
+}
+
+.electronics-sort-button[aria-expanded="true"] {
+border-color: #98a2b3;
+box-shadow:
+0 0 0 3px rgba(16, 24, 40, 0.04);
+}
+
+/* Selected text */
+#sortButtonLabel {
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+/* Arrow */
+.sort-arrow {
+width: 20px;
+height: 20px;
+
+flex: 0 0 20px;  
+
+display: flex;  
+align-items: center;  
+justify-content: center;  
+
+color: #667085;  
+
+transition:  
+    transform 0.18s ease,  
+    color 0.18s ease;
+
+}
+
+.sort-arrow svg {
+width: 18px;
+height: 18px;
+
+fill: none;  
+stroke: currentColor;  
+stroke-width: 2;  
+stroke-linecap: round;  
+stroke-linejoin: round;
+
+}
+
+.electronics-sort-button[aria-expanded="true"] .sort-arrow {
+transform: rotate(180deg);
+color: #344054;
+}
+
+/* Dropdown */
+.electronics-sort-menu {
+position: absolute;
+z-index: 100;
+
+top: calc(100% + 8px);  
+right: 0;  
+
+width: 100%;  
+padding: 6px;  
+
+background: #ffffff;  
+
+border: 1px solid #eaecf0;  
+border-radius: 10px;  
+
+box-shadow:  
+    0 12px 24px rgba(16, 24, 40, 0.10),  
+    0 3px 8px rgba(16, 24, 40, 0.06);  
+
+transform-origin: top right;  
+
+animation: sortMenuOpen 0.16s ease-out;
+
+}
+
+@keyframes sortMenuOpen {
+from {
+opacity: 0;
+transform: translateY(-5px) scale(0.98);
+}
+
+to {  
+    opacity: 1;  
+    transform: translateY(0) scale(1);  
+}
+
+}
+
+/* Individual options */
+.sort-option {
+width: 100%;
+min-height: 42px;
+
+padding: 0 10px 0 12px;  
+
+display: flex;  
+align-items: center;  
+justify-content: space-between;  
+gap: 12px;  
+
+border: 0;  
+border-radius: 7px;  
+
+background: transparent;  
+
+color: #344054;  
+font-family: inherit;  
+font-size: 14px;  
+font-weight: 500;  
+
+text-align: left;  
+
+cursor: pointer;  
+
+transition:  
+    background-color 0.15s ease,  
+    color 0.15s ease;
+
+}
+
+.sort-option:hover {
+background: #f2f4f7;
+color: #101828;
+}
+
+.sort-option:focus-visible {
+outline: none;
+background: #f2f4f7;
+box-shadow:
+inset 0 0 0 2px rgba(23, 92, 211, 0.18);
+}
+
+/* Active option */
+.sort-option.active {
+background: #f9fafb;
+color: #101828;
+font-weight: 600;
+}
+
+.sort-option.active:hover {
+background: #f2f4f7;
+}
+
+/* Checkmark */
+.sort-check {
+width: 20px;
+height: 20px;
+
+flex: 0 0 20px;  
+
+display: flex;  
+align-items: center;  
+justify-content: center;  
+
+color: #175cd3;  
+
+font-size: 15px;  
+font-weight: 700;  
+
+opacity: 0;
+
+}
+
+.sort-option.active .sort-check {
+opacity: 1;
+}
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+.electronics-sort-wrap {  
+    width: 190px;  
+}  
+
+.electronics-sort-button {  
+    min-height: 42px;  
+}  
+
+.sort-option {  
+    min-height: 42px;  
+}
+
+}
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+
+.electronics-sort-area {  
+    width: 100%;  
+    margin-left: 0;  
+
+    justify-content: space-between;  
+}  
+
+.sort-label {  
+    font-size: 13px;  
+}  
+
+.electronics-sort-wrap {  
+    width: 190px;  
+}  
+
+.electronics-sort-button {  
+    min-height: 44px;  
+    padding-left: 13px;  
+    padding-right: 11px;  
+
+    border-radius: 8px;  
+}  
+
+.electronics-sort-menu {  
+    top: calc(100% + 7px);  
+    right: 0;  
+
+    width: 100%;  
+
+    border-radius: 9px;  
+}  
+
+.sort-option {  
+    min-height: 44px;  
+    padding-left: 11px;  
+    padding-right: 9px;  
+}
+
+}
+
+/* =========================================================
+SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+.electronics-sort-area {  
+    gap: 8px;  
+}  
+
+.electronics-sort-wrap {  
+    width: 170px;  
+}  
+
+.electronics-sort-button {  
+    font-size: 13px;  
+}  
+
+.sort-option {  
+    font-size: 13px;  
+}
+
+}
+
+/* =========================================
+SORT DROPDOWN HEIGHT FIX
+========================================= */
+
+.electronics-sort-wrap {
+position: relative;
+height: auto;
+min-height: 0;
+}
+
+.electronics-sort-menu {
+position: absolute;
+
+height: auto !important;  
+min-height: 0 !important;  
+max-height: none;  
+
+box-sizing: border-box;  
+
+overflow: visible;
+
+}
+
+/* =========================================
+SEARCH SUGGESTIONS DROPDOWN
+========================================= */
+
+.electronics-search-suggestions {
+width: 100%;
+margin-top: 8px;
+background: #ffffff;
+border: 1px solid #e5e7eb;
+border-radius: 12px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+padding: 8px;
+box-sizing: border-box;
+overflow: hidden;
+}
+
+.search-suggestions-title {
+padding: 10px 12px 8px;
+font-size: 12px;
+font-weight: 700;
+color: #667085;
+text-transform: uppercase;
+letter-spacing: 0.04em;
+}
+
+.search-suggestion {
+width: 100%;
+min-height: 44px;
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 10px 12px;
+border: 0;
+border-radius: 8px;
+background: transparent;
+color: #1d2939;
+font-size: 14px;
+font-weight: 500;
+text-align: left;
+cursor: pointer;
+box-sizing: border-box;
+}
+
+.search-suggestion:hover {
+background: #f5f7fa;
+}
+
+.search-suggestion:active {
+background: #eef2f6;
+}
+
+.suggestion-icon {
+width: 28px;
+height: 28px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+border-radius: 50%;
+background: #f2f4f7;
+color: #667085;
+font-size: 17px;
+}
+
+.search-suggestion span:last-child {
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+/* =========================================
+MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+
+.electronics-search-suggestions {  
+    margin-top: 6px;  
+    border-radius: 10px;  
+    padding: 6px;  
+}  
+
+.search-suggestions-title {  
+    padding: 9px 10px 7px;  
+    font-size: 11px;  
+}  
+
+.search-suggestion {  
+    min-height: 42px;  
+    padding: 9px 10px;  
+    font-size: 13px;  
+}
+
+}
+
+/* SEARCH SUGGESTIONS LAYOUT FIX */
+
+.electronics-search-box {
+position: relative;
+flex-wrap: wrap;
+}
+
+.electronics-search-suggestions {
+flex: 0 0 100%;
+width: 100%;
+box-sizing: border-box;
+margin-top: 10px;
+}
+
+.electronics-search-button {
+transition:
+transform 0.2s ease,
+opacity 0.2s ease,
+box-shadow 0.2s ease;
+}
+
+.electronics-search-button.searching {
+cursor: wait;
+opacity: 0.75;
+transform: scale(0.98);
+}
+
+.electronics-search-button:disabled {
+cursor: wait;
+}
+
+/* =========================================================
+REVIEWNEST — STEP 10
+PROFESSIONAL EMPTY STATE
+========================================================= */
+
+.products-empty-state {
+width: 100%;
+min-height: 330px;
+margin-top: 28px;
+padding: 48px 24px;
+box-sizing: border-box;
+
+display: flex;  
+flex-direction: column;  
+align-items: center;  
+justify-content: center;  
+
+text-align: center;  
+
+background: #ffffff;  
+border: 1px solid #eaecf0;  
+border-radius: 16px;  
+
+box-shadow:  
+    0 2px 6px rgba(16, 24, 40, 0.03),  
+    0 12px 28px rgba(16, 24, 40, 0.04);  
+
+animation: emptyStateFadeIn 0.28s ease-out;
+
+}
+
+/* Icon */
+
+.empty-state-icon {
+width: 64px;
+height: 64px;
+
+display: flex;  
+align-items: center;  
+justify-content: center;  
+
+margin-bottom: 20px;  
+
+border-radius: 50%;  
+
+background: #f2f4f7;  
+color: #667085;
+
+}
+
+.empty-state-icon svg {
+width: 30px;
+height: 30px;
+
+fill: none;  
+stroke: currentColor;  
+stroke-width: 1.8;  
+stroke-linecap: round;  
+stroke-linejoin: round;
+
+}
+
+/* Heading */
+
+.products-empty-state h3 {
+margin: 0;
+
+color: #101828;  
+
+font-size: 22px;  
+font-weight: 700;  
+line-height: 1.3;  
+letter-spacing: -0.02em;
+
+}
+
+/* Description */
+
+.products-empty-state p {
+max-width: 440px;
+
+margin: 10px 0 24px;  
+
+color: #667085;  
+
+font-size: 14px;  
+font-weight: 400;  
+line-height: 1.6;
+
+}
+
+/* Clear button */
+
+#clearProductsButton {
+min-height: 44px;
+
+padding: 0 18px;  
+
+display: inline-flex;  
+align-items: center;  
+justify-content: center;  
+
+border: 1px solid #d0d5dd;  
+border-radius: 8px;  
+
+background: #ffffff;  
+color: #344054;  
+
+font-family: inherit;  
+font-size: 14px;  
+font-weight: 600;  
+
+cursor: pointer;  
+
+box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);  
+
+transition:  
+    background-color 0.18s ease,  
+    border-color 0.18s ease,  
+    color 0.18s ease,  
+    box-shadow 0.18s ease,  
+    transform 0.18s ease;
+
+}
+
+#clearProductsButton:hover {
+background: #f9fafb;
+border-color: #98a2b3;
+color: #101828;
+
+box-shadow:  
+    0 3px 8px rgba(16, 24, 40, 0.08);  
+
+transform: translateY(-1px);
+
+}
+
+#clearProductsButton:active {
+transform: translateY(0);
+}
+
+#clearProductsButton:focus-visible {
+outline: none;
+
+border-color: #175cd3;  
+
+box-shadow:  
+    0 0 0 3px rgba(23, 92, 211, 0.14);
+
+}
+
+/* Entrance animation */
+
+@keyframes emptyStateFadeIn {
+
+from {  
+    opacity: 0;  
+    transform: translateY(8px);  
+}  
+
+to {  
+    opacity: 1;  
+    transform: translateY(0);  
+}
+
+}
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+
+.products-empty-state {  
+    min-height: 300px;  
+
+    margin-top: 22px;  
+
+    padding: 38px 18px;  
+
+    border-radius: 14px;  
+}  
+
+.empty-state-icon {  
+    width: 58px;  
+    height: 58px;  
+
+    margin-bottom: 17px;  
+}  
+
+.empty-state-icon svg {  
+    width: 27px;  
+    height: 27px;  
+}  
+
+.products-empty-state h3 {  
+    font-size: 20px;  
+}  
+
+.products-empty-state p {  
+    max-width: 320px;  
+
+    margin-top: 9px;  
+    margin-bottom: 21px;  
+
+    font-size: 13px;  
+    line-height: 1.55;  
+}  
+
+#clearProductsButton {  
+    min-height: 43px;  
+
+    padding: 0 16px;  
+
+    font-size: 13px;  
+}
+
+}
+
+/* =========================================================
+SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+.products-empty-state {  
+    min-height: 280px;  
+
+    padding: 32px 15px;  
+
+    border-radius: 12px;  
+}  
+
+.empty-state-icon {  
+    width: 54px;  
+    height: 54px;  
+}  
+
+.empty-state-icon svg {  
+    width: 25px;  
+    height: 25px;  
+}  
+
+.products-empty-state h3 {  
+    font-size: 18px;  
+}  
+
+.products-empty-state p {  
+    font-size: 12.5px;  
+}
+
+}
+
+/* STEP 10 — HIDDEN STATE FIX */
+
+.products-empty-state[hidden] {
+display: none !important;
+}
+
+/* STEP 10 — EMPTY STATE POSITION FIX */
+
+.products-empty-state {
+position: relative;
+width: 100%;
+margin-top: 28px;
+clear: both;
+box-sizing: border-box;
+}
+
+
+
+
+
+
+
+/* =========================================================
+   STEP 11 — PERFORMANCE & FAST LOADING
+   ========================================================= */
+
+/* Stable image area prevents layout shifting while images load */
+.product-card-image {
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    position: relative;
+    background: #f8fafc;
+}
+
+/* Smooth image rendering */
+.product-card-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Broken image fallback */
+.product-card-image.image-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8fafc;
+}
+
+.product-card-image.image-error img {
+    display: none;
+}
+
+.product-card-image.image-error::before {
+    content: "Image unavailable";
+    font-size: 12px;
+    font-weight: 600;
+    color: #98a2b3;
+    letter-spacing: 0.01em;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .product-card,
+    .product-card *,
+    .products-pagination *,
+    .electronics-search-button {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+
+
+
+
+
+/* =========================================================
+   STEP 12 — MOBILE UX
+   ========================================================= */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Prevent background scrolling while mobile filter is open */
+body.filter-panel-open {
+    overflow: hidden;
+    touch-action: none;
+}
+
+/* Better keyboard/touch interaction */
+.electronics-search-button,
+.electronics-control-button,
+.filter-close-button,
+.filter-clear-button,
+.filter-apply-button,
+.sort-option,
+.filter-option,
+.pagination-button,
+.product-review-button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Accessible keyboard focus */
+.electronics-search-button:focus-visible,
+.electronics-control-button:focus-visible,
+.filter-close-button:focus-visible,
+.filter-clear-button:focus-visible,
+.filter-apply-button:focus-visible,
+.sort-option:focus-visible,
+.filter-option:focus-visible,
+.pagination-button:focus-visible,
+.product-review-button:focus-visible {
+    outline: 3px solid rgba(23, 92, 211, 0.25);
+    outline-offset: 2px;
+}
+
+/* Filter backdrop */
+.filter-backdrop {
+    display: none;
+}
+
+@media (max-width: 760px) {
+
+    /* -----------------------------------------
+       Search
+       ----------------------------------------- */
+
+    .electronics-search-box {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .electronics-search-box input {
+        min-width: 0;
+        flex: 1 1 0;
+    }
+
+    .electronics-search-button {
+        flex: 0 0 auto;
+        min-height: 42px;
+        min-width: 76px;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    /* -----------------------------------------
+       Filter backdrop
+       ----------------------------------------- */
+
+    .filter-backdrop:not([hidden]) {
+        display: block;
+        position: fixed;
+        inset: 0;
+        z-index: 999;
+        background: rgba(16, 24, 40, 0.42);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+    }
+
+    /* -----------------------------------------
+       Filter bottom sheet
+       ----------------------------------------- */
+
+    .electronics-filter-panel {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: auto;
+
+        width: 100%;
+        max-width: 100%;
+        max-height: 88vh;
+
+        transform: none;
+
+        border-radius: 18px 18px 0 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+
+        z-index: 1000;
+
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+    .filter-panel-body {
+        max-height: calc(88vh - 145px);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+    }
+
+    .filter-panel-footer {
+        padding-bottom: calc(13px + env(safe-area-inset-bottom));
+    }
+
+    /* -----------------------------------------
+       Filter controls
+       ----------------------------------------- */
+
+    .filter-option {
+        min-height: 44px;
+        cursor: pointer;
+    }
+
+    .filter-radio {
+        flex: 0 0 18px;
+    }
+
+    /* -----------------------------------------
+       Sort menu
+       ----------------------------------------- */
+
+    .electronics-sort-area {
+        position: relative;
+    }
+
+    .electronics-sort-menu {
+        max-width: calc(100vw - 36px);
+    }
+
+    /* -----------------------------------------
+       Product cards
+       ----------------------------------------- */
+
+    .products-grid {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .product-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .product-card-image {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+    }
+
+    .product-card-content {
+        min-width: 0;
+    }
+
+    .product-name {
+        overflow-wrap: anywhere;
+    }
+
+    /* -----------------------------------------
+       Pagination
+       ----------------------------------------- */
+
+    .products-pagination {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .pagination-button {
+        min-width: 42px;
+        min-height: 42px;
+        padding: 0 10px;
+        touch-action: manipulation;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .electronics-search-button {
+        min-width: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .products-pagination {
+        gap: 6px;
+    }
+
+    .pagination-button {
+        min-width: 40px;
+        min-height: 40px;
+        padding: 0 8px;
+    }
+
+    .product-review-button {
+        width: 100%;
+        min-height: 44px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .electronics-search-section,
+    .electronics-controls-section,
+    .electronics-products-section {
+        max-width: 100%;
+    }
+
+    .electronics-search-button {
+        min-width: 64px;
+    }
+
+    .pagination-button {
+        min-width: 38px;
+        min-height: 38px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   STEP 13 — FINAL POLISH & REAL-PRODUCT READY
+   ========================================================= */
+
+/* Smooth interaction without affecting layout */
+.product-card,
+.product-review-button,
+.pagination-button,
+.electronics-control-button,
+.electronics-search-button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Premium card interaction */
+.product-card {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Buttons feel more responsive */
+.product-review-button,
+.electronics-search-button,
+.electronics-control-button,
+.pagination-button {
+    transition:
+        transform 160ms ease,
+        box-shadow 160ms ease,
+        background-color 160ms ease,
+        border-color 160ms ease,
+        color 160ms ease;
+}
+
+.product-review-button:active,
+.electronics-search-button:active,
+.electronics-control-button:active,
+.pagination-button:active {
+    transform: translateY(1px);
+}
+
+/* Clear keyboard focus */
+.product-review-button:focus-visible,
+.electronics-search-button:focus-visible,
+.electronics-control-button:focus-visible,
+.pagination-button:focus-visible,
+.filter-close-button:focus-visible,
+.filter-clear-button:focus-visible,
+.filter-apply-button:focus-visible,
+.sort-option:focus-visible,
+.filter-option:focus-visible {
+    outline: 3px solid rgba(23, 92, 211, 0.22);
+    outline-offset: 3px;
+}
+
+/* Better image presentation */
+.product-card-image {
+    isolation: isolate;
+}
+
+.product-card-image img {
+    transition: transform 300ms ease;
+}
+
+.product-card:hover .product-card-image img {
+    transform: scale(1.025);
+}
+
+/* Image error state */
+.product-card-image.image-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card-image.image-error img {
+    display: none;
+}
+
+/* Pagination polish */
+.products-pagination {
+    min-height: 42px;
+}
+
+.pagination-button {
+    touch-action: manipulation;
+}
+
+/* Empty state polish */
+.products-empty-state {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Prevent long product names from breaking the layout */
+.product-name {
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+/* Mobile final polish */
+@media (max-width: 760px) {
+
+    .product-card:hover {
+        transform: none;
+    }
+
+    .product-card:hover .product-card-image img {
+        transform: none;
+    }
+
+    .product-review-button,
+    .electronics-search-button,
+    .electronics-control-button,
+    .pagination-button {
+        min-height: 42px;
+    }
+
+    .products-pagination {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+
+    .product-review-button {
+        min-height: 44px;
+    }
+
+    .pagination-button {
+        min-width: 38px;
+        min-height: 38px;
+    }
+}
+
+/* Respect reduced-motion users */
+@media (prefers-reduced-motion: reduce) {
+
+    .product-card,
+    .product-card *,
+    .product-review-button,
+    .electronics-search-button,
+    .electronics-control-button,
+    .pagination-button {
+        transition: none !important;
+        animation: none !important;
+    }
+
+    .product-card:hover {
+        transform: none;
+    }
+
+    .product-card:hover .product-card-image img {
+        transform: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   REVIEWNEST ELECTRONICS
+   STEP 1 — PRODUCT CARD CLASS MATCHING
+   ========================================================= */
+
+/* Product Image Wrapper */
+
+.product-image-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-surface-soft);
+}
+
+/* Product Image */
+
+.product-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Product Card Content */
+
+.product-card-content {
+    min-width: 0;
+    padding: 20px;
+}
+
+/* Product Type */
+
+.product-type {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: var(--color-primary);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+/* Product Title */
+
+.product-title {
+    margin: 0 0 12px;
+    color: var(--color-text);
+    font-size: 18px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+/* Product Review Count */
+
+.product-review-count {
+    margin-top: 6px;
+    color: var(--color-text-soft);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* Product Card Bottom */
+
+.product-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+/* Product Price */
+
+.product-price {
+    color: var(--color-text);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+/* Read Review Button */
+
+.product-review-button {
+    min-height: 42px;
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 10px;
+    background: var(--color-primary);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.product-review-button:hover {
+    opacity: 0.88;
+}
+
+.product-review-button:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+/* Featured Badge */
+
+.product-image-wrap .product-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+}
+
+/* Mobile Product Cards */
+
+@media (max-width: 480px) {
+    .product-card-content {
+        padding: 16px;
+    }
+
+    .product-title {
+        font-size: 16px;
+    }
+
+    .product-card-bottom {
+        align-items: stretch;
+    }
+
+    .product-review-button {
+        width: 100%;
+    }
+}
+
+
+
+

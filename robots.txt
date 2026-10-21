@@ -1,0 +1,8 @@
+# ReviewNest - Robots.txt
+# Temporary configuration before website launch
+
+User-agent: *
+Allow: /
+
+# Sitemap location will be updated after the website goes live.
+# Sitemap: https://YOUR-LIVE-DOMAIN.com/sitemap.xml

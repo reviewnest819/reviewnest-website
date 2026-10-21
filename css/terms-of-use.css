@@ -1,0 +1,897 @@
+/* =========================================================
+   REVIEWNEST — TERMS OF USE
+   Premium Legal Page Stylesheet
+   File: css/terms-of-use.css
+   Compatible with the supplied terms-of-use.html
+   ========================================================= */
+
+/* 1. Design tokens */
+
+.terms-page {
+    --terms-primary: #b42318;
+    --terms-primary-dark: #8f1d15;
+    --terms-primary-soft: #fef3f2;
+    --terms-text: #344054;
+    --terms-heading: #101828;
+    --terms-muted: #667085;
+    --terms-border: #e4e7ec;
+    --terms-border-light: #f2f4f7;
+    --terms-background: #f8fafc;
+    --terms-surface: #ffffff;
+    --terms-radius-sm: 8px;
+    --terms-radius-md: 14px;
+    --terms-radius-lg: 20px;
+    --terms-shadow-sm: 0 1px 3px rgba(16, 24, 40, .04);
+    --terms-shadow-md: 0 8px 24px rgba(16, 24, 40, .06);
+    --terms-transition: 180ms ease;
+
+    margin: 0;
+    min-height: 100vh;
+    background: var(--terms-background);
+    color: var(--terms-text);
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.terms-page *,
+.terms-page *::before,
+.terms-page *::after {
+    box-sizing: border-box;
+}
+
+.terms-page button,
+.terms-page input,
+.terms-page textarea,
+.terms-page select {
+    font: inherit;
+}
+
+.terms-page button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.terms-page a {
+    color: var(--terms-primary);
+    text-decoration: none;
+    transition:
+        color var(--terms-transition),
+        background-color var(--terms-transition),
+        border-color var(--terms-transition);
+}
+
+.terms-page a:hover {
+    color: var(--terms-primary-dark);
+}
+
+.terms-page a:focus-visible,
+.terms-page button:focus-visible {
+    outline: 3px solid rgba(180, 35, 24, .35);
+    outline-offset: 3px;
+}
+
+.terms-page img,
+.terms-page video,
+.terms-page iframe {
+    max-width: 100%;
+}
+
+/* 2. Page loader */
+
+.terms-page .page-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    visibility: visible;
+    opacity: 1;
+    transition:
+        opacity 250ms ease,
+        visibility 250ms ease;
+}
+
+.terms-page .page-loader.loaded {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.terms-page .loader-spinner {
+    width: 42px;
+    height: 42px;
+    border: 3px solid #fecdca;
+    border-top-color: var(--terms-primary);
+    border-radius: 50%;
+    animation: terms-spin .8s linear infinite;
+}
+
+@keyframes terms-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 3. Existing sidebar compatibility */
+
+.terms-page .sidebar {
+    z-index: 200;
+}
+
+.terms-page .mobile-overlay {
+    z-index: 190;
+}
+
+/* 4. Main page layout */
+
+.terms-page .terms-main {
+    min-width: 0;
+    min-height: 100vh;
+    margin-left: 270px;
+    background: var(--terms-background);
+}
+
+.terms-page .terms-container {
+    width: calc(100% - 64px);
+    max-width: 1240px;
+    margin-inline: auto;
+    padding: 38px 0 48px;
+}
+
+/* 5. Top navigation */
+
+.terms-page .terms-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 90;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+
+    min-height: 72px;
+    padding: 0 36px;
+
+    background: rgba(255, 255, 255, .94);
+    border-bottom: 1px solid var(--terms-border);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.terms-page .terms-brand {
+    display: inline-flex;
+    align-items: center;
+    min-width: 0;
+
+    color: var(--terms-heading);
+    font-size: 21px;
+    font-weight: 800;
+    letter-spacing: -.8px;
+    line-height: 1.2;
+}
+
+.terms-page .terms-brand:hover {
+    color: var(--terms-primary);
+}
+
+.terms-page .terms-topbar-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    min-height: 40px;
+    padding: 9px 16px;
+
+    color: var(--terms-text);
+    background: #ffffff;
+    border: 1px solid var(--terms-border);
+    border-radius: 10px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition:
+        color var(--terms-transition),
+        border-color var(--terms-transition),
+        background-color var(--terms-transition),
+        transform var(--terms-transition);
+}
+
+.terms-page .terms-topbar-link:hover {
+    color: var(--terms-primary);
+    border-color: #f0b8b3;
+    background: #fff8f7;
+    transform: translateY(-1px);
+}
+
+.terms-page .mobile-menu-toggle {
+    display: none;
+}
+
+/* 6. Hero section */
+
+.terms-page .terms-hero {
+    position: relative;
+    overflow: hidden;
+
+    padding: 46px 46px 36px;
+
+    background:
+        radial-gradient(
+            circle at 100% 0,
+            rgba(180, 35, 24, .075),
+            transparent 36%
+        ),
+        linear-gradient(135deg, #ffffff 0%, #fffdfd 100%);
+
+    border: 1px solid var(--terms-border);
+    border-radius: var(--terms-radius-lg);
+    box-shadow: var(--terms-shadow-sm);
+}
+
+.terms-page .terms-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-bottom: 18px;
+
+    color: var(--terms-primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.terms-page .terms-eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 2px;
+    background: var(--terms-primary);
+    border-radius: 99px;
+}
+
+.terms-page .terms-hero h1 {
+    max-width: 800px;
+    margin: 0;
+
+    color: var(--terms-heading);
+    font-size: clamp(36px, 4vw, 52px);
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1.13;
+    overflow-wrap: anywhere;
+}
+
+.terms-page .terms-intro {
+    max-width: 760px;
+    margin: 20px 0 0;
+
+    color: #475467;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.terms-page .terms-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 28px;
+
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--terms-border-light);
+}
+
+.terms-page .terms-meta span {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 5px;
+
+    color: var(--terms-muted);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.terms-page .terms-meta strong {
+    color: #344054;
+    font-weight: 700;
+}
+
+/* 7. Important notice */
+
+.terms-page .terms-notice {
+    position: relative;
+    margin-top: 22px;
+    padding: 21px 25px 21px 27px;
+
+    background: var(--terms-primary-soft);
+    border: 1px solid #fecdca;
+    border-left: 4px solid var(--terms-primary);
+    border-radius: var(--terms-radius-md);
+}
+
+.terms-page .terms-notice > strong {
+    display: block;
+    margin-bottom: 6px;
+
+    color: #912018;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.terms-page .terms-notice p {
+    margin: 0;
+    color: #7a271a;
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+/* 8. Main content grid */
+
+.terms-page .terms-layout {
+    display: grid;
+    grid-template-columns: 270px minmax(0, 1fr);
+    align-items: start;
+    gap: 28px;
+    margin-top: 32px;
+}
+
+.terms-page .terms-content {
+    min-width: 0;
+}
+
+/* 9. Table of contents */
+
+.terms-page .terms-toc {
+    position: sticky;
+    top: 94px;
+
+    min-width: 0;
+    max-height: calc(100vh - 112px);
+    padding: 22px 16px;
+
+    overflow-y: auto;
+    overscroll-behavior: contain;
+
+    background: var(--terms-surface);
+    border: 1px solid var(--terms-border);
+    border-radius: var(--terms-radius-md);
+    box-shadow: var(--terms-shadow-sm);
+
+    scrollbar-width: thin;
+    scrollbar-color: #d0d5dd transparent;
+}
+
+.terms-page .terms-toc::-webkit-scrollbar {
+    width: 5px;
+}
+
+.terms-page .terms-toc::-webkit-scrollbar-thumb {
+    background: #d0d5dd;
+    border-radius: 99px;
+}
+
+.terms-page .terms-toc h2 {
+    margin: 0 0 14px;
+    padding: 0 8px 15px;
+
+    color: var(--terms-heading);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: -.2px;
+
+    border-bottom: 1px solid var(--terms-border-light);
+}
+
+/* HTML mein direct nav > a hai, ul nahi */
+
+.terms-page .terms-toc nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.terms-page .terms-toc nav a {
+    position: relative;
+    display: block;
+
+    padding: 9px 10px 9px 12px;
+
+    color: #475467;
+    border-radius: 8px;
+
+    font-size: 11.5px;
+    font-weight: 500;
+    line-height: 1.6;
+
+    overflow-wrap: anywhere;
+
+    transition:
+        color var(--terms-transition),
+        background-color var(--terms-transition);
+}
+
+.terms-page .terms-toc nav a:hover {
+    color: var(--terms-primary);
+    background: #fff5f4;
+}
+
+.terms-page .terms-toc nav a.active {
+    color: var(--terms-primary);
+    background: var(--terms-primary-soft);
+    font-weight: 700;
+}
+
+.terms-page .terms-toc nav a.active::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    left: 0;
+
+    width: 3px;
+    background: var(--terms-primary);
+    border-radius: 0 4px 4px 0;
+}
+
+/* 10. Individual legal sections */
+
+.terms-page .terms-section {
+    scroll-margin-top: 100px;
+
+    min-width: 0;
+    margin-bottom: 18px;
+    padding: 30px 32px;
+
+    background: var(--terms-surface);
+    border: 1px solid var(--terms-border);
+    border-radius: var(--terms-radius-md);
+    box-shadow: var(--terms-shadow-sm);
+
+    transition:
+        border-color var(--terms-transition),
+        box-shadow var(--terms-transition);
+}
+
+.terms-page .terms-section:hover {
+    border-color: #d8dde5;
+    box-shadow: var(--terms-shadow-md);
+}
+
+.terms-page .terms-section h2 {
+    position: relative;
+    margin: 0 0 20px;
+    padding-bottom: 16px;
+
+    color: var(--terms-heading);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -.55px;
+    line-height: 1.45;
+
+    border-bottom: 1px solid var(--terms-border-light);
+    overflow-wrap: anywhere;
+}
+
+.terms-page .terms-section h2::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+
+    width: 45px;
+    height: 2px;
+
+    background: var(--terms-primary);
+    border-radius: 99px;
+}
+
+.terms-page .terms-section h3 {
+    margin: 24px 0 11px;
+
+    color: var(--terms-heading);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.terms-page .terms-section p {
+    margin: 0 0 17px;
+
+    color: #475467;
+    font-size: 13.5px;
+    line-height: 1.95;
+
+    overflow-wrap: anywhere;
+}
+
+.terms-page .terms-section p:last-child {
+    margin-bottom: 0;
+}
+
+.terms-page .terms-section strong {
+    color: #344054;
+    font-weight: 700;
+}
+
+.terms-page .terms-section a {
+    color: var(--terms-primary);
+    font-weight: 600;
+
+    text-decoration: underline;
+    text-decoration-color: rgba(180, 35, 24, .28);
+    text-underline-offset: 3px;
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.terms-page .terms-section a:hover {
+    color: var(--terms-primary-dark);
+    text-decoration-color: currentColor;
+}
+
+/* 11. Lists */
+
+.terms-page .terms-section ul,
+.terms-page .terms-section ol {
+    margin: 0 0 22px;
+    padding-left: 24px;
+    color: #475467;
+}
+
+.terms-page .terms-section ul {
+    list-style: disc;
+}
+
+.terms-page .terms-section ol {
+    list-style: decimal;
+}
+
+.terms-page .terms-section li {
+    margin-bottom: 10px;
+    padding-left: 4px;
+
+    font-size: 13px;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+.terms-page .terms-section li::marker {
+    color: var(--terms-primary);
+}
+
+.terms-page .terms-section li:last-child {
+    margin-bottom: 0;
+}
+
+/* 12. Amazon affiliate highlight */
+
+.terms-page .terms-highlight {
+    position: relative;
+    margin: 23px 0;
+    padding: 22px 24px;
+
+    background: linear-gradient(135deg, #fff8f0 0%, #ffffff 100%);
+    border: 1px solid #f4d7b5;
+    border-radius: var(--terms-radius-md);
+}
+
+.terms-page .terms-highlight::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    bottom: 16px;
+    left: 0;
+
+    width: 3px;
+    background: #d97706;
+    border-radius: 0 4px 4px 0;
+}
+
+.terms-page .terms-highlight > strong {
+    display: block;
+    margin-bottom: 9px;
+
+    color: #92400e;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.terms-page .terms-highlight p {
+    margin: 0;
+    color: #78350f;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.9;
+}
+
+/* 13. Governing-law note */
+
+.terms-page .terms-note {
+    margin-top: 22px;
+    padding: 17px 19px;
+
+    background: #fffaeb;
+    border: 1px solid #fedf89;
+    border-radius: var(--terms-radius-sm);
+
+    color: #7a2e0e;
+    font-size: 12.5px;
+    line-height: 1.9;
+
+    overflow-wrap: anywhere;
+}
+
+.terms-page .terms-note strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #93370d;
+    font-weight: 800;
+}
+
+/* 14. Contact section */
+
+.terms-page .terms-contact {
+    scroll-margin-top: 100px;
+}
+
+.terms-page .terms-contact-card {
+    margin-top: 22px;
+    padding: 25px;
+
+    background: #f9fafb;
+    border: 1px solid var(--terms-border);
+    border-radius: var(--terms-radius-md);
+}
+
+.terms-page .terms-contact-card h3 {
+    margin: 0 0 18px;
+
+    color: var(--terms-heading);
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: -.4px;
+}
+
+.terms-page .terms-contact-card p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px;
+
+    margin: 0 0 12px;
+    font-size: 12.5px;
+    line-height: 1.8;
+}
+
+.terms-page .terms-contact-card p:last-child {
+    margin-bottom: 0;
+}
+
+.terms-page .terms-contact-card p strong {
+    color: #344054;
+}
+
+.terms-page .terms-contact-card a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+/* 15. Related policies */
+
+.terms-page .terms-related {
+    margin-top: 26px;
+    padding: 28px;
+
+    background: #ffffff;
+    border: 1px solid var(--terms-border);
+    border-radius: var(--terms-radius-md);
+    box-shadow: var(--terms-shadow-sm);
+}
+
+.terms-page .terms-related h2 {
+    margin: 0 0 10px;
+
+    color: var(--terms-heading);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -.5px;
+}
+
+.terms-page .terms-related > p {
+    margin: 0 0 21px;
+    color: var(--terms-muted);
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+.terms-page .terms-related-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 11px;
+}
+
+.terms-page .terms-related-links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    min-width: 0;
+    min-height: 55px;
+    padding: 13px 14px;
+
+    color: #344054;
+    background: #ffffff;
+    border: 1px solid var(--terms-border);
+    border-radius: 10px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition:
+        color var(--terms-transition),
+        background-color var(--terms-transition),
+        border-color var(--terms-transition),
+        transform var(--terms-transition);
+}
+
+.terms-page .terms-related-links a span:first-child {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.terms-page .terms-related-links a span:last-child {
+    flex-shrink: 0;
+    color: var(--terms-primary);
+    font-size: 18px;
+    line-height: 1;
+}
+
+.terms-page .terms-related-links a:hover {
+    color: var(--terms-primary);
+    background: #fff8f7;
+    border-color: #f0b8b3;
+    transform: translateY(-2px);
+}
+
+/* 16. Footer */
+
+.terms-page .terms-footer {
+    margin-top: 36px;
+    padding: 30px 32px;
+
+    background: #ffffff;
+    border: 1px solid var(--terms-border);
+    border-radius: var(--terms-radius-md);
+}
+
+.terms-page .terms-footer-brand > a {
+    display: inline-block;
+
+    color: var(--terms-heading);
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -.7px;
+    line-height: 1.3;
+}
+
+.terms-page .terms-footer-brand > a:hover {
+    color: var(--terms-primary);
+}
+
+.terms-page .terms-footer-brand p {
+    max-width: 520px;
+    margin: 9px 0 0;
+
+    color: var(--terms-muted);
+    font-size: 12.5px;
+    line-height: 1.85;
+}
+
+.terms-page .terms-footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 23px;
+
+    margin-top: 24px;
+    padding: 19px 0;
+
+    border-top: 1px solid var(--terms-border-light);
+    border-bottom: 1px solid var(--terms-border-light);
+}
+
+.terms-page .terms-footer-links a {
+    color: #475467;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.terms-page .terms-footer-links a:hover,
+.terms-page .terms-footer-links a[aria-current="page"] {
+    color: var(--terms-primary);
+}
+
+.terms-page .terms-copyright {
+    margin: 18px 0 0;
+    color: #98a2b3;
+    font-size: 11.5px;
+    line-height: 1.8;
+}
+
+/* 17. Text selection */
+
+.terms-page ::selection {
+    color: #ffffff;
+    background: var(--terms-primary);
+}
+
+/* 18. Print */
+
+@media print {
+    .terms-page {
+        color: #000000;
+        background: #ffffff;
+    }
+
+    .terms-page .terms-main {
+        margin-left: 0 !important;
+    }
+
+    .terms-page .terms-topbar,
+    .terms-page .sidebar,
+    .terms-page .mobile-overlay,
+    .terms-page .terms-toc,
+    .terms-page .page-loader,
+    .terms-page .terms-topbar-link,
+    .terms-page .mobile-menu-toggle {
+        display: none !important;
+    }
+
+    .terms-page .terms-container {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .terms-page .terms-layout {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .terms-page .terms-hero,
+    .terms-page .terms-notice,
+    .terms-page .terms-section,
+    .terms-page .terms-related,
+    .terms-page .terms-footer {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+
+    .terms-page .terms-section {
+        padding: 18px 0;
+        border: 0;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .terms-page .terms-related-links {
+        grid-template-columns: 1fr;
+    }
+
+    .terms-page a {
+        color: #000000;
+        text-decoration: underline;
+    }
+}

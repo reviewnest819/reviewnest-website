@@ -1,0 +1,4862 @@
+/* =========================================================
+   REVIEWNEST PRODUCT REVIEW
+   PRODUCTION RESPONSIVE SYSTEM
+   =========================================================
+
+   TYPOGRAPHY UPDATE:
+   - More compact professional typography
+   - Mobile text reduced
+   - Better editorial reading density
+   - Hero/product image system preserved
+   - No change to .hero-product-visual sizing logic
+   - No change to .hero-image-frame positioning logic
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL RESPONSIVE FOUNDATION
+========================================================= */
+
+html {
+    overflow-x: hidden;
+}
+
+body.product-review-page {
+    overflow-x: hidden;
+}
+
+.product-review-main {
+    width: 100%;
+    max-width: 100%;
+    overflow: clip;
+}
+
+.product-review-container,
+.pr3-decision-center,
+.pr4-pros-cons,
+.pr5-editorial-review {
+    box-sizing: border-box;
+}
+
+.product-review-container *,
+.pr3-decision-center *,
+.pr4-pros-cons *,
+.pr5-editorial-review * {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+   1600px+
+========================================================= */
+
+@media (min-width: 1600px) {
+
+    .product-review-container {
+        width: min(calc(100% - 96px), 1400px);
+    }
+
+    .premium-hero {
+        gap: 76px;
+    }
+
+    .editorial-statement {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .decision-editorial-section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .pros-cons-editorial {
+        padding-top: 115px;
+        padding-bottom: 115px;
+    }
+
+    .buyer-fit-editorial {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .facts-editorial {
+        padding-top: 110px;
+        padding-bottom: 120px;
+    }
+
+    .deep-review-editorial {
+        padding-top: 120px;
+        padding-bottom: 125px;
+    }
+
+    .pr3-decision-center,
+    .pr4-pros-cons,
+    .pr5-editorial-review {
+        width: min(calc(100% - 96px), 1400px);
+    }
+
+    .pr3-decision-grid {
+        gap: 24px;
+    }
+
+    .pr4-tradeoff-grid {
+        gap: 24px;
+    }
+
+    .pr5-feature-story {
+        gap: 90px;
+    }
+
+    .pr5-feature-copy {
+        max-width: 650px;
+    }
+}
+
+
+/* =========================================================
+   1440px — PREMIUM DESKTOP
+========================================================= */
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+    .product-review-container {
+        width: min(calc(100% - 80px), 1340px);
+    }
+
+    .premium-hero {
+        gap: 68px;
+    }
+
+    .editorial-statement,
+    .decision-editorial-section,
+    .pros-cons-editorial,
+    .buyer-fit-editorial,
+    .facts-editorial,
+    .deep-review-editorial {
+        max-width: 1340px;
+    }
+
+    .pr3-decision-center,
+    .pr4-pros-cons,
+    .pr5-editorial-review {
+        width: min(calc(100% - 80px), 1340px);
+    }
+
+    .deep-review-text {
+        max-width: 780px;
+    }
+
+    .deep-review-text p {
+        max-width: 730px;
+    }
+}
+
+
+/* =========================================================
+   1280–1439px
+   STANDARD PROFESSIONAL DESKTOP
+========================================================= */
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+
+    .product-review-container {
+        width: min(calc(100% - 64px), 1240px);
+    }
+
+    .premium-hero {
+        gap: 52px;
+    }
+
+    .editorial-statement,
+    .decision-editorial-section,
+    .pros-cons-editorial,
+    .buyer-fit-editorial,
+    .facts-editorial,
+    .deep-review-editorial {
+        max-width: 1240px;
+    }
+
+    .editorial-statement {
+        padding-top: 95px;
+        padding-bottom: 95px;
+    }
+
+    .decision-editorial-section {
+        padding-top: 95px;
+        padding-bottom: 95px;
+    }
+
+    .pros-cons-editorial {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .buyer-fit-editorial {
+        padding-top: 95px;
+        padding-bottom: 95px;
+    }
+
+    .facts-editorial {
+        padding-top: 90px;
+        padding-bottom: 95px;
+    }
+
+    .deep-review-editorial {
+        padding-top: 100px;
+        padding-bottom: 105px;
+    }
+
+    .pr3-decision-center,
+    .pr4-pros-cons,
+    .pr5-editorial-review {
+        width: min(calc(100% - 64px), 1240px);
+    }
+
+    .pr3-decision-grid,
+    .pr4-tradeoff-grid {
+        gap: 20px;
+    }
+
+    .pr5-feature-story {
+        gap: 68px;
+    }
+
+    .pr5-feature-copy {
+        max-width: 600px;
+    }
+}
+
+
+/* =========================================================
+   1201–1279px
+   LAPTOP / SMALL DESKTOP
+========================================================= */
+
+@media (min-width: 1201px) and (max-width: 1279px) {
+
+    .product-review-container {
+        width: calc(100% - 56px);
+        max-width: 1180px;
+    }
+
+    .premium-hero {
+        gap: 42px;
+    }
+
+    .editorial-statement {
+        padding-top: 82px;
+        padding-bottom: 82px;
+    }
+
+    .decision-editorial-section {
+        padding-top: 82px;
+        padding-bottom: 82px;
+    }
+
+    .pros-cons-editorial {
+        padding-top: 78px;
+        padding-bottom: 78px;
+    }
+
+    .buyer-fit-editorial {
+        padding-top: 82px;
+        padding-bottom: 82px;
+    }
+
+    .facts-editorial {
+        padding-top: 78px;
+        padding-bottom: 82px;
+    }
+
+    .deep-review-editorial {
+        padding-top: 88px;
+        padding-bottom: 92px;
+    }
+
+    .pr3-decision-center,
+    .pr4-pros-cons,
+    .pr5-editorial-review {
+        width: calc(100% - 56px);
+        max-width: 1180px;
+    }
+
+    .deep-review-text {
+        max-width: 720px;
+    }
+
+    .pr5-feature-story {
+        gap: 55px;
+    }
+}
+
+
+/* =========================================================
+   1101–1200px
+   LAPTOP
+========================================================= */
+
+@media (min-width: 1101px) and (max-width: 1200px) {
+
+    .product-review-container {
+        width: calc(100% - 48px);
+        max-width: 1120px;
+    }
+
+    .premium-hero {
+        gap: 35px;
+    }
+
+    .editorial-statement,
+    .decision-editorial-section,
+    .pros-cons-editorial,
+    .buyer-fit-editorial,
+    .facts-editorial,
+    .deep-review-editorial {
+        width: 100%;
+    }
+
+    .editorial-statement {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    .decision-editorial-section {
+        padding-top: 78px;
+        padding-bottom: 78px;
+    }
+
+    .pros-cons-editorial {
+        padding-top: 72px;
+        padding-bottom: 72px;
+    }
+
+    .buyer-fit-editorial {
+        padding-top: 78px;
+        padding-bottom: 78px;
+    }
+
+    .facts-editorial {
+        padding-top: 72px;
+        padding-bottom: 78px;
+    }
+
+    .deep-review-editorial {
+        padding-top: 82px;
+        padding-bottom: 88px;
+    }
+
+    .pr3-decision-center,
+    .pr4-pros-cons,
+    .pr5-editorial-review {
+        width: calc(100% - 48px);
+        max-width: 1120px;
+    }
+
+    .pr3-decision-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .pr4-tradeoff-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .pr5-feature-story {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+        gap: 45px;
+    }
+}
+
+
+/* =========================================================
+   1024–1100px
+   COMPACT LAPTOP
+========================================================= */
+
+@media (min-width: 1024px) and (max-width: 1100px) {
+
+    .product-review-container {
+        width: calc(100% - 44px);
+        max-width: 1056px;
+    }
+
+    .premium-hero {
+        gap: 30px;
+    }
+
+    .editorial-statement {
+        padding-top: 68px;
+        padding-bottom: 68px;
+    }
+
+    .decision-editorial-section {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .pros-cons-editorial {
+        padding-top: 66px;
+        padding-bottom: 66px;
+    }
+
+    .buyer-fit-editorial {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .facts-editorial {
+        padding-top: 66px;
+        padding-bottom: 70px;
+    }
+
+    .deep-review-editorial {
+        padding-top: 75px;
+        padding-bottom: 80px;
+    }
+
+    .pr3-decision-center,
+    .pr4-pros-cons,
+    .pr5-editorial-review {
+        width: calc(100% - 44px);
+        max-width: 1056px;
+    }
+
+    .pr3-decision-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .pr4-tradeoff-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .pr5-feature-story {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(0, 1fr);
+        gap: 34px;
+    }
+
+    .pr5-feature-copy {
+        max-width: 500px;
+    }
+}
+
+
+/* =========================================================
+   1001–1023px
+   TABLET LANDSCAPE / COMPACT LAPTOP
+========================================================= */
+
+@media (min-width: 1001px) and (max-width: 1023px) {
+
+    .product-review-container {
+        width: calc(100% - 40px);
+    }
+
+    .editorial-statement,
+    .decision-editorial-section,
+    .pros-cons-editorial,
+    .buyer-fit-editorial,
+    .facts-editorial,
+    .deep-review-editorial {
+        padding-top: 62px;
+        padding-bottom: 62px;
+    }
+
+    .pr3-decision-center,
+    .pr4-pros-cons,
+    .pr5-editorial-review {
+        width: calc(100% - 40px);
+    }
+
+    .pr3-decision-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .pr4-tradeoff-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .pr5-feature-story {
+        gap: 30px;
+    }
+}
+
+
+/* =========================================================
+   1000px
+   TRANSITION
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .product-review-container {
+        width: min(calc(100% - 36px), 900px);
+    }
+
+    .premium-hero {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-copy {
+        order: 2;
+        padding: 0;
+    }
+
+    .hero-product-visual {
+        order: 1;
+        min-height: 620px;
+    }
+
+    .hero-image-frame {
+        inset: 40px 35px 55px;
+    }
+
+    .editorial-statement {
+        grid-template-columns: 70px 1fr;
+        gap: 30px;
+    }
+
+    .editorial-number {
+        font-size: 54px;
+    }
+
+    .decision-editorial-section {
+        grid-template-columns: 75px 1fr;
+        gap: 30px;
+    }
+
+    .decision-editorial-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .visual-break {
+        grid-template-columns: 1fr;
+    }
+
+    .visual-break-image {
+        min-height: 400px;
+    }
+
+    .visual-break-copy {
+        min-height: 360px;
+    }
+
+    .buyer-fit-editorial {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .buyer-fit-intro {
+        position: static;
+    }
+
+    .facts-editorial {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .deep-review-editorial {
+        grid-template-columns: 75px 1fr;
+        gap: 35px;
+    }
+
+    .premium-final-section {
+        padding: 55px;
+    }
+
+    .suggested-premium-card {
+        grid-template-columns: 300px 1fr;
+    }
+
+    /* PHASE 3 */
+
+    .pr3-decision-center {
+        width: min(calc(100% - 36px), 900px);
+        margin-top: 72px;
+    }
+
+    .pr3-decision-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .pr3-facts-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    /* PHASE 4 */
+
+    .pr4-pros-cons {
+        width: min(calc(100% - 36px), 900px);
+        margin-top: 80px;
+    }
+
+    .pr4-tradeoff-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    /* PHASE 5 */
+
+    .pr5-editorial-review {
+        width: min(calc(100% - 36px), 900px);
+    }
+
+    .pr5-editorial-intro {
+        grid-template-columns: 55px minmax(0, 1fr);
+    }
+
+    .pr5-intro-side {
+        display: none;
+    }
+
+    .pr5-feature-story {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 70px 0;
+    }
+
+    .pr5-feature-visual {
+        min-height: 440px;
+    }
+
+    .pr5-feature-copy {
+        max-width: 700px;
+    }
+
+    .pr5-deep-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .pr5-deep-aside {
+        max-width: 430px;
+    }
+}
+
+
+/* =========================================================
+   901–1000px
+   TABLET LANDSCAPE
+========================================================= */
+
+@media (min-width: 901px) and (max-width: 1000px) {
+
+    .product-review-container {
+        width: calc(100% - 40px);
+        max-width: 920px;
+    }
+
+    .editorial-statement,
+    .decision-editorial-section,
+    .pros-cons-editorial,
+    .buyer-fit-editorial,
+    .facts-editorial,
+    .deep-review-editorial {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .pr3-decision-center,
+    .pr4-pros-cons,
+    .pr5-editorial-review {
+        width: calc(100% - 40px);
+        max-width: 920px;
+    }
+}
+
+
+/* =========================================================
+   760px — MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .temporary-header-inner {
+        width: calc(100% - 26px);
+        min-height: 62px;
+    }
+
+    .usa-badge {
+        display: none;
+    }
+
+    .temporary-menu-button {
+        display: block;
+    }
+
+    .product-review-main {
+        padding-bottom: 60px;
+    }
+
+    .product-review-container {
+        width: calc(100% - 24px);
+    }
+
+    .review-breadcrumb {
+        padding: 18px 0 20px;
+        font-size: 10px;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .premium-hero {
+        gap: 30px;
+        padding-bottom: 60px;
+    }
+
+    .hero-product-visual {
+        min-height: 430px;
+        border-radius: 23px;
+    }
+
+    .hero-product-visual::before {
+        width: 330px;
+        height: 330px;
+    }
+
+    .hero-visual-label {
+        top: 17px;
+        right: 18px;
+        font-size: 8px;
+    }
+
+    .hero-image-frame {
+        inset: 38px 15px 45px;
+    }
+
+    .hero-image-frame img {
+        max-height: 360px;
+    }
+
+    .hero-visual-caption {
+        left: 17px;
+        right: 17px;
+        bottom: 15px;
+        font-size: 8px;
+    }
+
+    .hero-kicker {
+        margin-bottom: 15px;
+        font-size: 9px;
+    }
+
+    .hero-copy h1 {
+        font-size: clamp(34px, 9vw, 46px);
+        letter-spacing: -.065em;
+    }
+
+    .hero-description {
+        margin-top: 17px;
+        font-size: 14px;
+    }
+
+    .hero-meta {
+        gap: 8px;
+        margin-bottom: 22px;
+        font-size: 10px;
+    }
+
+    .hero-price-row {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 14px;
+        padding-top: 20px;
+    }
+
+    .hero-price-row > div strong {
+        font-size: 27px;
+    }
+
+    .premium-amazon-button {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       EDITORIAL STATEMENT
+    ===================================================== */
+
+    .editorial-statement {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 55px 0;
+    }
+
+    .editorial-number {
+        font-size: 40px;
+    }
+
+    .editorial-statement h2 {
+        font-size: 30px;
+        line-height: 1.12;
+    }
+
+    .editorial-statement p {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+
+    /* =====================================================
+       DECISION
+    ===================================================== */
+
+    .decision-editorial-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 60px 0;
+    }
+
+    .section-side-label {
+        flex-direction: row;
+        align-items: center;
+        gap: 9px;
+    }
+
+    .section-side-label span {
+        font-size: 34px;
+    }
+
+    .section-side-label strong {
+        max-width: none;
+        font-size: 12px;
+    }
+
+    .decision-intro {
+        margin-bottom: 26px;
+    }
+
+    .decision-intro h2 {
+        font-size: 30px;
+        line-height: 1.12;
+    }
+
+    .decision-intro p {
+        font-size: 13px;
+    }
+
+    .decision-editorial-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .editorial-decision-card {
+        min-height: 220px;
+        padding: 22px;
+    }
+
+    .editorial-decision-card:nth-child(2),
+    .editorial-decision-card:nth-child(3) {
+        margin-top: 0;
+        transform: none;
+    }
+
+    .editorial-decision-card h3 {
+        font-size: 20px;
+    }
+
+    .editorial-decision-card p {
+        font-size: 13px;
+    }
+
+
+    /* =====================================================
+       VISUAL BREAK
+    ===================================================== */
+
+    .visual-break {
+        margin-bottom: 60px;
+        border-radius: 21px;
+    }
+
+    .visual-break-image {
+        min-height: 280px;
+    }
+
+    .visual-break-placeholder {
+        inset: 22px;
+    }
+
+    .visual-break-copy {
+        min-height: auto;
+        padding: 33px 22px 37px;
+    }
+
+    .visual-break-copy h2 {
+        font-size: 29px;
+        line-height: 1.12;
+    }
+
+    .visual-break-copy p {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+
+    /* =====================================================
+       PROS / CONS
+    ===================================================== */
+
+    .pros-cons-editorial {
+        padding-bottom: 60px;
+    }
+
+    .pros-cons-heading {
+        margin-bottom: 26px;
+    }
+
+    .pros-cons-heading h2 {
+        font-size: 31px;
+        line-height: 1.12;
+    }
+
+    .pros-cons-heading p {
+        font-size: 13px;
+    }
+
+    .pros-cons-layout {
+        grid-template-columns: 1fr;
+        gap: 1px;
+    }
+
+    .pros-block,
+    .cons-block {
+        padding: 24px;
+    }
+
+    .editorial-point {
+        grid-template-columns: 29px 1fr;
+        padding: 19px 0;
+    }
+
+    .editorial-point h3 {
+        font-size: 14px;
+    }
+
+    .editorial-point p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       BUYER FIT
+    ===================================================== */
+
+    .buyer-fit-editorial {
+        padding: 60px 0;
+    }
+
+    .buyer-fit-intro h2 {
+        font-size: 30px;
+        line-height: 1.12;
+    }
+
+    .buyer-fit-intro p {
+        font-size: 13px;
+    }
+
+    .buyer-fit-row {
+        grid-template-columns: 30px 1fr 38px;
+        gap: 10px;
+        padding: 26px 0;
+    }
+
+    .fit-row-main h3 {
+        font-size: 19px;
+    }
+
+    .fit-row-main p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .fit-row-symbol {
+        width: 33px;
+        height: 33px;
+    }
+
+
+    /* =====================================================
+       FACTS
+    ===================================================== */
+
+    .facts-editorial {
+        padding: 60px 0;
+    }
+
+    .facts-title h2 {
+        font-size: 30px;
+        line-height: 1.12;
+    }
+
+    .facts-title p {
+        font-size: 13px;
+    }
+
+    .fact-editorial-row {
+        padding: 17px 0;
+    }
+
+    .fact-editorial-row span {
+        font-size: 8px;
+    }
+
+    .fact-editorial-row strong {
+        font-size: 12px;
+        text-align: right;
+    }
+
+
+    /* =====================================================
+       DEEP REVIEW
+    ===================================================== */
+
+    .deep-review-editorial {
+        grid-template-columns: 1fr;
+        gap: 23px;
+        padding: 60px 0;
+    }
+
+    .deep-review-label {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .deep-review-label span {
+        font-size: 36px;
+    }
+
+    .deep-review-label strong {
+        max-width: none;
+        font-size: 12px;
+    }
+
+    .deep-review-body > h2 {
+        margin-bottom: 27px;
+        font-size: 32px;
+        line-height: 1.12;
+    }
+
+    .deep-review-text p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .deep-review-text .lead-paragraph {
+        font-size: 17px;
+        line-height: 1.65;
+    }
+
+    .deep-review-text h3 {
+        margin-top: 32px;
+        font-size: 20px;
+    }
+
+    .quote-highlight {
+        margin: 30px 0;
+        padding: 23px;
+    }
+
+    .quote-highlight blockquote {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+
+    /* =====================================================
+       FINAL
+    ===================================================== */
+
+    .premium-final-section {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 30px 22px;
+        margin-bottom: 60px;
+        border-radius: 21px;
+    }
+
+    .final-number {
+        font-size: 40px;
+    }
+
+    .final-content h2 {
+        font-size: 30px;
+        line-height: 1.12;
+    }
+
+    .final-content p {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+
+    /* =====================================================
+       SUGGESTED
+    ===================================================== */
+
+    .suggested-premium-section {
+        padding-bottom: 55px;
+    }
+
+    .suggested-premium-heading h2 {
+        font-size: 30px;
+        line-height: 1.12;
+    }
+
+    .suggested-premium-heading p {
+        font-size: 13px;
+    }
+
+    .suggested-premium-card {
+        grid-template-columns: 1fr;
+        border-radius: 21px;
+    }
+
+    .suggested-premium-image {
+        min-height: 220px;
+    }
+
+    .suggested-premium-image img {
+        height: 175px;
+    }
+
+    .suggested-premium-content {
+        padding: 24px;
+    }
+
+    .suggested-premium-content h3 {
+        font-size: 21px;
+    }
+
+    .suggested-premium-content p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       PHASE 3
+    ===================================================== */
+
+    .pr3-decision-center {
+        width: calc(100% - 24px);
+        margin-top: 55px;
+    }
+
+    .pr3-section-heading {
+        margin-bottom: 26px;
+    }
+
+    .pr3-section-heading h2 {
+        font-size: 30px;
+        letter-spacing: -.035em;
+        line-height: 1.12;
+    }
+
+    .pr3-section-heading p {
+        margin-top: 12px;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .pr3-decision-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .pr3-decision-card {
+        min-height: auto;
+        gap: 15px;
+        padding: 22px;
+        border-radius: 20px;
+    }
+
+    .pr3-card-icon {
+        flex-basis: 39px;
+        width: 39px;
+        height: 39px;
+        border-radius: 12px;
+        font-size: 15px;
+    }
+
+    .pr3-card-content h3 {
+        font-size: 18px;
+    }
+
+    .pr3-card-content p {
+        font-size: 12.5px;
+        line-height: 1.7;
+    }
+
+    .pr3-mini-list {
+        margin-top: 15px;
+    }
+
+    .pr3-mini-list li {
+        font-size: 10px;
+        padding: 7px 9px;
+    }
+
+    .pr3-bottom-line {
+        grid-template-columns: 1fr;
+        gap: 17px;
+        margin-top: 13px;
+        padding: 24px 21px;
+        border-radius: 21px;
+    }
+
+    .pr3-bottom-line-mark {
+        width: 46px;
+        height: 46px;
+        border-radius: 13px;
+        font-size: 10px;
+    }
+
+    .pr3-bottom-line-content h3 {
+        font-size: 21px;
+    }
+
+    .pr3-bottom-line-content p {
+        font-size: 12.5px;
+        line-height: 1.7;
+    }
+
+    .pr3-facts-wrapper {
+        margin-top: 42px;
+    }
+
+    .pr3-facts-header h3 {
+        font-size: 19px;
+    }
+
+    .pr3-facts-header p {
+        font-size: 12px;
+    }
+
+    .pr3-fact {
+        grid-template-columns: 34px minmax(0, 1fr);
+        gap: 10px;
+        padding: 21px 0;
+    }
+
+    .pr3-fact h4 {
+        font-size: 14px;
+    }
+
+    .pr3-fact p {
+        font-size: 12px;
+    }
+
+
+    /* =====================================================
+       PHASE 4
+    ===================================================== */
+
+    .pr4-pros-cons {
+        width: calc(100% - 24px);
+        margin-top: 62px;
+    }
+
+    .pr4-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 17px;
+        margin-bottom: 26px;
+    }
+
+    .pr4-heading-note {
+        display: none;
+    }
+
+    .pr4-heading-copy h2 {
+        font-size: 30px;
+        letter-spacing: -.035em;
+        line-height: 1.12;
+    }
+
+    .pr4-heading-copy p {
+        margin-top: 12px;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .pr4-tradeoff-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .pr4-panel {
+        padding: 23px 21px;
+        border-radius: 21px;
+    }
+
+    .pr4-panel-top {
+        gap: 12px;
+        padding-bottom: 20px;
+    }
+
+    .pr4-panel-icon {
+        width: 41px;
+        height: 41px;
+        border-radius: 12px;
+        font-size: 18px;
+    }
+
+    .pr4-panel-top h3 {
+        font-size: 20px;
+    }
+
+    .pr4-point {
+        grid-template-columns: 27px minmax(0, 1fr);
+        gap: 10px;
+        padding: 20px 0;
+    }
+
+    .pr4-point-content h4 {
+        font-size: 13.5px;
+    }
+
+    .pr4-point-content p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .pr4-decision-strip {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 13px;
+        padding: 22px 20px;
+        border-radius: 20px;
+    }
+
+    .pr4-strip-marker {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+    }
+
+    .pr4-strip-content p {
+        font-size: 12.5px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       PHASE 5
+    ===================================================== */
+
+    .pr5-editorial-review {
+        width: calc(100% - 24px);
+        margin-top: 80px;
+    }
+
+    .pr5-editorial-intro {
+        grid-template-columns: 36px minmax(0, 1fr);
+        gap: 17px;
+        padding-bottom: 42px;
+    }
+
+    .pr5-intro-index i,
+    .pr5-deep-index div {
+        height: 52px;
+    }
+
+    .pr5-intro-main h2 {
+        font-size: 34px;
+        line-height: 1.1;
+    }
+
+    .pr5-intro-main p {
+        margin-top: 17px;
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .pr5-feature-story {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 52px 0;
+    }
+
+    .pr5-feature-visual {
+        min-height: 330px;
+        border-radius: 22px;
+    }
+
+    .pr5-feature-copy h3 {
+        font-size: 27px;
+        line-height: 1.12;
+    }
+
+    .pr5-feature-copy > p {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+    .pr5-insight-row {
+        grid-template-columns: 1fr;
+    }
+
+    .pr5-insight {
+        grid-template-columns: 33px minmax(0, 1fr);
+        padding: 24px 0;
+    }
+
+    .pr5-insight + .pr5-insight {
+        padding-left: 0;
+        border-left: 0;
+        border-top: 1px solid var(--pr5-line);
+    }
+
+    .pr5-statement {
+        grid-template-columns: 44px minmax(0, 1fr);
+        gap: 16px;
+        margin: 57px 0;
+        padding: 31px 24px;
+        border-radius: 22px;
+    }
+
+    .pr5-statement-mark {
+        font-size: 54px;
+    }
+
+    .pr5-statement p {
+        font-size: 21px;
+        line-height: 1.35;
+    }
+
+    .pr5-deep-dive {
+        grid-template-columns: 36px minmax(0, 1fr);
+        gap: 17px;
+    }
+
+    .pr5-deep-content > h2 {
+        font-size: 31px;
+        line-height: 1.12;
+    }
+
+    .pr5-deep-main p {
+        font-size: 13px;
+        line-height: 1.75;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .temporary-footer-inner {
+        width: calc(100% - 24px);
+        min-height: 130px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .temporary-footer p {
+        font-size: 10px;
+    }
+
+    .review-back-top {
+        right: 13px;
+        bottom: 13px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* =========================================================
+   641–760px
+   LARGE MOBILE / SMALL TABLET
+========================================================= */
+
+@media (min-width: 641px) and (max-width: 760px) {
+
+    .product-review-container {
+        width: calc(100% - 32px);
+    }
+
+    .pr3-decision-center,
+    .pr4-pros-cons,
+    .pr5-editorial-review {
+        width: calc(100% - 32px);
+    }
+
+    .pr3-decision-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .pr4-tradeoff-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .pr5-feature-story {
+        grid-template-columns: 1fr;
+    }
+
+    /*
+       Tablet typography:
+       slightly larger than phone,
+       still compact.
+    */
+
+    .hero-copy h1 {
+        font-size: clamp(40px, 7vw, 50px);
+    }
+
+    .editorial-statement h2,
+    .decision-intro h2,
+    .pros-cons-heading h2,
+    .buyer-fit-intro h2,
+    .facts-title h2,
+    .deep-review-body > h2 {
+        font-size: 32px;
+    }
+
+    .pr3-section-heading h2,
+    .pr4-heading-copy h2 {
+        font-size: 32px;
+    }
+
+    .pr5-intro-main h2 {
+        font-size: 36px;
+    }
+}
+
+
+/* =========================================================
+   600px
+   MOBILE READING QUALITY
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .product-review-main {
+        width: 100%;
+    }
+
+    .product-review-main h1,
+    .product-review-main h2,
+    .product-review-main h3,
+    .product-review-main p,
+    .product-review-main li,
+    .product-review-main strong {
+        overflow-wrap: anywhere;
+    }
+
+    .hero-description,
+    .editorial-statement p,
+    .decision-intro p,
+    .deep-review-text p,
+    .pr5-feature-copy > p {
+        line-height: 1.78;
+    }
+
+    .editorial-point p,
+    .fit-row-main p,
+    .pr5-deep-main p {
+        line-height: 1.72;
+    }
+}
+
+
+/* =========================================================
+   480px — SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .product-review-main {
+        overflow-x: hidden;
+    }
+
+    .product-review-container {
+        width: calc(100% - 20px);
+    }
+
+    .editorial-statement,
+    .decision-editorial-section,
+    .pros-cons-editorial,
+    .buyer-fit-editorial,
+    .facts-editorial,
+    .deep-review-editorial,
+    .pr5-editorial-review {
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .hero-copy h1 {
+        line-height: .98;
+        font-size: 34px;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        font-size: 13.5px;
+    }
+
+    .editorial-point,
+    .buyer-fit-row,
+    .fact-editorial-row {
+        min-width: 0;
+    }
+
+    .pr3-decision-center,
+    .pr4-pros-cons,
+    .pr5-editorial-review {
+        width: calc(100% - 20px);
+    }
+
+    .pr5-feature-visual {
+        min-height: 290px;
+        border-radius: 20px;
+    }
+
+    .pr5-visual-caption {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .pr5-visual-caption p {
+        max-width: 210px;
+        font-size: 10px;
+    }
+
+    .pr5-feature-copy h3 {
+        font-size: 25px;
+    }
+
+    .pr5-feature-copy > p {
+        font-size: 13px;
+    }
+
+    .pr5-statement {
+        grid-template-columns: 1fr;
+        padding: 27px 20px;
+    }
+
+    .pr5-statement-mark {
+        font-size: 45px;
+    }
+
+    .pr5-statement p {
+        font-size: 20px;
+    }
+
+    .pr5-deep-content > h2 {
+        font-size: 29px;
+    }
+
+    .pr5-deep-main .pr5-lead {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================================
+   420px — VERY SMALL PHONE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .product-review-container {
+        width: calc(100% - 18px);
+    }
+
+    .hero-product-visual {
+        min-height: 385px;
+    }
+
+    .hero-copy h1 {
+        font-size: 32px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .editorial-statement h2,
+    .decision-intro h2,
+    .pros-cons-heading h2,
+    .buyer-fit-intro h2,
+    .facts-title h2,
+    .deep-review-body > h2,
+    .final-content h2,
+    .suggested-premium-heading h2 {
+        font-size: 29px;
+    }
+
+    .buyer-fit-row {
+        grid-template-columns: 25px 1fr 34px;
+        gap: 8px;
+    }
+
+    .fit-row-main h3 {
+        font-size: 17px;
+    }
+
+    .pr3-decision-center {
+        width: calc(100% - 20px);
+    }
+
+    .pr3-section-heading h2 {
+        font-size: 29px;
+    }
+
+    .pr3-decision-card {
+        display: block;
+        padding: 20px;
+    }
+
+    .pr3-card-icon {
+        margin-bottom: 14px;
+    }
+
+    .pr3-card-content h3 {
+        font-size: 17px;
+    }
+
+    .pr3-card-content p {
+        font-size: 12px;
+    }
+
+    .pr3-bottom-line-content h3 {
+        font-size: 21px;
+    }
+
+    .pr4-pros-cons {
+        width: calc(100% - 20px);
+    }
+
+    .pr4-heading-copy h2 {
+        font-size: 29px;
+    }
+
+    .pr4-panel {
+        padding: 20px 18px;
+    }
+
+    .pr4-panel-top h3 {
+        font-size: 18px;
+    }
+
+    .pr4-point {
+        grid-template-columns: 25px minmax(0, 1fr);
+        gap: 9px;
+    }
+
+    .pr4-point-content h4 {
+        font-size: 13px;
+    }
+
+    .pr4-point-content p {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   390px — EXTRA SMALL
+========================================================= */
+
+@media (max-width: 390px) {
+
+    .product-review-container {
+        width: calc(100% - 18px);
+    }
+
+    .hero-product-visual {
+        min-height: 385px;
+    }
+
+    .hero-copy h1 {
+        font-size: 31px;
+    }
+
+    .pr5-editorial-review {
+        width: calc(100% - 18px);
+    }
+
+    .pr5-intro-main h2 {
+        font-size: 31px;
+    }
+
+    .pr5-feature-copy h3 {
+        font-size: 24px;
+    }
+}
+
+
+/* =========================================================
+   360px — NARROWEST COMMON PHONES
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .product-review-container {
+        width: calc(100% - 14px);
+    }
+
+    .hero-copy h1 {
+        font-size: 29px;
+    }
+
+    .hero-description {
+        font-size: 12.5px;
+    }
+
+    .editorial-statement h2,
+    .decision-intro h2,
+    .pros-cons-heading h2,
+    .buyer-fit-intro h2,
+    .facts-title h2,
+    .deep-review-body > h2,
+    .final-content h2,
+    .suggested-premium-heading h2 {
+        font-size: 27px;
+    }
+
+    .editorial-statement p,
+    .decision-intro p,
+    .deep-review-text p {
+        font-size: 12.5px;
+    }
+
+    .pr3-decision-center,
+    .pr4-pros-cons,
+    .pr5-editorial-review {
+        width: calc(100% - 14px);
+    }
+
+    .pr3-section-heading h2,
+    .pr4-heading-copy h2 {
+        font-size: 27px;
+    }
+
+    .pr3-decision-card {
+        padding: 19px;
+    }
+
+    .pr3-card-content h3 {
+        font-size: 16.5px;
+    }
+
+    .pr3-card-content p {
+        font-size: 11.8px;
+    }
+
+    .pr4-panel {
+        padding: 19px 17px;
+    }
+
+    .pr4-panel-top h3 {
+        font-size: 17px;
+    }
+
+    .pr4-point-content h4 {
+        font-size: 12.5px;
+    }
+
+    .pr4-point-content p {
+        font-size: 11.8px;
+    }
+
+    .pr5-feature-copy h3 {
+        font-size: 23px;
+    }
+
+    .pr5-feature-copy > p {
+        font-size: 12.5px;
+    }
+
+    .pr5-statement p {
+        font-size: 19px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+
+
+
+
+
+/* =========================================
+   PHASE 7 — PRODUCT COMPARISON RESPONSIVE
+========================================= */
+
+
+/* =========================================
+   1024px — TABLET LANDSCAPE
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .pr7-comparison {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .pr7-header {
+        grid-template-columns: 55px minmax(0, 1fr) 130px;
+        gap: 18px;
+    }
+
+    .pr7-header-main h2 {
+        font-size: 38px;
+    }
+
+    .pr7-header-main p {
+        font-size: 14px;
+    }
+
+    .pr7-product-image {
+        height: 220px;
+    }
+
+    .pr7-product-info {
+        padding: 22px;
+    }
+
+    .pr7-table-row > * {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+
+
+/* =========================================
+   900px
+========================================= */
+
+@media (max-width: 900px) {
+
+    .pr7-comparison {
+        padding-top: 85px;
+        padding-bottom: 95px;
+    }
+
+    .pr7-header {
+        grid-template-columns: 45px minmax(0, 1fr);
+    }
+
+    .pr7-header-mark {
+        display: none;
+    }
+
+    .pr7-header-main h2 {
+        font-size: 36px;
+    }
+
+    .pr7-compare-grid {
+        gap: 16px;
+    }
+
+    .pr7-product-image {
+        height: 205px;
+        padding: 20px;
+    }
+
+    .pr7-product-info h3 {
+        font-size: 20px;
+    }
+
+    .pr7-price strong {
+        font-size: 19px;
+    }
+}
+
+
+/* =========================================
+   760px — MOBILE / TABLET
+========================================= */
+
+@media (max-width: 760px) {
+
+    .pr7-comparison {
+        padding: 72px 20px 82px;
+    }
+
+    .pr7-header {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .pr7-header-index {
+        margin-bottom: 20px;
+    }
+
+    .pr7-header-main {
+        max-width: 620px;
+    }
+
+    .pr7-header-main h2 {
+        margin-top: 7px;
+        font-size: 32px;
+    }
+
+    .pr7-header-main p {
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+    .pr7-compare-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-bottom: 42px;
+    }
+
+    .pr7-product-image {
+        height: 220px;
+    }
+
+    .pr7-product-info {
+        padding: 20px;
+    }
+
+    .pr7-product-info h3 {
+        font-size: 19px;
+    }
+
+    .pr7-product-info p {
+        font-size: 12px;
+    }
+
+    .pr7-price {
+        margin-top: 17px;
+        padding-top: 14px;
+    }
+
+    .pr7-price strong {
+        font-size: 18px;
+    }
+
+    .pr7-comparison-table-wrap {
+        margin-bottom: 45px;
+        border-radius: 14px;
+    }
+
+    .pr7-table-heading {
+        display: block;
+        padding: 20px;
+    }
+
+    .pr7-table-heading strong {
+        display: block;
+        margin-top: 7px;
+        font-size: 16px;
+    }
+
+    .pr7-table-row {
+        grid-template-columns: minmax(100px, 1fr) minmax(85px, 0.85fr) minmax(85px, 0.85fr);
+    }
+
+    .pr7-table-row > * {
+        padding: 14px 11px;
+    }
+
+    .pr7-table-row > span {
+        font-size: 11px;
+    }
+
+    .pr7-table-row > strong {
+        font-size: 10px;
+    }
+
+    .pr7-section-title {
+        margin-bottom: 19px;
+    }
+
+    .pr7-section-title h3 {
+        font-size: 25px;
+    }
+
+    .pr7-difference-grid {
+        gap: 10px;
+    }
+
+    .pr7-difference-card {
+        grid-template-columns: 34px minmax(0, 1fr);
+        gap: 12px;
+        padding: 18px;
+    }
+
+    .pr7-difference-card strong {
+        font-size: 15px;
+    }
+
+    .pr7-difference-card p {
+        font-size: 11px;
+    }
+
+    .pr7-comparison-note {
+        grid-template-columns: 40px minmax(0, 1fr);
+        gap: 13px;
+        padding: 18px;
+    }
+
+    .pr7-note-mark {
+        width: 36px;
+        height: 36px;
+        font-size: 17px;
+    }
+
+    .pr7-comparison-note p {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================
+   600px
+========================================= */
+
+@media (max-width: 600px) {
+
+    .pr7-comparison {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .pr7-header-main h2 {
+        font-size: 29px;
+    }
+
+    .pr7-header-main p {
+        max-width: 500px;
+        font-size: 12px;
+    }
+
+    .pr7-product-top {
+        min-height: 47px;
+        padding: 13px 15px;
+    }
+
+    .pr7-product-label {
+        font-size: 9px;
+    }
+
+    .pr7-product-badge {
+        padding: 5px 8px;
+        font-size: 8px;
+    }
+
+    .pr7-product-image {
+        height: 190px;
+        padding: 17px;
+    }
+
+    .pr7-product-info {
+        padding: 18px;
+    }
+
+    .pr7-product-info h3 {
+        font-size: 18px;
+    }
+
+    .pr7-product-info p {
+        font-size: 11px;
+    }
+
+    .pr7-price span {
+        font-size: 8px;
+    }
+
+    .pr7-price strong {
+        font-size: 17px;
+    }
+
+    .pr7-table-heading {
+        padding: 17px;
+    }
+
+    .pr7-table-heading span {
+        font-size: 9px;
+    }
+
+    .pr7-table-heading strong {
+        font-size: 14px;
+    }
+
+    .pr7-table-row {
+        grid-template-columns: 1fr 0.82fr 0.82fr;
+    }
+
+    .pr7-table-row > * {
+        padding: 12px 8px;
+    }
+
+    .pr7-table-row > span {
+        font-size: 10px;
+    }
+
+    .pr7-table-row > strong {
+        font-size: 9px;
+    }
+
+    .pr7-section-title h3 {
+        font-size: 23px;
+    }
+
+    .pr7-difference-card {
+        padding: 16px;
+    }
+
+    .pr7-difference-card > span {
+        width: 29px;
+        height: 29px;
+        font-size: 8px;
+    }
+
+    .pr7-difference-card strong {
+        font-size: 14px;
+    }
+
+    .pr7-difference-card p {
+        font-size: 10.5px;
+        line-height: 1.6;
+    }
+
+    .pr7-comparison-note {
+        padding: 16px;
+    }
+
+    .pr7-comparison-note span {
+        font-size: 9px;
+    }
+
+    .pr7-comparison-note p {
+        font-size: 10.5px;
+    }
+}
+
+
+/* =========================================
+   480px
+========================================= */
+
+@media (max-width: 480px) {
+
+    .pr7-comparison {
+        padding-top: 62px;
+        padding-bottom: 70px;
+    }
+
+    .pr7-header-index {
+        gap: 10px;
+        margin-bottom: 16px;
+    }
+
+    .pr7-header-index span {
+        font-size: 11px;
+    }
+
+    .pr7-header-index i {
+        width: 22px;
+    }
+
+    .pr7-header-main h2 {
+        font-size: 27px;
+        letter-spacing: -0.035em;
+    }
+
+    .pr7-header-main p {
+        font-size: 11.5px;
+    }
+
+    .pr7-product-image {
+        height: 175px;
+    }
+
+    .pr7-product-info h3 {
+        font-size: 17px;
+    }
+
+    .pr7-price {
+        align-items: center;
+    }
+
+    .pr7-price strong {
+        font-size: 16px;
+    }
+
+    /*
+       Keep the comparison table readable
+       without causing horizontal overflow.
+    */
+    .pr7-table-row {
+        grid-template-columns: 1.05fr 0.82fr 0.82fr;
+    }
+
+    .pr7-table-row > * {
+        padding: 11px 7px;
+        overflow-wrap: anywhere;
+    }
+
+    .pr7-table-head > * {
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+
+    .pr7-table-row > span {
+        font-size: 9px;
+    }
+
+    .pr7-table-row > strong {
+        font-size: 8.5px;
+    }
+
+    .pr7-section-title h3 {
+        font-size: 21px;
+    }
+}
+
+
+/* =========================================
+   420px
+========================================= */
+
+@media (max-width: 420px) {
+
+    .pr7-comparison {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .pr7-header-main h2 {
+        font-size: 25px;
+    }
+
+    .pr7-product-image {
+        height: 160px;
+    }
+
+    .pr7-product-info {
+        padding: 16px;
+    }
+
+    .pr7-product-info h3 {
+        font-size: 16px;
+    }
+
+    .pr7-product-info p {
+        font-size: 10.5px;
+    }
+
+    .pr7-table-row {
+        grid-template-columns: 1fr 0.78fr 0.78fr;
+    }
+
+    .pr7-table-row > * {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .pr7-table-row > span {
+        font-size: 8.5px;
+    }
+
+    .pr7-table-row > strong {
+        font-size: 8px;
+    }
+
+    .pr7-difference-card {
+        grid-template-columns: 30px minmax(0, 1fr);
+        gap: 10px;
+        padding: 14px;
+    }
+
+    .pr7-difference-card > span {
+        width: 27px;
+        height: 27px;
+    }
+
+    .pr7-difference-card strong {
+        font-size: 13px;
+    }
+
+    .pr7-difference-card p {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================
+   390px
+========================================= */
+
+@media (max-width: 390px) {
+
+    .pr7-comparison {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+    .pr7-header-main h2 {
+        font-size: 23px;
+    }
+
+    .pr7-header-main p {
+        font-size: 11px;
+    }
+
+    .pr7-product-image {
+        height: 145px;
+    }
+
+    .pr7-table-row {
+        grid-template-columns: 0.95fr 0.78fr 0.78fr;
+    }
+
+    .pr7-table-row > * {
+        padding: 10px 5px;
+    }
+
+    .pr7-table-row > span {
+        font-size: 8px;
+    }
+
+    .pr7-table-row > strong {
+        font-size: 7.7px;
+    }
+
+    .pr7-section-title h3 {
+        font-size: 20px;
+    }
+}
+
+
+/* =========================================
+   360px — EXTRA SMALL
+========================================= */
+
+@media (max-width: 360px) {
+
+    .pr7-comparison {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .pr7-header-main h2 {
+        font-size: 21px;
+    }
+
+    .pr7-product-image {
+        height: 135px;
+    }
+
+    .pr7-product-info {
+        padding: 14px;
+    }
+
+    .pr7-product-info h3 {
+        font-size: 15px;
+    }
+
+    .pr7-product-info p {
+        font-size: 10px;
+    }
+
+    .pr7-table-row {
+        grid-template-columns: 0.9fr 0.75fr 0.75fr;
+    }
+
+    .pr7-table-row > * {
+        padding: 9px 4px;
+    }
+
+    .pr7-table-row > span {
+        font-size: 7.5px;
+    }
+
+    .pr7-table-row > strong {
+        font-size: 7.2px;
+    }
+
+    .pr7-difference-card {
+        padding: 12px;
+    }
+
+    .pr7-difference-card strong {
+        font-size: 12px;
+    }
+
+    .pr7-difference-card p {
+        font-size: 9.5px;
+    }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .pr7-product-card,
+    .pr7-product-image img,
+    .pr7-difference-card {
+        transition: none;
+    }
+
+    .pr7-product-card:hover,
+    .pr7-difference-card:hover {
+        transform: none;
+    }
+
+    .pr7-product-card:hover .pr7-product-image img {
+        transform: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   PHASE 8 — BUYING GUIDE RESPONSIVE
+========================================= */
+
+
+/* =========================================
+   1024px
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .pr8-buying-guide {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .pr8-header {
+        grid-template-columns: 55px minmax(0, 1fr) 130px;
+        gap: 18px;
+    }
+
+    .pr8-header-main h2 {
+        font-size: 38px;
+    }
+
+    .pr8-header-main p {
+        font-size: 13px;
+    }
+
+    .pr8-section-heading h3 {
+        font-size: 28px;
+    }
+}
+
+
+/* =========================================
+   900px
+========================================= */
+
+@media (max-width: 900px) {
+
+    .pr8-buying-guide {
+        padding-top: 85px;
+        padding-bottom: 95px;
+    }
+
+    .pr8-header {
+        grid-template-columns: 45px minmax(0, 1fr);
+    }
+
+    .pr8-header-mark {
+        display: none;
+    }
+
+    .pr8-header-main h2 {
+        font-size: 36px;
+    }
+
+    .pr8-check-grid {
+        gap: 12px;
+    }
+
+    .pr8-check-card {
+        grid-template-columns: 38px minmax(0, 1fr);
+        gap: 13px;
+    }
+
+    .pr8-factor-grid {
+        gap: 12px;
+    }
+
+    .pr8-factor-card {
+        padding: 20px;
+    }
+}
+
+
+/* =========================================
+   760px — MOBILE / TABLET
+========================================= */
+
+@media (max-width: 760px) {
+
+    .pr8-buying-guide {
+        padding: 72px 20px 82px;
+    }
+
+    .pr8-header {
+        display: block;
+        margin-bottom: 42px;
+    }
+
+    .pr8-header-index {
+        margin-bottom: 20px;
+    }
+
+    .pr8-header-main h2 {
+        margin-top: 7px;
+        font-size: 32px;
+    }
+
+    .pr8-header-main p {
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+    .pr8-before-buy,
+    .pr8-factors {
+        margin-bottom: 52px;
+    }
+
+    .pr8-section-heading {
+        margin-bottom: 19px;
+    }
+
+    .pr8-section-heading h3 {
+        font-size: 25px;
+    }
+
+    .pr8-check-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .pr8-check-card {
+        grid-template-columns: 36px minmax(0, 1fr);
+        gap: 12px;
+        padding: 19px;
+        border-radius: 14px;
+    }
+
+    .pr8-check-number {
+        width: 34px;
+        height: 34px;
+        font-size: 9px;
+    }
+
+    .pr8-check-content h4 {
+        font-size: 15px;
+    }
+
+    .pr8-check-content p {
+        font-size: 11px;
+    }
+
+    .pr8-factor-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .pr8-factor-card {
+        padding: 19px;
+        border-radius: 14px;
+    }
+
+    .pr8-factor-top {
+        margin-bottom: 10px;
+    }
+
+    .pr8-factor-top strong {
+        font-size: 15px;
+    }
+
+    .pr8-factor-card p {
+        font-size: 11px;
+    }
+
+    .pr8-fit-section {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 42px;
+    }
+
+    .pr8-fit-card {
+        padding: 21px;
+        border-radius: 14px;
+    }
+
+    .pr8-fit-card h3 {
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+
+    .pr8-fit-card li {
+        font-size: 11px;
+        margin-bottom: 9px;
+    }
+
+    .pr8-buying-tip {
+        grid-template-columns: 40px minmax(0, 1fr);
+        gap: 13px;
+        padding: 18px;
+    }
+
+    .pr8-tip-mark {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .pr8-buying-tip p {
+        font-size: 11px;
+    }
+
+    .pr8-price-note {
+        padding-top: 18px;
+    }
+
+    .pr8-price-note p {
+        font-size: 10.5px;
+    }
+}
+
+
+/* =========================================
+   600px
+========================================= */
+
+@media (max-width: 600px) {
+
+    .pr8-buying-guide {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .pr8-header-main h2 {
+        font-size: 29px;
+    }
+
+    .pr8-header-main p {
+        font-size: 12px;
+    }
+
+    .pr8-eyebrow,
+    .pr8-section-heading > span,
+    .pr8-fit-label,
+    .pr8-buying-tip span,
+    .pr8-price-note > span {
+        font-size: 9px;
+    }
+
+    .pr8-section-heading h3 {
+        font-size: 23px;
+    }
+
+    .pr8-check-card {
+        padding: 17px;
+    }
+
+    .pr8-check-content > span {
+        font-size: 8px;
+    }
+
+    .pr8-check-content h4 {
+        font-size: 14px;
+    }
+
+    .pr8-check-content p {
+        font-size: 10.5px;
+    }
+
+    .pr8-factor-card {
+        padding: 17px;
+    }
+
+    .pr8-factor-top strong {
+        font-size: 14px;
+    }
+
+    .pr8-factor-card p {
+        font-size: 10.5px;
+    }
+
+    .pr8-fit-card {
+        padding: 18px;
+    }
+
+    .pr8-fit-card h3 {
+        font-size: 18px;
+    }
+
+    .pr8-fit-card li {
+        padding-left: 17px;
+        font-size: 10.5px;
+    }
+
+    .pr8-buying-tip {
+        padding: 16px;
+    }
+
+    .pr8-buying-tip p {
+        font-size: 10.5px;
+    }
+}
+
+
+/* =========================================
+   480px
+========================================= */
+
+@media (max-width: 480px) {
+
+    .pr8-buying-guide {
+        padding-top: 62px;
+        padding-bottom: 70px;
+    }
+
+    .pr8-header-index {
+        gap: 10px;
+        margin-bottom: 16px;
+    }
+
+    .pr8-header-index span {
+        font-size: 11px;
+    }
+
+    .pr8-header-index i {
+        width: 22px;
+    }
+
+    .pr8-header-main h2 {
+        font-size: 27px;
+        letter-spacing: -0.035em;
+    }
+
+    .pr8-header-main p {
+        font-size: 11.5px;
+    }
+
+    .pr8-section-heading h3 {
+        font-size: 21px;
+    }
+
+    .pr8-check-card {
+        grid-template-columns: 31px minmax(0, 1fr);
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .pr8-check-number {
+        width: 29px;
+        height: 29px;
+        font-size: 8px;
+    }
+
+    .pr8-check-content h4 {
+        font-size: 13px;
+    }
+
+    .pr8-check-content p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .pr8-factor-card {
+        padding: 15px;
+    }
+
+    .pr8-factor-top {
+        gap: 10px;
+    }
+
+    .pr8-factor-top span {
+        width: 27px;
+        height: 27px;
+        font-size: 8px;
+    }
+
+    .pr8-factor-top strong {
+        font-size: 13px;
+    }
+
+    .pr8-factor-card p {
+        font-size: 10px;
+    }
+
+    .pr8-fit-card {
+        padding: 16px;
+    }
+
+    .pr8-fit-card h3 {
+        font-size: 17px;
+    }
+
+    .pr8-fit-card li {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .pr8-buying-tip {
+        grid-template-columns: 34px minmax(0, 1fr);
+        gap: 10px;
+        padding: 14px;
+    }
+
+    .pr8-tip-mark {
+        width: 31px;
+        height: 31px;
+        font-size: 14px;
+    }
+
+    .pr8-buying-tip p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+    .pr8-price-note p {
+        font-size: 9.5px;
+    }
+}
+
+
+/* =========================================
+   420px
+========================================= */
+
+@media (max-width: 420px) {
+
+    .pr8-buying-guide {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .pr8-header-main h2 {
+        font-size: 25px;
+    }
+
+    .pr8-header-main p {
+        font-size: 11px;
+    }
+
+    .pr8-section-heading h3 {
+        font-size: 20px;
+    }
+
+    .pr8-check-card {
+        padding: 14px;
+    }
+
+    .pr8-check-content h4 {
+        font-size: 12.5px;
+    }
+
+    .pr8-check-content p {
+        font-size: 9.7px;
+    }
+
+    .pr8-factor-card {
+        padding: 14px;
+    }
+
+    .pr8-factor-top strong {
+        font-size: 12.5px;
+    }
+
+    .pr8-factor-card p {
+        font-size: 9.7px;
+    }
+
+    .pr8-fit-card {
+        padding: 15px;
+    }
+
+    .pr8-fit-card h3 {
+        font-size: 16px;
+    }
+
+    .pr8-fit-card li {
+        font-size: 9.7px;
+    }
+}
+
+
+/* =========================================
+   390px
+========================================= */
+
+@media (max-width: 390px) {
+
+    .pr8-buying-guide {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+
+    .pr8-header-main h2 {
+        font-size: 23px;
+    }
+
+    .pr8-header-main p {
+        font-size: 10.5px;
+    }
+
+    .pr8-section-heading h3 {
+        font-size: 19px;
+    }
+
+    .pr8-check-card {
+        grid-template-columns: 28px minmax(0, 1fr);
+        gap: 9px;
+        padding: 13px;
+    }
+
+    .pr8-check-number {
+        width: 27px;
+        height: 27px;
+    }
+
+    .pr8-check-content h4 {
+        font-size: 12px;
+    }
+
+    .pr8-check-content p {
+        font-size: 9.3px;
+    }
+
+    .pr8-factor-card {
+        padding: 13px;
+    }
+
+    .pr8-factor-top span {
+        width: 25px;
+        height: 25px;
+    }
+
+    .pr8-factor-top strong {
+        font-size: 12px;
+    }
+
+    .pr8-factor-card p {
+        font-size: 9.3px;
+    }
+
+    .pr8-fit-card {
+        padding: 14px;
+    }
+
+    .pr8-fit-card h3 {
+        font-size: 15px;
+    }
+
+    .pr8-fit-card li {
+        font-size: 9.3px;
+    }
+
+    .pr8-buying-tip {
+        padding: 13px;
+    }
+
+    .pr8-buying-tip p {
+        font-size: 9.3px;
+    }
+}
+
+
+/* =========================================
+   360px
+========================================= */
+
+@media (max-width: 360px) {
+
+    .pr8-buying-guide {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .pr8-header-main h2 {
+        font-size: 21px;
+    }
+
+    .pr8-header-main p {
+        font-size: 10px;
+    }
+
+    .pr8-section-heading h3 {
+        font-size: 18px;
+    }
+
+    .pr8-check-card {
+        padding: 12px;
+    }
+
+    .pr8-check-content h4 {
+        font-size: 11.5px;
+    }
+
+    .pr8-check-content p {
+        font-size: 9px;
+    }
+
+    .pr8-factor-card {
+        padding: 12px;
+    }
+
+    .pr8-factor-top strong {
+        font-size: 11.5px;
+    }
+
+    .pr8-factor-card p {
+        font-size: 9px;
+    }
+
+    .pr8-fit-card {
+        padding: 13px;
+    }
+
+    .pr8-fit-card h3 {
+        font-size: 14.5px;
+    }
+
+    .pr8-fit-card li {
+        font-size: 9px;
+    }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .pr8-check-card,
+    .pr8-factor-card {
+        transition: none;
+    }
+
+    .pr8-check-card:hover,
+    .pr8-factor-card:hover {
+        transform: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   PHASE 11 — RELATED PRODUCTS
+   RESPONSIVE CSS
+========================================= */
+
+
+/* =========================================
+   1200px
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .pr11-products {
+        gap: 14px;
+    }
+
+    .pr11-product-image {
+        min-height: 230px;
+    }
+
+    .pr11-product-image img {
+        max-width: 185px;
+        height: 185px;
+    }
+
+    .pr11-product-content {
+        padding: 19px;
+    }
+}
+
+
+/* =========================================
+   1000px
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .pr11-header {
+        grid-template-columns: 58px minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .pr11-header-mark {
+        display: none;
+    }
+
+    .pr11-products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 780px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .pr11-product-image {
+        min-height: 250px;
+    }
+
+    .pr11-product-image img {
+        max-width: 205px;
+        height: 200px;
+    }
+
+    .pr11-compare-prompt {
+        max-width: 780px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* =========================================
+   760px
+========================================= */
+
+@media (max-width: 760px) {
+
+    .pr11-related {
+        margin-top: 55px;
+    }
+
+    .pr11-header {
+        padding: 27px 0 25px;
+    }
+
+    .pr11-header-main h2 {
+        font-size: 26px;
+    }
+
+    .pr11-header-main p {
+        font-size: 13px;
+    }
+
+    .pr11-products {
+        margin-top: 35px;
+        gap: 13px;
+    }
+
+    .pr11-product-image {
+        min-height: 220px;
+        padding: 20px;
+    }
+
+    .pr11-product-image img {
+        max-width: 175px;
+        height: 175px;
+    }
+
+    .pr11-product-content {
+        padding: 18px;
+    }
+
+    .pr11-product-content h3 {
+        font-size: 17px;
+    }
+
+    .pr11-product-content p {
+        font-size: 12px;
+    }
+
+    .pr11-compare-prompt {
+        grid-template-columns: 35px minmax(0, 1fr);
+        gap: 13px;
+    }
+
+    .pr11-prompt-link {
+        grid-column: 2;
+        justify-self: start;
+    }
+}
+
+
+/* =========================================
+   600px
+========================================= */
+
+@media (max-width: 600px) {
+
+    .pr11-header {
+        grid-template-columns: 44px minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .pr11-header-index span {
+        font-size: 13px;
+    }
+
+    .pr11-header-index i {
+        width: 22px;
+        height: 2px;
+    }
+
+    .pr11-eyebrow {
+        font-size: 9px;
+        margin-bottom: 7px;
+    }
+
+    .pr11-header-main h2 {
+        font-size: 23px;
+        line-height: 1.16;
+    }
+
+    .pr11-header-main p {
+        margin-top: 8px;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .pr11-products {
+        grid-template-columns: 1fr;
+        max-width: 440px;
+        margin-top: 31px;
+        gap: 14px;
+    }
+
+    .pr11-product-image {
+        min-height: 255px;
+    }
+
+    .pr11-product-image img {
+        max-width: 210px;
+        height: 205px;
+    }
+
+    .pr11-product-content {
+        padding: 20px;
+    }
+
+    .pr11-product-content h3 {
+        font-size: 17px;
+    }
+
+    .pr11-product-content p {
+        min-height: auto;
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+    .pr11-product-price {
+        font-size: 18px;
+    }
+
+    .pr11-product-link {
+        min-height: 38px;
+        padding: 9px 13px;
+        font-size: 10.5px;
+    }
+
+    .pr11-compare-prompt {
+        margin-top: 20px;
+        padding: 17px;
+    }
+
+    .pr11-prompt-content p {
+        font-size: 11.5px;
+    }
+}
+
+
+/* =========================================
+   480px
+========================================= */
+
+@media (max-width: 480px) {
+
+    .pr11-related {
+        margin-top: 48px;
+    }
+
+    .pr11-header {
+        padding: 23px 0 22px;
+    }
+
+    .pr11-header-main h2 {
+        font-size: 21px;
+    }
+
+    .pr11-header-main p {
+        font-size: 12.5px;
+    }
+
+    .pr11-products {
+        margin-top: 28px;
+    }
+
+    .pr11-product-image {
+        min-height: 235px;
+    }
+
+    .pr11-product-image img {
+        max-width: 185px;
+        height: 185px;
+    }
+
+    .pr11-product-badge {
+        top: 12px;
+        left: 12px;
+        font-size: 7.5px;
+    }
+
+    .pr11-product-content {
+        padding: 18px;
+    }
+
+    .pr11-product-meta span {
+        font-size: 8px;
+    }
+
+    .pr11-product-content h3 {
+        font-size: 16px;
+    }
+
+    .pr11-product-content p {
+        font-size: 12.5px;
+    }
+
+    .pr11-product-bottom {
+        padding-top: 14px;
+    }
+
+    .pr11-product-price {
+        font-size: 17px;
+    }
+
+    .pr11-product-link {
+        font-size: 10px;
+    }
+
+    .pr11-compare-prompt {
+        grid-template-columns: 32px minmax(0, 1fr);
+        padding: 16px;
+    }
+
+    .pr11-prompt-link {
+        width: 100%;
+        justify-content: center;
+        min-height: 40px;
+    }
+}
+
+
+/* =========================================
+   420px
+========================================= */
+
+@media (max-width: 420px) {
+
+    .pr11-header {
+        grid-template-columns: 38px minmax(0, 1fr);
+        gap: 13px;
+    }
+
+    .pr11-header-main h2 {
+        font-size: 20px;
+    }
+
+    .pr11-header-main p {
+        font-size: 12px;
+    }
+
+    .pr11-product-image {
+        min-height: 220px;
+    }
+
+    .pr11-product-image img {
+        max-width: 170px;
+        height: 170px;
+    }
+
+    .pr11-product-content {
+        padding: 17px;
+    }
+
+    .pr11-product-content h3 {
+        font-size: 15.5px;
+    }
+
+    .pr11-product-content p {
+        font-size: 12px;
+    }
+
+    .pr11-product-link {
+        min-height: 39px;
+        padding: 9px 11px;
+    }
+}
+
+
+/* =========================================
+   390px
+========================================= */
+
+@media (max-width: 390px) {
+
+    .pr11-header-main h2 {
+        font-size: 19px;
+    }
+
+    .pr11-header-main p {
+        font-size: 11.5px;
+    }
+
+    .pr11-product-image {
+        min-height: 205px;
+    }
+
+    .pr11-product-image img {
+        max-width: 155px;
+        height: 155px;
+    }
+
+    .pr11-product-content {
+        padding: 16px;
+    }
+
+    .pr11-product-content h3 {
+        font-size: 15px;
+    }
+
+    .pr11-product-content p {
+        font-size: 11.8px;
+    }
+
+    .pr11-product-price {
+        font-size: 16px;
+    }
+
+    .pr11-product-link {
+        font-size: 9.5px;
+    }
+
+    .pr11-prompt-content p {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================
+   360px
+========================================= */
+
+@media (max-width: 360px) {
+
+    .pr11-header {
+        grid-template-columns: 34px minmax(0, 1fr);
+        gap: 11px;
+    }
+
+    .pr11-header-main h2 {
+        font-size: 18px;
+    }
+
+    .pr11-header-main p {
+        font-size: 11px;
+    }
+
+    .pr11-product-image {
+        min-height: 195px;
+    }
+
+    .pr11-product-image img {
+        max-width: 145px;
+        height: 145px;
+    }
+
+    .pr11-product-content {
+        padding: 15px;
+    }
+
+    .pr11-product-content h3 {
+        font-size: 14.5px;
+    }
+
+    .pr11-product-content p {
+        font-size: 11.5px;
+        line-height: 1.6;
+    }
+
+    .pr11-product-link {
+        padding: 8px 10px;
+        font-size: 9px;
+    }
+
+    .pr11-prompt-content p {
+        font-size: 10.5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   PHASE 12 — CONVERSION / CTA
+   RESPONSIVE CSS
+========================================= */
+
+
+/* =========================================
+   1200px
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .pr12-cta-content {
+        padding: 42px 40px;
+    }
+
+    .pr12-cta-visual {
+        min-height: 360px;
+    }
+
+    .pr12-cta-product img {
+        max-width: 255px;
+        height: 270px;
+    }
+
+    .pr12-cta-content h3 {
+        font-size: 34px;
+    }
+}
+
+
+/* =========================================
+   1000px
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .pr12-header {
+        grid-template-columns: 58px minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .pr12-header-mark {
+        display: none;
+    }
+
+    .pr12-cta {
+        grid-template-columns: 0.8fr 1.2fr;
+    }
+
+    .pr12-cta-content {
+        padding: 38px 32px;
+    }
+
+    .pr12-cta-content h3 {
+        font-size: 30px;
+    }
+
+    .pr12-decision-item {
+        padding: 16px;
+    }
+}
+
+
+/* =========================================
+   760px
+========================================= */
+
+@media (max-width: 760px) {
+
+    .pr12-conversion {
+        margin-top: 55px;
+    }
+
+    .pr12-header {
+        padding: 27px 0 25px;
+    }
+
+    .pr12-header-main h2 {
+        font-size: 26px;
+    }
+
+    .pr12-header-main p {
+        font-size: 13px;
+    }
+
+    .pr12-cta {
+        grid-template-columns: 1fr;
+        margin-top: 35px;
+        border-radius: 15px;
+    }
+
+    .pr12-cta-visual {
+        min-height: 300px;
+    }
+
+    .pr12-cta-product img {
+        max-width: 220px;
+        height: 220px;
+    }
+
+    .pr12-cta-content {
+        padding: 34px 30px 35px;
+    }
+
+    .pr12-cta-content h3 {
+        font-size: 29px;
+    }
+
+    .pr12-cta-content > p {
+        font-size: 13px;
+    }
+
+    .pr12-decision-strip {
+        grid-template-columns: 1fr;
+    }
+
+    .pr12-decision-item + .pr12-decision-item {
+        border-left: 0;
+        border-top: 1px solid rgba(20, 20, 20, 0.08);
+    }
+}
+
+
+/* =========================================
+   600px
+========================================= */
+
+@media (max-width: 600px) {
+
+    .pr12-header {
+        grid-template-columns: 44px minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .pr12-header-index span {
+        font-size: 13px;
+    }
+
+    .pr12-header-index i {
+        width: 22px;
+        height: 2px;
+    }
+
+    .pr12-eyebrow {
+        font-size: 9px;
+        margin-bottom: 7px;
+    }
+
+    .pr12-header-main h2 {
+        font-size: 23px;
+        line-height: 1.16;
+    }
+
+    .pr12-header-main p {
+        margin-top: 8px;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .pr12-cta {
+        margin-top: 31px;
+    }
+
+    .pr12-cta-visual {
+        min-height: 270px;
+        padding: 25px;
+    }
+
+    .pr12-cta-product img {
+        max-width: 190px;
+        height: 190px;
+    }
+
+    .pr12-cta-badge {
+        top: 15px;
+        left: 15px;
+        font-size: 7.5px;
+    }
+
+    .pr12-cta-content {
+        padding: 29px 22px 28px;
+    }
+
+    .pr12-cta-label {
+        font-size: 8px;
+    }
+
+    .pr12-cta-content h3 {
+        font-size: 25px;
+        line-height: 1.12;
+    }
+
+    .pr12-cta-content > p {
+        margin-top: 13px;
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+    .pr12-cta-actions {
+        align-items: stretch;
+        flex-direction: column;
+        margin-top: 22px;
+    }
+
+    .pr12-amazon-button,
+    .pr12-secondary-button {
+        width: 100%;
+        min-height: 47px;
+    }
+
+    .pr12-cta-trust {
+        margin-top: 17px;
+    }
+
+    .pr12-cta-trust p {
+        font-size: 10.5px;
+    }
+
+    .pr12-decision-item {
+        padding: 16px;
+    }
+
+    .pr12-final-note {
+        padding: 16px;
+    }
+
+    .pr12-final-content p {
+        font-size: 11.5px;
+    }
+}
+
+
+/* =========================================
+   480px
+========================================= */
+
+@media (max-width: 480px) {
+
+    .pr12-conversion {
+        margin-top: 48px;
+    }
+
+    .pr12-header {
+        padding: 23px 0 22px;
+    }
+
+    .pr12-header-main h2 {
+        font-size: 21px;
+    }
+
+    .pr12-header-main p {
+        font-size: 12.5px;
+    }
+
+    .pr12-cta {
+        margin-top: 28px;
+        border-radius: 13px;
+    }
+
+    .pr12-cta-visual {
+        min-height: 245px;
+    }
+
+    .pr12-cta-product img {
+        max-width: 175px;
+        height: 175px;
+    }
+
+    .pr12-cta-content {
+        padding: 25px 18px 24px;
+    }
+
+    .pr12-cta-content h3 {
+        font-size: 23px;
+    }
+
+    .pr12-cta-content > p {
+        font-size: 12.5px;
+    }
+
+    .pr12-amazon-button,
+    .pr12-secondary-button {
+        min-height: 46px;
+    }
+
+    .pr12-decision-item {
+        padding: 15px;
+    }
+
+    .pr12-final-note {
+        gap: 12px;
+        padding: 15px;
+    }
+}
+
+
+/* =========================================
+   420px
+========================================= */
+
+@media (max-width: 420px) {
+
+    .pr12-header {
+        grid-template-columns: 38px minmax(0, 1fr);
+        gap: 13px;
+    }
+
+    .pr12-header-main h2 {
+        font-size: 20px;
+    }
+
+    .pr12-header-main p {
+        font-size: 12px;
+    }
+
+    .pr12-cta-visual {
+        min-height: 225px;
+    }
+
+    .pr12-cta-product img {
+        max-width: 160px;
+        height: 160px;
+    }
+
+    .pr12-cta-content {
+        padding: 23px 16px;
+    }
+
+    .pr12-cta-content h3 {
+        font-size: 21px;
+    }
+
+    .pr12-cta-content > p {
+        font-size: 12px;
+    }
+
+    .pr12-decision-item strong {
+        font-size: 11px;
+    }
+
+    .pr12-decision-item div span {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================
+   390px
+========================================= */
+
+@media (max-width: 390px) {
+
+    .pr12-header-main h2 {
+        font-size: 19px;
+    }
+
+    .pr12-header-main p {
+        font-size: 11.5px;
+    }
+
+    .pr12-cta-visual {
+        min-height: 210px;
+    }
+
+    .pr12-cta-product img {
+        max-width: 145px;
+        height: 145px;
+    }
+
+    .pr12-cta-content {
+        padding: 21px 15px;
+    }
+
+    .pr12-cta-content h3 {
+        font-size: 20px;
+    }
+
+    .pr12-cta-content > p {
+        font-size: 11.8px;
+    }
+
+    .pr12-cta-trust p {
+        font-size: 10px;
+    }
+
+    .pr12-final-content p {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================
+   360px
+========================================= */
+
+@media (max-width: 360px) {
+
+    .pr12-header {
+        grid-template-columns: 34px minmax(0, 1fr);
+        gap: 11px;
+    }
+
+    .pr12-header-main h2 {
+        font-size: 18px;
+    }
+
+    .pr12-header-main p {
+        font-size: 11px;
+    }
+
+    .pr12-cta-visual {
+        min-height: 195px;
+    }
+
+    .pr12-cta-product img {
+        max-width: 135px;
+        height: 135px;
+    }
+
+    .pr12-cta-content h3 {
+        font-size: 19px;
+    }
+
+    .pr12-cta-content > p {
+        font-size: 11.5px;
+    }
+
+    .pr12-amazon-button,
+    .pr12-secondary-button {
+        min-height: 44px;
+        font-size: 11px;
+    }
+
+    .pr12-final-content p {
+        font-size: 10.5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   PHASE 13 — RESPONSIVE PRODUCT UX
+========================================= */
+
+
+/* ---------- LARGE DESKTOP ---------- */
+
+@media (min-width: 1440px) {
+
+    .pr13-product-ux {
+        padding-top: 100px;
+    }
+
+    .pr13-control-panel {
+        padding: 24px;
+    }
+
+    .pr13-navigation {
+        padding: 34px;
+    }
+
+    .pr13-nav-card {
+        min-height: 82px;
+    }
+
+}
+
+
+/* ---------- DESKTOP ---------- */
+
+@media (max-width: 1200px) {
+
+    .pr13-header {
+        grid-template-columns: 60px minmax(0, 1fr) auto;
+        gap: 22px;
+    }
+
+    .pr13-control-panel {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .pr13-product-actions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .pr13-navigation-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ---------- TABLET / SMALL DESKTOP ---------- */
+
+@media (max-width: 1000px) {
+
+    .pr13-product-ux {
+        padding-top: 75px;
+    }
+
+    .pr13-header {
+        grid-template-columns: 52px minmax(0, 1fr);
+    }
+
+    .pr13-header-mark {
+        display: none;
+    }
+
+    .pr13-header-main h2 {
+        font-size: 34px;
+    }
+
+    .pr13-navigation {
+        padding: 24px;
+    }
+
+    .pr13-shortcuts {
+        grid-template-columns: 1fr;
+    }
+
+    .pr13-shortcut {
+        grid-template-columns: 42px minmax(0, 1fr) auto;
+        column-gap: 13px;
+        align-items: start;
+    }
+
+    .pr13-shortcut > a {
+        grid-column: auto;
+        align-self: center;
+        min-width: 88px;
+    }
+
+}
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 760px) {
+
+    .pr13-product-ux {
+        padding-top: 62px;
+    }
+
+    .pr13-header {
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 15px;
+        margin-bottom: 28px;
+    }
+
+    .pr13-header-index span {
+        font-size: 11px;
+    }
+
+    .pr13-header-index i {
+        height: 42px;
+    }
+
+    .pr13-eyebrow {
+        font-size: 9px;
+        margin-bottom: 8px;
+    }
+
+    .pr13-header-main h2 {
+        font-size: 29px;
+        line-height: 1.12;
+    }
+
+    .pr13-header-main p {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .pr13-control-panel {
+        padding: 18px;
+        border-radius: 17px;
+        gap: 18px;
+    }
+
+    .pr13-product-info {
+        width: 100%;
+    }
+
+    .pr13-product-thumb {
+        flex-basis: 68px;
+        width: 68px;
+        height: 68px;
+    }
+
+    .pr13-product-meta h3 {
+        font-size: 16px;
+    }
+
+    .pr13-product-rating {
+        font-size: 10px;
+    }
+
+    .pr13-product-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+    }
+
+    .pr13-action-button {
+        width: 100%;
+        min-height: 46px;
+        font-size: 12px;
+    }
+
+    .pr13-navigation {
+        margin-top: 18px;
+        padding: 20px;
+        border-radius: 17px;
+    }
+
+    .pr13-navigation-head {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 16px;
+    }
+
+    .pr13-navigation-head h3 {
+        font-size: 20px;
+    }
+
+    .pr13-navigation-count {
+        font-size: 8px;
+    }
+
+    .pr13-navigation-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .pr13-nav-card {
+        min-height: 68px;
+        padding: 12px;
+    }
+
+    .pr13-nav-card strong {
+        font-size: 14px;
+    }
+
+    .pr13-nav-card small {
+        font-size: 10px;
+    }
+
+    .pr13-shortcuts {
+        margin-top: 18px;
+        gap: 10px;
+    }
+
+    .pr13-shortcut {
+        padding: 17px;
+        border-radius: 16px;
+    }
+
+    .pr13-shortcut-content strong {
+        font-size: 14px;
+    }
+
+    .pr13-shortcut-content p {
+        font-size: 11px;
+    }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+    .pr13-product-ux {
+        padding-top: 52px;
+    }
+
+    .pr13-header {
+        grid-template-columns: 34px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .pr13-header-index {
+        padding-top: 2px;
+    }
+
+    .pr13-header-index span {
+        font-size: 10px;
+    }
+
+    .pr13-header-index i {
+        height: 34px;
+    }
+
+    .pr13-eyebrow {
+        font-size: 8px;
+        letter-spacing: .13em;
+    }
+
+    .pr13-header-main h2 {
+        font-size: 25px;
+        letter-spacing: -.025em;
+    }
+
+    .pr13-header-main p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .pr13-control-panel {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .pr13-product-info {
+        gap: 12px;
+    }
+
+    .pr13-product-thumb {
+        flex-basis: 60px;
+        width: 60px;
+        height: 60px;
+        border-radius: 11px;
+    }
+
+    .pr13-product-label {
+        font-size: 8px;
+    }
+
+    .pr13-product-meta h3 {
+        font-size: 15px;
+    }
+
+    .pr13-product-rating {
+        gap: 6px;
+        margin-top: 5px;
+        font-size: 9px;
+    }
+
+    .pr13-stars {
+        letter-spacing: 0;
+    }
+
+    .pr13-product-actions {
+        gap: 7px;
+    }
+
+    .pr13-action-button {
+        min-height: 45px;
+        padding: 0 10px;
+        border-radius: 10px;
+        font-size: 11px;
+    }
+
+    .pr13-action-button span {
+        font-size: 13px;
+    }
+
+    .pr13-navigation {
+        padding: 16px;
+        border-radius: 15px;
+    }
+
+    .pr13-navigation-eyebrow {
+        font-size: 8px;
+    }
+
+    .pr13-navigation-head h3 {
+        font-size: 19px;
+    }
+
+    .pr13-nav-card {
+        grid-template-columns: 32px minmax(0, 1fr) auto;
+        gap: 10px;
+        min-height: 64px;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .pr13-nav-number {
+        width: 32px;
+        height: 32px;
+        border-radius: 9px;
+        font-size: 9px;
+    }
+
+    .pr13-nav-card strong {
+        font-size: 13px;
+    }
+
+    .pr13-nav-card small {
+        font-size: 10px;
+    }
+
+    .pr13-nav-card b {
+        font-size: 15px;
+    }
+
+    .pr13-shortcut {
+        grid-template-columns: 38px minmax(0, 1fr);
+        padding: 15px;
+        border-radius: 14px;
+    }
+
+    .pr13-shortcut-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .pr13-shortcut-content span {
+        font-size: 7px;
+    }
+
+    .pr13-shortcut-content strong {
+        font-size: 13px;
+    }
+
+    .pr13-shortcut-content p {
+        margin-top: 5px;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .pr13-shortcut > a {
+        grid-column: 1 / -1;
+        width: 100%;
+        min-height: 40px;
+        font-size: 11px;
+    }
+
+    .pr13-final-note {
+        margin-top: 22px;
+        padding: 15px 10px;
+    }
+
+    .pr13-final-note p {
+        font-size: 11px;
+    }
+
+}
+
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width: 420px) {
+
+    .pr13-product-ux {
+        padding-top: 45px;
+    }
+
+    .pr13-header-main h2 {
+        font-size: 23px;
+    }
+
+    .pr13-header-main p {
+        font-size: 13px;
+    }
+
+    .pr13-control-panel {
+        padding: 13px;
+    }
+
+    .pr13-product-thumb {
+        flex-basis: 54px;
+        width: 54px;
+        height: 54px;
+    }
+
+    .pr13-product-meta h3 {
+        font-size: 14px;
+    }
+
+    .pr13-product-rating {
+        font-size: 8px;
+    }
+
+    .pr13-product-actions {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pr13-action-button {
+        min-height: 44px;
+        padding: 0 7px;
+        font-size: 10px;
+    }
+
+    .pr13-navigation {
+        padding: 13px;
+    }
+
+    .pr13-navigation-head h3 {
+        font-size: 18px;
+    }
+
+    .pr13-nav-card {
+        min-height: 61px;
+    }
+
+}
+
+
+/* ---------- EXTRA SMALL MOBILE ---------- */
+
+@media (max-width: 360px) {
+
+    .pr13-header {
+        grid-template-columns: 29px minmax(0, 1fr);
+        gap: 9px;
+    }
+
+    .pr13-header-main h2 {
+        font-size: 21px;
+    }
+
+    .pr13-header-main p {
+        font-size: 13px;
+    }
+
+    .pr13-product-info {
+        align-items: flex-start;
+    }
+
+    .pr13-product-thumb {
+        flex-basis: 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .pr13-product-meta h3 {
+        font-size: 13px;
+    }
+
+    .pr13-product-rating {
+        flex-wrap: wrap;
+    }
+
+    .pr13-action-button {
+        font-size: 10px;
+    }
+
+    .pr13-nav-card strong {
+        font-size: 12px;
+    }
+
+    .pr13-nav-card small {
+        font-size: 9px;
+    }
+
+    .pr13-shortcut-content strong {
+        font-size: 12px;
+    }
+
+    .pr13-shortcut-content p {
+        font-size: 10px;
+    }
+
+}
+
+
+/* ---------- REDUCED MOTION ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .pr13-product-thumb img,
+    .pr13-action-button,
+    .pr13-nav-card,
+    .pr13-nav-card b,
+    .pr13-shortcut {
+        transition: none !important;
+    }
+
+}
+
+
+/* =========================================
+   END PHASE 13 RESPONSIVE
+========================================= */
+
+
+
+
+
+
+
+/* =========================================
+   PHASE 14 — RESPONSIVE VISUAL POLISH
+========================================= */
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 1000px) {
+
+    .hero-product-visual:hover img,
+    .hero-image-frame:hover img {
+        transform: none;
+    }
+
+    .hero-image-frame:hover {
+        box-shadow: none;
+    }
+
+    .pr11-related .pr11-card:hover {
+        transform: translateY(-3px);
+    }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 760px) {
+
+    /* Touch devices should not depend on hover */
+
+    .hero-product-visual:hover img,
+    .hero-image-frame:hover img,
+    .pr11-related .pr11-card:hover .pr11-product-image img,
+    .pr12-cta:hover .pr12-cta-product img {
+        transform: none;
+    }
+
+    .pr11-related .pr11-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .pr11-related .pr11-card:active {
+        transform: scale(.992);
+    }
+
+    .pr12-amazon-button:hover,
+    .pr12-secondary-button:hover {
+        transform: none;
+    }
+
+    .pr12-amazon-button:active,
+    .pr12-secondary-button:active {
+        transform: scale(.985);
+    }
+
+    .pr13-action-button:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .pr13-action-button:active {
+        transform: scale(.985);
+    }
+
+    .pr13-nav-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .pr13-nav-card:active {
+        transform: scale(.992);
+    }
+
+    .pr13-shortcut:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .pr13-shortcut:active {
+        transform: scale(.995);
+    }
+
+    .pr10-faq details[open] {
+        box-shadow: none;
+    }
+
+    #comparison,
+    #specifications,
+    #pros-cons,
+    #buying-guide,
+    #faq {
+        scroll-margin-top: 75px;
+    }
+
+}
+
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width: 480px) {
+
+    .pr12-cta::after {
+        display: none;
+    }
+
+}
+
+
+/* ---------- REDUCED MOTION ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero-product-visual img,
+    .hero-image-frame img,
+    .pr11-product-image img,
+    .pr12-cta-product img,
+    .pr13-product-thumb img,
+    .pr11-related .pr11-card,
+    .pr12-amazon-button,
+    .pr12-secondary-button,
+    .pr13-action-button,
+    .pr13-nav-card,
+    .pr13-shortcut,
+    .pr10-faq details,
+    #backToTop {
+        transition: none !important;
+    }
+
+    .pr14-product-polish-enabled .pr13-control-panel,
+    .pr14-product-polish-enabled .pr13-navigation,
+    .pr14-product-polish-enabled .pr13-shortcuts {
+        animation: none !important;
+    }
+
+    .pr12-cta::after {
+        display: none;
+    }
+
+}
+
+
+/* =========================================
+   END PHASE 14 RESPONSIVE
+========================================= */
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   PHASE 15 — RESPONSIVE PERFORMANCE
+========================================= */
+
+@media (max-width: 760px) {
+
+    /*
+     * Keep mobile rendering lightweight.
+     * Large decorative effects are reduced
+     * without changing the actual product layout.
+     */
+
+    .pr12-cta::after {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    /*
+     * Prevent oversized visual effects
+     * on very small screens.
+     */
+
+    .hero-image-frame {
+        box-shadow: none;
+    }
+
+}
+
+
+/* =========================================
+   END PHASE 15 RESPONSIVE
+========================================= */

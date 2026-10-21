@@ -1,0 +1,209 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== FIX: Terms Page Width & Word Wrapping ===== */
+
+.terms-page,
+.terms-page body {
+    max-width: 100%;
+}
+
+.terms-page .terms-main {
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.terms-page .terms-container {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.terms-page .terms-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    min-width: 0;
+}
+
+.terms-page .terms-content,
+.terms-page .terms-section,
+.terms-page .terms-section p,
+.terms-page .terms-section li,
+.terms-page .terms-intro,
+.terms-page .terms-notice {
+    min-width: 0;
+    max-width: 100%;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    white-space: normal;
+}
+
+.terms-page .terms-section h2,
+.terms-page .terms-section h3,
+.terms-page .terms-toc a {
+    word-break: normal !important;
+    overflow-wrap: anywhere;
+}
+
+/* Tablet aur mobile */
+@media (max-width: 960px) {
+    .terms-page .terms-main {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .terms-page .terms-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .terms-page .terms-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .terms-page .terms-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .terms-page .terms-container {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+
+    .terms-page .terms-section {
+        padding: 16px;
+    }
+
+    .terms-page .terms-section p,
+    .terms-page .terms-section li {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== FIX: Page Scrolling and Card Overflow ===== */
+
+html {
+    height: auto !important;
+    min-height: 100% !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+}
+
+body.terms-page {
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+.terms-page .terms-main {
+    height: auto !important;
+    min-height: 100vh !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+.terms-page .terms-container,
+.terms-page .terms-layout,
+.terms-page .terms-content {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+.terms-page .terms-section,
+.terms-page .terms-toc,
+.terms-page .terms-contact-card,
+.terms-page .terms-notice,
+.terms-page .terms-highlight,
+.terms-page .terms-note {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+.terms-page .terms-section {
+    scroll-margin-top: 80px;
+}
+
+.terms-page .terms-section:last-child {
+    margin-bottom: 40px;
+}
+
+
+
+
+/* ===== FIX: Related Policies Text Wrapping ===== */
+
+.terms-page .terms-related,
+.terms-page .terms-related-links {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.terms-page .terms-related-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px 24px;
+}
+
+.terms-page .terms-related-links a {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: auto;
+    min-width: max-content;
+    max-width: 100%;
+    white-space: nowrap;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    writing-mode: horizontal-tb !important;
+}
+
+@media (max-width: 480px) {
+    .terms-page .terms-related-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .terms-page .terms-related-links a {
+        width: auto;
+        max-width: 100%;
+    }
+}

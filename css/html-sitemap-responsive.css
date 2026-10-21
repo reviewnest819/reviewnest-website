@@ -1,0 +1,613 @@
+/* =========================================================
+   REVIEWNEST — HTML SITEMAP RESPONSIVE CSS
+   File: css/html-sitemap-responsive.css
+   Works with html-sitemap.html and html-sitemap.css
+   ========================================================= */
+
+
+/* =========================
+   1. LARGE DESKTOP
+   Screens: 1600px and above
+   ========================= */
+
+@media (min-width: 1600px) {
+
+    .html-sitemap-page .html-sitemap-main {
+        margin-left: 290px;
+    }
+
+    .html-sitemap-page .html-sitemap-container {
+        padding-right: 48px;
+        padding-left: 48px;
+    }
+
+    .html-sitemap-page .html-sitemap-topbar {
+        padding-right: 48px;
+        padding-left: 48px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero {
+        padding-right: 48px;
+        padding-left: 48px;
+    }
+
+    .html-sitemap-page .sitemap-card {
+        padding: 30px;
+    }
+
+}
+
+
+/* =========================
+   2. STANDARD DESKTOP
+   Screens: 1200px–1599px
+   ========================= */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+    .html-sitemap-page .html-sitemap-container {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    .html-sitemap-page .html-sitemap-topbar {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+}
+
+
+/* =========================
+   3. SMALL DESKTOP / LARGE TABLET
+   Screens: 961px–1199px
+   ========================= */
+
+@media (min-width: 961px) and (max-width: 1199px) {
+
+    .html-sitemap-page .html-sitemap-main {
+        margin-left: 250px;
+    }
+
+    .html-sitemap-page .html-sitemap-container {
+        padding: 30px 24px 48px;
+    }
+
+    .html-sitemap-page .html-sitemap-topbar {
+        padding: 14px 24px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero {
+        padding: 48px 24px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero h1 {
+        font-size: 40px;
+    }
+
+    .html-sitemap-page .html-sitemap-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .html-sitemap-page .sitemap-card {
+        padding: 22px;
+    }
+
+    .html-sitemap-page .sitemap-card-header h2 {
+        font-size: 17px;
+    }
+
+    .html-sitemap-page .html-sitemap-footer-inner {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+}
+
+
+/* =========================
+   4. TABLET AND MOBILE
+   Screens: 960px and below
+   ========================= */
+
+@media (max-width: 960px) {
+
+    .html-sitemap-page .html-sitemap-main {
+        width: 100%;
+        min-width: 0;
+
+        margin-left: 0;
+    }
+
+    .html-sitemap-page .html-sitemap-topbar {
+        position: sticky;
+        top: 0;
+
+        min-height: 64px;
+
+        gap: 14px;
+
+        padding: 11px 22px;
+    }
+
+    .html-sitemap-page .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .html-sitemap-page .breadcrumb {
+        gap: 8px;
+        font-size: 12px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero {
+        padding: 44px 28px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero h1 {
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero p {
+        max-width: 650px;
+        font-size: 15px;
+    }
+
+    .html-sitemap-page .html-sitemap-container {
+        padding: 30px 28px 48px;
+    }
+
+    .html-sitemap-page .html-sitemap-intro {
+        margin-bottom: 26px;
+    }
+
+    .html-sitemap-page .html-sitemap-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .html-sitemap-page .sitemap-card {
+        padding: 22px;
+    }
+
+    .html-sitemap-page .sitemap-card-header {
+        gap: 10px;
+    }
+
+    .html-sitemap-page .sitemap-card-header h2 {
+        font-size: 17px;
+    }
+
+    .html-sitemap-page .sitemap-card-description {
+        font-size: 12px;
+    }
+
+    .html-sitemap-page .sitemap-link-list a {
+        font-size: 13px;
+    }
+
+    .html-sitemap-page .sitemap-xml-notice {
+        padding: 26px;
+    }
+
+    .html-sitemap-page .sitemap-help {
+        padding: 30px 24px;
+    }
+
+    .html-sitemap-page .html-sitemap-footer-inner {
+        padding: 22px 28px;
+    }
+
+}
+
+
+/* =========================
+   5. MOBILE
+   Screens: 600px and below
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .html-sitemap-page {
+        font-size: 14px;
+    }
+
+    .html-sitemap-page .html-sitemap-topbar {
+        min-height: 60px;
+
+        gap: 12px;
+
+        padding: 9px 16px;
+    }
+
+    .html-sitemap-page .mobile-menu-toggle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .html-sitemap-page .breadcrumb {
+        gap: 6px;
+        font-size: 11px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero {
+        padding: 36px 20px 38px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero::before {
+        top: -100px;
+        right: -150px;
+
+        width: 280px;
+        height: 280px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero::after {
+        right: -80px;
+        bottom: -180px;
+
+        width: 250px;
+        height: 250px;
+    }
+
+    .html-sitemap-page .html-sitemap-eyebrow {
+        margin-bottom: 14px;
+        padding: 6px 10px;
+
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero h1 {
+        margin-bottom: 14px;
+
+        font-size: 32px;
+        letter-spacing: -0.8px;
+        line-height: 1.2;
+    }
+
+    .html-sitemap-page .html-sitemap-hero p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .html-sitemap-page .html-sitemap-container {
+        padding: 26px 16px 36px;
+    }
+
+    .html-sitemap-page .html-sitemap-intro {
+        margin-bottom: 22px;
+    }
+
+    .html-sitemap-page .html-sitemap-intro h2 {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .html-sitemap-page .html-sitemap-intro p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .html-sitemap-page .html-sitemap-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .html-sitemap-page .sitemap-card {
+        padding: 21px 18px;
+
+        border-radius: 14px;
+
+        transform: none;
+    }
+
+    .html-sitemap-page .sitemap-card:hover {
+        transform: none;
+    }
+
+    .html-sitemap-page .sitemap-card-header {
+        gap: 11px;
+        margin-bottom: 12px;
+    }
+
+    .html-sitemap-page .sitemap-card-number {
+        width: 36px;
+        height: 36px;
+
+        font-size: 11px;
+    }
+
+    .html-sitemap-page .sitemap-card-header h2 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .html-sitemap-page .sitemap-card-description {
+        margin-bottom: 15px;
+
+        font-size: 12px;
+        line-height: 1.75;
+    }
+
+    .html-sitemap-page .sitemap-link-list a {
+        gap: 9px;
+
+        padding: 11px 2px;
+
+        font-size: 13px;
+        line-height: 1.7;
+
+        overflow-wrap: anywhere;
+    }
+
+    .html-sitemap-page .sitemap-link-list a:hover {
+        padding-left: 2px;
+    }
+
+    .html-sitemap-page .sitemap-xml-notice {
+        margin-top: 22px;
+        padding: 22px 18px;
+
+        border-radius: 12px;
+    }
+
+    .html-sitemap-page .sitemap-xml-notice h2 {
+        margin-bottom: 12px;
+
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .html-sitemap-page .sitemap-xml-notice p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .html-sitemap-page .sitemap-xml-link {
+        min-height: 44px;
+        max-width: 100%;
+
+        padding: 11px 15px;
+
+        font-size: 12px;
+    }
+
+    .html-sitemap-page .sitemap-xml-notice .sitemap-xml-note {
+        font-size: 11px;
+    }
+
+    .html-sitemap-page .sitemap-help {
+        margin-top: 22px;
+        padding: 26px 18px;
+
+        border-radius: 14px;
+    }
+
+    .html-sitemap-page .sitemap-help h2 {
+        margin-bottom: 12px;
+
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .html-sitemap-page .sitemap-help > p {
+        margin-bottom: 20px;
+
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .html-sitemap-page .sitemap-help-actions {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+    .html-sitemap-page .sitemap-button {
+        width: 100%;
+        min-height: 46px;
+
+        padding: 12px 16px;
+
+        font-size: 13px;
+    }
+
+    .html-sitemap-page .html-sitemap-footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 14px;
+
+        padding: 21px 16px;
+    }
+
+    .html-sitemap-page .html-sitemap-footer-inner > p {
+        font-size: 11px;
+    }
+
+    .html-sitemap-page .html-sitemap-footer-links {
+        justify-content: flex-start;
+
+        gap: 12px 16px;
+    }
+
+    .html-sitemap-page .html-sitemap-footer-links a {
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================
+   6. SMALL MOBILE
+   Screens: 380px and below
+   ========================= */
+
+@media (max-width: 380px) {
+
+    .html-sitemap-page .html-sitemap-topbar {
+        gap: 9px;
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .html-sitemap-page .breadcrumb {
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero {
+        padding: 30px 16px 32px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero h1 {
+        font-size: 29px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero p {
+        font-size: 13px;
+    }
+
+    .html-sitemap-page .html-sitemap-container {
+        padding: 22px 12px 30px;
+    }
+
+    .html-sitemap-page .sitemap-card {
+        padding: 19px 15px;
+    }
+
+    .html-sitemap-page .sitemap-card-header h2 {
+        font-size: 16px;
+    }
+
+    .html-sitemap-page .sitemap-xml-notice {
+        padding: 19px 15px;
+    }
+
+    .html-sitemap-page .sitemap-xml-notice h2 {
+        font-size: 18px;
+    }
+
+    .html-sitemap-page .sitemap-help {
+        padding: 23px 15px;
+    }
+
+    .html-sitemap-page .sitemap-help h2 {
+        font-size: 19px;
+    }
+
+}
+
+
+/* =========================
+   7. EXTRA SMALL MOBILE
+   Screens: 320px and below
+   ========================= */
+
+@media (max-width: 320px) {
+
+    .html-sitemap-page .html-sitemap-topbar {
+        gap: 7px;
+        padding-right: 9px;
+        padding-left: 9px;
+    }
+
+    .html-sitemap-page .mobile-menu-toggle {
+        width: 36px;
+        height: 36px;
+    }
+
+    .html-sitemap-page .breadcrumb {
+        font-size: 9px;
+    }
+
+    .html-sitemap-page .html-sitemap-hero h1 {
+        font-size: 26px;
+    }
+
+    .html-sitemap-page .html-sitemap-container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .html-sitemap-page .sitemap-card {
+        padding: 17px 13px;
+    }
+
+    .html-sitemap-page .sitemap-card-header {
+        gap: 8px;
+    }
+
+    .html-sitemap-page .sitemap-card-number {
+        width: 32px;
+        height: 32px;
+    }
+
+    .html-sitemap-page .sitemap-card-header h2 {
+        font-size: 15px;
+    }
+
+    .html-sitemap-page .sitemap-link-list a {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================
+   8. REDUCED MOTION
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .html-sitemap-page *,
+    .html-sitemap-page *::before,
+    .html-sitemap-page *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
+
+
+/* =========================
+   9. PRINT RESPONSIVENESS
+   ========================= */
+
+@media print {
+
+    .html-sitemap-page .html-sitemap-main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .html-sitemap-page .html-sitemap-container {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 20px 0;
+    }
+
+    .html-sitemap-page .html-sitemap-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .html-sitemap-page .html-sitemap-footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 15px 0;
+    }
+
+}
