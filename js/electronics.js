@@ -24,11 +24,11 @@ const products = [
     price: null,
     featured: false,
     date: "",
-    image: "images/products/product-01.webp",
+    image: "https://m.media-amazon.com/images/I/41+SGuZhPML._AC_AIweblab1006854,T4_FMavif_SF700,700_PQ69_.jpg",
     brand: "Apple",
     description: "Open-fit wireless earbuds with Apple ecosystem features, Spatial Audio and Adaptive EQ.",
     keywords: "Apple AirPods 3rd Generation, AirPods 3, renewed, wireless earbuds, Spatial Audio, Adaptive EQ",
-    url: "product-review.html"
+    url: "https://reviewnestguide.blogspot.com/2026/10/best-apple-airpods-3rd-generation.html",
 },
     {
     id: 2,
@@ -39,11 +39,11 @@ const products = [
     price: null,
     featured: false,
     date: "",
-    image: "images/products/product-01.webp",
+    image: "https://m.media-amazon.com/images/I/41JfdFBHleL._AC_AIweblab1006854,T4_FMavif_SF700,700_PQ69_.jpg",
     brand: "Apple",
     description: "Wireless earbuds with Active Noise Cancellation, Apple H2 chip, Adaptive Audio, and other smart Apple features.",
     keywords: "Apple AirPods 4, AirPods 4 ANC, Active Noise Cancellation, H2 chip, wireless earbuds, Renewed, Apple",
-    url: "product-review-1.html"
+    url: "https://reviewnestguide.blogspot.com/2026/10/best-apple-airpods-4-with-active-noise.html"
 },
     
 {
@@ -55,11 +55,11 @@ const products = [
     price: null,
     featured: false,
     date: "",
-    image: "images/products/product-01.webp",
+    image: "https://m.media-amazon.com/images/I/71fv7U1IIqL._AC_AIweblab1006854,T4_FMavif_SF700,700_PQ69_.jpg",
     brand: "Tukio",
     description: "Four Apple Find My-compatible tracker tags with replaceable CR2032 batteries, IP67 protection, silicone cases, key rings and lanyards. iOS only.",
     keywords: "Tukio Air Tracker Tags, Lucid Tag, 4 Pack, Apple Find My, Bluetooth tracker, CR2032, IP67, iOS tracker, luggage tracker, key finder",
-    url: "product-review-2.html"
+    url: "https://reviewnestguide.blogspot.com/2026/10/best-tukio-air-tracker-tags-4-pack-in.html"
 },
     
 {
@@ -71,11 +71,11 @@ const products = [
     price: null,
     featured: false,
     date: "",
-    image: "images/products/product-01.webp",
+    image: "https://m.media-amazon.com/images/I/61Avo6ecBsL._AC_AIweblab1006854,T4_FMavif_SF700,700_PQ69_.jpg",
     brand: "Apple",
     description: "46mm Jet Black aluminum smartwatch with watchOS 26, 64GB storage, built-in GPS and Bluetooth. Renewed Premium condition; listing states battery capacity exceeds 80% of new.",
     keywords: "Apple Watch Series 11, 46mm GPS, Renewed Premium, Jet Black Aluminum, Black Sport Band M/L, watchOS 26, 64GB, Bluetooth, smartwatch",
-    url: "product-review-3.html"
+    url: "https://reviewnestguide.blogspot.com/2026/10/best-apple-watch-series-11-46mm-gps.html"
 },
 
 
@@ -591,7 +591,13 @@ const priceFilters =
    ========================================================= */  
 
 let currentPage = 1;  
-let searchTerm = "";  
+let searchTerm = "";
+const initialSearchQuery = new URLSearchParams(window.location.search).get("q");
+
+if (initialSearchQuery && electronicsSearch) {
+    electronicsSearch.value = initialSearchQuery;
+    searchTerm = initialSearchQuery.trim().toLowerCase();
+}  
 let currentSort = "relevant";  
   
 const PRODUCTS_PER_PAGE = 12;  
